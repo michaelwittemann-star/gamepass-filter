@@ -186,9 +186,9 @@ def fetch_catalog() -> dict[str, set[str]]:
 # Katalog über dieselbe (inoffizielle) Schnittstelle, die luna.amazon.de ohne Anmeldung nutzt.
 # Luna Premium enthält alle Prime-Spiele.
 PLATFORMS = ("console", "pc", "cloud", "ea", "lunaPrime", "lunaPremium", "netflixMobile", "netflixTV",
-             "epicFree", "epicSoon", "primeClaim")
+             "epicFree", "epicSoon", "primeClaim", "primeSoon")
 # Reihenfolge für das Cover-Ziel, wenn ein Spiel auf mehreren Plattformen ist (Xbox zuerst)
-SOURCE_ORDER = ("luna-", "nf-", "epic-", "prime-")
+SOURCE_ORDER = ("luna-", "nf-", "epic-", "prime-", "primesoon-")
 LUNA_LISTS = {"lunaPrime": "included_with_prime", "lunaPremium": "luna_premium"}
 LUNA_GENRES = {
     "action": "Action & adventure", "adventure": "Action & adventure", "horror": "Action & adventure",
@@ -417,6 +417,46 @@ RATING_JUNK = re.compile(r"\s*\([^)]*(erwachsene|unbewertet|rated|mature|adult|e
 
 
 PRIME_LAST = ROOT / "data" / "cache" / "prime_last.json"
+MONTHS_EN = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
+MONTHS_DE = ["januar", "februar", "märz", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "dezember"]
+PRIME_SOON_VIA = {"epic": "Epic", "gog": "GOG", "amazon games": "Amazon Games", "legacy": "Legacy Games",
+                  "microsoft": "Microsoft Store", "xbox": "Microsoft Store", "ubisoft": "Ubisoft Connect", "ea": "EA app"}
+
+
+def fetch_prime_soon() -> tuple[list[dict], dict[str, set[str]]]:
+    """Angekündigte Prime-Abholspiele aus Amazons Monatsartikel (amazongamestudios.com, "luna-<monat>-<jahr>")."""
+    import html as htmllib
+
+    today = datetime.now(timezone.utc).date()
+    months = [(today.year, today.month), (today.year + (today.month == 12), today.month % 12 + 1)]
+    live = {norm(g["t"]) for g in load_json(PRIME_LAST, [])}  # aktuelle Abholliste (fetch_prime läuft vorher)
+    games, flags = [], {}
+    for year, month in months:
+        url = f"https://www.amazongamestudios.com/de-de/news/articles/luna-{MONTHS_EN[month - 1]}-{year}"
+        st, page = http_text(url)
+        if st != 200:
+            continue  # Artikel für den nächsten Monat gibt es meist erst Ende des Vormonats
+        text = re.sub(r"<script.*?</script>|<style.*?</style>", "", page, flags=re.S)
+        text = re.sub(r"\s+", " ", htmllib.unescape(re.sub(r"<[^>]+>", " ", text)).replace(" ", " "))
+        start = text.find("PC-Titel")
+        if start < 0:
+            continue
+        section = text[start: text.find("Auf dieser Seite", start) if "Auf dieser Seite" in text[start:] else None]
+        # "Titel (15. Oktober, Epic Games Store)"
+        for m in re.finditer(r"(?<=\))\s*:?\s*([^()]+?)\s*\((\d{1,2})\. ?([A-Za-zäÄ]+),?\s*([^)]*)\)", section):
+            title, day, mon, store = m.group(1).strip(), int(m.group(2)), m.group(3).lower(), m.group(4).lower()
+            if mon not in MONTHS_DE:
+                continue
+            date = f"{year}-{MONTHS_DE.index(mon) + 1:02d}-{day:02d}"
+            if date < today.isoformat() or norm(title) in live:
+                continue  # schon freigeschaltet, steht in der normalen Abholliste
+            via = next((v for k, v in PRIME_SOON_VIA.items() if k in store), store.title() or None)
+            g = base_entry("primesoon-" + norm(title), title, url, "prime", sq=True,
+                           deals=[{"src": "prime", "from": date, "via": via}])
+            games.append(g)
+            flags[g["id"]] = {"primeSoon"}
+    log(f"Prime demnächst: {len(games)}")
+    return games, flags
 
 
 def fetch_prime() -> tuple[list[dict], dict[str, set[str]]]:
@@ -936,7 +976,8 @@ def main():
     de = fetch_products(ids, "de-de")
     en = fetch_products(ids, "en-us")
     games = [parse_product(de[i], en.get(i)) for i in ids if i in de]
-    for name, fetch in (("Luna", fetch_luna), ("Netflix", fetch_netflix), ("Epic", fetch_epic), ("Prime", fetch_prime)):
+    for name, fetch in (("Luna", fetch_luna), ("Netflix", fetch_netflix), ("Epic", fetch_epic), ("Prime", fetch_prime),
+                        ("Prime demnächst", fetch_prime_soon)):
         try:
             extra, extra_flags = fetch()
         except Exception as e:  # noqa: BLE001

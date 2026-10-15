@@ -97,6 +97,7 @@ const FREE: Record<string, string> = {
   epicFree: 'Epic: jetzt gratis',
   epicSoon: 'Epic: bald gratis',
   primeClaim: 'Prime: zum Abholen',
+  primeSoon: 'Prime: bald abholbar',
 };
 const PLATS: Record<string, string> = { ...SUBS, ...FREE };
 const PLAT_SHORT: Record<string, string> = {
@@ -107,6 +108,7 @@ const PLAT_SHORT: Record<string, string> = {
   epicFree: 'Epic gratis',
   epicSoon: 'Epic bald gratis',
   primeClaim: 'Prime-Abholspiel',
+  primeSoon: 'Prime bald',
 };
 const LINK_LABELS: Record<string, string> = { luna: 'Luna', netflix: 'Netflix', epic: 'Epic', prime: 'Prime' };
 const STATUS: Record<string, string> = { new: 'Neu im Game Pass', leaving: 'Verlässt bald' };
@@ -403,7 +405,7 @@ function cellHtml(g: Game, col: Col): string {
         g.plat
           .filter((p) => !(p === 'lunaPremium' && g.plat.includes('lunaPrime')))
           .map((p) => {
-            const via = p === 'primeClaim' ? g.deals?.find((d) => d.src === 'prime')?.via : undefined;
+            const via = p.startsWith('prime') ? g.deals?.find((d) => d.src === 'prime')?.via : undefined;
             return (PLAT_SHORT[p] || PLATS[p]) + (via ? ` (${via})` : '');
           })
           .join(' · '),
@@ -439,7 +441,7 @@ function cardHtml(g: Game, cols: Col[]) {
   const dealBadges = (g.deals || []).map((d) =>
     d.src === 'epic'
       ? `<span class="badge free" title="Gratis im Epic Games Store">${d.until ? 'GRATIS BIS ' + dm(d.until) : 'GRATIS AB ' + dm(d.from)}</span>`
-      : `<span class="badge prime" title="Mit Prime abholen${d.via ? ' über ' + esc(d.via) : ''}">PRIME${d.until ? ' BIS ' + dm(d.until) : ''}</span>`,
+      : `<span class="badge prime" title="Mit Prime abholen${d.via ? ' über ' + esc(d.via) : ''}">PRIME${d.until ? ' BIS ' + dm(d.until) : d.from ? ' AB ' + dm(d.from) : ''}</span>`,
   );
   const badges = [
     g.new ? '<span class="badge new">NEU</span>' : '',
@@ -679,7 +681,7 @@ function buildFilters() {
       'Gratis zum Behalten',
       chipList(FREE, () => S.plat, (v) => (S.plat = v), countBy((g) => g.plat)),
       () => (S.plat = S.plat.filter((p) => !(p in FREE))),
-      'Wöchentliche Epic-Geschenke und monatliche Prime-Spiele – nur bis zur Frist abholbar.',
+      'Wöchentliche Epic-Geschenke und monatliche Prime-Spiele – nur bis zur Frist abholbar. „Bald“ = von Epic bzw. Amazon schon angekündigt.',
     ),
     group('Status', chipList(STATUS, () => S.status, (v) => (S.status = v), countBy((g) => [g.new ? 'new' : '', g.leaving ? 'leaving' : ''])), () => (S.status = [])),
     group('Erscheinungsjahr', rangeSlider(years, () => S.year, (r) => (S.year = r), (v, end) => (end ? (v === YEAR_MIN ? 'alle' : 'heute') : String(v))), () => (S.year = [null, null])),
