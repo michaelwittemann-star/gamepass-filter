@@ -188,3 +188,45 @@ footer a { color: #999; }
 @media (max-width: 800px) {
   .drawer-close { display: block; margin: 0 0 4px auto; }
 }
+
+/* User Score neben dem Metascore (Metacritic-Stil: rund) */
+.us {
+  display: inline-grid; place-items: center; min-width: 26px; height: 20px; padding: 0 4px;
+  border-radius: 10px; font-weight: 700; font-size: 12px; color: #000;
+}
+.us.good { background: var(--mc-good); }
+.us.mid { background: var(--mc-mid); }
+.us.bad { background: var(--mc-bad); }
+.us.na { background: #3a3a3a; color: var(--muted); }
+
+/* Reiter "Alle Spiele" / "Meine Liste" */
+.tabs { display: flex; gap: 4px; }
+.tabs button {
+  padding: 7px 14px; border: 0; border-radius: 999px; background: transparent; color: var(--muted);
+  font-weight: 600; cursor: pointer; white-space: nowrap;
+}
+.tabs button:hover { color: var(--text); background: var(--panel-2); }
+.tabs button.on { color: #fff; background: var(--green); }
+.tab-count:not(:empty) {
+  display: inline-block; min-width: 20px; padding: 0 6px; margin-left: 4px; border-radius: 10px;
+  background: rgba(255,255,255,.2); font-size: 12px; line-height: 18px; text-align: center;
+}
+.chip.share { margin-left: auto; }
+
+/* + Button auf dem Cover */
+.card { position: relative; }
+.add {
+  position: absolute; z-index: 2; top: 6px; right: 6px; width: 32px; height: 32px; border-radius: 50%;
+  display: grid; place-items: center; padding: 0; font-size: 20px; line-height: 1; cursor: pointer;
+  background: rgba(0,0,0,.72); color: #fff; border: 1px solid rgba(255,255,255,.45);
+  transition: transform .12s ease, background .12s ease;
+}
+.add:hover { transform: scale(1.1); background: rgba(0,0,0,.9); }
+.add.on { background: var(--green); border-color: var(--green); font-size: 16px; }
+.badges { right: 44px; }
+
+@media (max-width: 800px) {
+  .tabs { order: 2; }
+  .sort select { max-width: 130px; }
+  .tabs button { padding: 6px 10px; font-size: 14px; }
+}

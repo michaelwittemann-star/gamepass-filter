@@ -674,7 +674,7 @@ def mc_lookup(g: dict, forced=...) -> dict | None:
         return None
     score = (hit.get("criticScoreSummary") or {}).get("score") or None  # 0 = noch keine Wertung
     return {
-        "reviews": mc_review_count(hit["slug"]),
+        **mc_details(hit["slug"]),
         "slug": hit["slug"],
         "title": hit["title"],
         "score": score,
@@ -683,14 +683,20 @@ def mc_lookup(g: dict, forced=...) -> dict | None:
     }
 
 
-def mc_review_count(slug: str) -> int | None:
-    """Zahl der Kritiken über alle Plattformen – Anhaltspunkt für die Größe einer Produktion."""
+def mc_details(slug: str) -> dict:
+    """Zahl der Kritiken über alle Plattformen (Anhaltspunkt für die Produktionsgröße) und User Score."""
     mc_rl.wait()
     d = http_json(f"https://backend.metacritic.com/composer/metacritic/pages/games/{slug}/web?apiKey={MC_KEY}")
+    out = {"reviews": None, "user": None, "userCount": None}
     for c in d.get("components") or []:
-        if (c.get("meta") or {}).get("componentName") == "product":
-            return ((c.get("data") or {}).get("item") or {}).get("criticScoreSummary", {}).get("reviewCount")
-    return None
+        name = (c.get("meta") or {}).get("componentName")
+        item = (c.get("data") or {}).get("item") or {} if isinstance(c.get("data"), dict) else {}
+        if name == "product":
+            out["reviews"] = (item.get("criticScoreSummary") or {}).get("reviewCount")
+        elif name == "user-score-summary":
+            out["user"] = item.get("score") or None  # 0 / fehlend = "tbd" (zu wenige Bewertungen)
+            out["userCount"] = item.get("reviewCount")
+    return out
 
 
 _hltb = None
@@ -770,7 +776,7 @@ SOURCES = {"mc": ("metacritic", mc_lookup), "hltb": ("hltb", hltb_lookup), "stea
 
 
 # Felder, die ein Treffer haben muss; ältere Cache-Einträge ohne sie werden neu geholt
-REQUIRED = {"mc": "reviews", "hltb": "main", "steam": "price"}
+REQUIRED = {"mc": "userCount", "hltb": "main", "steam": "price"}
 
 
 def is_stale(entry: dict | None, refresh: bool, src: str = "") -> bool:
@@ -1044,6 +1050,8 @@ def main():
             "y": year,
             "yx": g["yx"],
             "mc": mc and mc.get("score"),
+            "us": mc and mc.get("user"),
+            "usN": mc and mc.get("user") and mc.get("userCount"),
             "mcSlug": mc and mc["slug"],
             "mcGenres": (mc or {}).get("genres") or None,
             "hMain": hl and hl.get("main"),

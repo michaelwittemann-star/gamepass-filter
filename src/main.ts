@@ -21,6 +21,9 @@ interface Game {
   y?: number;
   yx?: number;
   mc?: number;
+  us?: number;
+  usN?: number;
+  gone?: boolean;
   mcSlug?: string;
   hMain?: number;
   hExtra?: number;
@@ -47,6 +50,8 @@ interface State {
   status: string[];
   year: [number | null, number | null];
   mc: [number | null, number | null];
+  us: [number | null, number | null]; // User Score x10 (0–100), damit die URL ganzzahlig bleibt
+  tab: 'all' | 'list';
   hKind: HKey;
   hours: [number | null, number | null];
   missing: boolean;
@@ -135,6 +140,8 @@ const H_KINDS: Record<HKey, string> = { hMain: 'Story', hExtra: 'Story + Extras'
 const H_STEPS = [0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 25, 30, 40, 50, 60, 80, 100, 150];
 const SORTS: Record<string, string> = {
   mc: 'Metascore',
+  us: 'User Score',
+  listAdded: 'Zuletzt auf meine Liste',
   year: 'Neueste zuerst',
   yearAsc: 'Älteste zuerst',
   hAsc: 'Kürzeste Spielzeit',
@@ -161,6 +168,8 @@ function defaults(): State {
     status: [],
     year: [null, null],
     mc: [null, null],
+    us: [null, null],
+    tab: 'all',
     hKind: 'hMain',
     hours: [null, null],
     missing: false,
@@ -207,6 +216,8 @@ function saveUrl() {
   if (S.status.length) p.set('status', S.status.join('|'));
   if (S.year.some((x) => x !== null)) p.set('year', rng(S.year));
   if (S.mc.some((x) => x !== null)) p.set('mc', rng(S.mc));
+  if (S.us.some((x) => x !== null)) p.set('us', rng(S.us));
+  if (S.tab === 'list') p.set('tab', 'list');
   if (S.hKind !== d.hKind) p.set('hk', S.hKind);
   if (S.hours.some((x) => x !== null)) p.set('h', rng(S.hours));
   if (S.missing) p.set('missing', '1');
@@ -234,6 +245,8 @@ function loadUrl() {
   s.status = list('status');
   s.year = parseRng(p.get('year'));
   s.mc = parseRng(p.get('mc'));
+  s.us = parseRng(p.get('us'));
+  s.tab = p.get('tab') === 'list' ? 'list' : 'all';
   if (p.get('hk') && p.get('hk')! in H_KINDS) s.hKind = p.get('hk') as HKey;
   s.hours = parseRng(p.get('h'));
   s.missing = p.get('missing') === '1';
@@ -281,6 +294,7 @@ function matches(g: Game) {
   if (S.status.length && !S.status.some((s) => (g as unknown as Record<string, unknown>)[s])) return false;
   if (!inRange(g.y, S.year)) return false;
   if (!inRange(g.mc, S.mc)) return false;
+  if (!inRange(g.us !== undefined ? g.us * 10 : undefined, S.us)) return false;
   if (!inRange(g[S.hKind], S.hours)) return false;
   if (!matchTri(g.genres, S.genres, 'any')) return false;
   if (S.modes.length && !S.modes.every((m) => g.feat?.includes(m))) return false;
@@ -313,6 +327,8 @@ function sortGames(list: Game[]) {
   };
   const cmp: Record<string, (a: Game, b: Game) => number> = {
     mc: by((g) => g.mc, -1),
+    us: by((g) => g.us, -1),
+    listAdded: by((g) => myList.get(g.id)?.at, -1),
     year: by((g) => g.y, -1),
     yearAsc: by((g) => g.y, 1),
     hAsc: by((g) => g[S.hKind], 1),
@@ -334,8 +350,8 @@ type Col = 'mc' | 'y' | 'h' | 'tier' | 'plat' | 'genres' | 'modes' | 'online' | 
 
 function visibleCols(): Col[] {
   const c = new Set<Col>();
-  const sortCol: Record<string, Col> = { mc: 'mc', year: 'y', yearAsc: 'y', hAsc: 'h', hDesc: 'h', stars: 'stars', added: 'added' };
-  if (S.mc.some((x) => x !== null)) c.add('mc');
+  const sortCol: Record<string, Col> = { mc: 'mc', us: 'mc', year: 'y', yearAsc: 'y', hAsc: 'h', hDesc: 'h', stars: 'stars', added: 'added' };
+  if (S.mc.some((x) => x !== null) || S.us.some((x) => x !== null)) c.add('mc');
   if (S.year.some((x) => x !== null)) c.add('y');
   if (S.hours.some((x) => x !== null)) c.add('h');
   if (sortCol[S.sort]) c.add(sortCol[S.sort]);
@@ -363,10 +379,22 @@ function val(html: string, title: string, na = false, wrap = false) {
 function cellHtml(g: Game, col: Col): string {
   switch (col) {
     case 'mc': {
-      if (g.mc === undefined) return val('MC –', 'Kein Metascore', true);
-      const cls = g.mc >= 75 ? 'good' : g.mc >= 50 ? 'mid' : 'bad';
-      const badge = `<span class="mc ${cls}">${g.mc}</span>`;
-      return val(g.mcSlug ? `<a href="https://www.metacritic.com/game/${g.mcSlug}/" target="_blank" rel="noopener">${badge}</a>` : badge, 'Metascore');
+      const mcLink = (html: string, path = '') =>
+        g.mcSlug ? `<a href="https://www.metacritic.com/game/${g.mcSlug}/${path}" target="_blank" rel="noopener">${html}</a>` : html;
+      const meta =
+        g.mc === undefined
+          ? val('MC –', 'Kein Metascore', true)
+          : val(mcLink(`<span class="mc ${g.mc >= 75 ? 'good' : g.mc >= 50 ? 'mid' : 'bad'}">${g.mc}</span>`), 'Metascore (Kritiker)');
+      const user =
+        g.us === undefined
+          ? g.mc !== undefined
+            ? val('<span class="us na">–</span>', 'Kein User Score', true)
+            : ''
+          : val(
+              mcLink(`<span class="us ${g.us >= 7.5 ? 'good' : g.us >= 5 ? 'mid' : 'bad'}">${g.us.toFixed(1).replace('.', ',')}</span>`, 'user-reviews/'),
+              `User Score (Metacritic)${g.usN ? ` – ${g.usN.toLocaleString('de-DE')} Bewertungen` : ''}`,
+            );
+      return meta + user;
     }
     case 'y':
       return g.y ? val(String(g.y), g.yx && g.yx !== g.y ? `Erschienen ${g.y}, auf Xbox ${g.yx}` : 'Erscheinungsjahr') : val('Jahr –', 'Unbekannt', true);
@@ -446,6 +474,7 @@ function cardHtml(g: Game, cols: Col[]) {
   const badges = [
     g.new ? '<span class="badge new">NEU</span>' : '',
     g.leaving ? '<span class="badge leaving">VERLÄSST BALD</span>' : '',
+    g.gone ? '<span class="badge leaving">NICHT MEHR IM ANGEBOT</span>' : '',
     target === 'luna' ? '<span class="badge luna">LUNA</span>' : '',
     target === 'netflix' ? '<span class="badge netflix">NETFLIX</span>' : '',
     ...dealBadges,
@@ -453,7 +482,9 @@ function cardHtml(g: Game, cols: Col[]) {
     .filter(Boolean)
     .join('');
   const where = target ? { luna: 'bei Amazon Luna', netflix: 'bei Netflix', epic: 'im Epic Games Store', prime: 'bei Prime' }[target] : 'im Xbox Store';
-  return `<article class="card">
+  const on = myList.has(g.id);
+  const addBtn = `<button class="add${on ? ' on' : ''}" data-id="${esc(g.id)}" title="${on ? 'Von meiner Liste entfernen' : 'Zu meiner Liste hinzufügen'}" aria-label="${on ? 'Von meiner Liste entfernen' : 'Zu meiner Liste hinzufügen'}">${on ? '✓' : '+'}</button>`;
+  return `<article class="card">${addBtn}
     <a class="cover${g.sq ? ' sq' : ''}" href="${g.url}" target="_blank" rel="noopener" title="${esc(g.t)} ${where} öffnen">${img}<div class="badges">${badges}</div></a>
     <div class="title" title="${esc(g.t)}${g.dev ? ' – ' + esc(g.dev) : ''}">${esc(g.t)}</div>
     <div class="vals">${cols.map((c) => cellHtml(g, c)).join('')}</div>${links}
@@ -463,10 +494,21 @@ function cardHtml(g: Game, cols: Col[]) {
 let renderToken = 0;
 function render() {
   saveUrl();
-  const list = sortGames(games.filter(matches));
+  const inList = S.tab === 'list';
+  const base = inList ? listGames() : games;
+  const list = sortGames(base.filter(matches));
   const cols = visibleCols();
-  $('#count').innerHTML = `<b>${list.length}</b> von ${games.length} Spielen`;
-  $('#empty').hidden = list.length > 0;
+  $('#count').innerHTML = inList
+    ? `<b>${list.length}</b> von ${base.length} Spielen auf deiner Liste`
+    : `<b>${list.length}</b> von ${games.length} Spielen`;
+  const empty = $('#empty');
+  empty.hidden = list.length > 0;
+  empty.textContent = inList && !base.length
+    ? 'Deine Liste ist noch leer. Mit dem + oben rechts an einem Cover setzt du Spiele darauf.'
+    : 'Keine Spiele passen zu diesen Filtern.';
+  document.querySelectorAll<HTMLButtonElement>('.tabs button').forEach((b) => b.classList.toggle('on', b.dataset.tab === S.tab));
+  $('#listCount').textContent = myList.size ? String(myList.size) : '';
+  $('#shareList').hidden = !inList || !myList.size;
   const grid = $('#grid');
   // in Häppchen rendern, damit die Seite bei 800 Kacheln flüssig bleibt
   const token = ++renderToken;
@@ -481,6 +523,84 @@ function render() {
   requestAnimationFrame(more);
   renderActiveChips();
   syncControls();
+}
+
+// ---------- Meine Liste (nur in diesem Browser gespeichert) ----------
+
+interface Saved {
+  id: string;
+  t: string;
+  img?: string;
+  sq?: boolean;
+  url: string;
+  at: number;
+}
+const LIST_KEY = 'gamepass-filter.myList';
+let myList = new Map<string, Saved>();
+
+function loadList() {
+  try {
+    const arr = JSON.parse(localStorage.getItem(LIST_KEY) || '[]') as Saved[];
+    myList = new Map(arr.map((x) => [x.id, x]));
+  } catch {
+    myList = new Map();
+  }
+}
+function saveList() {
+  try {
+    localStorage.setItem(LIST_KEY, JSON.stringify([...myList.values()]));
+  } catch {
+    /* privates Fenster o. Ä.: Liste gilt dann nur bis zum Neuladen */
+  }
+}
+function addToList(g: Game) {
+  myList.set(g.id, { id: g.id, t: g.t, img: g.img, sq: g.sq, url: g.url, at: Date.now() });
+}
+
+const byId = () => new Map(games.map((g) => [g.id, g]));
+/** Spiele der Liste; was nicht mehr im Katalog ist, bleibt mit gespeichertem Titel/Cover sichtbar. */
+function listGames(): Game[] {
+  const idx = byId();
+  return [...myList.values()].map((x) => idx.get(x.id) || { id: x.id, t: x.t, img: x.img, sq: x.sq, url: x.url, plat: [], gone: true });
+}
+
+function toggleList(id: string, btn: HTMLButtonElement) {
+  if (myList.has(id)) myList.delete(id);
+  else {
+    const g = byId().get(id);
+    if (g) addToList(g);
+  }
+  saveList();
+  if (S.tab === 'list') return render();
+  const on = myList.has(id);
+  btn.classList.toggle('on', on);
+  btn.textContent = on ? '✓' : '+';
+  btn.title = on ? 'Von meiner Liste entfernen' : 'Zu meiner Liste hinzufügen';
+  $('#listCount').textContent = myList.size ? String(myList.size) : '';
+}
+
+/** Liste per Link auf ein anderes Gerät übertragen */
+async function shareList() {
+  const url = `${location.origin}${location.pathname}?tab=list&import=${encodeURIComponent([...myList.keys()].join('|'))}`;
+  try {
+    await navigator.clipboard.writeText(url);
+    alert('Link kopiert. Öffne ihn auf dem anderen Gerät, dann werden die Spiele dort zur Liste hinzugefügt.');
+  } catch {
+    prompt('Diesen Link auf dem anderen Gerät öffnen:', url);
+  }
+}
+function importFromUrl() {
+  const p = new URLSearchParams(location.search);
+  const ids = (p.get('import') || '').split('|').filter(Boolean);
+  if (!ids.length) return;
+  const idx = byId();
+  const fresh = ids.filter((id) => idx.has(id) && !myList.has(id));
+  if (fresh.length && confirm(`${fresh.length} Spiele zu deiner Liste hinzufügen?`)) {
+    fresh.forEach((id) => addToList(idx.get(id)!));
+    saveList();
+  }
+  p.delete('import');
+  history.replaceState(null, '', p.toString() ? '?' + p : location.pathname);
 }
 
 // ---------- Filterleiste ----------
@@ -687,6 +807,12 @@ function buildFilters() {
     group('Erscheinungsjahr', rangeSlider(years, () => S.year, (r) => (S.year = r), (v, end) => (end ? (v === YEAR_MIN ? 'alle' : 'heute') : String(v))), () => (S.year = [null, null])),
     group('Metascore', rangeSlider(mcs, () => S.mc, (r) => (S.mc = r), (v, end) => (end ? (v === 0 ? '0' : '100') : String(v))), () => (S.mc = [null, null])),
     group(
+      'User Score (Metacritic)',
+      rangeSlider(Array.from({ length: 21 }, (_, i) => i * 5), () => S.us, (r) => (S.us = r), (v) => (v / 10).toFixed(1).replace('.', ',')),
+      () => (S.us = [null, null]),
+      'Bewertung der Spieler auf Metacritic, 0–10',
+    ),
+    group(
       'Spielzeit (HowLongToBeat)',
       [
         seg(H_KINDS, () => S.hKind, (v) => (S.hKind = v)),
@@ -709,7 +835,7 @@ function buildFilters() {
     render();
   };
   controls.push({ sync: () => (cb.checked = S.missing) });
-  F.append(group('Fehlende Daten', missing, undefined, 'Gilt für Jahr, Metascore, Spielzeit, Spieleranzahl, Produktion und Open World, sobald dort gefiltert wird.'));
+  F.append(group('Fehlende Daten', missing, undefined, 'Gilt für Jahr, Metascore, User Score, Spielzeit, Spieleranzahl, Produktion und Open World, sobald dort gefiltert wird.'));
 
   const gc = countBy((g) => g.genres);
   const genreOpts = Object.fromEntries(Object.entries(GENRES).filter(([k]) => gc[k]));
@@ -808,6 +934,8 @@ function renderActiveChips() {
   S.status.forEach((p) => items.push([STATUS[p], () => (S.status = S.status.filter((x) => x !== p))]));
   if (S.year.some((x) => x !== null)) items.push(['Jahr ' + r(S.year, String), () => (S.year = [null, null])]);
   if (S.mc.some((x) => x !== null)) items.push(['Metascore ' + r(S.mc, String), () => (S.mc = [null, null])]);
+  if (S.us.some((x) => x !== null))
+    items.push(['User Score ' + r(S.us, (v) => (v / 10).toFixed(1).replace('.', ',')), () => (S.us = [null, null])]);
   if (S.hours.some((x) => x !== null)) items.push([`${H_KINDS[S.hKind]} ${r(S.hours, String)} Std.`, () => (S.hours = [null, null])]);
   Object.entries(S.genres).forEach(([k, v]) => items.push([(v < 0 ? 'ohne ' : '') + (GENRES[k] || k), () => delete S.genres[k]]));
   S.modes.forEach((m) => items.push([MODES[m], () => (S.modes = S.modes.filter((x) => x !== m))]));
@@ -838,9 +966,10 @@ function renderActiveChips() {
     b.className = 'chip clear';
     b.textContent = 'Alle Filter löschen';
     b.onclick = () => {
-      const sort = S.sort;
+      const { sort, tab } = S;
       S = defaults();
       S.sort = sort;
+      S.tab = tab;
       render();
     };
     box.append(b);
@@ -874,15 +1003,30 @@ async function init() {
     else document.body.classList.toggle('filters-hidden');
   };
 
+  loadList();
+  importFromUrl();
   loadUrl();
   buildFilters();
+  document.querySelectorAll<HTMLButtonElement>('.tabs button').forEach((b) => {
+    b.onclick = () => {
+      S.tab = b.dataset.tab === 'list' ? 'list' : 'all';
+      window.scrollTo(0, 0);
+      render();
+    };
+  });
+  $('#shareList').onclick = shareList;
+  $('#grid').addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('button.add');
+    if (btn) toggleList(btn.dataset.id!, btn);
+  });
   render();
 
   const n = (f: (g: Game) => unknown) => games.filter(f).length;
   $('#footer').innerHTML = `Stand: ${new Date(data.updated).toLocaleString('de-DE', { dateStyle: 'medium', timeStyle: 'short' })} · ${games.length} Spiele (Deutschland).<br>
-    Daten: Xbox-Game-Pass-Katalog &amp; Microsoft Store (Genre, Spielmodi, Freigabe), Metacritic (Metascore &amp; Original-Erscheinungsjahr, ${n((g) => g.mc !== undefined)} Spiele),
+    Daten: Xbox-Game-Pass-Katalog &amp; Microsoft Store (Genre, Spielmodi, Freigabe), Metacritic (Metascore, User Score &amp; Original-Erscheinungsjahr, ${n((g) => g.mc !== undefined)} Spiele),
     <a href="https://howlongtobeat.com" target="_blank" rel="noopener">HowLongToBeat</a> (Spielzeit, ${n((g) => g.hMain !== undefined)} Spiele),
-    Amazon Luna (Katalog Prime/Premium und Abholspiele), Netflix (Liste von <a href="https://www.whats-on-netflix.com" target="_blank" rel="noopener">What's on Netflix</a>, geprüft auf netflix.com/de), Epic Games Store (Gratisspiele), Steam (Tags/Open World, ${n((g) => g.tags)} Spiele). Zuordnung automatisch über den Titel – Einzelne Fehler sind möglich.`;
+    Amazon Luna (Katalog Prime/Premium und Abholspiele), Netflix (Liste von <a href="https://www.whats-on-netflix.com" target="_blank" rel="noopener">What's on Netflix</a>, geprüft auf netflix.com/de), Epic Games Store (Gratisspiele), Steam (Tags/Open World, ${n((g) => g.tags)} Spiele). Zuordnung automatisch über den Titel – Einzelne Fehler sind möglich.<br>
+    „Meine Liste“ wird nur in diesem Browser gespeichert; mit „Liste übertragen“ nimmst du sie auf ein anderes Gerät mit.`;
 }
 
 init().catch((e) => {

@@ -14,6 +14,10 @@
         <svg viewBox="0 0 24 24" width="20" height="20"><path d="M3 5h18M6 12h12M10 19h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
       </button>
       <h1>Game Pass <span>Filter</span></h1>
+      <nav class="tabs">
+        <button data-tab="all">Alle Spiele</button>
+        <button data-tab="list">Meine Liste <span id="listCount" class="tab-count"></span></button>
+      </nav>
       <input id="search" type="search" placeholder="Spiel suchen …" autocomplete="off" />
       <label class="sort">
         <span>Sortieren</span>
@@ -26,6 +30,7 @@
         <div class="resultbar">
           <span id="count"></span>
           <div id="activeChips" class="active-chips"></div>
+          <button id="shareList" class="chip share" hidden>Liste übertragen</button>
         </div>
         <div id="grid" class="grid"></div>
         <p id="empty" class="empty" hidden>Keine Spiele passen zu diesen Filtern.</p>
