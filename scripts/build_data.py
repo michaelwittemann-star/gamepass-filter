@@ -82,13 +82,14 @@ class RateLimit:
 
 EDITION_RE = re.compile(
     r"\s*[-–:(]?\s*(standard|deluxe|definitive|complete|ultimate|game of the year|goty|gold|premium|enhanced|anniversary|"
-    r"digital|director'?s cut|special|legendary|xbox series x\|s|xbox one|windows( 10)?|pc)\s*(edition|version|cut)?\)?\s*$",
+    r"digital|director'?s cut|special|legendary|collector'?s|console|xbox series x\|s|xbox one|windows( 10)?|pc)\s*(edition|version|cut)?\)?\s*$",
     re.I,
 )
 NOISE_RE = re.compile(r"\s*[-–]?\s*cross-gen[- ]bundle|\((game preview|early access|xbox series x\|s|xbox one|windows|pc|preview)\)|for windows( 10)?|- windows edition", re.I)
 
 
-ANY_EDITION_RE = re.compile(r"\s*[:\-–]\s*[^:\-–]{0,40}\b(edition|edici[oó]n)\s*$", re.I)
+# nur ein Wort vor "Edition" (Voidheart-Edition, 2026 Edition); bekannte Editionen übernimmt EDITION_RE
+ANY_EDITION_RE = re.compile(r"\s*[:\-–]\s*[^:\-–\s]{1,20}[\s-]*\b(edition|edici[oó]n)\s*$", re.I)
 
 
 def clean_title(t: str) -> str:
@@ -186,9 +187,10 @@ def fetch_catalog() -> dict[str, set[str]]:
 # Katalog über dieselbe (inoffizielle) Schnittstelle, die luna.amazon.de ohne Anmeldung nutzt.
 # Luna Premium enthält alle Prime-Spiele.
 PLATFORMS = ("console", "pc", "cloud", "ea", "lunaPrime", "lunaPremium", "netflixMobile", "netflixTV",
+             "psEssential", "psExtra", "psPremium",
              "epicFree", "epicSoon", "primeClaim", "primeSoon")
 # Reihenfolge für das Cover-Ziel, wenn ein Spiel auf mehreren Plattformen ist (Xbox zuerst)
-SOURCE_ORDER = ("luna-", "nf-", "epic-", "prime-", "primesoon-")
+SOURCE_ORDER = ("luna-", "nf-", "ps-", "epic-", "prime-", "primesoon-")
 LUNA_LISTS = {"lunaPrime": "included_with_prime", "lunaPremium": "luna_premium"}
 LUNA_GENRES = {
     "action": "Action & adventure", "adventure": "Action & adventure", "horror": "Action & adventure",
@@ -375,6 +377,50 @@ def fetch_netflix() -> tuple[list[dict], dict[str, set[str]]]:
     save_json(NETFLIX_CACHE, cache)
     log(f"Netflix: {len(games)} von {len(cards)} in Deutschland verfügbar")
     return games, flags
+
+
+PS_LISTS = {"psExtra": "plus-games-list", "psPremium": "plus-classics-list", "psEssential": "plus-monthly-games-list"}
+# Höhere Stufen enthalten die niedrigeren: Monatsspiele gibt es in allen, den Extra-Katalog auch in Premium
+PS_TIERS = {"psEssential": {"psEssential", "psExtra", "psPremium"}, "psExtra": {"psExtra", "psPremium"}, "psPremium": {"psPremium"}}
+PS_GENRES = {
+    "ACTION": "Action & adventure", "ADVENTURE": "Action & adventure", "HORROR": "Action & adventure",
+    "ROLE_PLAYING_GAMES": "Role playing", "SHOOTER": "Shooter", "SIMULATION": "Simulation", "SIMULATOR": "Simulation",
+    "STRATEGY": "Strategy", "PUZZLE": "Puzzle & trivia", "BRAIN_TRAINING": "Puzzle & trivia", "EDUCATIONAL": "Family & kids",
+    "RACING": "Racing & flying", "FAMILY": "Family & kids", "CASUAL": "Family & kids", "SPORTS": "Sports",
+    "ARCADE": "Arcade", "FIGHTING": "Fighting", "PARTY": "Party", "MUSIC/RHYTHM": "Music", "UNIQUE": "Other",
+}
+PS_SUFFIX = re.compile(r"\s*[-–]?\s*[(\[]?\s*\bPS[45]\b(\s*(&|und|and|/|,)?\s*\bPS[45]\b)?\s*[)\]]?(\s+version|\s+(?-i:[A-Z]{2}))?\s*$", re.I)  # "PS4 & PS5", "(PS4 & PS5)", "[PS4 & PS5]", "PS4&PS5 LV"
+
+
+def fetch_psplus() -> tuple[list[dict], dict[str, set[str]]]:
+    """PlayStation-Plus-Kataloge (Essential-Monatsspiele, Extra-Spielekatalog, Premium-Klassiker) von playstation.com."""
+    games: dict[str, dict] = {}
+    flags: dict[str, set[str]] = {}
+    for key, cat in PS_LISTS.items():
+        d = http_json(f"https://www.playstation.com/bin/imagic/gameslist?locale=de-de&categoryList={cat}")
+        lst = [x for c in d for x in c.get("games") or []]
+        log(f"PS Plus {key}: {len(lst)}")
+        for x in lst:
+            gid = f"ps-{x['conceptId']}"
+            flags.setdefault(gid, set()).update(PS_TIERS[key])
+            if gid in games:
+                continue
+            def strip_ps(t: str) -> str:
+                return PS_SUFFIX.sub("", re.sub(r"[\u2122\u00ae\u00a9]", "", t).replace("\u3000", " ")).strip()
+
+            name = strip_ps(x.get("name") or "")
+            name_en = strip_ps(x.get("nameEn") or x.get("name") or "")
+            age = re.search(r"(\d+)", (x.get("ageRating") or {}).get("name") or "")
+            rel = (x.get("releaseDate") or "")[:4]
+            img = x.get("imageUrl")
+            url = x.get("conceptUrl") or f"https://store.playstation.com/de-de/concept/{x['conceptId']}"
+            games[gid] = base_entry(
+                gid, name, url, "playstation", img=img and img + "?w=320", sq=True, tEn=name_en,
+                genres=list(dict.fromkeys(PS_GENRES[gg] for gg in x.get("genre") or [] if gg in PS_GENRES)),
+                yx=int(rel) if rel.isdigit() else None, pegi=int(age.group(1)) if age else None,
+                ps=sorted(set(x.get("device") or [])),
+            )
+    return list(games.values()), flags
 
 
 EPIC_URL = "https://store-site-backend-static-ipv4.ak.epicgames.com/freeGamesPromotions?locale={loc}&country=DE&allowCountries=DE"
@@ -984,7 +1030,7 @@ def main():
     de = fetch_products(ids, "de-de")
     en = fetch_products(ids, "en-us")
     games = [parse_product(de[i], en.get(i)) for i in ids if i in de]
-    for name, fetch in (("Luna", fetch_luna), ("Netflix", fetch_netflix), ("Epic", fetch_epic), ("Prime", fetch_prime),
+    for name, fetch in (("Luna", fetch_luna), ("Netflix", fetch_netflix), ("PS Plus", fetch_psplus), ("Epic", fetch_epic), ("Prime", fetch_prime),
                         ("Prime demnächst", fetch_prime_soon)):
         try:
             extra, extra_flags = fetch()
@@ -1037,6 +1083,7 @@ def main():
             "sq": (g["imgSq"] and not steam_cover) or None,
             "url": g["url"],
             "links": g.get("links"),
+            "ps": g.get("ps"),
             "deals": g.get("deals"),
             "plat": [p for p in PLATFORMS if p in f],
             "new": "new" in f or None,

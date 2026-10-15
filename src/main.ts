@@ -7,6 +7,7 @@ interface Game {
   sq?: boolean;
   url: string;
   links?: Record<string, string>;
+  ps?: string[];
   deals?: { src: string; until?: string; from?: string; via?: string }[];
   img2?: string;
   plat: string[];
@@ -97,6 +98,9 @@ const SUBS: Record<string, string> = {
   lunaPremium: 'Luna Premium',
   netflixMobile: 'Netflix (Handy)',
   netflixTV: 'Netflix (TV)',
+  psEssential: 'PS Plus Essential',
+  psExtra: 'PS Plus Extra',
+  psPremium: 'PS Plus Premium',
 };
 const FREE: Record<string, string> = {
   epicFree: 'Epic: jetzt gratis',
@@ -115,7 +119,7 @@ const PLAT_SHORT: Record<string, string> = {
   primeClaim: 'Prime-Abholspiel',
   primeSoon: 'Prime bald',
 };
-const LINK_LABELS: Record<string, string> = { luna: 'Luna', netflix: 'Netflix', epic: 'Epic', prime: 'Prime' };
+const LINK_LABELS: Record<string, string> = { luna: 'Luna', netflix: 'Netflix', playstation: 'PlayStation', epic: 'Epic', prime: 'Prime' };
 const STATUS: Record<string, string> = { new: 'Neu im Game Pass', leaving: 'Verlässt bald' };
 const MODES: Record<string, string> = {
   single: 'Einzelspieler',
@@ -431,10 +435,13 @@ function cellHtml(g: Game, col: Col): string {
     case 'plat':
       return val(
         g.plat
+          // bei Stufen-Abos nur die niedrigste nennen (Premium enthält Extra, Extra enthält Essential)
           .filter((p) => !(p === 'lunaPremium' && g.plat.includes('lunaPrime')))
+          .filter((p) => !(p === 'psPremium' && g.plat.includes('psExtra')) && !(p === 'psExtra' && g.plat.includes('psEssential')))
           .map((p) => {
             const via = p.startsWith('prime') ? g.deals?.find((d) => d.src === 'prime')?.via : undefined;
-            return (PLAT_SHORT[p] || PLATS[p]) + (via ? ` (${via})` : '');
+            const dev = p.startsWith('ps') && g.ps?.length ? g.ps.join('/') : undefined;
+            return (PLAT_SHORT[p] || PLATS[p]) + (via ? ` (${via})` : dev ? ` (${dev})` : '');
           })
           .join(' · '),
         g.plat.map((p) => PLATS[p]).join(', '),
@@ -477,11 +484,12 @@ function cardHtml(g: Game, cols: Col[]) {
     g.gone ? '<span class="badge leaving">NICHT MEHR IM ANGEBOT</span>' : '',
     target === 'luna' ? '<span class="badge luna">LUNA</span>' : '',
     target === 'netflix' ? '<span class="badge netflix">NETFLIX</span>' : '',
+    target === 'playstation' ? '<span class="badge ps">PS PLUS</span>' : '',
     ...dealBadges,
   ]
     .filter(Boolean)
     .join('');
-  const where = target ? { luna: 'bei Amazon Luna', netflix: 'bei Netflix', epic: 'im Epic Games Store', prime: 'bei Prime' }[target] : 'im Xbox Store';
+  const where = target ? { luna: 'bei Amazon Luna', netflix: 'bei Netflix', playstation: 'im PlayStation Store', epic: 'im Epic Games Store', prime: 'bei Prime' }[target] : 'im Xbox Store';
   const on = myList.has(g.id);
   const addBtn = `<button class="add${on ? ' on' : ''}" data-id="${esc(g.id)}" title="${on ? 'Von meiner Liste entfernen' : 'Zu meiner Liste hinzufügen'}" aria-label="${on ? 'Von meiner Liste entfernen' : 'Zu meiner Liste hinzufügen'}">${on ? '✓' : '+'}</button>`;
   return `<article class="card">${addBtn}
@@ -1025,7 +1033,7 @@ async function init() {
   $('#footer').innerHTML = `Stand: ${new Date(data.updated).toLocaleString('de-DE', { dateStyle: 'medium', timeStyle: 'short' })} · ${games.length} Spiele (Deutschland).<br>
     Daten: Xbox-Game-Pass-Katalog &amp; Microsoft Store (Genre, Spielmodi, Freigabe), Metacritic (Metascore, User Score &amp; Original-Erscheinungsjahr, ${n((g) => g.mc !== undefined)} Spiele),
     <a href="https://howlongtobeat.com" target="_blank" rel="noopener">HowLongToBeat</a> (Spielzeit, ${n((g) => g.hMain !== undefined)} Spiele),
-    Amazon Luna (Katalog Prime/Premium und Abholspiele), Netflix (Liste von <a href="https://www.whats-on-netflix.com" target="_blank" rel="noopener">What's on Netflix</a>, geprüft auf netflix.com/de), Epic Games Store (Gratisspiele), Steam (Tags/Open World, ${n((g) => g.tags)} Spiele). Zuordnung automatisch über den Titel – Einzelne Fehler sind möglich.<br>
+    Amazon Luna (Katalog Prime/Premium und Abholspiele), PlayStation Plus (Kataloge von playstation.com), Netflix (Liste von <a href="https://www.whats-on-netflix.com" target="_blank" rel="noopener">What's on Netflix</a>, geprüft auf netflix.com/de), Epic Games Store (Gratisspiele), Steam (Tags/Open World, ${n((g) => g.tags)} Spiele). Zuordnung automatisch über den Titel – Einzelne Fehler sind möglich.<br>
     „Meine Liste“ wird nur in diesem Browser gespeichert; mit „Liste übertragen“ nimmst du sie auf ein anderes Gerät mit.`;
 }
 

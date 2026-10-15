@@ -1,6 +1,26 @@
 {
  "_hinweis": "Falsche Zuordnungen korrigieren: Produkt-ID -> {metacritic: slug, hltb: id, steam: appid, tier: AAA|AA|Indie}; null = keine Zuordnung",
- "BS1NPTPJGD4G": {"metacritic": "viva-pinata-trouble-in-paradise", "hltb": 10979},
- "BVR64CDJ01FJ": {"metacritic": "banjo-kazooie-nuts-and-bolts", "hltb": 836},
- "C0SWGV4560W1": {"metacritic": "perfect-dark-2000"}
+ "BS1NPTPJGD4G": {
+  "metacritic": "viva-pinata-trouble-in-paradise",
+  "hltb": 10979
+ },
+ "BVR64CDJ01FJ": {
+  "metacritic": "banjo-kazooie-nuts-and-bolts",
+  "hltb": 836
+ },
+ "C0SWGV4560W1": {
+  "metacritic": "perfect-dark-2000"
+ },
+ "ps-10003269": {
+  "metacritic": "far-cry-3-blood-dragon"
+ },
+ "ps-10004394": {
+  "metacritic": "ape-escape"
+ },
+ "ps-10006481": {
+  "metacritic": "ape-escape-on-the-loose"
+ },
+ "9NVJ4L71DF5Q": {
+  "metacritic": "far-cry-3-blood-dragon"
+ }
 }

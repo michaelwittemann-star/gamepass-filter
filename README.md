@@ -1,6 +1,6 @@
 # Game Pass Filter
 
-Website, die den Xbox-Game-Pass- und Amazon-Luna-Katalog (Deutschland) nach allem filtert, was die Xbox-App nicht kann:
+Website, die die Kataloge von Xbox Game Pass, PlayStation Plus, Amazon Luna, Netflix Games sowie Epic-/Prime-Gratisspiele (Deutschland) nach allem filtert, was die Xbox-App nicht kann:
 Erscheinungsjahr, Metascore, Spielzeit (HowLongToBeat), Genre, Spielmodi, Spieleranzahl, Online/Offline,
 Open World, Produktionsgröße (AAA/AA/Indie), Steam-Tags, Technik, Altersfreigabe. Klick aufs Cover öffnet die Store-Seite auf xbox.com.
 
@@ -15,6 +15,7 @@ Open World, Produktionsgröße (AAA/AA/Indie), Steam-Tags, Technik, Altersfreiga
 | Steam-Tags, Open World, Steam-Preis | Steam-Suche + SteamSpy (Open World zusätzlich aus Metacritic-Genre) |
 | Luna-Spiele (Prime / Premium), Cover, Genre, Freigabe | interne Schnittstelle von luna.amazon.de (ohne Anmeldung, inoffiziell) |
 | Prime-Spiele zum Abholen (mit Frist und Shop) | GraphQL der Luna-Claims-Seite (csrf-key aus dem HTML, ohne Anmeldung) |
+| PS Plus Essential / Extra / Premium (Katalog, Cover, Genre, PS4/PS5, USK) | `playstation.com/bin/imagic/gameslist` (öffentlich) |
 | Epic-Gratisspiele (jetzt / demnächst) | `freeGamesPromotions` des Epic Games Store |
 | Netflix-Spiele (Handy / TV) | Liste von whats-on-netflix.com, Verfügbarkeit in DE + Bild über netflix.com/de/games/<id> (Cache `data/cache/netflix_de.json`) |
 | AAA / AA / Indie | **geschätzt** in `classify_tier()`: Publisher-Listen, Steam-Tag „Indie“, Zahl der Metacritic-Kritiken, Steam-Preis |

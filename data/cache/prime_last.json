@@ -3,6 +3,64 @@
   "deals": [
    {
     "src": "prime",
+    "until": "2026-12-16",
+    "via": "Amazon Games"
+   }
+  ],
+  "dev": null,
+  "feat": [],
+  "genres": [],
+  "id": "prime-98d2b591-efd2-420f-928c-e7a9b409f67a",
+  "img": "https://m.media-amazon.com/images/I/61uVCnb+LJL._SX450_._FMjpg_.jpg",
+  "imgSq": true,
+  "links": {
+   "prime": "https://gaming.amazon.com/caravan-sandwitch-aga/dp/amzn1.pg.item.98d2b591-efd2-420f-928c-e7a9b409f67a?ref_=SM_CaravanSandWitch_S01_FGWP_CRWN"
+  },
+  "localMax": null,
+  "onlineMax": null,
+  "onlineOnly": false,
+  "pegi": null,
+  "pub": null,
+  "stars": null,
+  "t": "Caravan SandWitch",
+  "tEn": "Caravan SandWitch",
+  "tFull": "Caravan SandWitch",
+  "url": "https://gaming.amazon.com/caravan-sandwitch-aga/dp/amzn1.pg.item.98d2b591-efd2-420f-928c-e7a9b409f67a?ref_=SM_CaravanSandWitch_S01_FGWP_CRWN",
+  "yx": null
+ },
+ {
+  "deals": [
+   {
+    "src": "prime",
+    "until": "2026-11-18",
+    "via": "Epic"
+   }
+  ],
+  "dev": null,
+  "feat": [],
+  "genres": [],
+  "id": "prime-7885fee3-7dda-40c5-8642-596bb1f4a9b3",
+  "img": "https://m.media-amazon.com/images/I/51ROEzV9RpL._SX450_._FMjpg_.jpg",
+  "imgSq": true,
+  "links": {
+   "prime": "https://gaming.amazon.com/vampire-the-masquerade-swansong-epic/dp/amzn1.pg.item.7885fee3-7dda-40c5-8642-596bb1f4a9b3?ref_=SM_VampireTheMasqueradeSwansong_S01_FGWP_CRWN"
+  },
+  "localMax": null,
+  "onlineMax": null,
+  "onlineOnly": false,
+  "pegi": null,
+  "pub": null,
+  "stars": null,
+  "t": "Vampire: The Masquerade - Swansong",
+  "tEn": "Vampire: The Masquerade - Swansong",
+  "tFull": "Vampire: The Masquerade - Swansong",
+  "url": "https://gaming.amazon.com/vampire-the-masquerade-swansong-epic/dp/amzn1.pg.item.7885fee3-7dda-40c5-8642-596bb1f4a9b3?ref_=SM_VampireTheMasqueradeSwansong_S01_FGWP_CRWN",
+  "yx": null
+ },
+ {
+  "deals": [
+   {
+    "src": "prime",
     "until": "2027-01-08",
     "via": "GOG"
    }
