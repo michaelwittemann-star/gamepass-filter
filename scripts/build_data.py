@@ -448,13 +448,15 @@ def fetch_prime_soon() -> tuple[list[dict], dict[str, set[str]]]:
             if mon not in MONTHS_DE:
                 continue
             date = f"{year}-{MONTHS_DE.index(mon) + 1:02d}-{day:02d}"
-            if date < today.isoformat() or norm(title) in live:
+            if norm(title) in live:
                 continue  # schon freigeschaltet, steht in der normalen Abholliste
             via = next((v for k, v in PRIME_SOON_VIA.items() if k in store), store.title() or None)
+            started = date < today.isoformat()  # Amazon schaltet am Starttag erst abends frei
+            # Schon gestartet, aber nicht in der Abholliste (auf GitHub ist die blockiert): als abholbar führen, Frist unbekannt
             g = base_entry("primesoon-" + norm(title), title, url, "prime", sq=True,
-                           deals=[{"src": "prime", "from": date, "via": via}])
+                           deals=[{"src": "prime", "via": via} if started else {"src": "prime", "from": date, "via": via}])
             games.append(g)
-            flags[g["id"]] = {"primeSoon"}
+            flags[g["id"]] = {"primeClaim" if started else "primeSoon"}
     log(f"Prime demnächst: {len(games)}")
     return games, flags
 
