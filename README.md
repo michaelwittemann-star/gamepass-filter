@@ -14,6 +14,9 @@ Open World, Produktionsgröße (AAA/AA/Indie), Steam-Tags, Technik, Altersfreiga
 | Spielzeit Story / +Extras / 100 % | HowLongToBeat (`howlongtobeatpy`) |
 | Steam-Tags, Open World, Steam-Preis | Steam-Suche + SteamSpy (Open World zusätzlich aus Metacritic-Genre) |
 | Luna-Spiele (Prime / Premium), Cover, Genre, Freigabe | interne Schnittstelle von luna.amazon.de (ohne Anmeldung, inoffiziell) |
+| Prime-Spiele zum Abholen (mit Frist und Shop) | GraphQL der Luna-Claims-Seite (csrf-key aus dem HTML, ohne Anmeldung) |
+| Epic-Gratisspiele (jetzt / demnächst) | `freeGamesPromotions` des Epic Games Store |
+| Netflix-Spiele (Handy / TV) | Liste von whats-on-netflix.com, Verfügbarkeit in DE + Bild über netflix.com/de/games/<id> (Cache `data/cache/netflix_de.json`) |
 | AAA / AA / Indie | **geschätzt** in `classify_tier()`: Publisher-Listen, Steam-Tag „Indie“, Zahl der Metacritic-Kritiken, Steam-Preis |
 
 Die Zuordnung zu Metacritic/HLTB/Steam läuft automatisch über den (englischen) Titel. Falsche Treffer

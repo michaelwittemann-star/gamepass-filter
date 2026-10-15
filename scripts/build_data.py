@@ -10,6 +10,7 @@ Ein Wert null heißt "keine Zuordnung".
 from __future__ import annotations
 
 import argparse
+import http.client
 import difflib
 import json
 import re
@@ -183,7 +184,10 @@ def fetch_catalog() -> dict[str, set[str]]:
 # ---------- Amazon Luna ----------
 # Katalog über dieselbe (inoffizielle) Schnittstelle, die luna.amazon.de ohne Anmeldung nutzt.
 # Luna Premium enthält alle Prime-Spiele.
-PLATFORMS = ("console", "pc", "cloud", "ea", "lunaPrime", "lunaPremium")
+PLATFORMS = ("console", "pc", "cloud", "ea", "lunaPrime", "lunaPremium", "netflixMobile", "netflixTV",
+             "epicFree", "epicSoon", "primeClaim")
+# Reihenfolge für das Cover-Ziel, wenn ein Spiel auf mehreren Plattformen ist (Xbox zuerst)
+SOURCE_ORDER = ("luna-", "nf-", "epic-", "prime-")
 LUNA_LISTS = {"lunaPrime": "included_with_prime", "lunaPremium": "luna_premium"}
 LUNA_GENRES = {
     "action": "Action & adventure", "adventure": "Action & adventure", "horror": "Action & adventure",
@@ -251,7 +255,7 @@ def parse_luna(asin: str, pd: dict) -> dict:
         "img": img,
         "imgSq": False,
         "url": url,
-        "lunaUrl": url,
+        "links": {"luna": url},
         "genres": genres,
         "feat": [],
         "onlineOnly": False,
@@ -275,6 +279,177 @@ def fetch_luna() -> tuple[list[dict], dict[str, set[str]]]:
             games.setdefault(asin, parse_luna(asin, pd))
             flags.setdefault("luna-" + asin, set()).add(key)
     return list(games.values()), flags
+
+
+# ---------- Weitere Plattformen: Netflix, Epic-Gratisspiele, Prime zum Abholen ----------
+
+def base_entry(id_: str, title: str, url: str, link_key: str, img: str | None = None, sq: bool = True, **extra) -> dict:
+    title = re.sub(r"\s+", " ", (title or "").replace("\\'", "'")).strip()
+    e = {
+        "id": id_, "t": clean_title(title) if len(clean_title(title)) > 2 else title, "tFull": title, "tEn": title,
+        "img": img, "imgSq": sq, "url": url, "links": {link_key: url}, "genres": [], "feat": [], "onlineOnly": False,
+        "onlineMax": None, "localMax": None, "yx": None, "pegi": None, "stars": None, "pub": None, "dev": None,
+    }
+    e.update(extra)
+    return e
+
+
+NETFLIX_LIST = "https://www.whats-on-netflix.com/news/netflix-games/full-list-mobile-cloud-games-on-netflix/"
+NETFLIX_CACHE = ROOT / "data" / "cache" / "netflix_de.json"
+NETFLIX_GENRES = {
+    "action": "Action & adventure", "adventure": "Action & adventure", "arcade": "Arcade", "acarde": "Arcade",
+    "card": "Card & board", "tabletop": "Card & board", "fighting": "Fighting", "interactive story": "Interactive story",
+    "dating": "Interactive story", "kids": "Family & kids", "educational": "Family & kids", "music": "Music",
+    "party": "Party", "puzzle": "Puzzle & trivia", "racing": "Racing & flying", "role-playing": "Role playing",
+    "simulation": "Simulation", "sport": "Sports", "sports": "Sports", "strategy": "Strategy",
+}
+
+
+def http_text(url: str) -> tuple[int, str]:
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "de-DE"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            try:
+                body = r.read()
+            except http.client.IncompleteRead as e:  # Netflix bricht gelegentlich ab; der Kopf reicht uns
+                body = e.partial
+            if "/NotFound" in r.geturl():  # Netflix leitet unbekannte/gesperrte Titel um, Status bleibt 200
+                return 404, ""
+            return r.status, body.decode("utf-8", "ignore")
+    except urllib.error.HTTPError as e:
+        return e.code, ""
+    except (urllib.error.URLError, TimeoutError, ConnectionError):
+        return 0, ""
+
+
+def fetch_netflix() -> tuple[list[dict], dict[str, set[str]]]:
+    """Liste von What's on Netflix (Fan-Seite); ob ein Spiel in Deutschland verfügbar ist, prüft netflix.com/de."""
+    import html as htmllib
+
+    status, page = http_text(NETFLIX_LIST)
+    if status != 200:
+        raise RuntimeError(f"What's on Netflix: HTTP {status}")
+    cache = load_json(NETFLIX_CACHE, {})
+    games, flags = [], {}
+    cards = re.findall(r'<div class="game-card"(.*?)(?=<div class="game-card"|<h3)', page, re.S)
+    for c in cards:
+        m = re.search(r"netflix\.com/games/(\d+)", c)
+        h4 = re.search(r"<h4>(.*?)<div", c, re.S)
+        if not m or not h4:
+            continue
+        nid = m.group(1)
+        title = htmllib.unescape(re.sub(r"<[^>]+>", "", h4.group(1))).strip()
+
+        def field(name: str) -> str:
+            f = re.search(rf"<strong>{name}:</strong>\s*([^<]*)", c)
+            return f.group(1).strip() if f else ""
+
+        ent = cache.get(nid)
+        if not ent or (datetime.now(timezone.utc) - datetime.fromisoformat(ent["at"])) > timedelta(days=7):
+            st, de = http_text(f"https://www.netflix.com/de/games/{nid}")
+            img = re.search(r'og:image" content="([^"]+)', de)
+            if st in (200, 404):
+                ent = {"at": datetime.now(timezone.utc).isoformat(), "ok": st == 200, "img": img and htmllib.unescape(img.group(1))}
+                cache[nid] = ent
+            else:  # Netzfehler: alten Stand behalten bzw. erst einmal als verfügbar annehmen
+                ent = ent or {"at": "2000-01-01T00:00:00+00:00", "ok": True, "img": None}
+        if not ent["ok"]:
+            continue  # in Deutschland nicht verfügbar
+        ym = re.search(r"(19|20)\d\d", field("Release Date"))
+        age = re.search(r"(\d+)", field("Rating"))
+        mobile = 'data-mobile="mobile"' in c
+        cloud = 'data-cloud="cloud"' in c
+        cat = field("Category").lower()
+        url = f"https://www.netflix.com/de/games/{nid}"
+        g = base_entry(
+            "nf-" + nid, title, url, "netflix", img=ent.get("img"), sq=True,
+            genres=[NETFLIX_GENRES[cat]] if cat in NETFLIX_GENRES else [],
+            yx=int(ym.group(0)) if ym else None, pegi=int(age.group(1)) if age else None, dev=field("Developer") or None,
+            onlineOnly=field("Offline Play").lower() == "no" and mobile,
+        )
+        games.append(g)
+        flags[g["id"]] = ({"netflixMobile"} if mobile else set()) | ({"netflixTV"} if cloud else set())
+    save_json(NETFLIX_CACHE, cache)
+    log(f"Netflix: {len(games)} von {len(cards)} in Deutschland verfügbar")
+    return games, flags
+
+
+EPIC_URL = "https://store-site-backend-static-ipv4.ak.epicgames.com/freeGamesPromotions?locale={loc}&country=DE&allowCountries=DE"
+
+
+def fetch_epic() -> tuple[list[dict], dict[str, set[str]]]:
+    de = http_json(EPIC_URL.format(loc="de"))["data"]["Catalog"]["searchStore"]["elements"]
+    en = {e["id"]: e for e in http_json(EPIC_URL.format(loc="en-US"))["data"]["Catalog"]["searchStore"]["elements"]}
+    games, flags = [], {}
+    for e in de:
+        p = e.get("promotions") or {}
+
+        def free(key: str) -> list:
+            return [o for x in p.get(key) or [] for o in x["promotionalOffers"] if o["discountSetting"]["discountPercentage"] == 0]
+
+        now, soon = free("promotionalOffers"), free("upcomingPromotionalOffers")
+        if not now and not soon:
+            continue
+        maps = (e.get("catalogNs") or {}).get("mappings") or []
+        slug = next((m["pageSlug"] for m in maps if m.get("pageType") == "productHome"), None)
+        slug = slug or (e.get("productSlug") or "").split("/")[0] or e.get("urlSlug")
+        imgs = {i["type"]: i["url"] for i in e.get("keyImages") or []}
+        tall = imgs.get("OfferImageTall") or imgs.get("DieselStoreFrontTall")
+        img = tall or imgs.get("Thumbnail") or imgs.get("OfferImageWide")
+        g = base_entry(
+            "epic-" + e["id"], e["title"], f"https://store.epicgames.com/de/p/{slug}", "epic",
+            img=img and img + ("?h=450&resize=1" if "epicgames.com" in img else ""), sq=not tall,
+            tEn=(en.get(e["id"]) or e)["title"], pub=(e.get("seller") or {}).get("name"),
+            deals=[{"src": "epic", "until": now[0]["endDate"][:10]}] if now else [{"src": "epic", "from": soon[0]["startDate"][:10]}],
+        )
+        games.append(g)
+        flags[g["id"]] = {"epicFree" if now else "epicSoon"}
+    log(f"Epic: {sum('epicFree' in f for f in flags.values())} gratis, {sum('epicSoon' in f for f in flags.values())} demnächst")
+    return games, flags
+
+
+PRIME_VIA = {"gog": "GOG", "epic": "Epic", "aga": "Amazon Games", "legacy": "Legacy Games", "microsoft": "Microsoft Store",
+             "ubisoft": "Ubisoft Connect", "ea": "EA app", "origin": "EA app", "steam": "Steam"}
+RATING_JUNK = re.compile(r"\s*\([^)]*(erwachsene|unbewertet|rated|mature|adult|eltern|pegi|usk|parental)[^)]*\)", re.I)
+
+
+def fetch_prime() -> tuple[list[dict], dict[str, set[str]]]:
+    """Monatliche Gratis-PC-Spiele zum Behalten (früher Prime Gaming), Daten der Luna-Claims-Seite."""
+    import http.cookiejar
+    import uuid
+
+    op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+    req = urllib.request.Request("https://luna.amazon.de/claims/home", headers={"User-Agent": UA, "Accept-Language": "de-DE"})
+    page = op.open(req, timeout=30).read().decode()
+    tok = re.search(r"name=['\"]csrf-key['\"]\s+value=['\"]([^'\"]+)", page)
+    if not tok:
+        raise RuntimeError("csrf-key nicht gefunden")
+    q = ("query FreeGames($pageSize: Int) { games: items(collectionType: FREE_GAMES, pageSize: $pageSize) { items { id category "
+         "assets { title externalClaimLink cardMedia { defaultMedia { src2x } } } offers { startTime endTime } } } }")
+    body = json.dumps({"operationName": "FreeGames", "variables": {"pageSize": 999}, "extensions": {}, "query": q}).encode()
+    h = {"Content-Type": "application/json", "User-Agent": UA, "Origin": "https://luna.amazon.de",
+         "Referer": "https://luna.amazon.de/claims/home", "client-id": "CarboniteApp", "csrf-token": tok.group(1),
+         "prime-gaming-language": "en-US"}
+    req = urllib.request.Request(f"https://luna.amazon.de/graphql?nonce={uuid.uuid4()}", data=body, headers=h)
+    d = json.loads(op.open(req, timeout=30).read())
+    games, flags = [], {}
+    for it in d["data"]["games"]["items"]:
+        if it.get("category") != "FULL_GAME":
+            continue
+        a = it["assets"]
+        link = a.get("externalClaimLink") or "https://luna.amazon.de/claims/home"
+        store = link.split("/dp/")[0].rstrip("/").rsplit("/", 1)[-1].rsplit("-", 1)[-1]
+        ends = sorted(o["endTime"][:10] for o in it.get("offers") or [] if o.get("endTime"))
+        img = ((a.get("cardMedia") or {}).get("defaultMedia") or {}).get("src2x")
+        g = base_entry(
+            "prime-" + it["id"].rsplit(".", 1)[-1], RATING_JUNK.sub("", a["title"]), link, "prime",
+            img=img and img.replace("._FMwebp_.", "._SX450_._FMjpg_."), sq=True,
+            deals=[{"src": "prime", "until": ends[0] if ends else None, "via": PRIME_VIA.get(store, store)}],
+        )
+        games.append(g)
+        flags[g["id"]] = {"primeClaim"}
+    log(f"Prime zum Abholen: {len(games)}")
+    return games, flags
 
 
 # Spielmodi aus Steam-Tags, wenn es keine Xbox-Angaben gibt (Luna-exklusive Spiele)
@@ -696,9 +871,11 @@ def merge_duplicates(games: list[dict]) -> list[dict]:
             by_key.setdefault(k, hit)
     out = []
     for grp in groups:
-        # Basis: der Eintrag mit den meisten Angaben, bevorzugt mit Konsole
-        # Xbox-Eintrag als Basis (Link zur Xbox-Seite, Store-Angaben), sonst der mit den meisten Angaben
-        grp.sort(key=lambda g: (g["id"].startswith("luna-"), -len(g), "console" not in g["plat"]))
+        # Xbox-Eintrag als Basis (Link zur Xbox-Seite, Store-Angaben), dann Luna, Netflix, Epic, Prime
+        def rank(g):
+            return next((i + 1 for i, pre in enumerate(SOURCE_ORDER) if g["id"].startswith(pre)), 0)
+
+        grp.sort(key=lambda g: (rank(g), -len(g), "console" not in g["plat"]))
         base = dict(grp[0])
         for o in grp[1:]:
             base["plat"] = [p for p in PLATFORMS if p in base["plat"] or p in o["plat"]]
@@ -706,6 +883,8 @@ def merge_duplicates(games: list[dict]) -> list[dict]:
                 if o.get(k):
                     base[k] = True
             base["feat"] = sorted(set(base.get("feat", [])) | set(o.get("feat", [])))
+            base["links"] = {**o.get("links", {}), **base.get("links", {})}
+            base["deals"] = base.get("deals", []) + o.get("deals", [])
             base["genres"] = list(dict.fromkeys(base.get("genres", []) + o.get("genres", [])))
             for k, v in o.items():
                 base.setdefault(k, v)
@@ -729,14 +908,16 @@ def main():
     de = fetch_products(ids, "de-de")
     en = fetch_products(ids, "en-us")
     games = [parse_product(de[i], en.get(i)) for i in ids if i in de]
-    try:
-        luna_games, luna_flags = fetch_luna()
+    for name, fetch in (("Luna", fetch_luna), ("Netflix", fetch_netflix), ("Epic", fetch_epic), ("Prime", fetch_prime)):
+        try:
+            extra, extra_flags = fetch()
+        except Exception as e:  # noqa: BLE001
+            log(f"WARNUNG: {name} nicht abrufbar ({e}) – diese Spiele fehlen in diesem Lauf")
+            continue
         if args.limit:
-            luna_games = luna_games[: args.limit]
-        games += luna_games
-        flags.update(luna_flags)
-    except Exception as e:  # noqa: BLE001
-        log(f"WARNUNG: Luna-Katalog nicht abrufbar ({e}) – Luna-Spiele fehlen in diesem Lauf")
+            extra = extra[: args.limit]
+        games += extra
+        flags.update(extra_flags)
 
     today = datetime.now(timezone.utc).date().isoformat()
     first_seen = load_json(FIRST_SEEN_FILE, {})
@@ -759,6 +940,10 @@ def main():
         f = flags[g["id"]]
         # Erscheinungsjahr = Original-Release (Metacritic, sonst HLTB), nicht der spätere Xbox-Port
         year = (mc and mc.get("year")) or (hl and hl.get("year")) or g["yx"]
+        steam_cover = (
+            f"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/{st['appid']}/library_600x900.jpg"
+            if g["imgSq"] and st else None
+        )
         tier, tier_why = classify_tier(g, mc, st, year)
         if overrides.get(g["id"], {}).get("tier"):
             tier, tier_why = overrides[g["id"]]["tier"], "manuell festgelegt"
@@ -768,10 +953,14 @@ def main():
             "id": g["id"],
             "t": g["t"],
             "_tEn": g["tEn"],
-            "img": g["img"],
-            "sq": g["imgSq"] or None,
+            # Querformat-Bilder (Prime, Netflix) durch das Hochformat-Cover von Steam ersetzen, falls vorhanden;
+            # das Original bleibt als Ersatz, falls Steam keins hat
+            "img": steam_cover if steam_cover else g["img"],
+            "img2": g["img"] if steam_cover else None,
+            "sq": (g["imgSq"] and not steam_cover) or None,
             "url": g["url"],
-            "lunaUrl": g.get("lunaUrl"),
+            "links": g.get("links"),
+            "deals": g.get("deals"),
             "plat": [p for p in PLATFORMS if p in f],
             "new": "new" in f or None,
             "leaving": "leaving" in f or None,

@@ -6,7 +6,9 @@ interface Game {
   img?: string;
   sq?: boolean;
   url: string;
-  lunaUrl?: string;
+  links?: Record<string, string>;
+  deals?: { src: string; until?: string; from?: string; via?: string }[];
+  img2?: string;
   plat: string[];
   new?: boolean;
   leaving?: boolean;
@@ -75,19 +77,38 @@ const GENRES: Record<string, string> = {
   'Card & board': 'Karten & Brett',
   'Multi-player Online Battle Arena': 'MOBA',
   Party: 'Party',
+  'Interactive story': 'Interaktive Geschichte',
   Arcade: 'Arcade',
   Classics: 'Klassiker',
   Music: 'Musik',
   Other: 'Sonstiges',
 };
-const PLATS: Record<string, string> = {
+const SUBS: Record<string, string> = {
   console: 'Konsole',
   pc: 'PC',
   cloud: 'Cloud',
   ea: 'EA Play',
   lunaPrime: 'Luna (Prime)',
   lunaPremium: 'Luna Premium',
+  netflixMobile: 'Netflix (Handy)',
+  netflixTV: 'Netflix (TV)',
 };
+const FREE: Record<string, string> = {
+  epicFree: 'Epic: jetzt gratis',
+  epicSoon: 'Epic: bald gratis',
+  primeClaim: 'Prime: zum Abholen',
+};
+const PLATS: Record<string, string> = { ...SUBS, ...FREE };
+const PLAT_SHORT: Record<string, string> = {
+  lunaPrime: 'Luna',
+  lunaPremium: 'Luna Premium',
+  netflixMobile: 'Netflix Handy',
+  netflixTV: 'Netflix TV',
+  epicFree: 'Epic gratis',
+  epicSoon: 'Epic bald gratis',
+  primeClaim: 'Prime-Abholspiel',
+};
+const LINK_LABELS: Record<string, string> = { luna: 'Luna', netflix: 'Netflix', epic: 'Epic', prime: 'Prime' };
 const STATUS: Record<string, string> = { new: 'Neu im Game Pass', leaving: 'Verlässt bald' };
 const MODES: Record<string, string> = {
   single: 'Einzelspieler',
@@ -118,6 +139,7 @@ const SORTS: Record<string, string> = {
   hDesc: 'Längste Spielzeit',
   stars: 'Xbox-Bewertung',
   added: 'Neu im Game Pass',
+  deadline: 'Gratis-Frist läuft ab',
   title: 'Titel A–Z',
 };
 
@@ -295,6 +317,10 @@ function sortGames(list: Game[]) {
     hDesc: by((g) => g[S.hKind], -1),
     stars: by((g) => g.stars, -1),
     added: by((g) => (g.new ? 1e9 : 0) + (g.added ? Date.parse(g.added) / 864e5 : 0), -1),
+    deadline: by((g) => {
+      const d = (g.deals || []).map((x) => x.until || x.from).filter(Boolean).sort()[0];
+      return d ? Date.parse(d) : undefined;
+    }, 1),
     title: (a, b) => a.t.localeCompare(b.t, 'de'),
   };
   return list.sort(cmp[S.sort] || cmp.mc);
@@ -376,7 +402,10 @@ function cellHtml(g: Game, col: Col): string {
       return val(
         g.plat
           .filter((p) => !(p === 'lunaPremium' && g.plat.includes('lunaPrime')))
-          .map((p) => (p.startsWith('luna') ? 'Luna' + (p === 'lunaPremium' ? ' Premium' : '') : PLATS[p]))
+          .map((p) => {
+            const via = p === 'primeClaim' ? g.deals?.find((d) => d.src === 'prime')?.via : undefined;
+            return (PLAT_SHORT[p] || PLATS[p]) + (via ? ` (${via})` : '');
+          })
           .join(' · '),
         g.plat.map((p) => PLATS[p]).join(', '),
         false,
@@ -395,16 +424,37 @@ function cellHtml(g: Game, col: Col): string {
 
 function cardHtml(g: Game, cols: Col[]) {
   const src = g.img && g.img.includes('s-microsoft.com') ? `${g.img}?w=${g.sq ? 320 : 300}` : g.img;
-  const img = src ? `<img src="${src}" alt="" loading="lazy" decoding="async">` : '';
-  const onLuna = g.lunaUrl === g.url;
-  const lunaLink = g.lunaUrl && !onLuna ? `<a class="luna-link" href="${g.lunaUrl}" target="_blank" rel="noopener">auch auf Luna ↗</a>` : '';
-  const badges = [g.new ? '<span class="badge new">NEU</span>' : '', g.leaving ? '<span class="badge leaving">VERLÄSST BALD</span>' : '', onLuna ? '<span class="badge luna">LUNA</span>' : '']
+  // Ersatzbild, falls das Steam-Hochformat-Cover fehlt
+  const fallback = g.img2 ? ` onerror="this.onerror=null;this.src='${g.img2}';this.parentNode.classList.add('sq')"` : '';
+  const img = src ? `<img src="${src}" alt="" loading="lazy" decoding="async"${fallback}>` : `<span class="noimg">${esc(g.t)}</span>`;
+  // Wohin führt das Cover? Xbox, sonst die erste andere Plattform; die übrigen als kleine Links
+  const target = Object.entries(g.links || {}).find(([, u]) => u === g.url)?.[0];
+  const others = Object.entries(g.links || {}).filter(([, u]) => u !== g.url);
+  const links = others.length
+    ? `<div class="more-links">auch: ${others
+        .map(([k, u]) => `<a href="${u}" target="_blank" rel="noopener">${LINK_LABELS[k] || k} ↗</a>`)
+        .join(' · ')}</div>`
+    : '';
+  const dm = (d?: string) => (d ? new Date(d).toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit' }) : '');
+  const dealBadges = (g.deals || []).map((d) =>
+    d.src === 'epic'
+      ? `<span class="badge free" title="Gratis im Epic Games Store">${d.until ? 'GRATIS BIS ' + dm(d.until) : 'GRATIS AB ' + dm(d.from)}</span>`
+      : `<span class="badge prime" title="Mit Prime abholen${d.via ? ' über ' + esc(d.via) : ''}">PRIME${d.until ? ' BIS ' + dm(d.until) : ''}</span>`,
+  );
+  const badges = [
+    g.new ? '<span class="badge new">NEU</span>' : '',
+    g.leaving ? '<span class="badge leaving">VERLÄSST BALD</span>' : '',
+    target === 'luna' ? '<span class="badge luna">LUNA</span>' : '',
+    target === 'netflix' ? '<span class="badge netflix">NETFLIX</span>' : '',
+    ...dealBadges,
+  ]
     .filter(Boolean)
     .join('');
+  const where = target ? { luna: 'bei Amazon Luna', netflix: 'bei Netflix', epic: 'im Epic Games Store', prime: 'bei Prime' }[target] : 'im Xbox Store';
   return `<article class="card">
-    <a class="cover${g.sq ? ' sq' : ''}" href="${g.url}" target="_blank" rel="noopener" title="${esc(g.t)} ${onLuna ? 'bei Amazon Luna' : 'im Xbox Store'} öffnen">${img}<div class="badges">${badges}</div></a>
+    <a class="cover${g.sq ? ' sq' : ''}" href="${g.url}" target="_blank" rel="noopener" title="${esc(g.t)} ${where} öffnen">${img}<div class="badges">${badges}</div></a>
     <div class="title" title="${esc(g.t)}${g.dev ? ' – ' + esc(g.dev) : ''}">${esc(g.t)}</div>
-    <div class="vals">${cols.map((c) => cellHtml(g, c)).join('')}</div>${lunaLink}
+    <div class="vals">${cols.map((c) => cellHtml(g, c)).join('')}</div>${links}
   </article>`;
 }
 
@@ -624,7 +674,13 @@ function buildFilters() {
   const mcs = Array.from({ length: 21 }, (_, i) => i * 5);
 
   F.append(
-    group('Plattform', chipList(PLATS, () => S.plat, (v) => (S.plat = v), countBy((g) => g.plat)), () => (S.plat = [])),
+    group('Plattform / Abo', chipList(SUBS, () => S.plat, (v) => (S.plat = v), countBy((g) => g.plat)), () => (S.plat = S.plat.filter((p) => !(p in SUBS)))),
+    group(
+      'Gratis zum Behalten',
+      chipList(FREE, () => S.plat, (v) => (S.plat = v), countBy((g) => g.plat)),
+      () => (S.plat = S.plat.filter((p) => !(p in FREE))),
+      'Wöchentliche Epic-Geschenke und monatliche Prime-Spiele – nur bis zur Frist abholbar.',
+    ),
     group('Status', chipList(STATUS, () => S.status, (v) => (S.status = v), countBy((g) => [g.new ? 'new' : '', g.leaving ? 'leaving' : ''])), () => (S.status = [])),
     group('Erscheinungsjahr', rangeSlider(years, () => S.year, (r) => (S.year = r), (v, end) => (end ? (v === YEAR_MIN ? 'alle' : 'heute') : String(v))), () => (S.year = [null, null])),
     group('Metascore', rangeSlider(mcs, () => S.mc, (r) => (S.mc = r), (v, end) => (end ? (v === 0 ? '0' : '100') : String(v))), () => (S.mc = [null, null])),
@@ -821,10 +877,10 @@ async function init() {
   render();
 
   const n = (f: (g: Game) => unknown) => games.filter(f).length;
-  $('#footer').innerHTML = `Stand: ${new Date(data.updated).toLocaleString('de-DE', { dateStyle: 'medium', timeStyle: 'short' })} · ${games.length} Spiele im Game Pass und bei Amazon Luna (Deutschland).<br>
+  $('#footer').innerHTML = `Stand: ${new Date(data.updated).toLocaleString('de-DE', { dateStyle: 'medium', timeStyle: 'short' })} · ${games.length} Spiele (Deutschland).<br>
     Daten: Xbox-Game-Pass-Katalog &amp; Microsoft Store (Genre, Spielmodi, Freigabe), Metacritic (Metascore &amp; Original-Erscheinungsjahr, ${n((g) => g.mc !== undefined)} Spiele),
     <a href="https://howlongtobeat.com" target="_blank" rel="noopener">HowLongToBeat</a> (Spielzeit, ${n((g) => g.hMain !== undefined)} Spiele),
-    Amazon Luna (Katalog Prime/Premium), Steam (Tags/Open World, ${n((g) => g.tags)} Spiele). Zuordnung automatisch über den Titel – Einzelne Fehler sind möglich.`;
+    Amazon Luna (Katalog Prime/Premium und Abholspiele), Netflix (Liste von <a href="https://www.whats-on-netflix.com" target="_blank" rel="noopener">What's on Netflix</a>, geprüft auf netflix.com/de), Epic Games Store (Gratisspiele), Steam (Tags/Open World, ${n((g) => g.tags)} Spiele). Zuordnung automatisch über den Titel – Einzelne Fehler sind möglich.`;
 }
 
 init().catch((e) => {

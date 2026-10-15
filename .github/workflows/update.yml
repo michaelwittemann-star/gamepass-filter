@@ -5,6 +5,7 @@ name: Katalog aktualisieren und veröffentlichen
 on:
   schedule:
     - cron: "15 5 * * *"
+    - cron: "30 15 * * 4"   # Epic wechselt die Gratisspiele donnerstags 17:00 deutscher Zeit
   push:
     branches: [main]
     paths-ignore: ["data/**", "public/data/**"]
