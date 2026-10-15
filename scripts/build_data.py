@@ -1,0 +1,586 @@
+"""Baut public/data/games.json aus Game-Pass-Katalog + Metacritic + HowLongToBeat + Steam-Tags.
+
+Aufruf:  python scripts/build_data.py            (nutzt den Cache, schlägt nur Neues/Veraltetes nach)
+         python scripts/build_data.py --refresh  (alle Anreicherungen neu holen)
+
+Falsche Zuordnungen in data/overrides.json korrigieren, z. B.
+  {"9NPDN9R45JX4": {"metacritic": "1000xresist", "hltb": 143595, "steam": 1675830}}
+Ein Wert null heißt "keine Zuordnung".
+"""
+from __future__ import annotations
+
+import argparse
+import difflib
+import json
+import re
+import sys
+import threading
+import time
+import unicodedata
+import urllib.parse
+import urllib.request
+from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+CACHE_FILE = ROOT / "data" / "cache" / "enrich.json"
+FIRST_SEEN_FILE = ROOT / "data" / "first_seen.json"
+OVERRIDES_FILE = ROOT / "data" / "overrides.json"
+OUT_FILE = ROOT / "public" / "data" / "games.json"
+
+MARKET = "DE"
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
+SIGLS = {
+    "console": "f6f1f99f-9b49-4ccd-b3bf-4d9767a77f5e",
+    "pc": "fdd9e2a7-0fee-49f6-ad69-4354098401ff",
+    "cloud": "29a81209-df6f-41fd-a528-2ae6b91f719c",
+    "ea": "b8900d09-a491-44cc-916e-32b5acae621b",
+    "new": "f13cf6b4-57e6-4459-89df-6aec18cf0538",
+    "leaving": "393f05bf-e596-4ef6-9487-6d4fa0eab987",
+}
+MC_KEY = "1MOZgmNFxvmljaQR1X9KAij9Mo4xAY3u"  # öffentlicher Schlüssel der Metacritic-Website
+# Treffer erneut nachschlagen nach ... Tagen (Fehlschläge früher, weil neue Spiele oft erst später Wertungen haben)
+REFRESH_HIT_DAYS = 45
+REFRESH_MISS_DAYS = 10
+
+
+def log(*a):
+    print(*a, flush=True)
+
+
+def http_json(url: str, data: bytes | None = None, headers: dict | None = None, tries: int = 3):
+    h = {"User-Agent": UA, "Accept": "application/json"}
+    h.update(headers or {})
+    for i in range(tries):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, data=data, headers=h), timeout=30) as r:
+                return json.loads(r.read().decode("utf-8"))
+        except Exception as e:  # noqa: BLE001
+            if i == tries - 1:
+                raise
+            time.sleep(2 * (i + 1))
+
+
+class RateLimit:
+    def __init__(self, per_sec: float):
+        self.gap = 1 / per_sec
+        self.lock = threading.Lock()
+        self.next = 0.0
+
+    def wait(self):
+        with self.lock:
+            now = time.monotonic()
+            t = max(now, self.next)
+            self.next = t + self.gap
+        time.sleep(max(0, t - now))
+
+
+# ---------- Titel-Normalisierung ----------
+
+EDITION_RE = re.compile(
+    r"\s*[-–:(]?\s*(standard|deluxe|definitive|complete|ultimate|game of the year|goty|gold|premium|enhanced|anniversary|"
+    r"digital|director'?s cut|special|legendary|xbox series x\|s|xbox one|windows( 10)?|pc)\s*(edition|version|cut)?\)?\s*$",
+    re.I,
+)
+NOISE_RE = re.compile(r"\s*[-–]?\s*cross-gen[- ]bundle|\((game preview|early access|xbox series x\|s|xbox one|windows|pc|preview)\)|for windows( 10)?|- windows edition", re.I)
+
+
+ANY_EDITION_RE = re.compile(r"\s*[:\-–]\s*[^:\-–]{0,40}\b(edition|edici[oó]n)\s*$", re.I)
+
+
+def clean_title(t: str) -> str:
+    t = re.sub(r"[™®©]", "", t)
+    t = NOISE_RE.sub("", t)
+    for _ in range(2):
+        t = EDITION_RE.sub("", t)
+    t = ANY_EDITION_RE.sub("", t)
+    return re.sub(r"\s+", " ", t).strip(" -–:")
+
+
+def search_terms(t: str) -> list[str]:
+    """Suchbegriffe: bereinigter Titel, dann der Teil vor ':' (für Untertitel, die die Datenbanken anders führen)."""
+    c = clean_title(t)
+    terms = [c]
+    head = re.split(r"\s*[:–]\s+|\s+-\s+", c)[0]
+    if head != c and len(head) >= 4:
+        terms.append(head)
+    return terms
+
+
+def norm(t: str) -> str:
+    t = unicodedata.normalize("NFKD", clean_title(t)).encode("ascii", "ignore").decode()
+    t = t.lower().replace("&", "and")
+    return re.sub(r"[^a-z0-9]+", "", t)
+
+
+def sim(a: str, b: str) -> float:
+    na, nb = norm(a), norm(b)
+    if not na or not nb:
+        return 0.0
+    if na == nb:
+        return 1.0
+    return difflib.SequenceMatcher(None, na, nb).ratio()
+
+
+ROMAN = {"ii": 2, "iii": 3, "iv": 4, "v": 5, "vi": 6, "vii": 7, "viii": 8, "ix": 9, "x": 10, "xi": 11, "xii": 12,
+         "xiii": 13, "xiv": 14, "xv": 15, "xvi": 16}
+
+
+def numbers(t: str) -> set[int]:
+    """Zahlen und römische Ziffern im Titel ("Final Fantasy III" -> {3}); müssen beim Abgleich übereinstimmen."""
+    out = set()
+    t = re.sub(r"\([^)]*\)", " ", clean_title(t).lower())  # Klammerzusätze wie "(2020)"
+    t = re.sub(r"\d+\s*-\s*\d+", " ", t)  # Bereiche wie "Kapitel 1-3"
+    t = re.sub(r"(?<=[a-z])(?=\d)", " ", t)  # "Dogs2" -> "Dogs 2"
+    t = re.sub(r"[-–]\s*(19|20)\d\d\s*$", " ", t)  # angehängte Jahreszahl wie "– 2009"
+    for w in re.findall(r"[a-z0-9]+", t):
+        if w.isdigit():
+            out.add(int(w))
+        elif w in ROMAN:
+            out.add(ROMAN[w])
+    return out
+
+
+def best_match(title: str, year: int | None, items: list, name_of, year_of, min_sim=0.82, full_title: str | None = None):
+    """Bester Kandidat nach Titelähnlichkeit, bei Gleichstand der mit passendem Jahr."""
+    nums = numbers(full_title or title)
+    scored = []
+    for it in items:
+        if numbers(name_of(it)) != nums:
+            continue
+        s = sim(title, name_of(it))
+        if s < min_sim:
+            continue
+        y = year_of(it)
+        # Original kann vor dem Xbox-Release liegen, aber nicht deutlich danach
+        penalty = 0.0
+        if year and y:
+            if y > year + 1:
+                penalty = 0.15
+            else:
+                penalty = min(abs(year - y), 15) * 0.004
+        scored.append((s - penalty, it))
+    if not scored:
+        return None
+    scored.sort(key=lambda x: -x[0])
+    return scored[0][1]
+
+
+# ---------- Game-Pass-Katalog + Microsoft Store ----------
+
+def fetch_catalog() -> dict[str, set[str]]:
+    flags: dict[str, set[str]] = {}
+    for key, sid in SIGLS.items():
+        lst = http_json(f"https://catalog.gamepass.com/sigls/v2?id={sid}&language=de-de&market={MARKET}")
+        for x in lst[1:]:
+            flags.setdefault(x["id"], set()).add(key)
+        log(f"Katalog {key}: {len(lst) - 1}")
+    # nur Spiele, die in einer der echten Bibliotheken sind
+    return {k: v for k, v in flags.items() if v & {"console", "pc", "cloud", "ea"}}
+
+
+def fetch_products(ids: list[str], lang: str) -> dict[str, dict]:
+    out = {}
+    for i in range(0, len(ids), 20):
+        url = (
+            "https://displaycatalog.mp.microsoft.com/v7.0/products?bigIds="
+            + ",".join(ids[i : i + 20])
+            + f"&market={MARKET}&languages={lang}&MS-CV=DGU1mcuYo0WMMp+F.1"
+        )
+        for p in http_json(url).get("Products", []):
+            out[p["ProductId"]] = p
+    return out
+
+
+def image_url(lp: dict) -> str | None:
+    imgs = lp.get("Images") or []
+    for purpose in ("Poster", "BoxArt", "BrandedKeyArt"):
+        for im in imgs:
+            if im.get("ImagePurpose") == purpose:
+                u = im["Uri"]
+                return ("https:" + u if u.startswith("//") else u), purpose
+    return None, None
+
+
+def slug(t: str) -> str:
+    t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode().lower()
+    return re.sub(r"[^a-z0-9]+", "-", t).strip("-") or "spiel"
+
+
+def parse_product(p: dict, p_en: dict | None) -> dict:
+    lp = p["LocalizedProperties"][0]
+    title = lp["ProductTitle"].strip()
+    en_title = (p_en or p)["LocalizedProperties"][0]["ProductTitle"].strip()
+    props = p.get("Properties") or {}
+    mp = (p.get("MarketProperties") or [{}])[0]
+    img, purpose = image_url(lp)
+
+    attrs = {}
+    for a in props.get("Attributes") or []:
+        attrs[a["Name"]] = a
+    def mx(*names):
+        vals = [attrs[n].get("Maximum") for n in names if n in attrs and attrs[n].get("Maximum")]
+        return max(vals) if vals else None
+
+    feats = set()
+    if "SinglePlayer" in attrs:
+        feats.add("single")
+    if {"XblOnlineMultiPlayer", "OnlineMultiplayerWithGold"} & attrs.keys():
+        feats.add("onlineMP")
+    if {"XblOnlineCoop", "CoopSupportOnline"} & attrs.keys():
+        feats.add("onlineCoop")
+    if {"XblLocalMultiPlayer", "LocalMultiplayer"} & attrs.keys():
+        feats.add("localMP")
+    if {"XblLocalCoop", "CoopSupportLocal"} & attrs.keys():
+        feats.add("localCoop")
+    if "SharedSplitScreen" in attrs:
+        feats.add("splitscreen")
+    if {"XblCrossPlatformMultiPlayer", "XblCrossPlatformCoop", "CrossPlatformMultiPlayer", "CrossPlatformCoOp"} & attrs.keys():
+        feats.add("crossplay")
+    if "XPA" in attrs:
+        feats.add("playAnywhere")
+    if "ConsoleGen9Optimized" in attrs:
+        feats.add("seriesOptimized")
+    if "Capability4k" in attrs:
+        feats.add("4k")
+    if {"120fps"} & attrs.keys():
+        feats.add("120fps")
+    if "RayTracing" in attrs:
+        feats.add("raytracing")
+    if "ConsoleKeyboardMouse" in attrs:
+        feats.add("mouseKeyboard")
+    if "XblCloudSaves" in attrs:
+        feats.add("cloudSaves")
+    # reine Online-Spiele: kein Einzelspieler, aber Online-Modi
+    online_only = "single" not in feats and bool(feats & {"onlineMP", "onlineCoop"}) and not (feats & {"localMP", "localCoop"})
+
+    pegi = None
+    for r in mp.get("ContentRatings") or []:
+        if r.get("RatingSystem") == "PEGI":
+            m = re.search(r"(\d+)", r.get("RatingId", ""))
+            pegi = int(m.group(1)) if m else None
+    if pegi is None and mp.get("MinimumUserAge") is not None:
+        pegi = mp.get("MinimumUserAge")
+
+    stars = None
+    for u in mp.get("UsageData") or []:
+        if u.get("AggregateTimeSpan") == "AllTime" and u.get("RatingCount", 0) >= 20:
+            stars = round(u.get("AverageRating", 0), 1)
+
+    rel = mp.get("OriginalReleaseDate") or ""
+    xbox_year = int(rel[:4]) if rel[:4].isdigit() and 1980 < int(rel[:4]) < 2100 else None
+
+    return {
+        "id": p["ProductId"],
+        "t": clean_title(title) if len(clean_title(title)) > 2 else title,
+        "tFull": title,
+        "tEn": en_title,
+        "img": img,
+        "imgSq": purpose != "Poster",
+        "url": f"https://www.xbox.com/de-DE/games/store/{slug(title)}/{p['ProductId']}",
+        "genres": props.get("Categories") or ([props["Category"]] if props.get("Category") else []),
+        "feat": sorted(feats),
+        "onlineOnly": online_only,
+        "onlineMax": mx("XblOnlineMultiPlayer", "XblOnlineCoop"),
+        "localMax": mx("XblLocalMultiPlayer", "XblLocalCoop"),
+        "yx": xbox_year,
+        "pegi": pegi,
+        "stars": stars,
+        "pub": lp.get("PublisherName"),
+        "dev": lp.get("DeveloperName"),
+    }
+
+
+# ---------- Anreicherung ----------
+
+mc_rl = RateLimit(4)
+steam_rl = RateLimit(3)
+spy_rl = RateLimit(0.9)
+
+
+def mc_lookup(g: dict, forced=...) -> dict | None:
+    if forced is None:
+        return None
+    hit = None
+    for term in [forced.replace("-", " ")] if forced is not ... else search_terms(g["tEn"]):
+        mc_rl.wait()
+        q = urllib.parse.quote(term.replace("/", " "))
+        d = http_json(
+            f"https://backend.metacritic.com/finder/metacritic/search/{q}/web?apiKey={MC_KEY}&offset=0&limit=12&mcoTypeId=13"
+        )
+        items = [i for i in d["data"]["items"] if i.get("typeId") == 13]
+        if forced is not ...:
+            hit = next((i for i in items if i["slug"] == forced), None)
+        else:
+            def plat_ok(i):
+                names = " ".join(p["name"] for p in i.get("platforms") or [])
+                return "Xbox" in names or "PC" in names
+            hit = best_match(term, g["yx"], [i for i in items if plat_ok(i)] or items,
+                             lambda i: i["title"], lambda i: i.get("premiereYear"), full_title=g["tEn"])
+        if hit:
+            break
+    if not hit:
+        return None
+    score = (hit.get("criticScoreSummary") or {}).get("score") or None  # 0 = noch keine Wertung
+    return {
+        "slug": hit["slug"],
+        "title": hit["title"],
+        "score": score,
+        "year": hit.get("premiereYear"),
+        "genres": [x["name"] for x in hit.get("genres") or [] if x.get("name")],
+    }
+
+
+_hltb = None
+
+
+def hltb_lookup(g: dict, forced=...) -> dict | None:
+    global _hltb
+    if forced is None:
+        return None
+    from howlongtobeatpy import HowLongToBeat
+
+    if _hltb is None:
+        _hltb = HowLongToBeat(0.0)
+    hit = None
+    if forced is not ...:
+        hit = _hltb.search_from_id(int(forced))
+    else:
+        for term in search_terms(g["tEn"]):
+            res = None
+            for i in range(3):
+                res = _hltb.search(term)
+                if res is not None:
+                    break
+                time.sleep(3 * (i + 1))
+            if res is None:
+                raise RuntimeError("HLTB-Abfrage fehlgeschlagen")
+            hit = best_match(term, g["yx"], res, lambda r: r.game_name, lambda r: r.release_world, full_title=g["tEn"])
+            if hit:
+                break
+    if not hit:
+        return None
+    def h(x):
+        return round(x, 1) if x else None
+    return {
+        "id": hit.game_id,
+        "title": hit.game_name,
+        "main": h(hit.main_story),
+        "extra": h(hit.main_extra),
+        "comp": h(hit.completionist),
+        "year": hit.release_world or None,
+    }
+
+
+def steam_lookup(g: dict, forced=...) -> dict | None:
+    if forced is None:
+        return None
+    if forced is ...:
+        hit = None
+        for term in search_terms(g["tEn"]):
+            steam_rl.wait()
+            q = urllib.parse.quote(term)
+            d = http_json(f"https://store.steampowered.com/api/storesearch/?term={q}&cc=DE&l=english")
+            hit = best_match(term, None, d.get("items") or [], lambda i: i["name"], lambda i: None, min_sim=0.9, full_title=g["tEn"])
+            if hit:
+                break
+        if not hit:
+            return None
+        appid, name = hit["id"], hit["name"]
+    else:
+        appid, name = int(forced), None
+    spy_rl.wait()
+    d = http_json(f"https://steamspy.com/api.php?request=appdetails&appid={appid}")
+    tags = d.get("tags") or {}
+    tags = list(tags.keys()) if isinstance(tags, dict) else []
+    return {"appid": appid, "name": name or d.get("name"), "tags": tags[:20]}
+
+
+SOURCES = {"mc": ("metacritic", mc_lookup), "hltb": ("hltb", hltb_lookup), "steam": ("steam", steam_lookup)}
+
+
+def is_stale(entry: dict | None, refresh: bool) -> bool:
+    if refresh or not entry:
+        return True
+    age = datetime.now(timezone.utc) - datetime.fromisoformat(entry["at"])
+    if entry.get("err"):
+        return age > timedelta(days=1)
+    return age > timedelta(days=REFRESH_HIT_DAYS if entry.get("v") else REFRESH_MISS_DAYS)
+
+
+def enrich(games: list[dict], cache: dict, overrides: dict, refresh: bool):
+    lock = threading.Lock()
+    todo = []
+    for g in games:
+        c = cache.setdefault(g["id"], {})
+        ov = overrides.get(g["id"], {})
+        for src, (ov_key, _) in SOURCES.items():
+            forced = ov.get(ov_key, ...)
+            entry = c.get(src)
+            # Override geändert -> neu nachschlagen
+            if entry and entry.get("forced", ...) != (forced if forced is not ... else ...):
+                entry = None
+            if is_stale(entry, refresh):
+                todo.append((g, src, forced))
+    log(f"Nachzuschlagen: {len(todo)} Abfragen")
+    done = [0]
+    t0 = time.monotonic()
+
+    def run(job):
+        g, src, forced = job
+        fn = SOURCES[src][1]
+        e = {"at": datetime.now(timezone.utc).isoformat()}
+        if forced is not ...:
+            e["forced"] = forced
+        try:
+            e["v"] = fn(g, forced)
+        except Exception as ex:  # noqa: BLE001
+            e["v"] = None
+            e["err"] = str(ex)[:200]
+        with lock:
+            cache[g["id"]][src] = e
+            done[0] += 1
+            if done[0] % 100 == 0:
+                log(f"  {done[0]}/{len(todo)} ({time.monotonic() - t0:.0f}s)")
+                save_json(CACHE_FILE, cache)
+
+    # je Quelle ein eigener Pool, damit die Quellen parallel laufen, aber jede für sich gedrosselt bleibt
+    pools = {"mc": ThreadPoolExecutor(4), "hltb": ThreadPoolExecutor(3), "steam": ThreadPoolExecutor(2)}
+    futs = [pools[j[1]].submit(run, j) for j in todo]
+    for f in futs:
+        f.result()
+    for p in pools.values():
+        p.shutdown()
+    errs = sum(1 for g in games for s in SOURCES if (cache[g["id"]].get(s) or {}).get("err"))
+    if errs:
+        log(f"Fehler bei {errs} Abfragen (werden beim nächsten Lauf wiederholt)")
+
+
+# ---------- Ausgabe ----------
+
+def load_json(p: Path, default):
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return default
+
+
+def save_json(p: Path, data, compact=False):
+    p.parent.mkdir(parents=True, exist_ok=True)
+    tmp = p.with_suffix(".tmp")
+    if compact:
+        tmp.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    else:
+        tmp.write_text(json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
+    tmp.replace(p)
+
+
+def merge_duplicates(games: list[dict]) -> list[dict]:
+    """Konsolen- und PC-Fassung haben oft eigene Store-IDs: gleiche Titel zu einem Eintrag zusammenführen."""
+    groups: dict[str, list[dict]] = {}
+    for g in games:
+        groups.setdefault(norm(g["t"]), []).append(g)
+    out = []
+    for grp in groups.values():
+        # Basis: der Eintrag mit den meisten Angaben, bevorzugt mit Konsole
+        grp.sort(key=lambda g: (-len(g), "console" not in g["plat"]))
+        base = dict(grp[0])
+        for o in grp[1:]:
+            base["plat"] = [p for p in ("console", "pc", "cloud", "ea") if p in base["plat"] or p in o["plat"]]
+            for k in ("new", "leaving"):
+                if o.get(k):
+                    base[k] = True
+            base["feat"] = sorted(set(base.get("feat", [])) | set(o.get("feat", [])))
+            base["genres"] = list(dict.fromkeys(base.get("genres", []) + o.get("genres", [])))
+            for k, v in o.items():
+                base.setdefault(k, v)
+            if o.get("added") and o["added"] < base.get("added", "9999"):
+                base["added"] = o["added"]
+        out.append(base)
+    return out
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--refresh", action="store_true")
+    ap.add_argument("--limit", type=int, default=0, help="nur die ersten N Spiele (zum Testen)")
+    args = ap.parse_args()
+
+    flags = fetch_catalog()
+    ids = sorted(flags)
+    if args.limit:
+        ids = ids[: args.limit]
+    log(f"{len(ids)} Spiele im Game Pass ({MARKET})")
+    de = fetch_products(ids, "de-de")
+    en = fetch_products(ids, "en-us")
+    games = [parse_product(de[i], en.get(i)) for i in ids if i in de]
+
+    today = datetime.now(timezone.utc).date().isoformat()
+    first_seen = load_json(FIRST_SEEN_FILE, {})
+    for g in games:
+        first_seen.setdefault(g["id"], today)
+
+    cache = load_json(CACHE_FILE, {})
+    overrides = {k: v for k, v in load_json(OVERRIDES_FILE, {}).items() if not k.startswith("_")}
+    enrich(games, cache, overrides, args.refresh)
+    save_json(CACHE_FILE, cache)
+    if not args.limit:
+        save_json(FIRST_SEEN_FILE, first_seen)
+
+    out = []
+    for g in games:
+        c = cache.get(g["id"], {})
+        mc = (c.get("mc") or {}).get("v")
+        hl = (c.get("hltb") or {}).get("v")
+        st = (c.get("steam") or {}).get("v")
+        f = flags[g["id"]]
+        # Erscheinungsjahr = Original-Release (Metacritic, sonst HLTB), nicht der spätere Xbox-Port
+        year = (mc and mc.get("year")) or (hl and hl.get("year")) or g["yx"]
+        mc_ow = any("open-world" in x.lower() for x in (mc or {}).get("genres") or [])
+        tags = (st or {}).get("tags") or []
+        out.append({
+            "id": g["id"],
+            "t": g["t"],
+            "img": g["img"],
+            "sq": g["imgSq"] or None,
+            "url": g["url"],
+            "plat": [p for p in ("console", "pc", "cloud", "ea") if p in f],
+            "new": "new" in f or None,
+            "leaving": "leaving" in f or None,
+            "added": first_seen.get(g["id"]),
+            "genres": g["genres"],
+            "feat": g["feat"],
+            "onlineOnly": g["onlineOnly"] or None,
+            "onlineMax": g["onlineMax"],
+            "localMax": g["localMax"],
+            "y": year,
+            "yx": g["yx"],
+            "mc": mc and mc.get("score"),
+            "mcSlug": mc and mc["slug"],
+            "mcGenres": (mc or {}).get("genres") or None,
+            "hMain": hl and hl.get("main"),
+            "hExtra": hl and hl.get("extra"),
+            "hComp": hl and hl.get("comp"),
+            "hltbId": hl and hl["id"],
+            "openWorld": True if ("Open World" in tags or mc_ow) else (False if st else None),
+            "tags": tags or None,
+            "steam": st and st["appid"],
+            "pegi": g["pegi"],
+            "stars": g["stars"],
+            "pub": g["pub"],
+            "dev": g["dev"],
+        })
+    out = [{k: v for k, v in g.items() if v not in (None, [], "")} for g in out]
+    out = merge_duplicates(out)
+    out.sort(key=lambda g: g["t"].lower())
+    save_json(OUT_FILE, {"updated": datetime.now(timezone.utc).isoformat(timespec="minutes"), "market": MARKET, "games": out}, compact=True)
+    n = len(out)
+    log(
+        f"Fertig: {n} Spiele -> {OUT_FILE.relative_to(ROOT)} | Metascore {sum('mc' in g for g in out)}, "
+        f"HLTB {sum('hMain' in g for g in out)}, Steam-Tags {sum('tags' in g for g in out)}"
+    )
+
+
+if __name__ == "__main__":
+    sys.exit(main())
