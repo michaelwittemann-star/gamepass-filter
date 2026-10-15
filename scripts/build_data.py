@@ -13,6 +13,7 @@ import argparse
 import http.client
 import difflib
 import json
+import os
 import re
 import sys
 import threading
@@ -345,7 +346,9 @@ def fetch_netflix() -> tuple[list[dict], dict[str, set[str]]]:
             return f.group(1).strip() if f else ""
 
         ent = cache.get(nid)
-        if not ent or (datetime.now(timezone.utc) - datetime.fromisoformat(ent["at"])) > timedelta(days=7):
+        # Auf GitHub-Servern (USA) sähe netflix.com den US-Katalog: dort nur neue Spiele prüfen, bekannte behalten
+        stale = not ent or (datetime.now(timezone.utc) - datetime.fromisoformat(ent["at"])) > timedelta(days=7)
+        if stale and not (ent and os.environ.get("GITHUB_ACTIONS")):
             st, de = http_text(f"https://www.netflix.com/de/games/{nid}")
             img = re.search(r'og:image" content="([^"]+)', de)
             if st in (200, 404):
@@ -413,13 +416,37 @@ PRIME_VIA = {"gog": "GOG", "epic": "Epic", "aga": "Amazon Games", "legacy": "Leg
 RATING_JUNK = re.compile(r"\s*\([^)]*(erwachsene|unbewertet|rated|mature|adult|eltern|pegi|usk|parental)[^)]*\)", re.I)
 
 
+PRIME_LAST = ROOT / "data" / "cache" / "prime_last.json"
+
+
 def fetch_prime() -> tuple[list[dict], dict[str, set[str]]]:
+    """Wie _fetch_prime; blockt Amazon (von GitHub-Servern aus: HTTP 418), gilt die zuletzt geholte Liste ohne Abgelaufene."""
+    try:
+        games, flags = _fetch_prime()
+        save_json(PRIME_LAST, games)
+        return games, flags
+    except Exception as e:  # noqa: BLE001
+        today = datetime.now(timezone.utc).date().isoformat()
+        games = [g for g in load_json(PRIME_LAST, []) if (g["deals"][0].get("until") or "9999") >= today]
+        if not games:
+            raise
+        log(f"Prime: Abruf fehlgeschlagen ({e}), nutze letzte Liste ({len(games)} noch gültig)")
+        return games, {g["id"]: {"primeClaim"} for g in games}
+
+
+def _fetch_prime() -> tuple[list[dict], dict[str, set[str]]]:
     """Monatliche Gratis-PC-Spiele zum Behalten (früher Prime Gaming), Daten der Luna-Claims-Seite."""
     import http.cookiejar
     import uuid
 
     op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
-    req = urllib.request.Request("https://luna.amazon.de/claims/home", headers={"User-Agent": UA, "Accept-Language": "de-DE"})
+    browser = {
+        "User-Agent": UA, "Accept-Language": "de-DE,de;q=0.9,en;q=0.8", "sec-ch-ua": '"Chromium";v="130", "Google Chrome";v="130"',
+        "sec-ch-ua-mobile": "?0", "sec-ch-ua-platform": '"Windows"',
+    }
+    req = urllib.request.Request("https://luna.amazon.de/claims/home", headers={
+        **browser, "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Sec-Fetch-Dest": "document", "Sec-Fetch-Mode": "navigate", "Sec-Fetch-Site": "none", "Upgrade-Insecure-Requests": "1"})
     page = op.open(req, timeout=30).read().decode()
     tok = re.search(r"name=['\"]csrf-key['\"]\s+value=['\"]([^'\"]+)", page)
     if not tok:
@@ -427,7 +454,8 @@ def fetch_prime() -> tuple[list[dict], dict[str, set[str]]]:
     q = ("query FreeGames($pageSize: Int) { games: items(collectionType: FREE_GAMES, pageSize: $pageSize) { items { id category "
          "assets { title externalClaimLink cardMedia { defaultMedia { src2x } } } offers { startTime endTime } } } }")
     body = json.dumps({"operationName": "FreeGames", "variables": {"pageSize": 999}, "extensions": {}, "query": q}).encode()
-    h = {"Content-Type": "application/json", "User-Agent": UA, "Origin": "https://luna.amazon.de",
+    h = {**browser, "Content-Type": "application/json", "Accept": "*/*", "Origin": "https://luna.amazon.de",
+         "Sec-Fetch-Dest": "empty", "Sec-Fetch-Mode": "cors", "Sec-Fetch-Site": "same-origin",
          "Referer": "https://luna.amazon.de/claims/home", "client-id": "CarboniteApp", "csrf-token": tok.group(1),
          "prime-gaming-language": "en-US"}
     req = urllib.request.Request(f"https://luna.amazon.de/graphql?nonce={uuid.uuid4()}", data=body, headers=h)
