@@ -1,8 +1,8 @@
 # Game Pass Filter
 
-Website, die den Xbox-Game-Pass-Katalog (Deutschland) nach allem filtert, was die Xbox-App nicht kann:
+Website, die den Xbox-Game-Pass- und Amazon-Luna-Katalog (Deutschland) nach allem filtert, was die Xbox-App nicht kann:
 Erscheinungsjahr, Metascore, Spielzeit (HowLongToBeat), Genre, Spielmodi, Spieleranzahl, Online/Offline,
-Open World, Steam-Tags, Technik, Altersfreigabe. Klick aufs Cover öffnet die Store-Seite auf xbox.com.
+Open World, Produktionsgröße (AAA/AA/Indie), Steam-Tags, Technik, Altersfreigabe. Klick aufs Cover öffnet die Store-Seite auf xbox.com.
 
 ## Datenquellen
 
@@ -12,16 +12,18 @@ Open World, Steam-Tags, Technik, Altersfreigabe. Klick aufs Cover öffnet die St
 | Cover, Genre, Spielmodi, Spieleranzahl, Technik, Altersfreigabe, Xbox-Bewertung | `displaycatalog.mp.microsoft.com` |
 | Metascore, Original-Erscheinungsjahr | Metacritic (Such-API der Website) |
 | Spielzeit Story / +Extras / 100 % | HowLongToBeat (`howlongtobeatpy`) |
-| Steam-Tags, Open World | Steam-Suche + SteamSpy (Open World zusätzlich aus Metacritic-Genre) |
+| Steam-Tags, Open World, Steam-Preis | Steam-Suche + SteamSpy (Open World zusätzlich aus Metacritic-Genre) |
+| Luna-Spiele (Prime / Premium), Cover, Genre, Freigabe | interne Schnittstelle von luna.amazon.de (ohne Anmeldung, inoffiziell) |
+| AAA / AA / Indie | **geschätzt** in `classify_tier()`: Publisher-Listen, Steam-Tag „Indie“, Zahl der Metacritic-Kritiken, Steam-Preis |
 
 Die Zuordnung zu Metacritic/HLTB/Steam läuft automatisch über den (englischen) Titel. Falsche Treffer
 in `data/overrides.json` korrigieren (Produkt-ID aus der xbox.com-URL):
 
 ```json
-{ "9NPDN9R45JX4": { "metacritic": "1000xresist", "hltb": 143595, "steam": null } }
+{ "9NPDN9R45JX4": { "metacritic": "1000xresist", "hltb": 143595, "steam": null, "tier": "AA" } }
 ```
 
-`null` = keine Zuordnung. Danach `npm run data`.
+`null` = keine Zuordnung. Luna-Spiele haben die ID `luna-<ASIN>`. Gleiche Spiele aus Konsole/PC/Luna werden über deutschen/englischen Titel oder Metacritic-Eintrag zusammengeführt. Danach `npm run data`.
 
 ## Befehle
 

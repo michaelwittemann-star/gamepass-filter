@@ -6,6 +6,7 @@ interface Game {
   img?: string;
   sq?: boolean;
   url: string;
+  lunaUrl?: string;
   plat: string[];
   new?: boolean;
   leaving?: boolean;
@@ -24,6 +25,8 @@ interface Game {
   hComp?: number;
   hltbId?: number;
   openWorld?: boolean;
+  tier?: string;
+  tierWhy?: string;
   tags?: string[];
   steam?: number;
   pegi?: number;
@@ -50,6 +53,7 @@ interface State {
   online: 'any' | 'offline' | 'onlineOnly';
   players: number;
   ow: 'any' | 'yes' | 'no';
+  tier: string[];
   tags: Tri;
   tech: string[];
   pegi: number;
@@ -70,11 +74,20 @@ const GENRES: Record<string, string> = {
   Fighting: 'Kampfspiel',
   'Card & board': 'Karten & Brett',
   'Multi-player Online Battle Arena': 'MOBA',
+  Party: 'Party',
+  Arcade: 'Arcade',
   Classics: 'Klassiker',
   Music: 'Musik',
   Other: 'Sonstiges',
 };
-const PLATS: Record<string, string> = { console: 'Konsole', pc: 'PC', cloud: 'Cloud', ea: 'EA Play' };
+const PLATS: Record<string, string> = {
+  console: 'Konsole',
+  pc: 'PC',
+  cloud: 'Cloud',
+  ea: 'EA Play',
+  lunaPrime: 'Luna (Prime)',
+  lunaPremium: 'Luna Premium',
+};
 const STATUS: Record<string, string> = { new: 'Neu im Game Pass', leaving: 'Verlässt bald' };
 const MODES: Record<string, string> = {
   single: 'Einzelspieler',
@@ -94,6 +107,7 @@ const TECH: Record<string, string> = {
   mouseKeyboard: 'Maus & Tastatur (Konsole)',
   cloudSaves: 'Cloud-Speicherstände',
 };
+const TIERS: Record<string, string> = { AAA: 'AAA', AA: 'AA', Indie: 'Indie' };
 const H_KINDS: Record<HKey, string> = { hMain: 'Story', hExtra: 'Story + Extras', hComp: '100 %' };
 const H_STEPS = [0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 25, 30, 40, 50, 60, 80, 100, 150];
 const SORTS: Record<string, string> = {
@@ -131,6 +145,7 @@ function defaults(): State {
     online: 'any',
     players: 0,
     ow: 'any',
+    tier: [],
     tags: {},
     tech: [],
     pegi: 0,
@@ -176,6 +191,7 @@ function saveUrl() {
   if (S.online !== 'any') p.set('online', S.online);
   if (S.players) p.set('players', String(S.players));
   if (S.ow !== 'any') p.set('ow', S.ow);
+  if (S.tier.length) p.set('tier', S.tier.join('|'));
   if (Object.keys(S.tags).length) p.set('tags', triToStr(S.tags));
   if (S.tech.length) p.set('tech', S.tech.join('|'));
   if (S.pegi) p.set('pegi', String(S.pegi));
@@ -204,6 +220,7 @@ function loadUrl() {
   s.players = +(p.get('players') || 0);
   const ow = p.get('ow');
   if (ow === 'yes' || ow === 'no') s.ow = ow;
+  s.tier = list('tier');
   s.tags = strToTri(p.get('tags'));
   s.tech = list('tech');
   s.pegi = +(p.get('pegi') || 0);
@@ -254,6 +271,7 @@ function matches(g: Game) {
       if (!S.missing) return false;
     } else if (g.openWorld !== (S.ow === 'yes')) return false;
   }
+  if (S.tier.length && !(g.tier ? S.tier.includes(g.tier) : S.missing)) return false;
   if (!matchTri(g.tags, S.tags, 'all')) return false;
   if (S.tech.length && !S.tech.every((m) => g.feat?.includes(m))) return false;
   if (S.pegi && (g.pegi ?? 99) > S.pegi) return false;
@@ -284,7 +302,7 @@ function sortGames(list: Game[]) {
 
 // ---------- Kacheln ----------
 
-type Col = 'mc' | 'y' | 'h' | 'plat' | 'genres' | 'modes' | 'online' | 'players' | 'ow' | 'tags' | 'tech' | 'pegi' | 'stars' | 'added';
+type Col = 'mc' | 'y' | 'h' | 'tier' | 'plat' | 'genres' | 'modes' | 'online' | 'players' | 'ow' | 'tags' | 'tech' | 'pegi' | 'stars' | 'added';
 
 function visibleCols(): Col[] {
   const c = new Set<Col>();
@@ -299,18 +317,19 @@ function visibleCols(): Col[] {
   if (S.online !== 'any') c.add('online');
   if (S.players) c.add('players');
   if (S.ow !== 'any') c.add('ow');
+  if (S.tier.length) c.add('tier');
   if (Object.values(S.tags).some((v) => v > 0)) c.add('tags');
   if (S.tech.length) c.add('tech');
   if (S.pegi) c.add('pegi');
   if (S.stars) c.add('stars');
   // ohne aktive Filter: die drei Kernwerte
   if (c.size <= 1) ['mc', 'y', 'h'].forEach((x) => c.add(x as Col));
-  const order: Col[] = ['mc', 'y', 'h', 'stars', 'players', 'ow', 'online', 'modes', 'genres', 'tags', 'tech', 'plat', 'pegi', 'added'];
+  const order: Col[] = ['mc', 'y', 'h', 'tier', 'stars', 'players', 'ow', 'online', 'modes', 'genres', 'tags', 'tech', 'plat', 'pegi', 'added'];
   return order.filter((x) => c.has(x));
 }
 
-function val(html: string, title: string, na = false) {
-  return `<span class="val${na ? ' na' : ''}" title="${esc(title)}">${html}</span>`;
+function val(html: string, title: string, na = false, wrap = false) {
+  return `<span class="val${na ? ' na' : ''}${wrap ? ' wrap' : ''}" title="${esc(title)}">${html}</span>`;
 }
 
 function cellHtml(g: Game, col: Col): string {
@@ -341,6 +360,8 @@ function cellHtml(g: Game, col: Col): string {
     }
     case 'ow':
       return g.openWorld === undefined ? val('Open World ?', 'Unbekannt', true) : val(g.openWorld ? 'Open World' : 'keine Open World', 'Steam-Tags / Metacritic');
+    case 'tier':
+      return g.tier ? val(g.tier, 'Geschätzte Produktionsgröße: ' + (g.tierWhy || '')) : val('AAA/AA ?', 'Zu wenig Anhaltspunkte', true);
     case 'online':
       return val(g.onlineOnly ? 'Nur online' : 'Offline spielbar', 'Online/Offline');
     case 'modes':
@@ -352,7 +373,15 @@ function cellHtml(g: Game, col: Col): string {
     case 'tech':
       return S.tech.map((m) => val(TECH[m], 'Technik')).join('');
     case 'plat':
-      return val(g.plat.map((p) => PLATS[p]).join(' · '), 'Plattformen');
+      return val(
+        g.plat
+          .filter((p) => !(p === 'lunaPremium' && g.plat.includes('lunaPrime')))
+          .map((p) => (p.startsWith('luna') ? 'Luna' + (p === 'lunaPremium' ? ' Premium' : '') : PLATS[p]))
+          .join(' · '),
+        g.plat.map((p) => PLATS[p]).join(', '),
+        false,
+        true,
+      );
     case 'pegi':
       return g.pegi !== undefined ? val(`ab ${g.pegi}`, 'Altersfreigabe (PEGI/USK)') : val('ab ?', 'Keine Angabe', true);
     case 'added':
@@ -365,14 +394,17 @@ function cellHtml(g: Game, col: Col): string {
 }
 
 function cardHtml(g: Game, cols: Col[]) {
-  const img = g.img ? `<img src="${g.img}?w=${g.sq ? 320 : 300}" alt="" loading="lazy" decoding="async">` : '';
-  const badges = [g.new ? '<span class="badge new">NEU</span>' : '', g.leaving ? '<span class="badge leaving">VERLÄSST BALD</span>' : '']
+  const src = g.img && g.img.includes('s-microsoft.com') ? `${g.img}?w=${g.sq ? 320 : 300}` : g.img;
+  const img = src ? `<img src="${src}" alt="" loading="lazy" decoding="async">` : '';
+  const onLuna = g.lunaUrl === g.url;
+  const lunaLink = g.lunaUrl && !onLuna ? `<a class="luna-link" href="${g.lunaUrl}" target="_blank" rel="noopener">auch auf Luna ↗</a>` : '';
+  const badges = [g.new ? '<span class="badge new">NEU</span>' : '', g.leaving ? '<span class="badge leaving">VERLÄSST BALD</span>' : '', onLuna ? '<span class="badge luna">LUNA</span>' : '']
     .filter(Boolean)
     .join('');
   return `<article class="card">
-    <a class="cover${g.sq ? ' sq' : ''}" href="${g.url}" target="_blank" rel="noopener" title="${esc(g.t)} im Xbox Store öffnen">${img}<div class="badges">${badges}</div></a>
+    <a class="cover${g.sq ? ' sq' : ''}" href="${g.url}" target="_blank" rel="noopener" title="${esc(g.t)} ${onLuna ? 'bei Amazon Luna' : 'im Xbox Store'} öffnen">${img}<div class="badges">${badges}</div></a>
     <div class="title" title="${esc(g.t)}${g.dev ? ' – ' + esc(g.dev) : ''}">${esc(g.t)}</div>
-    <div class="vals">${cols.map((c) => cellHtml(g, c)).join('')}</div>
+    <div class="vals">${cols.map((c) => cellHtml(g, c)).join('')}</div>${lunaLink}
   </article>`;
 }
 
@@ -619,7 +651,7 @@ function buildFilters() {
     render();
   };
   controls.push({ sync: () => (cb.checked = S.missing) });
-  F.append(group('Fehlende Daten', missing, undefined, 'Gilt für Jahr, Metascore, Spielzeit, Spieleranzahl und Open World, sobald dort gefiltert wird.'));
+  F.append(group('Fehlende Daten', missing, undefined, 'Gilt für Jahr, Metascore, Spielzeit, Spieleranzahl, Produktion und Open World, sobald dort gefiltert wird.'));
 
   const gc = countBy((g) => g.genres);
   const genreOpts = Object.fromEntries(Object.entries(GENRES).filter(([k]) => gc[k]));
@@ -638,6 +670,12 @@ function buildFilters() {
         S.online = 'any';
         S.players = 0;
       },
+    ),
+    group(
+      'Produktion',
+      chipList(TIERS, () => S.tier, (v) => (S.tier = v), countBy((g) => (g.tier ? [g.tier] : []))),
+      () => (S.tier = []),
+      'Geschätzt aus Publisher, Steam-Tag „Indie“, Zahl der Kritiken und Steam-Preis – es gibt kein offizielles Label. Begründung im Tooltip am Wert.',
     ),
     group('Open World', seg({ any: 'egal', yes: 'ja', no: 'nein' } as Record<State['ow'], string>, () => S.ow, (v) => (S.ow = v)), undefined, 'Laut Steam-Tags bzw. Metacritic-Genre'),
   );
@@ -717,6 +755,7 @@ function renderActiveChips() {
   S.modes.forEach((m) => items.push([MODES[m], () => (S.modes = S.modes.filter((x) => x !== m))]));
   if (S.online !== 'any') items.push([S.online === 'offline' ? 'offline spielbar' : 'reines Online-Spiel', () => (S.online = 'any')]);
   if (S.players) items.push([`mind. ${S.players} Spieler`, () => (S.players = 0)]);
+  S.tier.forEach((t) => items.push([t, () => (S.tier = S.tier.filter((x) => x !== t))]));
   if (S.ow !== 'any') items.push([S.ow === 'yes' ? 'Open World' : 'keine Open World', () => (S.ow = 'any')]);
   Object.entries(S.tags).forEach(([k, v]) => items.push([(v < 0 ? 'ohne #' : '#') + k, () => delete S.tags[k]]));
   S.tech.forEach((m) => items.push([TECH[m], () => (S.tech = S.tech.filter((x) => x !== m))]));
@@ -782,10 +821,10 @@ async function init() {
   render();
 
   const n = (f: (g: Game) => unknown) => games.filter(f).length;
-  $('#footer').innerHTML = `Stand: ${new Date(data.updated).toLocaleString('de-DE', { dateStyle: 'medium', timeStyle: 'short' })} · ${games.length} Spiele im Game Pass (Deutschland).<br>
+  $('#footer').innerHTML = `Stand: ${new Date(data.updated).toLocaleString('de-DE', { dateStyle: 'medium', timeStyle: 'short' })} · ${games.length} Spiele im Game Pass und bei Amazon Luna (Deutschland).<br>
     Daten: Xbox-Game-Pass-Katalog &amp; Microsoft Store (Genre, Spielmodi, Freigabe), Metacritic (Metascore &amp; Original-Erscheinungsjahr, ${n((g) => g.mc !== undefined)} Spiele),
     <a href="https://howlongtobeat.com" target="_blank" rel="noopener">HowLongToBeat</a> (Spielzeit, ${n((g) => g.hMain !== undefined)} Spiele),
-    Steam (Tags/Open World, ${n((g) => g.tags)} Spiele). Zuordnung automatisch über den Titel – Einzelne Fehler sind möglich.`;
+    Amazon Luna (Katalog Prime/Premium), Steam (Tags/Open World, ${n((g) => g.tags)} Spiele). Zuordnung automatisch über den Titel – Einzelne Fehler sind möglich.`;
 }
 
 init().catch((e) => {

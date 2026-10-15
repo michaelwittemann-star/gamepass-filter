@@ -180,6 +180,111 @@ def fetch_catalog() -> dict[str, set[str]]:
     return {k: v for k, v in flags.items() if v & {"console", "pc", "cloud", "ea"}}
 
 
+# ---------- Amazon Luna ----------
+# Katalog über dieselbe (inoffizielle) Schnittstelle, die luna.amazon.de ohne Anmeldung nutzt.
+# Luna Premium enthält alle Prime-Spiele.
+PLATFORMS = ("console", "pc", "cloud", "ea", "lunaPrime", "lunaPremium")
+LUNA_LISTS = {"lunaPrime": "included_with_prime", "lunaPremium": "luna_premium"}
+LUNA_GENRES = {
+    "action": "Action & adventure", "adventure": "Action & adventure", "horror": "Action & adventure",
+    "rätsel/puzzle": "Puzzle & trivia", "puzzle": "Puzzle & trivia", "strategie": "Strategy", "strategy": "Strategy",
+    "simulation": "Simulation", "shooter": "Shooter", "sport": "Sports", "sports": "Sports",
+    "rennspiel": "Racing & flying", "racing": "Racing & flying", "tabletop": "Card & board",
+    "rollenspiel": "Role playing", "rpg": "Role playing", "kampfspiel": "Fighting", "fighting": "Fighting",
+    "party": "Party", "arcade": "Arcade", "plattformer": "Platformer", "platformer": "Platformer",
+}
+
+
+def fetch_luna_list(query: str) -> dict[str, dict]:
+    body = {
+        "timeout": 10000,
+        "searchContext": {"query": query, "sort": "TITLE_A_TO_Z", "filtersList": []},
+        "featureScheme": "WEB_V1",
+        "pageContext": {"pageType": "multistate_browse_results", "pageId": "default"},
+        "clientContext": {"browserMetadata": {"browserClientRole": "browser", "browserType": "Chrome", "browserVersion": "130.0.0.0",
+                                              "deviceModel": "unknown", "deviceType": "unknown", "osName": "Windows", "osVersion": "10"},
+                          "refMarker": None, "referrer": None},
+        "inputContext": {"gamepadTypes": []},
+        "dynamicFeatures": [],
+    }
+    sid = "261-1234567-7654321"
+    headers = {
+        "content-type": "text/plain;charset=UTF-8", "x-amz-locale": "de_DE", "x-amz-country-of-residence": "DE",
+        "x-amz-marketplace-id": "A1PA6795UKMFR9", "x-amz-platform": "web", "x-amz-device-type": "browser",
+        "x-amz-session-id": sid, "x-amz-device-serial-number": sid, "Origin": "https://luna.amazon.de",
+    }
+    d = http_json("https://proxy-prod.eu-west-1.tempo.digital.a2z.com/getPage", data=json.dumps(body).encode(), headers=headers)
+    out: dict[str, dict] = {}
+
+    def walk(w):
+        if isinstance(w, dict):
+            targets = [a.get("target") for a in w.get("actions") or [] if isinstance(a, dict)]
+            if w.get("type") == "GAME_TILE" and targets and (targets[0] or "").startswith("/game/"):
+                pd = json.loads(w.get("presentationData") or "{}")
+                pd["_target"] = targets[0]
+                out[targets[0].rsplit("/", 1)[-1]] = pd
+            for v in w.values():
+                walk(v)
+        elif isinstance(w, list):
+            for v in w:
+                walk(v)
+
+    walk(d)
+    return out
+
+
+def parse_luna(asin: str, pd: dict) -> dict:
+    title = re.sub(r"\s+", " ", pd.get("title") or "").strip()
+    hover = pd.get("hoverDetails") or {}
+    genres = list(dict.fromkeys(LUNA_GENRES[x.lower()] for x in pd.get("genreTags") or [] if x.lower() in LUNA_GENRES))
+    m = re.search(r"(\d+)$", (hover.get("ageRating") or {}).get("categoryId") or "")
+    img = pd.get("imagePortrait")
+    if img:
+        img = re.sub(r"\.(png|jpg)$", r"._SX300_.\1", img)  # Amazon-Bildgröße
+    yr = str(pd.get("releaseYear") or "")
+    url = "https://luna.amazon.de" + pd["_target"]
+    return {
+        "id": "luna-" + asin,
+        "t": clean_title(title) if len(clean_title(title)) > 2 else title,
+        "tFull": title,
+        "tEn": title,
+        "img": img,
+        "imgSq": False,
+        "url": url,
+        "lunaUrl": url,
+        "genres": genres,
+        "feat": [],
+        "onlineOnly": False,
+        "onlineMax": None,
+        "localMax": None,
+        "yx": int(yr) if yr.isdigit() else None,
+        "pegi": int(m.group(1)) if m else None,
+        "stars": None,
+        "pub": hover.get("publishersText"),
+        "dev": None,
+    }
+
+
+def fetch_luna() -> tuple[list[dict], dict[str, set[str]]]:
+    games: dict[str, dict] = {}
+    flags: dict[str, set[str]] = {}
+    for key, query in LUNA_LISTS.items():
+        lst = fetch_luna_list(query)
+        log(f"Luna {key}: {len(lst)}")
+        for asin, pd in lst.items():
+            games.setdefault(asin, parse_luna(asin, pd))
+            flags.setdefault("luna-" + asin, set()).add(key)
+    return list(games.values()), flags
+
+
+# Spielmodi aus Steam-Tags, wenn es keine Xbox-Angaben gibt (Luna-exklusive Spiele)
+STEAM_MODE_TAGS = {
+    "Singleplayer": "single", "Online Co-Op": "onlineCoop", "Local Co-Op": "localCoop", "Local Multiplayer": "localMP",
+    "Split Screen": "splitscreen", "PvP": "onlineMP", "Online PvP": "onlineMP", "Massively Multiplayer": "onlineMP",
+    "Cross-Platform Multiplayer": "crossplay",
+}
+
+
 def fetch_products(ids: list[str], lang: str) -> dict[str, dict]:
     out = {}
     for i in range(0, len(ids), 20):
@@ -324,12 +429,23 @@ def mc_lookup(g: dict, forced=...) -> dict | None:
         return None
     score = (hit.get("criticScoreSummary") or {}).get("score") or None  # 0 = noch keine Wertung
     return {
+        "reviews": mc_review_count(hit["slug"]),
         "slug": hit["slug"],
         "title": hit["title"],
         "score": score,
         "year": hit.get("premiereYear"),
         "genres": [x["name"] for x in hit.get("genres") or [] if x.get("name")],
     }
+
+
+def mc_review_count(slug: str) -> int | None:
+    """Zahl der Kritiken über alle Plattformen – Anhaltspunkt für die Größe einer Produktion."""
+    mc_rl.wait()
+    d = http_json(f"https://backend.metacritic.com/composer/metacritic/pages/games/{slug}/web?apiKey={MC_KEY}")
+    for c in d.get("components") or []:
+        if (c.get("meta") or {}).get("componentName") == "product":
+            return ((c.get("data") or {}).get("item") or {}).get("criticScoreSummary", {}).get("reviewCount")
+    return None
 
 
 _hltb = None
@@ -394,14 +510,28 @@ def steam_lookup(g: dict, forced=...) -> dict | None:
     d = http_json(f"https://steamspy.com/api.php?request=appdetails&appid={appid}")
     tags = d.get("tags") or {}
     tags = list(tags.keys()) if isinstance(tags, dict) else []
-    return {"appid": appid, "name": name or d.get("name"), "tags": tags[:20]}
+    price = d.get("initialprice")
+    return {
+        "appid": appid,
+        "name": name or d.get("name"),
+        "tags": tags[:20],
+        "price": int(price) / 100 if str(price or "").isdigit() and int(price) > 0 else None,
+        "owners": d.get("owners"),
+        "publisher": d.get("publisher"),
+    }
 
 
 SOURCES = {"mc": ("metacritic", mc_lookup), "hltb": ("hltb", hltb_lookup), "steam": ("steam", steam_lookup)}
 
 
-def is_stale(entry: dict | None, refresh: bool) -> bool:
+# Felder, die ein Treffer haben muss; ältere Cache-Einträge ohne sie werden neu geholt
+REQUIRED = {"mc": "reviews", "hltb": "main", "steam": "price"}
+
+
+def is_stale(entry: dict | None, refresh: bool, src: str = "") -> bool:
     if refresh or not entry:
+        return True
+    if entry.get("v") and REQUIRED.get(src) not in entry["v"]:
         return True
     age = datetime.now(timezone.utc) - datetime.fromisoformat(entry["at"])
     if entry.get("err"):
@@ -421,7 +551,7 @@ def enrich(games: list[dict], cache: dict, overrides: dict, refresh: bool):
             # Override geändert -> neu nachschlagen
             if entry and entry.get("forced", ...) != (forced if forced is not ... else ...):
                 entry = None
-            if is_stale(entry, refresh):
+            if is_stale(entry, refresh, src):
                 todo.append((g, src, forced))
     log(f"Nachzuschlagen: {len(todo)} Abfragen")
     done = [0]
@@ -476,18 +606,102 @@ def save_json(p: Path, data, compact=False):
     tmp.replace(p)
 
 
+# ---------- Produktionsgröße (AAA / AA / Indie) ----------
+# Ein offizielles Label gibt es nirgends. Geschätzt aus Publisher, Steam-Tag "Indie",
+# Zahl der Metacritic-Kritiken und Steam-Vollpreis. Korrektur per overrides.json: {"<id>": {"tier": "AA"}}.
+
+BIG_PUBLISHERS = [
+    "xbox game studios", "microsoft", "bethesda", "activision", "blizzard", "electronic arts", "ea sports", "ea swiss",
+    "ubisoft", "square enix", "sega", "atlus", "bandai namco", "capcom", "warner bros", "2k", "take-two", "rockstar",
+    "sony", "playstation", "konami", "cd projekt", "epic games", "riot games", "nintendo", "mojang", "koei tecmo",
+]
+MID_PUBLISHERS = [
+    "thq nordic", "focus entertainment", "nacon", "bigben", "paradox", "deep silver", "plaion", "koch media", "505 games",
+    "kalypso", "frontier", "remedy", "saber", "techland", "private division", "microids", "aspyr", "embracer",
+    "gearbox", "quantic dream", "kepler", "nighthawk", "level-5", "spike chunsoft", "nis america", "marvelous",
+    "milestone", "codemasters", "people can fly", "starbreeze", "bloober", "11 bit", "warhorse", "dontnod",
+    "don't nod", "obsidian", "double fine", "ninja theory", "inxile", "compulsion", "the coalition", "arkane",
+]
+INDIE_PUBLISHERS = [
+    "devolver", "annapurna", "raw fury", "team17", "humble", "finji", "chucklefish", "coffee stain", "tinybuild",
+    "curve", "fellow traveller", "akupara", "thunderful", "headup", "playism", "freedom games", "dangen", "whitethorn",
+    "hooded horse", "neon doctrine", "ysbryd", "armor games", "kwalee", "silent games", "untold tales", "wired productions",
+    "merge games", "modus", "super rare", "serenity forge", "noodlecake", "surprise attack", "secret mode", "joystick ventures",
+    "dear villagers", "playtonic", "versus evil", "iam8bit", "skybound", "ratalaika", "eastasiasoft", "assemble",
+]
+
+
+def _has(name: str | None, lst: list[str]) -> bool:
+    n = (name or "").lower()
+    return any(x in n for x in lst)
+
+
+def classify_tier(g: dict, mc: dict | None, st: dict | None, year: int | None) -> tuple[str | None, str]:
+    st = st or {}
+    pubs = [g.get("pub"), st.get("publisher")]
+    big = any(_has(p, BIG_PUBLISHERS) for p in pubs)  # Entwickler allein macht kein AAA
+    mid = any(_has(p, MID_PUBLISHERS) for p in pubs + [g.get("dev")])
+    indie_pub = any(_has(p, INDIE_PUBLISHERS) for p in pubs)
+    indie_tag = "Indie" in (st.get("tags") or [])
+    reviews = (mc or {}).get("reviews")
+    price = st.get("price")
+    old = bool(year and year < 2008)  # ältere Spiele haben weniger Online-Kritiken und heute niedrigere Preise
+
+    why = []
+    if reviews:
+        why.append(f"{reviews} Kritiken")
+    if price:
+        why.append(f"Steam-Preis {price:.2f} €".replace(".", ","))
+    if indie_tag:
+        why.append("Steam-Tag Indie")
+    why.append(f"Publisher {g.get('pub') or st.get('publisher') or '?'}")
+    reason = ", ".join(why)
+
+    many = reviews is not None and reviews >= (35 if old else 55)
+    some = reviews is not None and reviews >= (15 if old else 25)
+    cheap = price is not None and price < 30 and not old
+    pricey = price is not None and price >= 50
+
+    if indie_tag or indie_pub:
+        return "Indie", reason  # große Indie-Hits (Hades, Hollow Knight) bleiben Indie
+    if big:
+        # Preise sinken mit der Zeit: ein günstiges Spiel mit sehr vielen Kritiken war trotzdem eine Großproduktion
+        if (cheap and not (reviews or 0) >= 80) or (reviews is not None and not some and not old):
+            return "AA", reason
+        return "AAA", reason
+    if many and pricey:
+        return "AAA", reason
+    if mid or some or (price is not None and price >= 30):
+        return "AA", reason
+    if reviews is None and price is None:
+        return None, reason  # zu wenig Anhaltspunkte
+    return "Indie", reason
+
+
 def merge_duplicates(games: list[dict]) -> list[dict]:
-    """Konsolen- und PC-Fassung haben oft eigene Store-IDs: gleiche Titel zu einem Eintrag zusammenführen."""
-    groups: dict[str, list[dict]] = {}
+    """Konsolen- und PC-Fassung (und Luna) haben eigene IDs: gleiche Spiele zu einem Eintrag zusammenführen.
+    Gleich = gleicher deutscher oder englischer Titel oder gleicher Metacritic-Eintrag."""
+    groups: list[list[dict]] = []
+    by_key: dict[str, int] = {}
     for g in games:
-        groups.setdefault(norm(g["t"]), []).append(g)
+        keys = {norm(g["t"]), norm(g.pop("_tEn", "") or g["t"])} - {""}
+        if g.get("mcSlug"):
+            keys.add("mc:" + g["mcSlug"])
+        hit = next((by_key[k] for k in keys if k in by_key), None)
+        if hit is None:
+            hit = len(groups)
+            groups.append([])
+        groups[hit].append(g)
+        for k in keys:
+            by_key.setdefault(k, hit)
     out = []
-    for grp in groups.values():
+    for grp in groups:
         # Basis: der Eintrag mit den meisten Angaben, bevorzugt mit Konsole
-        grp.sort(key=lambda g: (-len(g), "console" not in g["plat"]))
+        # Xbox-Eintrag als Basis (Link zur Xbox-Seite, Store-Angaben), sonst der mit den meisten Angaben
+        grp.sort(key=lambda g: (g["id"].startswith("luna-"), -len(g), "console" not in g["plat"]))
         base = dict(grp[0])
         for o in grp[1:]:
-            base["plat"] = [p for p in ("console", "pc", "cloud", "ea") if p in base["plat"] or p in o["plat"]]
+            base["plat"] = [p for p in PLATFORMS if p in base["plat"] or p in o["plat"]]
             for k in ("new", "leaving"):
                 if o.get(k):
                     base[k] = True
@@ -515,6 +729,14 @@ def main():
     de = fetch_products(ids, "de-de")
     en = fetch_products(ids, "en-us")
     games = [parse_product(de[i], en.get(i)) for i in ids if i in de]
+    try:
+        luna_games, luna_flags = fetch_luna()
+        if args.limit:
+            luna_games = luna_games[: args.limit]
+        games += luna_games
+        flags.update(luna_flags)
+    except Exception as e:  # noqa: BLE001
+        log(f"WARNUNG: Luna-Katalog nicht abrufbar ({e}) – Luna-Spiele fehlen in diesem Lauf")
 
     today = datetime.now(timezone.utc).date().isoformat()
     first_seen = load_json(FIRST_SEEN_FILE, {})
@@ -537,20 +759,25 @@ def main():
         f = flags[g["id"]]
         # Erscheinungsjahr = Original-Release (Metacritic, sonst HLTB), nicht der spätere Xbox-Port
         year = (mc and mc.get("year")) or (hl and hl.get("year")) or g["yx"]
+        tier, tier_why = classify_tier(g, mc, st, year)
+        if overrides.get(g["id"], {}).get("tier"):
+            tier, tier_why = overrides[g["id"]]["tier"], "manuell festgelegt"
         mc_ow = any("open-world" in x.lower() for x in (mc or {}).get("genres") or [])
         tags = (st or {}).get("tags") or []
         out.append({
             "id": g["id"],
             "t": g["t"],
+            "_tEn": g["tEn"],
             "img": g["img"],
             "sq": g["imgSq"] or None,
             "url": g["url"],
-            "plat": [p for p in ("console", "pc", "cloud", "ea") if p in f],
+            "lunaUrl": g.get("lunaUrl"),
+            "plat": [p for p in PLATFORMS if p in f],
             "new": "new" in f or None,
             "leaving": "leaving" in f or None,
             "added": first_seen.get(g["id"]),
             "genres": g["genres"],
-            "feat": g["feat"],
+            "feat": g["feat"] or sorted({STEAM_MODE_TAGS[t] for t in tags if t in STEAM_MODE_TAGS}),
             "onlineOnly": g["onlineOnly"] or None,
             "onlineMax": g["onlineMax"],
             "localMax": g["localMax"],
@@ -564,6 +791,8 @@ def main():
             "hComp": hl and hl.get("comp"),
             "hltbId": hl and hl["id"],
             "openWorld": True if ("Open World" in tags or mc_ow) else (False if st else None),
+            "tier": tier,
+            "tierWhy": tier_why,
             "tags": tags or None,
             "steam": st and st["appid"],
             "pegi": g["pegi"],
