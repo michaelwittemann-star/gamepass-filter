@@ -27641,6 +27641,45 @@
    }
   }
  },
+ "9PKZRN4RJRC9": {
+  "hltb": {
+   "at": "2026-10-16T09:52:07.756495+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 187426,
+    "main": null,
+    "title": "Chained Beasts",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-10-16T09:52:07.755733+00:00",
+   "v": {
+    "genres": [
+     "Action"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "chained-beasts",
+    "title": "Chained Beasts",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-10-16T09:52:07.757108+00:00",
+   "v": {
+    "appid": 3569420,
+    "name": "Chained Beasts",
+    "owners": "0 .. 20,000",
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
  "9PL427M642BV": {
   "hltb": {
    "at": "2026-10-15T13:47:43.016273+00:00",
@@ -40869,6 +40908,45 @@
   "steam": {
    "at": "2026-10-15T15:25:55.957495+00:00",
    "v": null
+  }
+ },
+ "epic-6a846880836044a2adad614ac771f487": {
+  "hltb": {
+   "at": "2026-10-16T09:52:07.757919+00:00",
+   "v": {
+    "comp": 3.9,
+    "extra": 2.7,
+    "id": 159259,
+    "main": 2.1,
+    "title": "Bad Cheese",
+    "year": 2025
+   }
+  },
+  "mc": {
+   "at": "2026-10-16T09:52:07.757436+00:00",
+   "v": {
+    "genres": [
+     "First-Person Adventure"
+    ],
+    "reviews": 5,
+    "score": 63,
+    "slug": "bad-cheese",
+    "title": "Bad Cheese",
+    "user": 7.1,
+    "userCount": 11,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-10-16T09:52:07.758096+00:00",
+   "v": {
+    "appid": 3094480,
+    "name": "Bad Cheese",
+    "owners": "0 .. 20,000",
+    "price": 12.99,
+    "publisher": "Feardemic",
+    "tags": []
+   }
   }
  },
  "epic-6aab3ddef4f84fbc9dd81c60f9d8549c": {
