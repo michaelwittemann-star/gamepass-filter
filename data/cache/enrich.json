@@ -2513,6 +2513,51 @@
    }
   }
  },
+ "9N0QFT016SGV": {
+  "hltb": {
+   "at": "2026-10-20T10:06:21.555006+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-20T10:06:21.554287+00:00",
+   "v": {
+    "genres": [
+     "Linear Action Adventure"
+    ],
+    "reviews": 41,
+    "score": 63,
+    "slug": "assassins-creed-chronicles-india",
+    "title": "Assassin's Creed Chronicles: India",
+    "user": 4.4,
+    "userCount": 113,
+    "year": 2016
+   }
+  },
+  "steam": {
+   "at": "2026-10-20T10:06:21.555391+00:00",
+   "v": {
+    "appid": 359610,
+    "name": "Assassin’s Creed® Chronicles: India",
+    "owners": "200,000 .. 500,000",
+    "price": 9.99,
+    "publisher": "Ubisoft Entertainment",
+    "tags": [
+     "Action",
+     "Adventure",
+     "Assassin",
+     "Stealth",
+     "2.5D",
+     "Platformer",
+     "Singleplayer",
+     "Parkour",
+     "Side Scroller",
+     "2D",
+     "Historical",
+     "Open World"
+    ]
+   }
+  }
+ },
  "9N0QWXC09MPT": {
   "hltb": {
    "at": "2026-10-15T13:31:11.588957+00:00",
@@ -25690,6 +25735,55 @@
      "PvE",
      "Resource Management",
      "Multiplayer"
+    ]
+   }
+  }
+ },
+ "9PG0ZSTFBL1T": {
+  "hltb": {
+   "at": "2026-10-20T10:06:21.556539+00:00",
+   "v": {
+    "comp": 7.8,
+    "extra": 4.7,
+    "id": 37972,
+    "main": 3.2,
+    "title": "Trials of the Blood Dragon",
+    "year": 2016
+   }
+  },
+  "mc": {
+   "at": "2026-10-20T10:06:21.556194+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": 30,
+    "score": 55,
+    "slug": "trials-of-the-blood-dragon",
+    "title": "Trials of the Blood Dragon",
+    "user": 5.7,
+    "userCount": 39,
+    "year": 2016
+   }
+  },
+  "steam": {
+   "at": "2026-10-20T10:06:21.556932+00:00",
+   "v": {
+    "appid": 435480,
+    "name": "Trials of the Blood Dragon",
+    "owners": "50,000 .. 100,000",
+    "price": 14.99,
+    "publisher": "Ubisoft",
+    "tags": [
+     "Racing",
+     "Retro",
+     "Platformer",
+     "1980s",
+     "Great Soundtrack",
+     "Cyberpunk",
+     "Action",
+     "Anime",
+     "Singleplayer"
     ]
    }
   }
