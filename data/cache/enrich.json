@@ -51601,6 +51601,66 @@
    }
   }
  },
+ "ps-10000886": {
+  "hltb": {
+   "at": "2026-10-21T10:11:15.270576+00:00",
+   "v": {
+    "comp": 89.8,
+    "extra": 62.9,
+    "id": 79775,
+    "main": 28.7,
+    "title": "Horizon Forbidden West",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-10-21T10:11:15.269799+00:00",
+   "v": {
+    "genres": [
+     "Open-World Action"
+    ],
+    "reviews": 38,
+    "score": 89,
+    "slug": "horizon-forbidden-west-complete-edition",
+    "title": "Horizon Forbidden West: Complete Edition",
+    "user": 7.4,
+    "userCount": 1061,
+    "year": 2024
+   }
+  },
+  "steam": {
+   "at": "2026-10-21T10:11:15.270959+00:00",
+   "v": {
+    "appid": 2420110,
+    "name": "Horizon Forbidden West™ Complete Edition",
+    "owners": "1,000,000 .. 2,000,000",
+    "price": 59.99,
+    "publisher": "PlayStation Publishing LLC",
+    "tags": [
+     "Open World",
+     "Singleplayer",
+     "Female Protagonist",
+     "Action",
+     "Exploration",
+     "RPG",
+     "Post-apocalyptic",
+     "Story Rich",
+     "Third Person",
+     "Sci-fi",
+     "Robots",
+     "Action RPG",
+     "Adventure",
+     "Atmospheric",
+     "LGBTQ+",
+     "Great Soundtrack",
+     "Controller",
+     "Action-Adventure",
+     "Stealth",
+     "Politics"
+    ]
+   }
+  }
+ },
  "ps-10000899": {
   "hltb": {
    "at": "2026-10-15T16:49:26.315639+00:00",
@@ -58623,6 +58683,45 @@
    }
   }
  },
+ "ps-10007134": {
+  "hltb": {
+   "at": "2026-10-21T10:11:15.271960+00:00",
+   "v": {
+    "comp": 24.4,
+    "extra": 14.7,
+    "id": 155658,
+    "main": 12.2,
+    "title": "Mafia: The Old Country",
+    "year": 2025
+   }
+  },
+  "mc": {
+   "at": "2026-10-21T10:11:15.271545+00:00",
+   "v": {
+    "genres": [
+     "Linear Action Adventure"
+    ],
+    "reviews": 85,
+    "score": 73,
+    "slug": "mafia-the-old-country",
+    "title": "Mafia: The Old Country",
+    "user": 7.5,
+    "userCount": 1837,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-10-21T10:11:15.272137+00:00",
+   "v": {
+    "appid": 1941540,
+    "name": "Mafia: The Old Country",
+    "owners": "0 .. 20,000",
+    "price": 49.99,
+    "publisher": "2K",
+    "tags": []
+   }
+  }
+ },
  "ps-10007196": {
   "hltb": {
    "at": "2026-10-15T16:44:36.670759+00:00",
@@ -61724,6 +61823,66 @@
    "v": null
   }
  },
+ "ps-10009390": {
+  "hltb": {
+   "at": "2026-10-21T10:11:17.955139+00:00",
+   "v": {
+    "comp": 7.6,
+    "extra": 6.2,
+    "id": 157305,
+    "main": 5.1,
+    "title": "The Midnight Walk",
+    "year": 2025
+   }
+  },
+  "mc": {
+   "at": "2026-10-21T10:11:17.248451+00:00",
+   "v": {
+    "genres": [
+     "Action Adventure"
+    ],
+    "reviews": 33,
+    "score": 77,
+    "slug": "the-midnight-walk",
+    "title": "The Midnight Walk",
+    "user": 8.2,
+    "userCount": 155,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-10-21T10:11:19.219610+00:00",
+   "v": {
+    "appid": 2863640,
+    "name": "The Midnight Walk",
+    "owners": "20,000 .. 50,000",
+    "price": 29.99,
+    "publisher": "Fast Travel Games",
+    "tags": [
+     "Adventure",
+     "Atmospheric",
+     "Horror",
+     "Dark Fantasy",
+     "Singleplayer",
+     "Dark",
+     "Stealth",
+     "Narration",
+     "VR",
+     "Cinematic",
+     "Story Rich",
+     "Action-Adventure",
+     "Fantasy",
+     "Emotional",
+     "Puzzle",
+     "Exploration",
+     "Hand-drawn",
+     "Controller",
+     "First-Person",
+     "Lore-Rich"
+    ]
+   }
+  }
+ },
  "ps-10009392": {
   "hltb": {
    "at": "2026-10-15T16:43:33.424420+00:00",
@@ -62077,6 +62236,38 @@
    }
   }
  },
+ "ps-10009931": {
+  "hltb": {
+   "at": "2026-10-21T10:11:15.272900+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 177236,
+    "main": null,
+    "title": "Monster Energy Supercross 25 - The Official Video Game",
+    "year": 2025
+   }
+  },
+  "mc": {
+   "at": "2026-10-21T10:11:15.272553+00:00",
+   "v": {
+    "genres": [
+     "Racing Sim"
+    ],
+    "reviews": 14,
+    "score": 71,
+    "slug": "monster-energy-supercross-25-the-official-video",
+    "title": "Monster Energy Supercross 25 - The Official Video Game",
+    "user": 6.1,
+    "userCount": 10,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-10-21T10:11:15.937141+00:00",
+   "v": null
+  }
+ },
  "ps-10010137": {
   "hltb": {
    "at": "2026-10-15T16:57:49.925402+00:00",
@@ -62265,6 +62456,38 @@
   "steam": {
    "at": "2026-10-15T16:48:16.026725+00:00",
    "v": null
+  }
+ },
+ "ps-10010437": {
+  "hltb": {
+   "at": "2026-10-21T10:11:17.436688+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-21T10:11:17.064027+00:00",
+   "v": {
+    "genres": [
+     "Survival"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "poppy-playtime-chapter-2",
+    "title": "Poppy Playtime: Chapter 2",
+    "user": 6.9,
+    "userCount": 120,
+    "year": 2024
+   }
+  },
+  "steam": {
+   "at": "2026-10-21T10:11:16.836417+00:00",
+   "v": {
+    "appid": 1817490,
+    "name": "Poppy Playtime - Chapter 2",
+    "owners": "0 .. 20,000",
+    "price": 9.99,
+    "publisher": "Mob Entertainment",
+    "tags": []
+   }
   }
  },
  "ps-10010458": {
@@ -64145,6 +64368,45 @@
   "steam": {
    "at": "2026-10-15T16:48:31.670321+00:00",
    "v": null
+  }
+ },
+ "ps-10018765": {
+  "hltb": {
+   "at": "2026-10-21T10:11:17.271298+00:00",
+   "v": {
+    "comp": 79.0,
+    "extra": 60.6,
+    "id": 167555,
+    "main": null,
+    "title": "Mycopunk",
+    "year": 2025
+   }
+  },
+  "mc": {
+   "at": "2026-10-21T10:11:15.273067+00:00",
+   "v": {
+    "genres": [
+     "FPS"
+    ],
+    "reviews": 7,
+    "score": null,
+    "slug": "mycopunk",
+    "title": "Mycopunk",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-10-21T10:11:16.374968+00:00",
+   "v": {
+    "appid": 3247750,
+    "name": "Mycopunk",
+    "owners": "0 .. 20,000",
+    "price": 14.99,
+    "publisher": "Devolver Digital",
+    "tags": []
+   }
   }
  },
  "ps-10019710": {
@@ -78492,6 +78754,66 @@
   "steam": {
    "at": "2026-10-15T16:43:03.480602+00:00",
    "v": null
+  }
+ },
+ "ps-234823": {
+  "hltb": {
+   "at": "2026-10-21T10:11:17.821065+00:00",
+   "v": {
+    "comp": 74.1,
+    "extra": 56.5,
+    "id": 68118,
+    "main": 41.0,
+    "title": "Tales of Arise",
+    "year": 2021
+   }
+  },
+  "mc": {
+   "at": "2026-10-21T10:11:17.078952+00:00",
+   "v": {
+    "genres": [
+     "Action RPG"
+    ],
+    "reviews": 27,
+    "score": 73,
+    "slug": "tales-of-arise-beyond-the-dawn",
+    "title": "Tales of Arise: Beyond the Dawn",
+    "user": 7.7,
+    "userCount": 46,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-10-21T10:11:17.948449+00:00",
+   "v": {
+    "appid": 740130,
+    "name": "Tales of ARISE",
+    "owners": "2,000,000 .. 5,000,000",
+    "price": 49.99,
+    "publisher": "Bandai Namco Entertainment",
+    "tags": [
+     "Anime",
+     "JRPG",
+     "RPG",
+     "Action RPG",
+     "Open World",
+     "Singleplayer",
+     "Fantasy",
+     "Action",
+     "Story Rich",
+     "Third Person",
+     "Magic",
+     "Adventure",
+     "Combat",
+     "Romance",
+     "Female Protagonist",
+     "Controller",
+     "Character Customization",
+     "Sexual Content",
+     "Hack and Slash",
+     "Multiplayer"
+    ]
+   }
   }
  },
  "ps-234902": {
