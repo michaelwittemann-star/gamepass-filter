@@ -21980,6 +21980,45 @@
    }
   }
  },
+ "9P7S9F02293J": {
+  "hltb": {
+   "at": "2026-10-22T10:13:12.941092+00:00",
+   "v": {
+    "comp": 6.0,
+    "extra": 4.0,
+    "id": 172173,
+    "main": 4.0,
+    "title": "Dodo Duckie!",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-10-22T10:13:12.940504+00:00",
+   "v": {
+    "genres": [
+     "3D Platformer"
+    ],
+    "reviews": 5,
+    "score": 81,
+    "slug": "dodo-duckie",
+    "title": "Dodo Duckie!",
+    "user": null,
+    "userCount": 3,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-10-22T10:13:12.941334+00:00",
+   "v": {
+    "appid": 3358170,
+    "name": "Dodo Duckie",
+    "owners": "0 .. 20,000",
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
  "9P7SL78VHVMF": {
   "hltb": {
    "at": "2026-10-15T14:01:23.891131+00:00",
@@ -63650,6 +63689,64 @@
    }
   }
  },
+ "ps-10012956": {
+  "hltb": {
+   "at": "2026-10-22T10:13:12.942435+00:00",
+   "v": {
+    "comp": 190.0,
+    "extra": 57.5,
+    "id": 83478,
+    "main": 20.5,
+    "title": "RollerCoaster Tycoon 3: Complete Edition",
+    "year": 2020
+   }
+  },
+  "mc": {
+   "at": "2026-10-22T10:13:12.942316+00:00",
+   "v": {
+    "genres": [
+     "Tycoon"
+    ],
+    "reviews": 18,
+    "score": 72,
+    "slug": "rollercoaster-tycoon-3-complete-edition",
+    "title": "RollerCoaster Tycoon 3: Complete Edition",
+    "user": 7.1,
+    "userCount": 22,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-10-22T10:13:13.654276+00:00",
+   "v": {
+    "appid": 1368820,
+    "name": "RollerCoaster Tycoon® 3: Complete Edition",
+    "owners": "200,000 .. 500,000",
+    "price": 19.99,
+    "publisher": "Atari, Aspyr (Mac)",
+    "tags": [
+     "Management",
+     "Strategy",
+     "Building",
+     "Simulation",
+     "City Builder",
+     "Casual",
+     "Sandbox",
+     "Family Friendly",
+     "Resource Management",
+     "3D",
+     "Cartoony",
+     "Colorful",
+     "Stylized",
+     "Funny",
+     "Singleplayer",
+     "Multiplayer",
+     "Base-Building",
+     "Cinematic"
+    ]
+   }
+  }
+ },
  "ps-10013168": {
   "hltb": {
    "at": "2026-10-15T16:56:12.169045+00:00",
@@ -64368,6 +64465,45 @@
   "steam": {
    "at": "2026-10-15T16:48:31.670321+00:00",
    "v": null
+  }
+ },
+ "ps-10018570": {
+  "hltb": {
+   "at": "2026-10-22T10:13:12.941847+00:00",
+   "v": {
+    "comp": 17.5,
+    "extra": 8.1,
+    "id": 2562,
+    "main": 5.3,
+    "title": "Dino Crisis 2",
+    "year": 2000
+   }
+  },
+  "mc": {
+   "at": "2026-10-22T10:13:12.941518+00:00",
+   "v": {
+    "genres": [
+     "Survival"
+    ],
+    "reviews": 13,
+    "score": 86,
+    "slug": "dino-crisis-2",
+    "title": "Dino Crisis 2",
+    "user": 8.5,
+    "userCount": 346,
+    "year": 2000
+   }
+  },
+  "steam": {
+   "at": "2026-10-22T10:13:12.942121+00:00",
+   "v": {
+    "appid": 4249140,
+    "name": "Dino Crisis 2",
+    "owners": "0 .. 20,000",
+    "price": 9.99,
+    "publisher": "CAPCOM Co., Ltd.",
+    "tags": []
+   }
   }
  },
  "ps-10018765": {
