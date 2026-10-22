@@ -41107,6 +41107,66 @@
    "v": null
   }
  },
+ "epic-4e469c7d8bbf49bcabc2c07127d3d946": {
+  "hltb": {
+   "at": "2026-10-22T19:21:36.218843+00:00",
+   "v": {
+    "comp": 17.0,
+    "extra": 8.4,
+    "id": 125118,
+    "main": 7.0,
+    "title": "Sorry We're Closed",
+    "year": 2024
+   }
+  },
+  "mc": {
+   "at": "2026-10-22T19:21:36.218237+00:00",
+   "v": {
+    "genres": [
+     "Survival"
+    ],
+    "reviews": 21,
+    "score": 83,
+    "slug": "sorry-were-closed",
+    "title": "Sorry We're Closed",
+    "user": 6,
+    "userCount": 52,
+    "year": 2024
+   }
+  },
+  "steam": {
+   "at": "2026-10-22T19:21:36.219148+00:00",
+   "v": {
+    "appid": 1796580,
+    "name": "Sorry We're Closed",
+    "owners": "20,000 .. 50,000",
+    "price": 24.99,
+    "publisher": "Akupara Games",
+    "tags": [
+     "LGBTQ+",
+     "Female Protagonist",
+     "Survival Horror",
+     "Psychological Horror",
+     "Retro",
+     "Atmospheric",
+     "Indie",
+     "Singleplayer",
+     "Dark",
+     "Puzzle",
+     "Shooter",
+     "Action-Adventure",
+     "Action",
+     "Adventure",
+     "3D",
+     "Horror",
+     "Supernatural",
+     "Stylized",
+     "Third Person",
+     "Multiple Endings"
+    ]
+   }
+  }
+ },
  "epic-6a846880836044a2adad614ac771f487": {
   "hltb": {
    "at": "2026-10-16T09:52:07.757919+00:00",
@@ -46341,6 +46401,66 @@
     "price": 9.99,
     "publisher": "Meeple Corp",
     "tags": []
+   }
+  }
+ },
+ "luna-B0HN8HNG2Z": {
+  "hltb": {
+   "at": "2026-10-22T19:21:36.217564+00:00",
+   "v": {
+    "comp": 13.7,
+    "extra": 10.3,
+    "id": 152334,
+    "main": 8.0,
+    "title": "A Quiet Place: The Road Ahead",
+    "year": 2024
+   }
+  },
+  "mc": {
+   "at": "2026-10-22T19:21:36.216873+00:00",
+   "v": {
+    "genres": [
+     "Survival"
+    ],
+    "reviews": 33,
+    "score": 67,
+    "slug": "a-quiet-place-the-road-ahead",
+    "title": "A Quiet Place: The Road Ahead",
+    "user": 6.5,
+    "userCount": 232,
+    "year": 2024
+   }
+  },
+  "steam": {
+   "at": "2026-10-22T19:21:36.217924+00:00",
+   "v": {
+    "appid": 2233120,
+    "name": "A Quiet Place: The Road Ahead",
+    "owners": "50,000 .. 100,000",
+    "price": 29.99,
+    "publisher": "Saber Interactive",
+    "tags": [
+     "Stealth",
+     "Survival Horror",
+     "Horror",
+     "Female Protagonist",
+     "Walking Simulator",
+     "First-Person",
+     "Thriller",
+     "Post-apocalyptic",
+     "Story Rich",
+     "Atmospheric",
+     "Adventure",
+     "Linear",
+     "Drama",
+     "Emotional",
+     "Cinematic",
+     "Aliens",
+     "Multiplayer",
+     "Silent Protagonist",
+     "Puzzle",
+     "Action"
+    ]
    }
   }
  },
