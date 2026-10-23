@@ -3,6 +3,64 @@
   "deals": [
    {
     "src": "prime",
+    "until": "2026-11-25",
+    "via": "Legacy Games"
+   }
+  ],
+  "dev": null,
+  "feat": [],
+  "genres": [],
+  "id": "prime-c3af790f-8ce0-42b2-8c16-ebecb97303f5",
+  "img": "https://m.media-amazon.com/images/I/61MzWa7HYbL._SX450_._FMjpg_.jpg",
+  "imgSq": true,
+  "links": {
+   "prime": "https://gaming.amazon.com/time-travel-escape-room-game-legacy/dp/amzn1.pg.item.c3af790f-8ce0-42b2-8c16-ebecb97303f5?ref_=SM_TimeTravelEscapeRoomGame_S01_FGWP_CRWN"
+  },
+  "localMax": null,
+  "onlineMax": null,
+  "onlineOnly": false,
+  "pegi": null,
+  "pub": null,
+  "stars": null,
+  "t": "Time Travel: Escape Room Game",
+  "tEn": "Time Travel: Escape Room Game",
+  "tFull": "Time Travel: Escape Room Game",
+  "url": "https://gaming.amazon.com/time-travel-escape-room-game-legacy/dp/amzn1.pg.item.c3af790f-8ce0-42b2-8c16-ebecb97303f5?ref_=SM_TimeTravelEscapeRoomGame_S01_FGWP_CRWN",
+  "yx": null
+ },
+ {
+  "deals": [
+   {
+    "src": "prime",
+    "until": "2026-11-25",
+    "via": "Epic"
+   }
+  ],
+  "dev": null,
+  "feat": [],
+  "genres": [],
+  "id": "prime-69de011b-6575-41ab-9964-971e59cf7457",
+  "img": "https://m.media-amazon.com/images/I/61oHRL5seYL._SX450_._FMjpg_.jpg",
+  "imgSq": true,
+  "links": {
+   "prime": "https://gaming.amazon.com/ad-infinitum-epic/dp/amzn1.pg.item.69de011b-6575-41ab-9964-971e59cf7457?ref_=SM_AdInfinitum_S01_FGWP_CRWN"
+  },
+  "localMax": null,
+  "onlineMax": null,
+  "onlineOnly": false,
+  "pegi": null,
+  "pub": null,
+  "stars": null,
+  "t": "Ad Infinitum",
+  "tEn": "Ad Infinitum",
+  "tFull": "Ad Infinitum",
+  "url": "https://gaming.amazon.com/ad-infinitum-epic/dp/amzn1.pg.item.69de011b-6575-41ab-9964-971e59cf7457?ref_=SM_AdInfinitum_S01_FGWP_CRWN",
+  "yx": null
+ },
+ {
+  "deals": [
+   {
+    "src": "prime",
     "until": "2026-12-16",
     "via": "Amazon Games"
    }
@@ -258,93 +316,6 @@
   "tEn": "The Da Vinci Cryptex",
   "tFull": "The Da Vinci Cryptex",
   "url": "https://gaming.amazon.com/the-da-vinci-cryptex-legacy/dp/amzn1.pg.item.6cd3cd34-9ede-48df-bf9a-cc154ed97525?ref_=SM_TheDaVinciCryptex_S01_FGWP_CRWN",
-  "yx": null
- },
- {
-  "deals": [
-   {
-    "src": "prime",
-    "until": "2026-10-21",
-    "via": "Epic"
-   }
-  ],
-  "dev": null,
-  "feat": [],
-  "genres": [],
-  "id": "prime-2cf2cac0-6b4d-4b5e-9064-2005dad4ede7",
-  "img": "https://m.media-amazon.com/images/I/61mTwPrcqsL._SX450_._FMjpg_.jpg",
-  "imgSq": true,
-  "links": {
-   "prime": "https://gaming.amazon.com/rims-racing-epic/dp/amzn1.pg.item.2cf2cac0-6b4d-4b5e-9064-2005dad4ede7?ref_=SM_RimsRacing_S01_FGWP_CRWN"
-  },
-  "localMax": null,
-  "onlineMax": null,
-  "onlineOnly": false,
-  "pegi": null,
-  "pub": null,
-  "stars": null,
-  "t": "RiMS Racing",
-  "tEn": "RiMS Racing",
-  "tFull": "RiMS Racing",
-  "url": "https://gaming.amazon.com/rims-racing-epic/dp/amzn1.pg.item.2cf2cac0-6b4d-4b5e-9064-2005dad4ede7?ref_=SM_RimsRacing_S01_FGWP_CRWN",
-  "yx": null
- },
- {
-  "deals": [
-   {
-    "src": "prime",
-    "until": "2026-10-21",
-    "via": "Amazon Games"
-   }
-  ],
-  "dev": null,
-  "feat": [],
-  "genres": [],
-  "id": "prime-11e467f2-b0e3-4a1e-9dee-4cd723e92ee9",
-  "img": "https://m.media-amazon.com/images/I/71wVd0xq9oL._SX450_._FMjpg_.jpg",
-  "imgSq": true,
-  "links": {
-   "prime": "https://gaming.amazon.com/wall-world-2-aga/dp/amzn1.pg.item.11e467f2-b0e3-4a1e-9dee-4cd723e92ee9?ref_=SM_WallWorld2_S01_FGWP_CRWN"
-  },
-  "localMax": null,
-  "onlineMax": null,
-  "onlineOnly": false,
-  "pegi": null,
-  "pub": null,
-  "stars": null,
-  "t": "Wall World 2",
-  "tEn": "Wall World 2",
-  "tFull": "Wall World 2",
-  "url": "https://gaming.amazon.com/wall-world-2-aga/dp/amzn1.pg.item.11e467f2-b0e3-4a1e-9dee-4cd723e92ee9?ref_=SM_WallWorld2_S01_FGWP_CRWN",
-  "yx": null
- },
- {
-  "deals": [
-   {
-    "src": "prime",
-    "until": "2026-10-21",
-    "via": "Microsoft Store"
-   }
-  ],
-  "dev": null,
-  "feat": [],
-  "genres": [],
-  "id": "prime-1c490f2e-c698-4077-94a6-6a69c98945e2",
-  "img": "https://m.media-amazon.com/images/I/71dBSw0a0OL._SX450_._FMjpg_.jpg",
-  "imgSq": true,
-  "links": {
-   "prime": "https://gaming.amazon.com/doom-eternal-microsoft/dp/amzn1.pg.item.1c490f2e-c698-4077-94a6-6a69c98945e2?ref_=SM_DOOMEternal_S02_FGWP_CRWN"
-  },
-  "localMax": null,
-  "onlineMax": null,
-  "onlineOnly": false,
-  "pegi": null,
-  "pub": null,
-  "stars": null,
-  "t": "DOOM Eternal",
-  "tEn": "DOOM Eternal",
-  "tFull": "DOOM Eternal",
-  "url": "https://gaming.amazon.com/doom-eternal-microsoft/dp/amzn1.pg.item.1c490f2e-c698-4077-94a6-6a69c98945e2?ref_=SM_DOOMEternal_S02_FGWP_CRWN",
   "yx": null
  },
  {

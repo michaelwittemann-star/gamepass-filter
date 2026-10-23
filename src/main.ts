@@ -8,7 +8,9 @@ interface Game {
   url: string;
   links?: Record<string, string>;
   ps?: string[];
-  deals?: { src: string; until?: string; from?: string; via?: string }[];
+  deals?: { src: string; until?: string; from?: string; via?: string; price?: number; initial?: number; disc?: number }[];
+  sp?: number;
+  spN?: number;
   img2?: string;
   plat: string[];
   new?: boolean;
@@ -52,6 +54,7 @@ interface State {
   year: [number | null, number | null];
   mc: [number | null, number | null];
   us: [number | null, number | null]; // User Score x10 (0–100), damit die URL ganzzahlig bleibt
+  sp: [number | null, number | null]; // Steam: % positive Bewertungen
   tab: 'all' | 'list';
   hKind: HKey;
   hours: [number | null, number | null];
@@ -108,7 +111,11 @@ const FREE: Record<string, string> = {
   primeClaim: 'Prime: zum Abholen',
   primeSoon: 'Prime: bald abholbar',
 };
-const PLATS: Record<string, string> = { ...SUBS, ...FREE };
+const STEAMD: Record<string, string> = {
+  steamFree: 'Steam: kostenlos',
+  steamCheap: 'Steam: bis 5 €',
+};
+const PLATS: Record<string, string> = { ...SUBS, ...FREE, ...STEAMD };
 const PLAT_SHORT: Record<string, string> = {
   lunaPrime: 'Luna',
   lunaPremium: 'Luna Premium',
@@ -118,8 +125,10 @@ const PLAT_SHORT: Record<string, string> = {
   epicSoon: 'Epic bald gratis',
   primeClaim: 'Prime-Abholspiel',
   primeSoon: 'Prime bald',
+  steamFree: 'Steam kostenlos',
+  steamCheap: 'Steam',
 };
-const LINK_LABELS: Record<string, string> = { luna: 'Luna', netflix: 'Netflix', playstation: 'PlayStation', epic: 'Epic', prime: 'Prime' };
+const LINK_LABELS: Record<string, string> = { steam: 'Steam', luna: 'Luna', netflix: 'Netflix', playstation: 'PlayStation', epic: 'Epic', prime: 'Prime' };
 const STATUS: Record<string, string> = { new: 'Neu im Game Pass', leaving: 'Verlässt bald' };
 const MODES: Record<string, string> = {
   single: 'Einzelspieler',
@@ -145,6 +154,8 @@ const H_STEPS = [0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 25, 30, 40, 50, 60, 80,
 const SORTS: Record<string, string> = {
   mc: 'Metascore',
   us: 'User Score',
+  sp: 'Steam-Bewertung',
+  price: 'Steam-Preis (günstigste zuerst)',
   listAdded: 'Zuletzt auf meine Liste',
   year: 'Neueste zuerst',
   yearAsc: 'Älteste zuerst',
@@ -158,6 +169,10 @@ const SORTS: Record<string, string> = {
 
 const $ = <T extends HTMLElement = HTMLElement>(sel: string) => document.querySelector(sel) as T;
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
+const eur = (v: number) => v.toFixed(2).replace('.', ',') + ' €';
+/** günstigstes Steam-Angebot eines Spiels */
+const steamDeal = (g: Game) =>
+  (g.deals || []).filter((d) => d.src === 'steam').sort((a, b) => (a.price ?? 0) - (b.price ?? 0))[0];
 const fmtH = (h: number) => (h < 10 ? h.toFixed(1).replace('.', ',').replace(',0', '') : String(Math.round(h)));
 
 let games: Game[] = [];
@@ -173,6 +188,7 @@ function defaults(): State {
     year: [null, null],
     mc: [null, null],
     us: [null, null],
+    sp: [null, null],
     tab: 'all',
     hKind: 'hMain',
     hours: [null, null],
@@ -221,6 +237,7 @@ function saveUrl() {
   if (S.year.some((x) => x !== null)) p.set('year', rng(S.year));
   if (S.mc.some((x) => x !== null)) p.set('mc', rng(S.mc));
   if (S.us.some((x) => x !== null)) p.set('us', rng(S.us));
+  if (S.sp.some((x) => x !== null)) p.set('sp', rng(S.sp));
   if (S.tab === 'list') p.set('tab', 'list');
   if (S.hKind !== d.hKind) p.set('hk', S.hKind);
   if (S.hours.some((x) => x !== null)) p.set('h', rng(S.hours));
@@ -250,6 +267,7 @@ function loadUrl() {
   s.year = parseRng(p.get('year'));
   s.mc = parseRng(p.get('mc'));
   s.us = parseRng(p.get('us'));
+  s.sp = parseRng(p.get('sp'));
   s.tab = p.get('tab') === 'list' ? 'list' : 'all';
   if (p.get('hk') && p.get('hk')! in H_KINDS) s.hKind = p.get('hk') as HKey;
   s.hours = parseRng(p.get('h'));
@@ -299,6 +317,7 @@ function matches(g: Game) {
   if (!inRange(g.y, S.year)) return false;
   if (!inRange(g.mc, S.mc)) return false;
   if (!inRange(g.us !== undefined ? g.us * 10 : undefined, S.us)) return false;
+  if (!inRange(g.sp, S.sp)) return false;
   if (!inRange(g[S.hKind], S.hours)) return false;
   if (!matchTri(g.genres, S.genres, 'any')) return false;
   if (S.modes.length && !S.modes.every((m) => g.feat?.includes(m))) return false;
@@ -332,6 +351,8 @@ function sortGames(list: Game[]) {
   const cmp: Record<string, (a: Game, b: Game) => number> = {
     mc: by((g) => g.mc, -1),
     us: by((g) => g.us, -1),
+    sp: by((g) => (g.sp === undefined ? undefined : g.sp + Math.min(g.spN || 0, 1e6) / 1e7), -1),
+    price: by((g) => steamDeal(g)?.price, 1),
     listAdded: by((g) => myList.get(g.id)?.at, -1),
     year: by((g) => g.y, -1),
     yearAsc: by((g) => g.y, 1),
@@ -350,11 +371,11 @@ function sortGames(list: Game[]) {
 
 // ---------- Kacheln ----------
 
-type Col = 'mc' | 'y' | 'h' | 'tier' | 'plat' | 'genres' | 'modes' | 'online' | 'players' | 'ow' | 'tags' | 'tech' | 'pegi' | 'stars' | 'added';
+type Col = 'mc' | 'y' | 'h' | 'tier' | 'sp' | 'plat' | 'genres' | 'modes' | 'online' | 'players' | 'ow' | 'tags' | 'tech' | 'pegi' | 'stars' | 'added';
 
 function visibleCols(): Col[] {
   const c = new Set<Col>();
-  const sortCol: Record<string, Col> = { mc: 'mc', us: 'mc', year: 'y', yearAsc: 'y', hAsc: 'h', hDesc: 'h', stars: 'stars', added: 'added' };
+  const sortCol: Record<string, Col> = { mc: 'mc', us: 'mc', sp: 'sp', year: 'y', yearAsc: 'y', hAsc: 'h', hDesc: 'h', stars: 'stars', added: 'added' };
   if (S.mc.some((x) => x !== null) || S.us.some((x) => x !== null)) c.add('mc');
   if (S.year.some((x) => x !== null)) c.add('y');
   if (S.hours.some((x) => x !== null)) c.add('h');
@@ -366,13 +387,14 @@ function visibleCols(): Col[] {
   if (S.players) c.add('players');
   if (S.ow !== 'any') c.add('ow');
   if (S.tier.length) c.add('tier');
+  if (S.sp.some((x) => x !== null)) c.add('sp');
   if (Object.values(S.tags).some((v) => v > 0)) c.add('tags');
   if (S.tech.length) c.add('tech');
   if (S.pegi) c.add('pegi');
   if (S.stars) c.add('stars');
   // ohne aktive Filter: die drei Kernwerte
   if (c.size <= 1) ['mc', 'y', 'h'].forEach((x) => c.add(x as Col));
-  const order: Col[] = ['mc', 'y', 'h', 'tier', 'stars', 'players', 'ow', 'online', 'modes', 'genres', 'tags', 'tech', 'plat', 'pegi', 'added'];
+  const order: Col[] = ['mc', 'y', 'h', 'tier', 'sp', 'stars', 'players', 'ow', 'online', 'modes', 'genres', 'tags', 'tech', 'plat', 'pegi', 'added'];
   return order.filter((x) => c.has(x));
 }
 
@@ -420,6 +442,10 @@ function cellHtml(g: Game, col: Col): string {
     }
     case 'ow':
       return g.openWorld === undefined ? val('Open World ?', 'Unbekannt', true) : val(g.openWorld ? 'Open World' : 'keine Open World', 'Steam-Tags / Metacritic');
+    case 'sp':
+      return g.sp !== undefined
+        ? val(`👍 ${g.sp} %`, `Steam: ${g.sp} % positive Bewertungen${g.spN ? ` (${g.spN.toLocaleString('de-DE')})` : ''}`)
+        : val('👍 –', 'Keine Steam-Bewertung', true);
     case 'tier':
       return g.tier ? val(g.tier, 'Geschätzte Produktionsgröße: ' + (g.tierWhy || '')) : val('AAA/AA ?', 'Zu wenig Anhaltspunkte', true);
     case 'online':
@@ -441,6 +467,8 @@ function cellHtml(g: Game, col: Col): string {
           .map((p) => {
             const via = p.startsWith('prime') ? g.deals?.find((d) => d.src === 'prime')?.via : undefined;
             const dev = p.startsWith('ps') && g.ps?.length ? g.ps.join('/') : undefined;
+            const st = p === 'steamCheap' ? steamDeal(g) : undefined;
+            if (st?.price !== undefined) return `Steam ${eur(st.price)}${st.disc ? ` (statt ${eur(st.initial || 0)})` : ''}`;
             return (PLAT_SHORT[p] || PLATS[p]) + (via ? ` (${via})` : dev ? ` (${dev})` : '');
           })
           .join(' · '),
@@ -473,8 +501,14 @@ function cardHtml(g: Game, cols: Col[]) {
         .join(' · ')}</div>`
     : '';
   const dm = (d?: string) => (d ? new Date(d).toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit' }) : '');
-  const dealBadges = (g.deals || []).map((d) =>
-    d.src === 'epic'
+  // mehrere Steam-Fassungen (z. B. normal + GOTY) zusammengeführt: nur das günstigste Angebot zeigen
+  const cheapest = steamDeal(g);
+  const dealBadges = (g.deals || []).filter((d) => d.src !== 'steam' || d === cheapest).map((d) =>
+    d.src === 'steam'
+      ? `<span class="badge steam" title="Steam${d.disc ? ` – statt ${eur(d.initial || 0)}` : ''}">${
+          !d.price ? 'F2P' : d.disc ? `−${d.disc} % · ${eur(d.price)}` : eur(d.price)
+        }</span>`
+      : d.src === 'epic'
       ? `<span class="badge free" title="Gratis im Epic Games Store">${d.until ? 'GRATIS BIS ' + dm(d.until) : 'GRATIS AB ' + dm(d.from)}</span>`
       : `<span class="badge prime" title="Mit Prime abholen${d.via ? ' über ' + esc(d.via) : ''}">PRIME${d.until ? ' BIS ' + dm(d.until) : d.from ? ' AB ' + dm(d.from) : ''}</span>`,
   );
@@ -489,7 +523,7 @@ function cardHtml(g: Game, cols: Col[]) {
   ]
     .filter(Boolean)
     .join('');
-  const where = target ? { luna: 'bei Amazon Luna', netflix: 'bei Netflix', playstation: 'im PlayStation Store', epic: 'im Epic Games Store', prime: 'bei Prime' }[target] : 'im Xbox Store';
+  const where = target ? { steam: 'bei Steam', luna: 'bei Amazon Luna', netflix: 'bei Netflix', playstation: 'im PlayStation Store', epic: 'im Epic Games Store', prime: 'bei Prime' }[target] : 'im Xbox Store';
   const on = myList.has(g.id);
   const addBtn = `<button class="add${on ? ' on' : ''}" data-id="${esc(g.id)}" title="${on ? 'Von meiner Liste entfernen' : 'Zu meiner Liste hinzufügen'}" aria-label="${on ? 'Von meiner Liste entfernen' : 'Zu meiner Liste hinzufügen'}">${on ? '✓' : '+'}</button>`;
   return `<article class="card">${addBtn}
@@ -811,6 +845,12 @@ function buildFilters() {
       () => (S.plat = S.plat.filter((p) => !(p in FREE))),
       'Wöchentliche Epic-Geschenke und monatliche Prime-Spiele – nur bis zur Frist abholbar. „Bald“ = von Epic bzw. Amazon schon angekündigt.',
     ),
+    group(
+      'Steam',
+      chipList(STEAMD, () => S.plat, (v) => (S.plat = v), countBy((g) => g.plat)),
+      () => (S.plat = S.plat.filter((p) => !(p in STEAMD))),
+      'Kostenlos: ≥ 80 % positiv bei ≥ 2.000 Bewertungen, oder AAA/AA mit ≥ 60 % bei ≥ 20.000. Bis 5 € (auch im Angebot): ≥ 85 % bei ≥ 2.000 Bewertungen oder Metascore ≥ 80. Täglich neu geprüft.',
+    ),
     group('Status', chipList(STATUS, () => S.status, (v) => (S.status = v), countBy((g) => [g.new ? 'new' : '', g.leaving ? 'leaving' : ''])), () => (S.status = [])),
     group('Erscheinungsjahr', rangeSlider(years, () => S.year, (r) => (S.year = r), (v, end) => (end ? (v === YEAR_MIN ? 'alle' : 'heute') : String(v))), () => (S.year = [null, null])),
     group('Metascore', rangeSlider(mcs, () => S.mc, (r) => (S.mc = r), (v, end) => (end ? (v === 0 ? '0' : '100') : String(v))), () => (S.mc = [null, null])),
@@ -819,6 +859,12 @@ function buildFilters() {
       rangeSlider(Array.from({ length: 21 }, (_, i) => i * 5), () => S.us, (r) => (S.us = r), (v) => (v / 10).toFixed(1).replace('.', ',')),
       () => (S.us = [null, null]),
       'Bewertung der Spieler auf Metacritic, 0–10',
+    ),
+    group(
+      'Steam-Bewertung',
+      rangeSlider(Array.from({ length: 21 }, (_, i) => i * 5), () => S.sp, (r) => (S.sp = r), (v) => `${v} %`),
+      () => (S.sp = [null, null]),
+      'Anteil positiver Nutzerbewertungen auf Steam – gilt für alle Spiele, die es auch auf Steam gibt',
     ),
     group(
       'Spielzeit (HowLongToBeat)',
@@ -843,7 +889,7 @@ function buildFilters() {
     render();
   };
   controls.push({ sync: () => (cb.checked = S.missing) });
-  F.append(group('Fehlende Daten', missing, undefined, 'Gilt für Jahr, Metascore, User Score, Spielzeit, Spieleranzahl, Produktion und Open World, sobald dort gefiltert wird.'));
+  F.append(group('Fehlende Daten', missing, undefined, 'Gilt für Jahr, Metascore, User Score, Steam-Bewertung, Spielzeit, Spieleranzahl, Produktion und Open World, sobald dort gefiltert wird.'));
 
   const gc = countBy((g) => g.genres);
   const genreOpts = Object.fromEntries(Object.entries(GENRES).filter(([k]) => gc[k]));
@@ -942,6 +988,7 @@ function renderActiveChips() {
   S.status.forEach((p) => items.push([STATUS[p], () => (S.status = S.status.filter((x) => x !== p))]));
   if (S.year.some((x) => x !== null)) items.push(['Jahr ' + r(S.year, String), () => (S.year = [null, null])]);
   if (S.mc.some((x) => x !== null)) items.push(['Metascore ' + r(S.mc, String), () => (S.mc = [null, null])]);
+  if (S.sp.some((x) => x !== null)) items.push(['Steam ' + r(S.sp, (v) => v + ' %'), () => (S.sp = [null, null])]);
   if (S.us.some((x) => x !== null))
     items.push(['User Score ' + r(S.us, (v) => (v / 10).toFixed(1).replace('.', ',')), () => (S.us = [null, null])]);
   if (S.hours.some((x) => x !== null)) items.push([`${H_KINDS[S.hKind]} ${r(S.hours, String)} Std.`, () => (S.hours = [null, null])]);
@@ -1033,7 +1080,7 @@ async function init() {
   $('#footer').innerHTML = `Stand: ${new Date(data.updated).toLocaleString('de-DE', { dateStyle: 'medium', timeStyle: 'short' })} · ${games.length} Spiele (Deutschland).<br>
     Daten: Xbox-Game-Pass-Katalog &amp; Microsoft Store (Genre, Spielmodi, Freigabe), Metacritic (Metascore, User Score &amp; Original-Erscheinungsjahr, ${n((g) => g.mc !== undefined)} Spiele),
     <a href="https://howlongtobeat.com" target="_blank" rel="noopener">HowLongToBeat</a> (Spielzeit, ${n((g) => g.hMain !== undefined)} Spiele),
-    Amazon Luna (Katalog Prime/Premium und Abholspiele), PlayStation Plus (Kataloge von playstation.com), Netflix (Liste von <a href="https://www.whats-on-netflix.com" target="_blank" rel="noopener">What's on Netflix</a>, geprüft auf netflix.com/de), Epic Games Store (Gratisspiele), Steam (Tags/Open World, ${n((g) => g.tags)} Spiele). Zuordnung automatisch über den Titel – Einzelne Fehler sind möglich.<br>
+    Amazon Luna (Katalog Prime/Premium und Abholspiele), PlayStation Plus (Kataloge von playstation.com), Netflix (Liste von <a href="https://www.whats-on-netflix.com" target="_blank" rel="noopener">What's on Netflix</a>, geprüft auf netflix.com/de), Epic Games Store (Gratisspiele), Steam-Angebote (SteamSpy + Steam-Preise), Steam (Tags/Open World, ${n((g) => g.tags)} Spiele). Zuordnung automatisch über den Titel – Einzelne Fehler sind möglich.<br>
     „Meine Liste“ wird nur in diesem Browser gespeichert; mit „Liste übertragen“ nimmst du sie auf ein anderes Gerät mit.`;
 }
 

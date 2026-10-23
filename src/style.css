@@ -140,6 +140,7 @@ main { padding: 16px 24px 40px; min-width: 0; }
 .badge.luna { background: #7b3fe4; }
 .badge.netflix { background: #e50914; }
 .badge.ps { background: #0070d1; }
+.badge.steam { background: #4c6b22; color: #beee11; }
 .badge.free { background: #0074e4; }
 .badge.prime { background: #1a98ff; color: #001a33; }
 .more-links { margin-top: 4px; font-size: 12px; color: var(--muted); }

@@ -4,3 +4,4 @@ data/build.log
 *.tmp
 __pycache__/
 preview.log
+data/cache/steamspy_all.json

@@ -188,9 +188,9 @@ def fetch_catalog() -> dict[str, set[str]]:
 # Luna Premium enthält alle Prime-Spiele.
 PLATFORMS = ("console", "pc", "cloud", "ea", "lunaPrime", "lunaPremium", "netflixMobile", "netflixTV",
              "psEssential", "psExtra", "psPremium",
-             "epicFree", "epicSoon", "primeClaim", "primeSoon")
+             "epicFree", "epicSoon", "primeClaim", "primeSoon", "steamFree", "steamCheap")
 # Reihenfolge für das Cover-Ziel, wenn ein Spiel auf mehreren Plattformen ist (Xbox zuerst)
-SOURCE_ORDER = ("luna-", "nf-", "ps-", "epic-", "prime-", "primesoon-")
+SOURCE_ORDER = ("luna-", "nf-", "ps-", "epic-", "prime-", "primesoon-", "steam-")
 LUNA_LISTS = {"lunaPrime": "included_with_prime", "lunaPremium": "luna_premium"}
 LUNA_GENRES = {
     "action": "Action & adventure", "adventure": "Action & adventure", "horror": "Action & adventure",
@@ -421,6 +421,146 @@ def fetch_psplus() -> tuple[list[dict], dict[str, set[str]]]:
                 ps=sorted(set(x.get("device") or [])),
             )
     return list(games.values()), flags
+
+
+# ---------- Steam: kostenlose und günstige (≤ 5 €) Spiele mit guten Bewertungen ----------
+# Kandidaten = die 5000 meistbesessenen Steam-Spiele (SteamSpy, 1 Abruf/Minute erlaubt), Euro-Preis und
+# Verfügbarkeit prüft danach die Steam-API. Die endgültige Auswahl (Regeln STEAM_RULES) passiert in main(),
+# weil dafür Metascore und AAA/AA-Einstufung nötig sind.
+STEAM_PAGES = 5
+STEAMSPY_CACHE = ROOT / "data" / "cache" / "steamspy_all.json"
+STEAM_RULES = {
+    # kostenlos: sehr gut bewertet ODER große Produktion (AAA/AA) mit ordentlicher Bewertung
+    "free_top": (80, 2000),
+    "free_big": (60, 20000),
+    # bis 5 € (auch im Angebot): gut bewertet ODER Metascore ≥ 80
+    "cheap_top": (85, 2000),
+    "cheap_mc": 80,
+    "cheap_max_eur": 5.00,
+}
+
+
+def steam_pct(pos: int, neg: int) -> tuple[int | None, int]:
+    n = (pos or 0) + (neg or 0)
+    return (round(100 * pos / n) if n else None), n
+
+
+def fetch_steamspy_all() -> list[dict]:
+    cache = load_json(STEAMSPY_CACHE, {})
+    today = datetime.now(timezone.utc).date().isoformat()
+    if cache.get("date") == today and len(cache.get("apps", [])) >= 1000 * STEAM_PAGES * 0.9:
+        return cache["apps"]
+    apps = []
+    for page in range(STEAM_PAGES):
+        if page:
+            time.sleep(61)  # SteamSpy: "all" höchstens einmal pro Minute
+        d = http_json(f"https://steamspy.com/api.php?request=all&page={page}")
+        apps += list(d.values())
+        log(f"  SteamSpy Seite {page + 1}/{STEAM_PAGES}")
+    save_json(STEAMSPY_CACHE, {"date": today, "apps": apps})
+    return apps
+
+
+def steam_prices(appids: list[int]) -> dict[int, dict | None]:
+    """Euro-Preise über die Steam-API: {} = kostenlos, None = nicht (mehr) erhältlich."""
+    out: dict[int, dict | None] = {}
+    for i in range(0, len(appids), 50):
+        chunk = appids[i: i + 50]
+        steam_rl.wait()
+        d = http_json("https://store.steampowered.com/api/appdetails?cc=de&filters=price_overview&appids=" + ",".join(map(str, chunk)))
+        for a in chunk:
+            e = d.get(str(a)) or {}
+            if not e.get("success"):
+                out[a] = None
+            else:
+                po = (e.get("data") or {}).get("price_overview") if isinstance(e.get("data"), dict) else None
+                out[a] = {} if not po else {"price": po["final"] / 100, "initial": po["initial"] / 100, "disc": po["discount_percent"]}
+    return out
+
+
+STEAM_FREE_CACHE = ROOT / "data" / "cache" / "steam_free.json"
+free_rl = RateLimit(0.6)  # Einzelabfragen der Steam-API: ca. 200 pro 5 Minuten erlaubt
+
+
+def steam_really_free(appids: list[int]) -> dict[int, bool]:
+    """Ohne Preis heißt bei Steam entweder kostenlos oder nicht mehr käuflich (z. B. GTA V Legacy) – is_free klärt das.
+    Geht nur einzeln; Ergebnisse 14 Tage zwischengespeichert."""
+    cache = load_json(STEAM_FREE_CACHE, {})
+    now = datetime.now(timezone.utc)
+    out = {}
+    for a in appids:
+        e = cache.get(str(a))
+        if e and now - datetime.fromisoformat(e["at"]) < timedelta(days=14):
+            out[a] = e["free"]
+            continue
+        for _ in range(3):
+            free_rl.wait()
+            try:
+                d = http_json(f"https://store.steampowered.com/api/appdetails?appids={a}&cc=de&filters=basic", tries=1)
+                data = (d.get(str(a)) or {}).get("data")
+                out[a] = bool(isinstance(data, dict) and data.get("is_free"))
+                cache[str(a)] = {"at": now.isoformat(), "free": out[a]}
+                break
+            except Exception:  # noqa: BLE001 – meist HTTP 429, kurz warten
+                time.sleep(60)
+        else:
+            out[a] = False
+    save_json(STEAM_FREE_CACHE, cache)
+    return out
+
+
+def fetch_steam_deals() -> tuple[list[dict], dict[str, set[str]]]:
+    apps = fetch_steamspy_all()
+    r = STEAM_RULES
+    cands = []
+    for a in apps:
+        pct, n = steam_pct(a.get("positive", 0), a.get("negative", 0))
+        if pct is None:
+            continue
+        free = str(a.get("price")) == "0" and str(a.get("initialprice")) == "0"
+        usd = int(a["price"]) / 100 if str(a.get("price") or "").isdigit() else None
+        if free and ((pct >= r["free_top"][0] and n >= r["free_top"][1]) or (pct >= r["free_big"][0] and n >= r["free_big"][1])):
+            cands.append((a, pct, n))
+        # Vorauswahl großzügig (Dollarpreis, Metascore-Ausnahme); die genaue Prüfung folgt in Euro bzw. nach Metacritic
+        elif not free and usd is not None and usd <= 8 and pct >= 70 and n >= 1000:
+            cands.append((a, pct, n))
+    prices = steam_prices([int(a["appid"]) for a, _, _ in cands])
+    free_ok = steam_really_free([a for a, pr in prices.items() if pr == {}])
+    games, flags = [], {}
+    for a, pct, n in cands:
+        appid = int(a["appid"])
+        pr = prices.get(appid)
+        if pr is None or (pr == {} and not free_ok.get(appid)):
+            continue  # eingestellt, nicht mehr käuflich oder in DE nicht erhältlich
+        if pr and pr["price"] > r["cheap_max_eur"]:
+            continue
+        url = f"https://store.steampowered.com/app/{appid}/"
+        cdn = f"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/{appid}"
+        g = base_entry(
+            f"steam-{appid}", a.get("name") or "", url, "steam", img=f"{cdn}/library_600x900.jpg", sq=False,
+            img2=f"{cdn}/header.jpg", pub=a.get("publisher") or None, dev=a.get("developer") or None,
+            sp=pct, spN=n, steamAppid=appid,
+            deals=[{"src": "steam", "price": pr.get("price", 0), "initial": pr.get("initial", 0), "disc": pr.get("disc", 0)}],
+        )
+        games.append(g)
+        flags[g["id"]] = {"steamFree"} if not pr else {"steamCheap"}
+    log(f"Steam: {sum('steamFree' in f for f in flags.values())} kostenlos, "
+        f"{sum('steamCheap' in f for f in flags.values())} bis {r['cheap_max_eur']:.0f} € (vor Feinauswahl)")
+    return games, flags
+
+
+def steam_rules_keep(f: set[str], sp: int | None, sp_n: int, mc: int | None, tier: str | None) -> set[str]:
+    """Feinauswahl nach Metascore/Einstufung; gibt die verbleibenden Steam-Flags zurück."""
+    r = STEAM_RULES
+    keep = set()
+    if "steamFree" in f and sp is not None:
+        if (sp >= r["free_top"][0] and sp_n >= r["free_top"][1]) or (
+            tier in ("AAA", "AA") and sp >= r["free_big"][0] and sp_n >= r["free_big"][1]):
+            keep.add("steamFree")
+    if "steamCheap" in f and sp is not None:
+        if (sp >= r["cheap_top"][0] and sp_n >= r["cheap_top"][1]) or (mc or 0) >= r["cheap_mc"]:
+            keep.add("steamCheap")
+    return keep
 
 
 EPIC_URL = "https://store-site-backend-static-ipv4.ak.epicgames.com/freeGamesPromotions?locale={loc}&country=DE&allowCountries=DE"
@@ -815,6 +955,8 @@ def steam_lookup(g: dict, forced=...) -> dict | None:
         "price": int(price) / 100 if str(price or "").isdigit() and int(price) > 0 else None,
         "owners": d.get("owners"),
         "publisher": d.get("publisher"),
+        "pos": d.get("positive") or 0,
+        "neg": d.get("negative") or 0,
     }
 
 
@@ -822,7 +964,7 @@ SOURCES = {"mc": ("metacritic", mc_lookup), "hltb": ("hltb", hltb_lookup), "stea
 
 
 # Felder, die ein Treffer haben muss; ältere Cache-Einträge ohne sie werden neu geholt
-REQUIRED = {"mc": "userCount", "hltb": "main", "steam": "price"}
+REQUIRED = {"mc": "userCount", "hltb": "main", "steam": "pos"}
 
 
 def is_stale(entry: dict | None, refresh: bool, src: str = "") -> bool:
@@ -1031,7 +1173,7 @@ def main():
     en = fetch_products(ids, "en-us")
     games = [parse_product(de[i], en.get(i)) for i in ids if i in de]
     for name, fetch in (("Luna", fetch_luna), ("Netflix", fetch_netflix), ("PS Plus", fetch_psplus), ("Epic", fetch_epic), ("Prime", fetch_prime),
-                        ("Prime demnächst", fetch_prime_soon)):
+                        ("Prime demnächst", fetch_prime_soon), ("Steam", fetch_steam_deals)):
         try:
             extra, extra_flags = fetch()
         except Exception as e:  # noqa: BLE001
@@ -1049,6 +1191,9 @@ def main():
 
     cache = load_json(CACHE_FILE, {})
     overrides = {k: v for k, v in load_json(OVERRIDES_FILE, {}).items() if not k.startswith("_")}
+    for g in games:  # Steam-Spiele kennen ihre App-ID schon, keine Titelsuche nötig
+        if g.get("steamAppid"):
+            overrides.setdefault(g["id"], {}).setdefault("steam", g["steamAppid"])
     enrich(games, cache, overrides, args.refresh)
     save_json(CACHE_FILE, cache)
     if not args.limit:
@@ -1070,6 +1215,11 @@ def main():
         tier, tier_why = classify_tier(g, mc, st, year)
         if overrides.get(g["id"], {}).get("tier"):
             tier, tier_why = overrides[g["id"]]["tier"], "manuell festgelegt"
+        sp, sp_n = (g["sp"], g["spN"]) if g.get("sp") is not None else steam_pct((st or {}).get("pos", 0), (st or {}).get("neg", 0))
+        if f & {"steamFree", "steamCheap"}:
+            f = (f - {"steamFree", "steamCheap"}) | steam_rules_keep(f, sp, sp_n, mc and mc.get("score"), tier)
+            if not f:
+                continue  # Steam-Kandidat, der die Feinauswahl nicht besteht
         mc_ow = any("open-world" in x.lower() for x in (mc or {}).get("genres") or [])
         tags = (st or {}).get("tags") or []
         out.append({
@@ -1079,7 +1229,7 @@ def main():
             # Querformat-Bilder (Prime, Netflix) durch das Hochformat-Cover von Steam ersetzen, falls vorhanden;
             # das Original bleibt als Ersatz, falls Steam keins hat
             "img": steam_cover if steam_cover else g["img"],
-            "img2": g["img"] if steam_cover else None,
+            "img2": g["img"] if steam_cover else g.get("img2"),
             "sq": (g["imgSq"] and not steam_cover) or None,
             "url": g["url"],
             "links": g.get("links"),
@@ -1110,6 +1260,8 @@ def main():
             "tierWhy": tier_why,
             "tags": tags or None,
             "steam": st and st["appid"],
+            "sp": sp,
+            "spN": sp_n if sp is not None else None,
             "pegi": g["pegi"],
             "stars": g["stars"],
             "pub": g["pub"],
