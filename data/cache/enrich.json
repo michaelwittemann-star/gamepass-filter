@@ -83004,6 +83004,69 @@
    }
   }
  },
+ "steam-1061090": {
+  "hltb": {
+   "at": "2026-10-24T09:38:04.508583+00:00",
+   "v": {
+    "comp": 86.8,
+    "extra": 31.2,
+    "id": 66968,
+    "main": 10.7,
+    "title": "Jump King",
+    "year": 2019
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:03.838968+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": 6,
+    "score": 71,
+    "slug": "jump-king",
+    "title": "Jump King",
+    "user": 6.7,
+    "userCount": 57,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:09.323696+00:00",
+   "forced": 1061090,
+   "v": {
+    "appid": 1061090,
+    "name": "Jump King",
+    "neg": 1222,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 11081,
+    "price": 12.99,
+    "publisher": "Nexile",
+    "tags": [
+     "Psychological Horror",
+     "Difficult",
+     "Precision Platformer",
+     "Indie",
+     "Pixel Graphics",
+     "Adventure",
+     "Platformer",
+     "2D",
+     "Action",
+     "Singleplayer",
+     "Retro",
+     "Medieval",
+     "Atmospheric",
+     "Philosophical",
+     "Funny",
+     "Dark Humor",
+     "Fantasy",
+     "Souls-like",
+     "Horror",
+     "Side Scroller"
+    ]
+   }
+  }
+ },
  "steam-1063660": {
   "hltb": {
    "at": "2026-10-23T12:29:56.412773+00:00",
@@ -86117,6 +86180,69 @@
    }
   }
  },
+ "steam-1182620": {
+  "hltb": {
+   "at": "2026-10-24T09:38:04.602958+00:00",
+   "v": {
+    "comp": 4.3,
+    "extra": 4.0,
+    "id": 72348,
+    "main": 3.9,
+    "title": "Impostor Factory",
+    "year": 2021
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:03.917004+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": 14,
+    "score": 80,
+    "slug": "impostor-factory",
+    "title": "Impostor Factory",
+    "user": 8,
+    "userCount": 83,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:10.330134+00:00",
+   "forced": 1182620,
+   "v": {
+    "appid": 1182620,
+    "name": "Impostor Factory",
+    "neg": 486,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 11287,
+    "price": 9.99,
+    "publisher": "Freebird Games",
+    "tags": [
+     "Story Rich",
+     "Emotional",
+     "Pixel Graphics",
+     "Adventure",
+     "RPG",
+     "2D",
+     "Singleplayer",
+     "Top-Down",
+     "Atmospheric",
+     "Psychological Horror",
+     "Comedy",
+     "Mystery",
+     "Narrative",
+     "Interactive Fiction",
+     "Lovecraftian",
+     "Linear",
+     "Cute",
+     "Funny",
+     "Retro",
+     "JRPG"
+    ]
+   }
+  }
+ },
  "steam-1186640": {
   "hltb": {
    "at": "2026-10-23T12:32:28.304933+00:00",
@@ -87453,6 +87579,69 @@
    }
   }
  },
+ "steam-1267540": {
+  "hltb": {
+   "at": "2026-10-24T09:38:11.500210+00:00",
+   "v": {
+    "comp": 27.7,
+    "extra": 21.1,
+    "id": 82743,
+    "main": 19.4,
+    "title": "WRC 9: FIA World Rally Championship",
+    "year": 2020
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:11.788530+00:00",
+   "v": {
+    "genres": [
+     "Auto Racing Sim"
+    ],
+    "reviews": 24,
+    "score": 81,
+    "slug": "wrc-9-fia-world-rally-championship",
+    "title": "WRC 9 FIA World Rally Championship",
+    "user": 6.1,
+    "userCount": 64,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:28.207402+00:00",
+   "forced": 1267540,
+   "v": {
+    "appid": 1267540,
+    "name": "WRC 9 FIA World Rally Championship",
+    "neg": 426,
+    "owners": "200,000 .. 500,000",
+    "pos": 1444,
+    "price": 29.99,
+    "publisher": "Nacon",
+    "tags": [
+     "Racing",
+     "Driving",
+     "Sports",
+     "Automobile Sim",
+     "Physics",
+     "Management",
+     "PvP",
+     "Time Management",
+     "e-sports",
+     "Competitive",
+     "First-Person",
+     "3D",
+     "Simulation",
+     "Open World",
+     "Third Person",
+     "Offroad",
+     "Realistic",
+     "Colorful",
+     "Cinematic",
+     "Score Attack"
+    ]
+   }
+  }
+ },
  "steam-1274290": {
   "hltb": {
    "at": "2026-10-23T12:39:22.261185+00:00",
@@ -88727,6 +88916,69 @@
      "Short",
      "2D Platformer",
      "Funny"
+    ]
+   }
+  }
+ },
+ "steam-1318690": {
+  "hltb": {
+   "at": "2026-10-24T09:38:08.084188+00:00",
+   "v": {
+    "comp": 94.3,
+    "extra": 39.4,
+    "id": 80051,
+    "main": 26.6,
+    "title": "shapez.io",
+    "year": 2020
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:07.810205+00:00",
+   "v": {
+    "genres": [
+     "Strategy"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "shapez",
+    "title": "shapez",
+    "user": 7.9,
+    "userCount": 39,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:18.206834+00:00",
+   "forced": 1318690,
+   "v": {
+    "appid": 1318690,
+    "name": "shapez",
+    "neg": 516,
+    "owners": "200,000 .. 500,000",
+    "pos": 13165,
+    "price": 9.99,
+    "publisher": "tobspr Games, Doyoyo Games",
+    "tags": [
+     "Automation",
+     "Base-Building",
+     "Resource Management",
+     "Sandbox",
+     "Crafting",
+     "Strategy",
+     "Singleplayer",
+     "Management",
+     "Building",
+     "Open World",
+     "2D",
+     "Puzzle",
+     "Casual",
+     "Moddable",
+     "Simulation",
+     "Abstract",
+     "Logic",
+     "Procedural Generation",
+     "Indie",
+     "Family Friendly"
     ]
    }
   }
@@ -90270,6 +90522,52 @@
    }
   }
  },
+ "steam-1462810": {
+  "hltb": {
+   "at": "2026-10-24T09:38:11.585300+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:11.898234+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:29.304131+00:00",
+   "forced": 1462810,
+   "v": {
+    "appid": 1462810,
+    "name": "WRC 10 FIA World Rally Championship",
+    "neg": 716,
+    "owners": "200,000 .. 500,000",
+    "pos": 1847,
+    "price": 49.99,
+    "publisher": "Nacon",
+    "tags": [
+     "Racing",
+     "Automobile Sim",
+     "Sports",
+     "Driving",
+     "Physics",
+     "Management",
+     "PvP",
+     "Competitive",
+     "Time Management",
+     "e-sports",
+     "First-Person",
+     "3D",
+     "Simulation",
+     "Third Person",
+     "Open World",
+     "Offroad",
+     "Realistic",
+     "Colorful",
+     "Cinematic",
+     "Score Attack"
+    ]
+   }
+  }
+ },
  "steam-1468260": {
   "hltb": {
    "at": "2026-10-23T12:27:59.805078+00:00",
@@ -90638,6 +90936,69 @@
      "Singleplayer",
      "Spelling",
      "Puzzle"
+    ]
+   }
+  }
+ },
+ "steam-1484720": {
+  "hltb": {
+   "at": "2026-10-24T09:38:08.183682+00:00",
+   "v": {
+    "comp": 60.1,
+    "extra": 14.6,
+    "id": 88143,
+    "main": 3.3,
+    "title": "Dead Estate",
+    "year": 2021
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:07.993331+00:00",
+   "v": {
+    "genres": [
+     "Top-Down Shoot-'Em-Up"
+    ],
+    "reviews": 2,
+    "score": null,
+    "slug": "dead-estate",
+    "title": "Dead Estate",
+    "user": null,
+    "userCount": 1,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:19.321227+00:00",
+   "forced": 1484720,
+   "v": {
+    "appid": 1484720,
+    "name": "Dead Estate",
+    "neg": 300,
+    "owners": "200,000 .. 500,000",
+    "pos": 5503,
+    "price": 14.99,
+    "publisher": "2 Left Thumbs",
+    "tags": [
+     "Action Roguelike",
+     "Twin Stick Shooter",
+     "Horror",
+     "Shoot 'Em Up",
+     "Replay Value",
+     "Rogue-like",
+     "Difficult",
+     "Dungeon Crawler",
+     "Perma Death",
+     "Action",
+     "Shooter",
+     "Isometric",
+     "Demons",
+     "Pixel Graphics",
+     "Zombies",
+     "Sexual Content",
+     "Procedural Generation",
+     "Gore",
+     "Singleplayer",
+     "Anime"
     ]
    }
   }
@@ -94921,6 +95282,58 @@
    }
   }
  },
+ "steam-207610": {
+  "hltb": {
+   "at": "2026-10-24T09:38:00.307167+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 66845,
+    "main": 0.5,
+    "title": "The Walking Dead",
+    "year": 2017
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:00.306779+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:00.307673+00:00",
+   "forced": 207610,
+   "v": {
+    "appid": 207610,
+    "name": "The Walking Dead",
+    "neg": 1995,
+    "owners": "2,000,000 .. 5,000,000",
+    "pos": 71633,
+    "price": 14.99,
+    "publisher": "Skybound Games",
+    "tags": [
+     "Zombies",
+     "Story Rich",
+     "Adventure",
+     "Point & Click",
+     "Episodic",
+     "Singleplayer",
+     "Choices Matter",
+     "Drama",
+     "Horror",
+     "Emotional",
+     "Mature",
+     "Atmospheric",
+     "Choose Your Own Adventure",
+     "Post-apocalyptic",
+     "Comic Book",
+     "Survival",
+     "Quick-Time Events",
+     "Gore",
+     "Action",
+     "Third Person"
+    ]
+   }
+  }
+ },
  "steam-20820": {
   "hltb": {
    "at": "2026-10-23T12:41:19.441864+00:00",
@@ -96799,6 +97212,160 @@
    }
   }
  },
+ "steam-224960": {
+  "hltb": {
+   "at": "2026-10-24T09:38:05.753765+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:05.088935+00:00",
+   "v": {
+    "genres": [
+     "Linear Action Adventure"
+    ],
+    "reviews": 13,
+    "score": 91,
+    "slug": "tomb-raider-1996",
+    "title": "Tomb Raider (1996)",
+    "user": 8.2,
+    "userCount": 549,
+    "year": 1996
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:12.678532+00:00",
+   "forced": 224960,
+   "v": {
+    "appid": 224960,
+    "name": "Tomb Raider I (1996)",
+    "neg": 664,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 3877,
+    "price": 6.99,
+    "publisher": "Crystal Dynamics",
+    "tags": [
+     "Adventure",
+     "Action",
+     "Classic",
+     "Female Protagonist",
+     "Singleplayer",
+     "Puzzle",
+     "Third Person",
+     "Platformer",
+     "Retro",
+     "1990's",
+     "Action-Adventure",
+     "Old School",
+     "Third-Person Shooter",
+     "3D Platformer",
+     "Shooter",
+     "Exploration",
+     "Atmospheric",
+     "Dinosaurs",
+     "Puzzle-Platformer",
+     "Great Soundtrack"
+    ]
+   }
+  }
+ },
+ "steam-225300": {
+  "hltb": {
+   "at": "2026-10-24T09:38:09.406929+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:09.931761+00:00",
+   "v": {
+    "genres": [
+     "Linear Action Adventure"
+    ],
+    "reviews": 13,
+    "score": 85,
+    "slug": "tomb-raider-ii",
+    "title": "Tomb Raider II",
+    "user": 8,
+    "userCount": 101,
+    "year": 1997
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:23.770963+00:00",
+   "forced": 225300,
+   "v": {
+    "appid": 225300,
+    "name": "Tomb Raider II (1997)",
+    "neg": 302,
+    "owners": "200,000 .. 500,000",
+    "pos": 2004,
+    "price": 6.99,
+    "publisher": "Crystal Dynamics",
+    "tags": [
+     "Adventure",
+     "Action",
+     "Female Protagonist",
+     "Classic",
+     "Singleplayer",
+     "Third Person",
+     "Puzzle",
+     "Action-Adventure",
+     "Platformer",
+     "Old School",
+     "1990's",
+     "Third-Person Shooter",
+     "Shooter",
+     "Atmospheric",
+     "3D Platformer",
+     "Retro",
+     "Puzzle-Platformer",
+     "Exploration",
+     "Difficult",
+     "Story Rich"
+    ]
+   }
+  }
+ },
+ "steam-225320": {
+  "hltb": {
+   "at": "2026-10-24T09:38:08.629691+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:08.392116+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:20.333770+00:00",
+   "forced": 225320,
+   "v": {
+    "appid": 225320,
+    "name": "Tomb Raider III (1998)",
+    "neg": 239,
+    "owners": "200,000 .. 500,000",
+    "pos": 1253,
+    "price": 6.99,
+    "publisher": "Crystal Dynamics",
+    "tags": [
+     "Adventure",
+     "Action",
+     "Female Protagonist",
+     "Classic",
+     "Puzzle",
+     "Third Person",
+     "Action-Adventure",
+     "Singleplayer",
+     "Third-Person Shooter",
+     "Shooter",
+     "Platformer",
+     "Difficult",
+     "1990's",
+     "Atmospheric",
+     "Old School",
+     "Exploration",
+     "Retro"
+    ]
+   }
+  }
+ },
  "steam-225840": {
   "hltb": {
    "at": "2026-10-23T12:28:10.813514+00:00",
@@ -97024,6 +97591,69 @@
      "Singleplayer",
      "Horror",
      "Story Rich"
+    ]
+   }
+  }
+ },
+ "steam-229480": {
+  "hltb": {
+   "at": "2026-10-24T09:38:05.822531+00:00",
+   "v": {
+    "comp": 19.5,
+    "extra": 4.7,
+    "id": 12973,
+    "main": 2.1,
+    "title": "Dungeons & Dragons: Chronicles of Mystara",
+    "year": 2013
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:05.755708+00:00",
+   "v": {
+    "genres": [
+     "Compilation"
+    ],
+    "reviews": 28,
+    "score": 77,
+    "slug": "dungeons-and-dragons-chronicles-of-mystara",
+    "title": "Dungeons & Dragons: Chronicles of Mystara",
+    "user": 5.9,
+    "userCount": 30,
+    "year": 2013
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:13.758596+00:00",
+   "forced": 229480,
+   "v": {
+    "appid": 229480,
+    "name": "Dungeons & Dragons: Chronicles of Mystara",
+    "neg": 339,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 1488,
+    "price": 14.99,
+    "publisher": "Capcom",
+    "tags": [
+     "Beat 'em up",
+     "Arcade",
+     "Action",
+     "RPG",
+     "Online Co-Op",
+     "Local Co-Op",
+     "Dungeons & Dragons",
+     "Adventure",
+     "Side Scroller",
+     "Classic",
+     "Co-op",
+     "Fantasy",
+     "4 Player Local",
+     "Retro",
+     "2D",
+     "Dwarf",
+     "Pixel Graphics",
+     "Local Multiplayer",
+     "Multiplayer",
+     "Singleplayer"
     ]
    }
   }
@@ -101135,6 +101765,67 @@
    }
   }
  },
+ "steam-269670": {
+  "hltb": {
+   "at": "2026-10-24T09:38:09.149453+00:00",
+   "v": {
+    "comp": 5.9,
+    "extra": 5.6,
+    "id": 12473,
+    "main": 5.4,
+    "title": "BADLAND",
+    "year": 2013
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:09.391572+00:00",
+   "v": {
+    "genres": [
+     "Linear Action Adventure"
+    ],
+    "reviews": 20,
+    "score": 85,
+    "slug": "badland",
+    "title": "BADLAND",
+    "user": 7.3,
+    "userCount": 76,
+    "year": 2013
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:21.535190+00:00",
+   "forced": 269670,
+   "v": {
+    "appid": 269670,
+    "name": "BADLAND: Game of the Year Edition",
+    "neg": 440,
+    "owners": "200,000 .. 500,000",
+    "pos": 2637,
+    "price": 11.99,
+    "publisher": "Frogmind",
+    "tags": [
+     "Indie",
+     "Adventure",
+     "2D",
+     "Action",
+     "Local Co-Op",
+     "Multiplayer",
+     "Platformer",
+     "Co-op",
+     "Puzzle",
+     "Difficult",
+     "Atmospheric",
+     "Puzzle-Platformer",
+     "Side Scroller",
+     "Singleplayer",
+     "Casual",
+     "Local Multiplayer",
+     "4 Player Local",
+     "Survival"
+    ]
+   }
+  }
+ },
  "steam-2704110": {
   "hltb": {
    "at": "2026-10-23T12:43:37.184001+00:00",
@@ -102253,6 +102944,132 @@
    }
   }
  },
+ "steam-286690": {
+  "hltb": {
+   "at": "2026-10-24T09:38:00.305881+00:00",
+   "v": {
+    "comp": 23.7,
+    "extra": 11.6,
+    "id": 20737,
+    "main": 9.1,
+    "title": "Metro 2033 Redux",
+    "year": 2014
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:00.305155+00:00",
+   "v": {
+    "genres": [
+     "FPS"
+    ],
+    "reviews": 5,
+    "score": 90,
+    "slug": "metro-2033-redux",
+    "title": "Metro: 2033 Redux",
+    "user": 8.1,
+    "userCount": 2606,
+    "year": 2014
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:00.306412+00:00",
+   "forced": 286690,
+   "v": {
+    "appid": 286690,
+    "name": "METRO 2033 Redux",
+    "neg": 9424,
+    "owners": "5,000,000 .. 10,000,000",
+    "pos": 101543,
+    "price": 19.99,
+    "publisher": "Deep Silver",
+    "tags": [
+     "Post-apocalyptic",
+     "FPS",
+     "Atmospheric",
+     "Story Rich",
+     "Horror",
+     "Action",
+     "Singleplayer",
+     "First-Person",
+     "Shooter",
+     "Stealth",
+     "Survival Horror",
+     "Based On A Novel",
+     "Survival",
+     "Adventure",
+     "Multiplayer",
+     "Remake",
+     "Gore",
+     "Mature",
+     "Classic",
+     "Open World"
+    ]
+   }
+  }
+ },
+ "steam-287290": {
+  "hltb": {
+   "at": "2026-10-24T09:38:01.983811+00:00",
+   "v": {
+    "comp": 35.1,
+    "extra": 15.8,
+    "id": 21258,
+    "main": 10.2,
+    "title": "Resident Evil: Revelations 2",
+    "year": 2015
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:00.685286+00:00",
+   "v": {
+    "genres": [
+     "Survival"
+    ],
+    "reviews": 30,
+    "score": 75,
+    "slug": "resident-evil-revelations-2",
+    "title": "Resident Evil: Revelations 2",
+    "user": 7.7,
+    "userCount": 905,
+    "year": 2015
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:02.653318+00:00",
+   "forced": 287290,
+   "v": {
+    "appid": 287290,
+    "name": "Resident Evil Revelations 2",
+    "neg": 6276,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 22413,
+    "price": 19.99,
+    "publisher": "CAPCOM Co., Ltd.",
+    "tags": [
+     "Zombies",
+     "Horror",
+     "Multiplayer",
+     "Survival Horror",
+     "Action",
+     "Co-op",
+     "Adventure",
+     "Third-Person Shooter",
+     "Survival",
+     "Female Protagonist",
+     "Singleplayer",
+     "Local Co-Op",
+     "Third Person",
+     "Gore",
+     "Episodic",
+     "Atmospheric",
+     "Online Co-Op",
+     "Story Rich",
+     "Shooter",
+     "Action RPG"
+    ]
+   }
+  }
+ },
  "steam-287390": {
   "hltb": {
    "at": "2026-10-23T12:23:47.157498+00:00",
@@ -102919,6 +103736,46 @@
    }
   }
  },
+ "steam-296490": {
+  "hltb": {
+   "at": "2026-10-24T09:38:10.347406+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:10.249177+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:24.885234+00:00",
+   "forced": 296490,
+   "v": {
+    "appid": 296490,
+    "name": "GemCraft - Chasing Shadows",
+    "neg": 197,
+    "owners": "200,000 .. 500,000",
+    "pos": 3939,
+    "price": 9.99,
+    "publisher": "Armor Games Studios",
+    "tags": [
+     "Tower Defense",
+     "Strategy",
+     "Indie",
+     "Singleplayer",
+     "Action",
+     "Top-Down",
+     "Fantasy",
+     "Tactical",
+     "2D",
+     "Classic",
+     "Difficult",
+     "Great Soundtrack",
+     "Puzzle",
+     "Magic",
+     "Dark Fantasy"
+    ]
+   }
+  }
+ },
  "steam-296870": {
   "hltb": {
    "at": "2026-10-23T12:36:04.643829+00:00",
@@ -103220,6 +104077,69 @@
      "Retro",
      "Difficult",
      "Strategy"
+    ]
+   }
+  }
+ },
+ "steam-301860": {
+  "hltb": {
+   "at": "2026-10-24T09:38:10.471211+00:00",
+   "v": {
+    "comp": 5.3,
+    "extra": 3.3,
+    "id": 26175,
+    "main": 2.4,
+    "title": "Submerged",
+    "year": 2015
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:11.627833+00:00",
+   "v": {
+    "genres": [
+     "Action Adventure"
+    ],
+    "reviews": 33,
+    "score": 56,
+    "slug": "submerged-2015",
+    "title": "Submerged",
+    "user": 5.1,
+    "userCount": 52,
+    "year": 2015
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:27.104595+00:00",
+   "forced": 301860,
+   "v": {
+    "appid": 301860,
+    "name": "Submerged",
+    "neg": 1143,
+    "owners": "200,000 .. 500,000",
+    "pos": 3598,
+    "price": 19.99,
+    "publisher": "Uppercut Games Pty Ltd",
+    "tags": [
+     "Exploration",
+     "Relaxing",
+     "Female Protagonist",
+     "Walking Simulator",
+     "Family Friendly",
+     "Nature",
+     "Third Person",
+     "Casual",
+     "Adventure",
+     "Atmospheric",
+     "Colorful",
+     "Open World",
+     "Mystery",
+     "Post-apocalyptic",
+     "Singleplayer",
+     "Indie",
+     "Parkour",
+     "Beautiful",
+     "Great Soundtrack",
+     "Survival"
     ]
    }
   }
@@ -103578,6 +104498,69 @@
      "Nostalgia",
      "Action",
      "Colorful"
+    ]
+   }
+  }
+ },
+ "steam-304240": {
+  "hltb": {
+   "at": "2026-10-24T09:38:01.826292+00:00",
+   "v": {
+    "comp": 15.4,
+    "extra": 8.4,
+    "id": 7716,
+    "main": 6.7,
+    "title": "Resident Evil",
+    "year": 1996
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:00.308440+00:00",
+   "v": {
+    "genres": [
+     "Survival"
+    ],
+    "reviews": 8,
+    "score": 91,
+    "slug": "resident-evil",
+    "title": "Resident Evil",
+    "user": 8.7,
+    "userCount": 1133,
+    "year": 1996
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:01.555457+00:00",
+   "forced": 304240,
+   "v": {
+    "appid": 304240,
+    "name": "Resident Evil",
+    "neg": 2154,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 24613,
+    "price": 19.99,
+    "publisher": "CAPCOM Co., Ltd.",
+    "tags": [
+     "Survival Horror",
+     "Zombies",
+     "Horror",
+     "Classic",
+     "Remake",
+     "Atmospheric",
+     "Singleplayer",
+     "Puzzle",
+     "Survival",
+     "Adventure",
+     "Third Person",
+     "Action",
+     "Female Protagonist",
+     "Cult Classic",
+     "Story Rich",
+     "Difficult",
+     "Gore",
+     "Shooter",
+     "Great Soundtrack",
+     "Third-Person Shooter"
     ]
    }
   }
@@ -105937,6 +106920,58 @@
    }
   }
  },
+ "steam-339340": {
+  "hltb": {
+   "at": "2026-10-24T09:38:03.259113+00:00",
+   "v": {
+    "comp": 19.8,
+    "extra": 12.5,
+    "id": 7734,
+    "main": 11.2,
+    "title": "Resident Evil 0",
+    "year": 2002
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:02.046580+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:04.873174+00:00",
+   "forced": 339340,
+   "v": {
+    "appid": 339340,
+    "name": "Resident Evil 0",
+    "neg": 2522,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 11048,
+    "price": 19.99,
+    "publisher": "CAPCOM Co., Ltd.",
+    "tags": [
+     "Horror",
+     "Zombies",
+     "Survival Horror",
+     "Adventure",
+     "Classic",
+     "Action",
+     "Singleplayer",
+     "Remake",
+     "Third Person",
+     "Atmospheric",
+     "Survival",
+     "Female Protagonist",
+     "Puzzle",
+     "Difficult",
+     "Story Rich",
+     "Gore",
+     "Third-Person Shooter",
+     "Multiplayer",
+     "Great Soundtrack",
+     "Shooter"
+    ]
+   }
+  }
+ },
  "steam-340050": {
   "hltb": {
    "at": "2026-10-23T12:35:23.509676+00:00",
@@ -106631,6 +107666,69 @@
    }
   }
  },
+ "steam-353640": {
+  "hltb": {
+   "at": "2026-10-24T09:38:07.574658+00:00",
+   "v": {
+    "comp": 19.4,
+    "extra": 12.5,
+    "id": 30538,
+    "main": 8.7,
+    "title": "Train Valley",
+    "year": 2015
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:07.479209+00:00",
+   "v": {
+    "genres": [
+     "Tycoon"
+    ],
+    "reviews": 6,
+    "score": 79,
+    "slug": "train-valley-console-edition",
+    "title": "Train Valley: Console Edition",
+    "user": null,
+    "userCount": 2,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:17.104892+00:00",
+   "forced": 353640,
+   "v": {
+    "appid": 353640,
+    "name": "Train Valley",
+    "neg": 339,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 2964,
+    "price": 9.99,
+    "publisher": "Flazm, META Publishing",
+    "tags": [
+     "Replay Value",
+     "Resource Management",
+     "Indie",
+     "3D",
+     "Trains",
+     "Casual",
+     "Puzzle",
+     "Strategy",
+     "Simulation",
+     "Relaxing",
+     "Transportation",
+     "Singleplayer",
+     "Management",
+     "Family Friendly",
+     "Building",
+     "Mouse only",
+     "Cute",
+     "Top-Down",
+     "Real-Time with Pause",
+     "Time Management"
+    ]
+   }
+  }
+ },
  "steam-3540": {
   "hltb": {
    "at": "2026-10-23T12:41:33.211051+00:00",
@@ -106968,6 +108066,69 @@
      "Cult Classic",
      "Singleplayer",
      "Top-Down Shooter",
+     "Casual"
+    ]
+   }
+  }
+ },
+ "steam-35720": {
+  "hltb": {
+   "at": "2026-10-24T09:38:00.308115+00:00",
+   "v": {
+    "comp": 34.8,
+    "extra": 13.7,
+    "id": 15660,
+    "main": 9.1,
+    "title": "Trine 2: Complete Story",
+    "year": 2013
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:00.307893+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": 9,
+    "score": 84,
+    "slug": "trine-2-complete-story",
+    "title": "Trine 2: Complete Story",
+    "user": 7.6,
+    "userCount": 393,
+    "year": 2013
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:00.321488+00:00",
+   "forced": 35720,
+   "v": {
+    "appid": 35720,
+    "name": "Trine 2: Complete Story",
+    "neg": 997,
+    "owners": "2,000,000 .. 5,000,000",
+    "pos": 20682,
+    "price": 19.99,
+    "publisher": "Frozenbyte",
+    "tags": [
+     "Puzzle-Platformer",
+     "Platformer",
+     "Adventure",
+     "Action",
+     "Beautiful",
+     "2D Platformer",
+     "Co-op",
+     "Puzzle",
+     "Fantasy",
+     "Indie",
+     "Online Co-Op",
+     "Local Co-Op",
+     "Multiplayer",
+     "Physics",
+     "Great Soundtrack",
+     "Singleplayer",
+     "Atmospheric",
+     "2D",
+     "RPG",
      "Casual"
     ]
    }
@@ -111286,6 +112447,69 @@
    }
   }
  },
+ "steam-429570": {
+  "hltb": {
+   "at": "2026-10-24T09:38:05.573172+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 66845,
+    "main": 0.5,
+    "title": "The Walking Dead",
+    "year": 2017
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:04.649221+00:00",
+   "v": {
+    "genres": [
+     "Third-Person Adventure"
+    ],
+    "reviews": 8,
+    "score": 67,
+    "slug": "the-walking-dead-michonne-a-telltale-miniseries",
+    "title": "The Walking Dead: Michonne - A Telltale Miniseries",
+    "user": 6.3,
+    "userCount": 262,
+    "year": 2016
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:11.602234+00:00",
+   "forced": 429570,
+   "v": {
+    "appid": 429570,
+    "name": "The Walking Dead: Michonne - A Telltale Miniseries",
+    "neg": 1523,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 6038,
+    "price": 14.99,
+    "publisher": "Skybound Games",
+    "tags": [
+     "Adventure",
+     "Zombies",
+     "Choices Matter",
+     "Story Rich",
+     "Female Protagonist",
+     "Singleplayer",
+     "Point & Click",
+     "Choose Your Own Adventure",
+     "Episodic",
+     "Horror",
+     "Post-apocalyptic",
+     "Gore",
+     "Comic Book",
+     "Action",
+     "Atmospheric",
+     "Third Person",
+     "Survival",
+     "Great Soundtrack",
+     "Violent",
+     "Survival Horror"
+    ]
+   }
+  }
+ },
  "steam-429790": {
   "hltb": {
    "at": "2026-10-23T12:40:08.390251+00:00",
@@ -111516,6 +112740,61 @@
      "Aliens",
      "Old School",
      "Retro"
+    ]
+   }
+  }
+ },
+ "steam-434250": {
+  "hltb": {
+   "at": "2026-10-24T09:38:10.387843+00:00",
+   "v": {
+    "comp": 3.3,
+    "extra": null,
+    "id": 34217,
+    "main": null,
+    "title": "Masked Shooters 2",
+    "year": 2016
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:11.625628+00:00",
+   "v": {
+    "genres": [
+     "FPS"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "masked-shooters-2",
+    "title": "Masked Shooters 2",
+    "user": null,
+    "userCount": 3,
+    "year": 2016
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:26.001737+00:00",
+   "forced": 434250,
+   "v": {
+    "appid": 434250,
+    "name": "Masked Shooters 2",
+    "neg": 472,
+    "owners": "200,000 .. 500,000",
+    "pos": 1128,
+    "price": 29.99,
+    "publisher": "My Way Games",
+    "tags": [
+     "Action",
+     "Indie",
+     "FPS",
+     "Shooter",
+     "Multiplayer",
+     "Singleplayer",
+     "First-Person",
+     "Arena Shooter",
+     "PvP",
+     "Sniper",
+     "Military",
+     "Memes"
     ]
    }
   }
@@ -114911,6 +116190,58 @@
    }
   }
  },
+ "steam-536220": {
+  "hltb": {
+   "at": "2026-10-24T09:38:03.426686+00:00",
+   "v": {
+    "comp": 8.2,
+    "extra": 8.0,
+    "id": 41484,
+    "main": 7.6,
+    "title": "The Walking Dead: A New Frontier",
+    "year": 2016
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:02.899729+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:07.004244+00:00",
+   "forced": 536220,
+   "v": {
+    "appid": 536220,
+    "name": "The Walking Dead: A New Frontier",
+    "neg": 2899,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 13947,
+    "price": 14.99,
+    "publisher": "Skybound Games",
+    "tags": [
+     "Zombies",
+     "Story Rich",
+     "Choices Matter",
+     "Adventure",
+     "Post-apocalyptic",
+     "Atmospheric",
+     "Episodic",
+     "Singleplayer",
+     "Survival",
+     "Gore",
+     "Action",
+     "Violent",
+     "Choose Your Own Adventure",
+     "Point & Click",
+     "Horror",
+     "Drama",
+     "Female Protagonist",
+     "Comic Book",
+     "Visual Novel",
+     "Casual"
+    ]
+   }
+  }
+ },
  "steam-539470": {
   "hltb": {
    "at": "2026-10-23T12:30:13.782301+00:00",
@@ -117812,6 +119143,69 @@
    }
   }
  },
+ "steam-626690": {
+  "hltb": {
+   "at": "2026-10-24T09:38:03.343630+00:00",
+   "v": {
+    "comp": 130.1,
+    "extra": 52.8,
+    "id": 53186,
+    "main": 26.1,
+    "title": "Sword Art Online: Fatal Bullet",
+    "year": 2018
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:02.353414+00:00",
+   "v": {
+    "genres": [
+     "Third Person Shooter"
+    ],
+    "reviews": 42,
+    "score": 64,
+    "slug": "sword-art-online-fatal-bullet",
+    "title": "Sword Art Online: Fatal Bullet",
+    "user": 7.2,
+    "userCount": 150,
+    "year": 2018
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:05.900120+00:00",
+   "forced": 626690,
+   "v": {
+    "appid": 626690,
+    "name": "Sword Art Online: Fatal Bullet",
+    "neg": 4011,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 15142,
+    "price": 19.99,
+    "publisher": "BANDAI NAMCO Entertainment",
+    "tags": [
+     "Anime",
+     "RPG",
+     "Character Customization",
+     "Action",
+     "Multiplayer",
+     "JRPG",
+     "Third-Person Shooter",
+     "Open World",
+     "Shooter",
+     "Third Person",
+     "Co-op",
+     "Singleplayer",
+     "MMORPG",
+     "Online Co-Op",
+     "Fantasy",
+     "Sexual Content",
+     "Nudity",
+     "Great Soundtrack",
+     "Visual Novel",
+     "FPS"
+    ]
+   }
+  }
+ },
  "steam-629520": {
   "hltb": {
    "at": "2026-10-23T12:23:44.052327+00:00",
@@ -118497,6 +119891,64 @@
      "Silent Protagonist",
      "Cute",
      "Casual"
+    ]
+   }
+  }
+ },
+ "steam-6510": {
+  "hltb": {
+   "at": "2026-10-24T09:38:09.236387+00:00",
+   "v": {
+    "comp": 23.5,
+    "extra": 9.5,
+    "id": 5397,
+    "main": 7.8,
+    "title": "Lost Planet: Extreme Condition",
+    "year": 2006
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:09.408830+00:00",
+   "v": {
+    "genres": [
+     "Third Person Shooter"
+    ],
+    "reviews": 76,
+    "score": 79,
+    "slug": "lost-planet-extreme-condition",
+    "title": "Lost Planet: Extreme Condition",
+    "user": 6.8,
+    "userCount": 145,
+    "year": 2007
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:22.682239+00:00",
+   "forced": 6510,
+   "v": {
+    "appid": 6510,
+    "name": "Lost Planet: Extreme Condition",
+    "neg": 361,
+    "owners": "200,000 .. 500,000",
+    "pos": 1586,
+    "price": 14.99,
+    "publisher": "Capcom",
+    "tags": [
+     "Action",
+     "Adventure",
+     "Mechs",
+     "Third-Person Shooter",
+     "Sci-fi",
+     "Shooter",
+     "Third Person",
+     "Robots",
+     "Multiplayer",
+     "Atmospheric",
+     "Co-op",
+     "Singleplayer",
+     "Snow",
+     "Aliens",
+     "Classic"
     ]
    }
   }
@@ -119908,6 +121360,68 @@
    }
   }
  },
+ "steam-7000": {
+  "hltb": {
+   "at": "2026-10-24T09:38:07.049757+00:00",
+   "v": {
+    "comp": 14.9,
+    "extra": 9.1,
+    "id": 10477,
+    "main": 7.2,
+    "title": "Tomb Raider: Legend",
+    "year": 2006
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:06.608420+00:00",
+   "v": {
+    "genres": [
+     "Linear Action Adventure"
+    ],
+    "reviews": 54,
+    "score": 80,
+    "slug": "tomb-raider-legend",
+    "title": "Tomb Raider: Legend",
+    "user": 8,
+    "userCount": 235,
+    "year": 2006
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:15.986439+00:00",
+   "forced": 7000,
+   "v": {
+    "appid": 7000,
+    "name": "Tomb Raider: Legend",
+    "neg": 664,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 4690,
+    "price": 6.99,
+    "publisher": "Crystal Dynamics",
+    "tags": [
+     "Adventure",
+     "Action",
+     "Female Protagonist",
+     "Third Person",
+     "Puzzle",
+     "Platformer",
+     "Singleplayer",
+     "Action-Adventure",
+     "Shooter",
+     "Third-Person Shooter",
+     "Exploration",
+     "Classic",
+     "Controller",
+     "Parkour",
+     "Story Rich",
+     "Atmospheric",
+     "3D Platformer",
+     "Modern",
+     "Great Soundtrack"
+    ]
+   }
+  }
+ },
  "steam-700330": {
   "hltb": {
    "at": "2026-10-23T12:21:38.974839+00:00",
@@ -120030,6 +121544,69 @@
      "Puzzle",
      "Open World",
      "Space"
+    ]
+   }
+  }
+ },
+ "steam-70600": {
+  "hltb": {
+   "at": "2026-10-24T09:38:06.381007+00:00",
+   "v": {
+    "comp": 22.9,
+    "extra": 19.0,
+    "id": 11316,
+    "main": 7.2,
+    "title": "Worms: Ultimate Mayhem",
+    "year": 2011
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:06.096292+00:00",
+   "v": {
+    "genres": [
+     "Artillery"
+    ],
+    "reviews": 18,
+    "score": 59,
+    "slug": "worms-ultimate-mayhem",
+    "title": "Worms Ultimate Mayhem",
+    "user": 7.5,
+    "userCount": 24,
+    "year": 2011
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:14.898039+00:00",
+   "forced": 70600,
+   "v": {
+    "appid": 70600,
+    "name": "Worms Ultimate Mayhem",
+    "neg": 669,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 5169,
+    "price": 14.99,
+    "publisher": "Team17 Digital Ltd",
+    "tags": [
+     "Strategy",
+     "Multiplayer",
+     "Funny",
+     "Turn-Based",
+     "Turn-Based Strategy",
+     "Comedy",
+     "Action",
+     "Third Person",
+     "Destruction",
+     "Local Co-Op",
+     "Local Multiplayer",
+     "Singleplayer",
+     "3D Vision",
+     "3D",
+     "Co-op",
+     "Classic",
+     "Nostalgia",
+     "Online Co-Op",
+     "Split Screen",
+     "Shooter"
     ]
    }
   }
@@ -122599,6 +124176,58 @@
    }
   }
  },
+ "steam-866800": {
+  "hltb": {
+   "at": "2026-10-24T09:38:04.392080+00:00",
+   "v": {
+    "comp": 13.8,
+    "extra": 10.3,
+    "id": 47646,
+    "main": 9.9,
+    "title": "The Walking Dead: The Final Season",
+    "year": 2018
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:03.667597+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:08.224888+00:00",
+   "forced": 866800,
+   "v": {
+    "appid": 866800,
+    "name": "The Walking Dead: The Final Season",
+    "neg": 982,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 18302,
+    "price": 19.99,
+    "publisher": "Skybound Games",
+    "tags": [
+     "Story Rich",
+     "Choices Matter",
+     "Zombies",
+     "Adventure",
+     "Choose Your Own Adventure",
+     "Singleplayer",
+     "Female Protagonist",
+     "Post-apocalyptic",
+     "Survival",
+     "Atmospheric",
+     "Horror",
+     "Violent",
+     "Drama",
+     "Action",
+     "Gore",
+     "Episodic",
+     "Comic Book",
+     "Point & Click",
+     "Mature",
+     "LGBTQ+"
+    ]
+   }
+  }
+ },
  "steam-874260": {
   "hltb": {
    "at": "2026-10-23T12:32:25.200193+00:00",
@@ -122780,6 +124409,69 @@
      "Realistic",
      "Atmospheric",
      "Third Person"
+    ]
+   }
+  }
+ },
+ "steam-8850": {
+  "hltb": {
+   "at": "2026-10-24T09:38:02.596396+00:00",
+   "v": {
+    "comp": 23.9,
+    "extra": 14.4,
+    "id": 1066,
+    "main": 10.5,
+    "title": "BioShock 2",
+    "year": 2010
+   }
+  },
+  "mc": {
+   "at": "2026-10-24T09:38:01.752344+00:00",
+   "v": {
+    "genres": [
+     "FPS"
+    ],
+    "reviews": 93,
+    "score": 88,
+    "slug": "bioshock-2",
+    "title": "BioShock 2",
+    "user": 8.1,
+    "userCount": 1445,
+    "year": 2010
+   }
+  },
+  "steam": {
+   "at": "2026-10-24T09:38:03.659070+00:00",
+   "forced": 8850,
+   "v": {
+    "appid": 8850,
+    "name": "BioShock 2",
+    "neg": 1555,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 12864,
+    "price": 19.99,
+    "publisher": "2K",
+    "tags": [
+     "FPS",
+     "Action",
+     "Singleplayer",
+     "Story Rich",
+     "Atmospheric",
+     "Horror",
+     "First-Person",
+     "Shooter",
+     "Steampunk",
+     "Sci-fi",
+     "Underwater",
+     "Multiplayer",
+     "Dystopian ",
+     "Adventure",
+     "Immersive",
+     "RPG",
+     "Dark",
+     "Great Soundtrack",
+     "Philosophical",
+     "Action RPG"
     ]
    }
   }
