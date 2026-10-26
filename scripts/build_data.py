@@ -424,20 +424,19 @@ def fetch_psplus() -> tuple[list[dict], dict[str, set[str]]]:
 
 
 # ---------- Steam: kostenlose und günstige (≤ 5 €) Spiele mit guten Bewertungen ----------
-# Kandidaten = die 5000 meistbesessenen Steam-Spiele (SteamSpy, 1 Abruf/Minute erlaubt), Euro-Preis und
-# Verfügbarkeit prüft danach die Steam-API. Die endgültige Auswahl (Regeln STEAM_RULES) passiert in main(),
-# weil dafür Metascore und AAA/AA-Einstufung nötig sind.
-STEAM_PAGES = 5
+# Kandidaten aus der Steam-Shop-Suche ("Free to Play" bzw. "bis 5 €", nach Bewertung sortiert): liefert Euro-Preis,
+# Rabatt und Bewertung in einem, nicht käufliche Spiele tauchen dort nicht auf. Große Gratis-Spiele unter 80 %
+# (Apex, Halo Infinite …) kommen aus Steams Meistgespielt-Liste und der SteamSpy-Topliste. Die endgültige
+# Auswahl (steam_rules_keep) passiert in main(), weil dafür die AAA/AA-Einstufung nötig ist.
 STEAMSPY_CACHE = ROOT / "data" / "cache" / "steamspy_all.json"
 STEAM_RULES = {
-    # kostenlos: sehr gut bewertet ODER große Produktion (AAA/AA) mit ordentlicher Bewertung
-    "free_top": (80, 2000),
-    "free_big": (60, 20000),
-    # bis 5 € (auch im Angebot): gut bewertet ODER Metascore ≥ 80
-    "cheap_top": (85, 2000),
-    "cheap_mc": 80,
+    # (mindestens % positiv, mindestens Anzahl Bewertungen)
+    "free_top": (80, 100),   # kostenlos und sehr gut bewertet
+    "free_big": (60, 100),   # kostenlos, AAA/AA, ordentlich bewertet
+    "cheap_top": (85, 100),  # bis 5 € (auch im Angebot), gut bewertet
     "cheap_max_eur": 5.00,
 }
+search_rl = RateLimit(0.6)
 
 
 def steam_pct(pos: int, neg: int) -> tuple[int | None, int]:
@@ -445,18 +444,60 @@ def steam_pct(pos: int, neg: int) -> tuple[int | None, int]:
     return (round(100 * pos / n) if n else None), n
 
 
-def fetch_steamspy_all() -> list[dict]:
+def steam_search(params: str, stop_pct: int) -> list[dict]:
+    """Steam-Shop-Suche seitenweise, nach Bewertung sortiert, bis die Bewertung unter stop_pct fällt."""
+    rows, start = [], 0
+    while start < 20000:
+        url = (f"https://store.steampowered.com/search/results/?{params}&sort_by=Reviews_DESC&start={start}"
+               "&count=100&cc=de&l=english&category1=998&infinite=1")
+        d = None
+        for i in range(5):
+            search_rl.wait()
+            try:
+                d = http_json(url, tries=1)
+                break
+            except urllib.error.HTTPError as e:
+                if e.code != 429:
+                    raise
+                time.sleep(30 * (i + 1))  # Steam bremst schnelle Abrufe kurz aus
+        if d is None:
+            raise RuntimeError("Steam-Suche: dauerhaft HTTP 429")
+        page = []
+        for b in (d.get("results_html") or "").split('<a href="https://store.steampowered.com/app/')[1:]:
+            appid = b.split("/")[0]
+            if not appid.isdigit():
+                continue
+            t = re.search(r'<span class="title">(.*?)</span>', b)
+            rev = re.search(r"(\d+)% of the ([\d,]+) user reviews", b)
+            price = re.search(r'data-price-final="(\d+)"', b)
+            disc = re.search(r'data-discount="(\d+)"', b)
+            orig = re.search(r'discount_original_price">([\d,.]+)', b)
+            page.append({
+                "appid": int(appid), "name": htmllib_unescape(t.group(1)) if t else "",
+                "pct": int(rev.group(1)) if rev else None, "n": int(rev.group(2).replace(",", "")) if rev else 0,
+                "price": int(price.group(1)) / 100 if price else None, "disc": int(disc.group(1)) if disc else 0,
+                "initial": float(orig.group(1).replace(".", "").replace(",", ".")) if orig else None,
+            })
+        rows += page
+        start += 100
+        pcts = [x["pct"] for x in page if x["pct"] is not None]
+        if not page or (pcts and max(pcts) < stop_pct):
+            break
+    return rows
+
+
+def htmllib_unescape(s: str) -> str:
+    import html as htmllib
+    return htmllib.unescape(s)
+
+
+def fetch_steamspy_top() -> list[dict]:
+    """Die 1000 meistbesessenen Spiele (SteamSpy) – für große Gratis-Spiele mit mittlerer Bewertung."""
     cache = load_json(STEAMSPY_CACHE, {})
     today = datetime.now(timezone.utc).date().isoformat()
-    if cache.get("date") == today and len(cache.get("apps", [])) >= 1000 * STEAM_PAGES * 0.9:
+    if cache.get("date") == today and cache.get("apps"):
         return cache["apps"]
-    apps = []
-    for page in range(STEAM_PAGES):
-        if page:
-            time.sleep(61)  # SteamSpy: "all" höchstens einmal pro Minute
-        d = http_json(f"https://steamspy.com/api.php?request=all&page={page}")
-        apps += list(d.values())
-        log(f"  SteamSpy Seite {page + 1}/{STEAM_PAGES}")
+    apps = list(http_json("https://steamspy.com/api.php?request=all&page=0").values())
     save_json(STEAMSPY_CACHE, {"date": today, "apps": apps})
     return apps
 
@@ -509,57 +550,78 @@ def steam_really_free(appids: list[int]) -> dict[int, bool]:
     return out
 
 
+def steam_entry(appid: int, name: str, pct: int, n: int, price: float, initial: float, disc: int, **extra) -> dict:
+    cdn = f"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/{appid}"
+    return base_entry(
+        f"steam-{appid}", name, f"https://store.steampowered.com/app/{appid}/", "steam",
+        img=f"{cdn}/library_600x900.jpg", sq=False, img2=f"{cdn}/header.jpg", sp=pct, spN=n, steamAppid=appid,
+        deals=[{"src": "steam", "price": price, "initial": initial, "disc": disc}], **extra,
+    )
+
+
 def fetch_steam_deals() -> tuple[list[dict], dict[str, set[str]]]:
-    apps = fetch_steamspy_all()
     r = STEAM_RULES
-    cands = []
-    for a in apps:
-        pct, n = steam_pct(a.get("positive", 0), a.get("negative", 0))
-        if pct is None:
-            continue
-        free = str(a.get("price")) == "0" and str(a.get("initialprice")) == "0"
-        usd = int(a["price"]) / 100 if str(a.get("price") or "").isdigit() else None
-        if free and ((pct >= r["free_top"][0] and n >= r["free_top"][1]) or (pct >= r["free_big"][0] and n >= r["free_big"][1])):
-            cands.append((a, pct, n))
-        # Vorauswahl großzügig (Dollarpreis, Metascore-Ausnahme); die genaue Prüfung folgt in Euro bzw. nach Metacritic
-        elif not free and usd is not None and usd <= 8 and pct >= 70 and n >= 1000:
-            cands.append((a, pct, n))
-    prices = steam_prices([int(a["appid"]) for a, _, _ in cands])
-    free_ok = steam_really_free([a for a, pr in prices.items() if pr == {}])
-    games, flags = [], {}
-    for a, pct, n in cands:
-        appid = int(a["appid"])
-        pr = prices.get(appid)
-        if pr is None or (pr == {} and not free_ok.get(appid)):
-            continue  # eingestellt, nicht mehr käuflich oder in DE nicht erhältlich
-        if pr and pr["price"] > r["cheap_max_eur"]:
-            continue
-        url = f"https://store.steampowered.com/app/{appid}/"
-        cdn = f"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/{appid}"
-        g = base_entry(
-            f"steam-{appid}", a.get("name") or "", url, "steam", img=f"{cdn}/library_600x900.jpg", sq=False,
-            img2=f"{cdn}/header.jpg", pub=a.get("publisher") or None, dev=a.get("developer") or None,
-            sp=pct, spN=n, steamAppid=appid,
-            deals=[{"src": "steam", "price": pr.get("price", 0), "initial": pr.get("initial", 0), "disc": pr.get("disc", 0)}],
-        )
-        games.append(g)
-        flags[g["id"]] = {"steamFree"} if not pr else {"steamCheap"}
+    games: dict[int, dict] = {}
+    flags: dict[str, set[str]] = {}
+
+    for x in steam_search("genre=Free%20to%20Play", r["free_top"][0]):
+        if x["price"] == 0 and x["pct"] is not None and x["pct"] >= r["free_top"][0] and x["n"] >= r["free_top"][1]:
+            games[x["appid"]] = steam_entry(x["appid"], x["name"], x["pct"], x["n"], 0, 0, 0)
+            flags[f"steam-{x['appid']}"] = {"steamFree"}
+    log(f"  Steam-Suche gratis: {len(games)}")
+    for x in steam_search(f"maxprice={int(r['cheap_max_eur'])}", r["cheap_top"][0]):
+        if (x["price"] and x["price"] <= r["cheap_max_eur"] and x["pct"] is not None
+                and x["pct"] >= r["cheap_top"][0] and x["n"] >= r["cheap_top"][1] and x["appid"] not in games):
+            games[x["appid"]] = steam_entry(x["appid"], x["name"], x["pct"], x["n"], x["price"],
+                                            x["initial"] or x["price"], x["disc"])
+            flags[f"steam-{x['appid']}"] = {"steamCheap"}
+
+    # große Gratis-Spiele mit 60–79 %: Kandidaten aus Meistgespielt-Liste und SteamSpy-Top-1000
+    big: dict[int, tuple[str, int, int]] = {}
+    try:
+        for a in fetch_steamspy_top():
+            pct, n = steam_pct(a.get("positive", 0), a.get("negative", 0))
+            if str(a.get("price")) == "0" and pct is not None and pct >= r["free_big"][0] and n >= r["free_big"][1]:
+                big[int(a["appid"])] = (a.get("name") or "", pct, n)
+    except Exception as e:  # noqa: BLE001
+        log(f"  SteamSpy-Topliste nicht abrufbar ({e})")
+    try:
+        ranks = http_json("https://api.steampowered.com/ISteamChartsService/GetMostPlayedGames/v1/")["response"]["ranks"]
+        for rk in ranks:
+            a = rk["appid"]
+            if a in big or a in games:
+                continue
+            spy_rl.wait()
+            d = http_json(f"https://steamspy.com/api.php?request=appdetails&appid={a}")
+            pct, n = steam_pct(d.get("positive", 0), d.get("negative", 0))
+            if str(d.get("price")) == "0" and pct is not None and pct >= r["free_big"][0] and n >= r["free_big"][1]:
+                big[a] = (d.get("name") or "", pct, n)
+    except Exception as e:  # noqa: BLE001
+        log(f"  Meistgespielt-Liste nicht abrufbar ({e})")
+    big = {a: v for a, v in big.items() if a not in games}
+    if big:
+        prices = steam_prices(list(big))
+        free_ok = steam_really_free([a for a in big if prices.get(a) == {}])
+        for a, (name, pct, n) in big.items():
+            if prices.get(a) == {} and free_ok.get(a):
+                games[a] = steam_entry(a, name, pct, n, 0, 0, 0)
+                flags[f"steam-{a}"] = {"steamFree"}
+
     log(f"Steam: {sum('steamFree' in f for f in flags.values())} kostenlos, "
         f"{sum('steamCheap' in f for f in flags.values())} bis {r['cheap_max_eur']:.0f} € (vor Feinauswahl)")
-    return games, flags
+    return list(games.values()), flags
 
 
 def steam_rules_keep(f: set[str], sp: int | None, sp_n: int, mc: int | None, tier: str | None) -> set[str]:
-    """Feinauswahl nach Metascore/Einstufung; gibt die verbleibenden Steam-Flags zurück."""
+    """Feinauswahl nach Einstufung; gibt die verbleibenden Steam-Flags zurück."""
     r = STEAM_RULES
     keep = set()
     if "steamFree" in f and sp is not None:
         if (sp >= r["free_top"][0] and sp_n >= r["free_top"][1]) or (
             tier in ("AAA", "AA") and sp >= r["free_big"][0] and sp_n >= r["free_big"][1]):
             keep.add("steamFree")
-    if "steamCheap" in f and sp is not None:
-        if (sp >= r["cheap_top"][0] and sp_n >= r["cheap_top"][1]) or (mc or 0) >= r["cheap_mc"]:
-            keep.add("steamCheap")
+    if "steamCheap" in f and sp is not None and sp >= r["cheap_top"][0] and sp_n >= r["cheap_top"][1]:
+        keep.add("steamCheap")
     return keep
 
 

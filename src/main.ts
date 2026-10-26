@@ -849,7 +849,7 @@ function buildFilters() {
       'Steam',
       chipList(STEAMD, () => S.plat, (v) => (S.plat = v), countBy((g) => g.plat)),
       () => (S.plat = S.plat.filter((p) => !(p in STEAMD))),
-      'Kostenlos: ≥ 80 % positiv bei ≥ 2.000 Bewertungen, oder AAA/AA mit ≥ 60 % bei ≥ 20.000. Bis 5 € (auch im Angebot): ≥ 85 % bei ≥ 2.000 Bewertungen oder Metascore ≥ 80. Täglich neu geprüft.',
+      'Alle mit ≥ 100 Steam-Bewertungen. Kostenlos: ≥ 80 % positiv, oder AAA/AA mit ≥ 60 %. Bis 5 € (auch im Angebot): ≥ 85 % positiv. Täglich neu geprüft – mit „Steam-Bewertung“ unten schärfer stellen.',
     ),
     group('Status', chipList(STATUS, () => S.status, (v) => (S.status = v), countBy((g) => [g.new ? 'new' : '', g.leaving ? 'leaving' : ''])), () => (S.status = [])),
     group('Erscheinungsjahr', rangeSlider(years, () => S.year, (r) => (S.year = r), (v, end) => (end ? (v === YEAR_MIN ? 'alle' : 'heute') : String(v))), () => (S.year = [null, null])),

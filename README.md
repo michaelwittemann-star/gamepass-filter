@@ -18,7 +18,7 @@ Open World, Produktionsgröße (AAA/AA/Indie), Steam-Tags, Technik, Altersfreiga
 | PS Plus Essential / Extra / Premium (Katalog, Cover, Genre, PS4/PS5, USK) | `playstation.com/bin/imagic/gameslist` (öffentlich) |
 | Epic-Gratisspiele (jetzt / demnächst) | `freeGamesPromotions` des Epic Games Store |
 | Netflix-Spiele (Handy / TV) | Liste von whats-on-netflix.com, Verfügbarkeit in DE + Bild über netflix.com/de/games/<id> (Cache `data/cache/netflix_de.json`) |
-| Steam: kostenlos / bis 5 € (Regeln `STEAM_RULES`) | SteamSpy `request=all` (5000 meistbesessene Spiele, 1 Abruf/Minute) + Steam-API (Euro-Preis, Rabatt, `is_free`) |
+| Steam: kostenlos / bis 5 € (Regeln `STEAM_RULES`, ab 100 Bewertungen) | Steam-Shop-Suche (Free to Play / bis 5 €, nach Bewertung sortiert; Euro-Preis, Rabatt, % positiv); große F2P (60–79 %) zusätzlich aus Steams Meistgespielt-Liste + SteamSpy-Top-1000, geprüft per `appdetails`/`is_free` |
 | AAA / AA / Indie | **geschätzt** in `classify_tier()`: Publisher-Listen, Steam-Tag „Indie“, Zahl der Metacritic-Kritiken, Steam-Preis |
 
 Die Zuordnung zu Metacritic/HLTB/Steam läuft automatisch über den (englischen) Titel. Falsche Treffer
