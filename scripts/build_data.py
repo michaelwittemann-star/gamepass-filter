@@ -1223,6 +1223,100 @@ def merge_duplicates(games: list[dict]) -> list[dict]:
     return out
 
 
+# ---------- Steam-Tags aus der offiziellen Store-API und Genres daraus ----------
+# SteamSpy kennt kleinere/neuere Spiele nicht (keine Tags) – IStoreBrowseService liefert sie für bis zu 100 Spiele je Abruf.
+STEAM_TAGS_CACHE = ROOT / "data" / "cache" / "steam_tags.json"
+
+
+def steam_store_info(appids: list[int]) -> dict[int, dict]:
+    """Tags und echte Cover-Adressen (neuere Spiele haben eine Prüfsumme im Bildpfad; die alte Adresse
+    liefert dort nur einen leeren Platzhalter)."""
+    cache = load_json(STEAM_TAGS_CACHE, {})
+    now = datetime.now(timezone.utc)
+    todo = [a for a in dict.fromkeys(appids)
+            if str(a) not in cache or "cap" not in cache[str(a)]
+            or now - datetime.fromisoformat(cache[str(a)]["at"]) > timedelta(days=30)]
+    if todo:
+        names = {t["tagid"]: t["name"] for t in
+                 http_json("https://api.steampowered.com/IStoreService/GetTagList/v1/?language=english")["response"]["tags"]}
+        for i in range(0, len(todo), 100):
+            chunk = todo[i: i + 100]
+            req = {"ids": [{"appid": a} for a in chunk], "context": {"language": "english", "country_code": "DE"},
+                   "data_request": {"include_tag_count": 20, "include_assets": True}}
+            steam_rl.wait()
+            try:
+                d = http_json("https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json="
+                              + urllib.parse.quote(json.dumps(req)))
+            except Exception as e:  # noqa: BLE001
+                log(f"  Steam-Tags: Abruf fehlgeschlagen ({e})")
+                continue
+            for it in (d.get("response") or {}).get("store_items") or []:
+                if it.get("appid"):
+                    tags = [names.get(t["tagid"]) for t in sorted(it.get("tags") or [], key=lambda t: -t.get("weight", 0))]
+                    assets = it.get("assets") or {}
+                    fmt = assets.get("asset_url_format")
+
+                    def asset(key):
+                        f = assets.get(key)
+                        return f"https://shared.akamai.steamstatic.com/store_item_assets/{fmt.replace('${FILENAME}', f)}" if fmt and f else None
+
+                    cache[str(it["appid"])] = {"at": now.isoformat(), "tags": [t for t in tags if t][:20],
+                                               "cap": asset("library_capsule"), "hdr": asset("header")}
+        log(f"  Steam-Infos (Tags/Cover) nachgeladen: {len(todo)}")
+        save_json(STEAM_TAGS_CACHE, cache)
+    return {a: cache.get(str(a)) or {} for a in appids}
+
+
+# Steam-Tag -> Genre der Seite (Reihenfolge der Tags = Gewicht auf Steam; höchstens 3 Genres)
+TAG_GENRES = {
+    "Action": "Action & adventure", "Action-Adventure": "Action & adventure", "Adventure": "Action & adventure",
+    "Hack and Slash": "Action & adventure", "Beat 'em up": "Action & adventure", "Point & Click": "Action & adventure",
+    "Survival": "Action & adventure", "Stealth": "Action & adventure",
+    "RPG": "Role playing", "Action RPG": "Role playing", "JRPG": "Role playing", "CRPG": "Role playing",
+    "Party-Based RPG": "Role playing", "Strategy RPG": "Role playing", "Dungeon Crawler": "Role playing",
+    "Shooter": "Shooter", "FPS": "Shooter", "Third-Person Shooter": "Shooter", "Shoot 'Em Up": "Shooter",
+    "Bullet Hell": "Shooter", "Arena Shooter": "Shooter", "Hero Shooter": "Shooter",
+    "Simulation": "Simulation", "Life Sim": "Simulation", "Farming Sim": "Simulation", "City Builder": "Simulation",
+    "Building": "Simulation", "Management": "Simulation", "Colony Sim": "Simulation", "Walking Simulator": "Simulation",
+    "Strategy": "Strategy", "RTS": "Strategy", "Turn-Based Strategy": "Strategy", "Grand Strategy": "Strategy",
+    "Tower Defense": "Strategy", "4X": "Strategy", "Turn-Based Tactics": "Strategy", "Auto Battler": "Strategy",
+    "Platformer": "Platformer", "2D Platformer": "Platformer", "3D Platformer": "Platformer",
+    "Precision Platformer": "Platformer", "Puzzle-Platformer": "Platformer", "Metroidvania": "Platformer",
+    "Family Friendly": "Family & kids",
+    "Racing": "Racing & flying", "Driving": "Racing & flying", "Flight": "Racing & flying", "Automobile Sim": "Racing & flying",
+    "Sports": "Sports", "Football (Soccer)": "Sports", "Basketball": "Sports", "Golf": "Sports", "Skateboarding": "Sports",
+    "Puzzle": "Puzzle & trivia", "Logic": "Puzzle & trivia", "Hidden Object": "Puzzle & trivia", "Trivia": "Puzzle & trivia",
+    "Word Game": "Puzzle & trivia", "Match 3": "Puzzle & trivia",
+    "Fighting": "Fighting", "2D Fighter": "Fighting", "3D Fighter": "Fighting", "Martial Arts": "Fighting",
+    "Card Game": "Card & board", "Board Game": "Card & board", "Deckbuilding": "Card & board", "Card Battler": "Card & board",
+    "Chess": "Card & board", "Tabletop": "Card & board", "Solitaire": "Card & board",
+    "MOBA": "Multi-player Online Battle Arena",
+    "Rhythm": "Music", "Music": "Music",
+    "Party": "Party", "Party Game": "Party",
+    "Arcade": "Arcade",
+    "Visual Novel": "Interactive story", "Interactive Fiction": "Interactive story", "Choose Your Own Adventure": "Interactive story",
+    "Dating Sim": "Interactive story",
+    "Classic": "Classics",
+    "Horror": "Action & adventure", "Psychological Horror": "Action & adventure", "Survival Horror": "Action & adventure",
+    "Exploration": "Action & adventure",
+}
+# nur wenn sonst nichts passt
+TAG_GENRES_FALLBACK = {"Casual": "Other", "Idler": "Other", "Clicker": "Other", "Sandbox": "Simulation", "Education": "Family & kids"}
+
+
+def genres_from_tags(tags: list[str]) -> list[str]:
+    out = []
+    for t in tags[:12]:
+        gname = TAG_GENRES.get(t)
+        if gname and gname not in out:
+            out.append(gname)
+        if len(out) == 3:
+            break
+    if not out:
+        out = list(dict.fromkeys(TAG_GENRES_FALLBACK[t] for t in tags if t in TAG_GENRES_FALLBACK))[:1]
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--refresh", action="store_true")
@@ -1264,18 +1358,30 @@ def main():
     if not args.limit:
         save_json(FIRST_SEEN_FILE, first_seen)
 
+    # Tags für Spiele nachladen, die SteamSpy nicht kennt
+    def appid_of(g):
+        v = ((cache.get(g["id"]) or {}).get("steam") or {}).get("v") or {}
+        return v.get("appid") or g.get("steamAppid")
+    info = steam_store_info([int(appid_of(g)) for g in games if appid_of(g)])
+
     out = []
     for g in games:
         c = cache.get(g["id"], {})
         mc = (c.get("mc") or {}).get("v")
         hl = (c.get("hltb") or {}).get("v")
         st = (c.get("steam") or {}).get("v")
+        si = info.get(int(appid_of(g))) if appid_of(g) else None
+        if st and not st.get("tags") and (si or {}).get("tags"):
+            st = {**st, "tags": si["tags"]}
+        if g["id"].startswith("steam-") and si:  # echte Cover-Adressen statt geratener
+            g = {**g, "img": si.get("cap") or si.get("hdr") or g["img"], "imgSq": not si.get("cap"),
+                 "img2": si.get("hdr") if si.get("cap") else None}
         f = flags[g["id"]]
         # Erscheinungsjahr = Original-Release (Metacritic, sonst HLTB), nicht der spätere Xbox-Port
         year = (mc and mc.get("year")) or (hl and hl.get("year")) or g["yx"]
         steam_cover = (
-            f"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/{st['appid']}/library_600x900.jpg"
-            if g["imgSq"] and st else None
+            ((si or {}).get("cap") or f"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/{st['appid']}/library_600x900.jpg")
+            if g["imgSq"] and st and not g["id"].startswith("steam-") else None
         )
         tier, tier_why = classify_tier(g, mc, st, year)
         if overrides.get(g["id"], {}).get("tier"):
@@ -1304,7 +1410,7 @@ def main():
             "new": "new" in f or None,
             "leaving": "leaving" in f or None,
             "added": first_seen.get(g["id"]),
-            "genres": g["genres"],
+            "genres": g["genres"] or genres_from_tags(tags),
             "feat": g["feat"] or sorted({STEAM_MODE_TAGS[t] for t in tags if t in STEAM_MODE_TAGS}),
             "onlineOnly": g["onlineOnly"] or None,
             "onlineMax": g["onlineMax"],
