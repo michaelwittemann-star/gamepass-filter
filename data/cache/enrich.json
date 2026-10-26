@@ -326216,6 +326216,63 @@
    }
   }
  },
+ "steam-31170": {
+  "hltb": {
+   "at": "2026-10-26T18:48:20.616682+00:00",
+   "v": {
+    "comp": 16.5,
+    "extra": 15.6,
+    "id": 9594,
+    "main": 15.2,
+    "title": "Tales of Monkey Island",
+    "year": 2009
+   }
+  },
+  "mc": {
+   "at": "2026-10-26T18:48:20.616157+00:00",
+   "v": {
+    "genres": [
+     "Point-and-Click"
+    ],
+    "reviews": 6,
+    "score": 86,
+    "slug": "tales-of-monkey-island",
+    "title": "Tales of Monkey Island",
+    "user": 8,
+    "userCount": 62,
+    "year": 2010
+   }
+  },
+  "steam": {
+   "at": "2026-10-26T18:48:20.616838+00:00",
+   "forced": 31170,
+   "v": {
+    "appid": 31170,
+    "name": "Tales of Monkey Island: Complete Season",
+    "neg": 81,
+    "owners": "200,000 .. 500,000",
+    "pos": 660,
+    "price": 14.99,
+    "publisher": "Telltale",
+    "tags": [
+     "Point & Click",
+     "Adventure",
+     "Comedy",
+     "Puzzle",
+     "Funny",
+     "Story Rich",
+     "Singleplayer",
+     "Cartoon",
+     "Pirates",
+     "Narration",
+     "Supernatural",
+     "Exploration",
+     "Episodic",
+     "Retro"
+    ]
+   }
+  }
+ },
  "steam-311730": {
   "hltb": {
    "at": "2026-10-23T17:04:47.735467+00:00",
