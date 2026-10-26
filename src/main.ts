@@ -846,13 +846,11 @@ function buildFilters() {
       'Gratis zum Behalten',
       chipList(FREE, () => S.plat, (v) => (S.plat = v), countBy((g) => g.plat)),
       () => (S.plat = S.plat.filter((p) => !(p in FREE))),
-      'Wöchentliche Epic-Geschenke und monatliche Prime-Spiele – nur bis zur Frist abholbar. „Bald“ = von Epic bzw. Amazon schon angekündigt.',
     ),
     group(
       'Steam',
       chipList(STEAMD, () => S.plat, (v) => (S.plat = v), countBy((g) => g.plat)),
       () => (S.plat = S.plat.filter((p) => !(p in STEAMD))),
-      'Alle mit ≥ 100 Steam-Bewertungen. Kostenlos: ≥ 80 % positiv, oder AAA/AA mit ≥ 60 %. Bis 5 € bzw. bis 10 € (auch im Angebot, „bis 10 €“ enthält „bis 5 €“): ≥ 85 % positiv. Täglich neu geprüft – mit „Steam-Bewertung“ unten schärfer stellen.',
     ),
     group('Status', chipList(STATUS, () => S.status, (v) => (S.status = v), countBy((g) => [g.new ? 'new' : '', g.leaving ? 'leaving' : ''])), () => (S.status = [])),
     group('Erscheinungsjahr', rangeSlider(years, () => S.year, (r) => (S.year = r), (v, end) => (end ? (v === YEAR_MIN ? 'alle' : 'heute') : String(v))), () => (S.year = [null, null])),
