@@ -655,7 +655,7 @@ interface Ctl {
 }
 const controls: Ctl[] = [];
 
-function group(title: string, body: HTMLElement | HTMLElement[], reset?: () => void, hint?: string) {
+function group(title: string, body: HTMLElement | HTMLElement[], reset?: () => void) {
   const g = document.createElement('section');
   g.className = 'fgroup';
   const h = document.createElement('h3');
@@ -671,12 +671,6 @@ function group(title: string, body: HTMLElement | HTMLElement[], reset?: () => v
     h.append(b);
   }
   g.append(h, ...(Array.isArray(body) ? body : [body]));
-  if (hint) {
-    const p = document.createElement('p');
-    p.className = 'hint';
-    p.textContent = hint;
-    g.append(p);
-  }
   return g;
 }
 
@@ -859,13 +853,11 @@ function buildFilters() {
       'User Score (Metacritic)',
       rangeSlider(Array.from({ length: 21 }, (_, i) => i * 5), () => S.us, (r) => (S.us = r), (v) => (v / 10).toFixed(1).replace('.', ',')),
       () => (S.us = [null, null]),
-      'Bewertung der Spieler auf Metacritic, 0–10',
     ),
     group(
       'Steam-Bewertung',
       rangeSlider(Array.from({ length: 21 }, (_, i) => i * 5), () => S.sp, (r) => (S.sp = r), (v) => `${v} %`),
       () => (S.sp = [null, null]),
-      'Anteil positiver Nutzerbewertungen auf Steam – gilt für alle Spiele, die es auch auf Steam gibt',
     ),
     group(
       'Spielzeit (HowLongToBeat)',
@@ -890,11 +882,11 @@ function buildFilters() {
     render();
   };
   controls.push({ sync: () => (cb.checked = S.missing) });
-  F.append(group('Fehlende Daten', missing, undefined, 'Gilt für Jahr, Metascore, User Score, Steam-Bewertung, Spielzeit, Spieleranzahl, Produktion und Open World, sobald dort gefiltert wird.'));
+  F.append(group('Fehlende Daten', missing));
 
   const gc = countBy((g) => g.genres);
   const genreOpts = Object.fromEntries(Object.entries(GENRES).filter(([k]) => gc[k]));
-  F.append(group('Genre', triChips(genreOpts, () => S.genres, gc), () => (S.genres = {}), 'Grün = eines davon, rot = ausschließen'));
+  F.append(group('Genre', triChips(genreOpts, () => S.genres, gc), () => (S.genres = {})));
 
   F.append(
     group(
@@ -914,9 +906,8 @@ function buildFilters() {
       'Produktion',
       chipList(TIERS, () => S.tier, (v) => (S.tier = v), countBy((g) => (g.tier ? [g.tier] : []))),
       () => (S.tier = []),
-      'Geschätzt aus Publisher, Steam-Tag „Indie“, Zahl der Kritiken und Steam-Preis – es gibt kein offizielles Label. Begründung im Tooltip am Wert.',
     ),
-    group('Open World', seg({ any: 'egal', yes: 'ja', no: 'nein' } as Record<State['ow'], string>, () => S.ow, (v) => (S.ow = v)), undefined, 'Laut Steam-Tags bzw. Metacritic-Genre'),
+    group('Open World', seg({ any: 'egal', yes: 'ja', no: 'nein' } as Record<State['ow'], string>, () => S.ow, (v) => (S.ow = v))),
   );
 
   // Steam-Tags: Freitext mit Vorschlägen + häufigste als Chips
@@ -956,7 +947,6 @@ function buildFilters() {
       'Merkmale (Steam-Tags)',
       [tagBox, triChips(Object.fromEntries(popular.map((t) => [t, t])), () => S.tags, tc, true)],
       () => (S.tags = {}),
-      'Grün = muss haben (alle), rot = ausschließen. Nur für Spiele, die es auch auf Steam gibt.',
     ),
     group('Technik', chipList(TECH, () => S.tech, (v) => (S.tech = v), countBy((g) => g.feat)), () => (S.tech = [])),
     group(
