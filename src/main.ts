@@ -1060,6 +1060,7 @@ async function init() {
     if (matchMedia('(max-width: 800px)').matches) document.body.classList.toggle('filters-open');
     else document.body.classList.toggle('filters-hidden');
   };
+  $('#backdrop').onclick = () => document.body.classList.remove('filters-open');
 
   loadList();
   importFromUrl();

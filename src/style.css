@@ -182,11 +182,15 @@ footer a { color: #999; }
   }
   body:not(.filters-open) .filters { display: none; }
   body.filters-hidden .filters { display: none; }
+  /* abgedunkelte Fläche neben den offenen Filtern: Tippen schließt sie, statt ein Spiel zu öffnen */
+  body.filters-open .backdrop { display: block; position: fixed; inset: 0; z-index: 29; background: rgba(0,0,0,.5); }
+  body.filters-open { overflow: hidden; }
   main { padding: 12px 16px 40px; }
   .grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 18px 12px; }
 }
 
 .drawer-close { display: none; }
+.backdrop { display: none; }
 @media (max-width: 800px) {
   .drawer-close { display: block; margin: 0 0 4px auto; }
 }
