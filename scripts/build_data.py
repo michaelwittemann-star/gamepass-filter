@@ -188,7 +188,7 @@ def fetch_catalog() -> dict[str, set[str]]:
 # Luna Premium enthält alle Prime-Spiele.
 PLATFORMS = ("console", "pc", "cloud", "ea", "lunaPrime", "lunaPremium", "netflixMobile", "netflixTV",
              "psEssential", "psExtra", "psPremium",
-             "epicFree", "epicSoon", "primeClaim", "primeSoon", "steamFree", "steamCheap")
+             "epicFree", "epicSoon", "primeClaim", "primeSoon", "steamFree", "steamCheap", "steamCheap10")
 # Reihenfolge für das Cover-Ziel, wenn ein Spiel auf mehreren Plattformen ist (Xbox zuerst)
 SOURCE_ORDER = ("luna-", "nf-", "ps-", "epic-", "prime-", "primesoon-", "steam-")
 LUNA_LISTS = {"lunaPrime": "included_with_prime", "lunaPremium": "luna_premium"}
@@ -435,6 +435,7 @@ STEAM_RULES = {
     "free_big": (60, 100),   # kostenlos, AAA/AA, ordentlich bewertet
     "cheap_top": (85, 100),  # bis 5 € (auch im Angebot), gut bewertet
     "cheap_max_eur": 5.00,
+    "cheap10_max_eur": 10.00,
 }
 search_rl = RateLimit(0.6)
 
@@ -569,12 +570,13 @@ def fetch_steam_deals() -> tuple[list[dict], dict[str, set[str]]]:
             games[x["appid"]] = steam_entry(x["appid"], x["name"], x["pct"], x["n"], 0, 0, 0)
             flags[f"steam-{x['appid']}"] = {"steamFree"}
     log(f"  Steam-Suche gratis: {len(games)}")
-    for x in steam_search(f"maxprice={int(r['cheap_max_eur'])}", r["cheap_top"][0]):
-        if (x["price"] and x["price"] <= r["cheap_max_eur"] and x["pct"] is not None
+    # eine Suche bis 10 €; was bis 5 € kostet, steht in beiden Kategorien
+    for x in steam_search(f"maxprice={int(r['cheap10_max_eur'])}", r["cheap_top"][0]):
+        if (x["price"] and x["price"] <= r["cheap10_max_eur"] and x["pct"] is not None
                 and x["pct"] >= r["cheap_top"][0] and x["n"] >= r["cheap_top"][1] and x["appid"] not in games):
             games[x["appid"]] = steam_entry(x["appid"], x["name"], x["pct"], x["n"], x["price"],
                                             x["initial"] or x["price"], x["disc"])
-            flags[f"steam-{x['appid']}"] = {"steamCheap"}
+            flags[f"steam-{x['appid']}"] = {"steamCheap10"} | ({"steamCheap"} if x["price"] <= r["cheap_max_eur"] else set())
 
     # große Gratis-Spiele mit 60–79 %: Kandidaten aus Meistgespielt-Liste und SteamSpy-Top-1000
     big: dict[int, tuple[str, int, int]] = {}
@@ -608,7 +610,8 @@ def fetch_steam_deals() -> tuple[list[dict], dict[str, set[str]]]:
                 flags[f"steam-{a}"] = {"steamFree"}
 
     log(f"Steam: {sum('steamFree' in f for f in flags.values())} kostenlos, "
-        f"{sum('steamCheap' in f for f in flags.values())} bis {r['cheap_max_eur']:.0f} € (vor Feinauswahl)")
+        f"{sum('steamCheap' in f for f in flags.values())} bis {r['cheap_max_eur']:.0f} €, "
+        f"{sum('steamCheap10' in f for f in flags.values())} bis {r['cheap10_max_eur']:.0f} € (vor Feinauswahl)")
     return list(games.values()), flags
 
 
@@ -620,8 +623,8 @@ def steam_rules_keep(f: set[str], sp: int | None, sp_n: int, mc: int | None, tie
         if (sp >= r["free_top"][0] and sp_n >= r["free_top"][1]) or (
             tier in ("AAA", "AA") and sp >= r["free_big"][0] and sp_n >= r["free_big"][1]):
             keep.add("steamFree")
-    if "steamCheap" in f and sp is not None and sp >= r["cheap_top"][0] and sp_n >= r["cheap_top"][1]:
-        keep.add("steamCheap")
+    if sp is not None and sp >= r["cheap_top"][0] and sp_n >= r["cheap_top"][1]:
+        keep |= f & {"steamCheap", "steamCheap10"}
     return keep
 
 
@@ -1278,8 +1281,8 @@ def main():
         if overrides.get(g["id"], {}).get("tier"):
             tier, tier_why = overrides[g["id"]]["tier"], "manuell festgelegt"
         sp, sp_n = (g["sp"], g["spN"]) if g.get("sp") is not None else steam_pct((st or {}).get("pos", 0), (st or {}).get("neg", 0))
-        if f & {"steamFree", "steamCheap"}:
-            f = (f - {"steamFree", "steamCheap"}) | steam_rules_keep(f, sp, sp_n, mc and mc.get("score"), tier)
+        if f & {"steamFree", "steamCheap", "steamCheap10"}:
+            f = (f - {"steamFree", "steamCheap", "steamCheap10"}) | steam_rules_keep(f, sp, sp_n, mc and mc.get("score"), tier)
             if not f:
                 continue  # Steam-Kandidat, der die Feinauswahl nicht besteht
         mc_ow = any("open-world" in x.lower() for x in (mc or {}).get("genres") or [])

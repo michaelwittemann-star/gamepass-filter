@@ -114,6 +114,7 @@ const FREE: Record<string, string> = {
 const STEAMD: Record<string, string> = {
   steamFree: 'Steam: kostenlos',
   steamCheap: 'Steam: bis 5 €',
+  steamCheap10: 'Steam: bis 10 €',
 };
 const PLATS: Record<string, string> = { ...SUBS, ...FREE, ...STEAMD };
 const PLAT_SHORT: Record<string, string> = {
@@ -127,6 +128,7 @@ const PLAT_SHORT: Record<string, string> = {
   primeSoon: 'Prime bald',
   steamFree: 'Steam kostenlos',
   steamCheap: 'Steam',
+  steamCheap10: 'Steam',
 };
 const LINK_LABELS: Record<string, string> = { steam: 'Steam', luna: 'Luna', netflix: 'Netflix', playstation: 'PlayStation', epic: 'Epic', prime: 'Prime' };
 const STATUS: Record<string, string> = { new: 'Neu im Game Pass', leaving: 'Verlässt bald' };
@@ -464,10 +466,11 @@ function cellHtml(g: Game, col: Col): string {
           // bei Stufen-Abos nur die niedrigste nennen (Premium enthält Extra, Extra enthält Essential)
           .filter((p) => !(p === 'lunaPremium' && g.plat.includes('lunaPrime')))
           .filter((p) => !(p === 'psPremium' && g.plat.includes('psExtra')) && !(p === 'psExtra' && g.plat.includes('psEssential')))
+          .filter((p) => !(p === 'steamCheap10' && g.plat.includes('steamCheap')))
           .map((p) => {
             const via = p.startsWith('prime') ? g.deals?.find((d) => d.src === 'prime')?.via : undefined;
             const dev = p.startsWith('ps') && g.ps?.length ? g.ps.join('/') : undefined;
-            const st = p === 'steamCheap' ? steamDeal(g) : undefined;
+            const st = p === 'steamCheap' || p === 'steamCheap10' ? steamDeal(g) : undefined;
             if (st?.price !== undefined) return `Steam ${eur(st.price)}${st.disc ? ` (statt ${eur(st.initial || 0)})` : ''}`;
             return (PLAT_SHORT[p] || PLATS[p]) + (via ? ` (${via})` : dev ? ` (${dev})` : '');
           })
@@ -849,7 +852,7 @@ function buildFilters() {
       'Steam',
       chipList(STEAMD, () => S.plat, (v) => (S.plat = v), countBy((g) => g.plat)),
       () => (S.plat = S.plat.filter((p) => !(p in STEAMD))),
-      'Alle mit ≥ 100 Steam-Bewertungen. Kostenlos: ≥ 80 % positiv, oder AAA/AA mit ≥ 60 %. Bis 5 € (auch im Angebot): ≥ 85 % positiv. Täglich neu geprüft – mit „Steam-Bewertung“ unten schärfer stellen.',
+      'Alle mit ≥ 100 Steam-Bewertungen. Kostenlos: ≥ 80 % positiv, oder AAA/AA mit ≥ 60 %. Bis 5 € bzw. bis 10 € (auch im Angebot, „bis 10 €“ enthält „bis 5 €“): ≥ 85 % positiv. Täglich neu geprüft – mit „Steam-Bewertung“ unten schärfer stellen.',
     ),
     group('Status', chipList(STATUS, () => S.status, (v) => (S.status = v), countBy((g) => [g.new ? 'new' : '', g.leaving ? 'leaving' : ''])), () => (S.status = [])),
     group('Erscheinungsjahr', rangeSlider(years, () => S.year, (r) => (S.year = r), (v, end) => (end ? (v === YEAR_MIN ? 'alle' : 'heute') : String(v))), () => (S.year = [null, null])),
