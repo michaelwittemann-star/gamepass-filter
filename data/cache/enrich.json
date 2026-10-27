@@ -9919,7 +9919,7 @@
  },
  "9NFQ1XMXDLN6": {
   "hltb": {
-   "at": "2026-10-17T09:23:45.726940+00:00",
+   "at": "2026-10-27T10:43:59.694602+00:00",
    "v": null
   },
   "mc": {
@@ -10622,7 +10622,7 @@
  },
  "9NH8K4B707H0": {
   "hltb": {
-   "at": "2026-10-17T09:23:47.485977+00:00",
+   "at": "2026-10-27T10:43:59.694865+00:00",
    "v": null
   },
   "mc": {
@@ -18618,7 +18618,7 @@
  },
  "9NZCJF5VF1NV": {
   "hltb": {
-   "at": "2026-10-17T09:23:48.592988+00:00",
+   "at": "2026-10-27T10:43:59.695022+00:00",
    "v": null
   },
   "mc": {
@@ -19174,7 +19174,7 @@
  },
  "9P0G4TBCCS7J": {
   "hltb": {
-   "at": "2026-10-17T09:23:48.699439+00:00",
+   "at": "2026-10-27T10:44:00.967935+00:00",
    "v": null
   },
   "mc": {
@@ -27754,7 +27754,7 @@
  },
  "9PJBKF27C16M": {
   "hltb": {
-   "at": "2026-10-17T09:23:49.468928+00:00",
+   "at": "2026-10-27T10:44:01.336903+00:00",
    "v": null
   },
   "mc": {
@@ -42987,7 +42987,7 @@
  },
  "luna-B092LJJJSK": {
   "hltb": {
-   "at": "2026-10-17T09:23:50.843322+00:00",
+   "at": "2026-10-27T10:44:02.158796+00:00",
    "v": null
   },
   "mc": {
@@ -43128,7 +43128,7 @@
  },
  "luna-B093NC7GX3": {
   "hltb": {
-   "at": "2026-10-17T09:23:51.268764+00:00",
+   "at": "2026-10-27T10:44:02.270894+00:00",
    "v": null
   },
   "mc": {
@@ -44706,7 +44706,7 @@
  },
  "luna-B0D7XHG4RN": {
   "hltb": {
-   "at": "2026-10-17T09:23:50.488521+00:00",
+   "at": "2026-10-27T10:44:01.890233+00:00",
    "v": null
   },
   "mc": {
@@ -50007,7 +50007,7 @@
  },
  "nf-81746201": {
   "hltb": {
-   "at": "2026-10-17T09:23:53.979581+00:00",
+   "at": "2026-10-27T10:44:03.721104+00:00",
    "v": null
   },
   "mc": {
@@ -50021,7 +50021,7 @@
  },
  "nf-81746472": {
   "hltb": {
-   "at": "2026-10-17T09:23:53.494161+00:00",
+   "at": "2026-10-27T10:44:03.301117+00:00",
    "v": null
   },
   "mc": {
@@ -53704,7 +53704,7 @@
  },
  "ps-10001019": {
   "hltb": {
-   "at": "2026-10-17T09:24:53.930491+00:00",
+   "at": "2026-10-27T10:44:03.882031+00:00",
    "v": null
   },
   "mc": {
@@ -59347,7 +59347,7 @@
  },
  "ps-10005198": {
   "hltb": {
-   "at": "2026-10-17T09:26:00.343182+00:00",
+   "at": "2026-10-27T10:44:05.042434+00:00",
    "v": null
   },
   "mc": {
@@ -64628,7 +64628,7 @@
  },
  "ps-10010296": {
   "hltb": {
-   "at": "2026-10-17T09:26:01.857755+00:00",
+   "at": "2026-10-27T10:44:05.779005+00:00",
    "v": null
   },
   "mc": {
@@ -64874,7 +64874,7 @@
  },
  "ps-10010692": {
   "hltb": {
-   "at": "2026-10-17T09:26:01.049395+00:00",
+   "at": "2026-10-27T10:44:05.496537+00:00",
    "v": null
   },
   "mc": {
@@ -70004,7 +70004,7 @@
  },
  "ps-205132": {
   "hltb": {
-   "at": "2026-10-17T09:25:00.981018+00:00",
+   "at": "2026-10-27T10:44:04.780371+00:00",
    "v": null
   },
   "mc": {
@@ -233867,6 +233867,69 @@
    }
   }
  },
+ "steam-220820": {
+  "hltb": {
+   "at": "2026-10-27T10:44:08.441008+00:00",
+   "v": {
+    "comp": 18.6,
+    "extra": 8.6,
+    "id": 11574,
+    "main": 5.3,
+    "title": "Zombie Driver HD",
+    "year": 2009
+   }
+  },
+  "mc": {
+   "at": "2026-10-27T10:44:04.249759+00:00",
+   "v": {
+    "genres": [
+     "Vehicle Combat Sim"
+    ],
+    "reviews": 10,
+    "score": 64,
+    "slug": "zombie-driver-hd",
+    "title": "Zombie Driver HD",
+    "user": 5.3,
+    "userCount": 17,
+    "year": 2012
+   }
+  },
+  "steam": {
+   "at": "2026-10-27T10:44:05.464770+00:00",
+   "forced": 220820,
+   "v": {
+    "appid": 220820,
+    "name": "Zombie Driver HD",
+    "neg": 653,
+    "owners": "200,000 .. 500,000",
+    "pos": 3280,
+    "price": 9.99,
+    "publisher": "Exor Studios",
+    "tags": [
+     "Zombies",
+     "Racing",
+     "Top-Down",
+     "Gore",
+     "Violent",
+     "Open World",
+     "Top-Down Shooter",
+     "Controller",
+     "Singleplayer",
+     "Score Attack",
+     "Atmospheric",
+     "Replay Value",
+     "Isometric",
+     "Addictive",
+     "Exploration",
+     "Post-apocalyptic",
+     "Shooter",
+     "Adventure",
+     "Survival",
+     "Horror"
+    ]
+   }
+  }
+ },
  "steam-220860": {
   "hltb": {
    "at": "2026-10-23T12:34:07.921929+00:00",
@@ -236739,6 +236802,69 @@
      "Indie",
      "Kickstarter",
      "Great Soundtrack"
+    ]
+   }
+  }
+ },
+ "steam-2232200": {
+  "hltb": {
+   "at": "2026-10-27T10:44:07.370832+00:00",
+   "v": {
+    "comp": 5.0,
+    "extra": 5.4,
+    "id": 81981,
+    "main": 4.6,
+    "title": "First Snow",
+    "year": 2020
+   }
+  },
+  "mc": {
+   "at": "2026-10-27T10:43:59.697051+00:00",
+   "v": {
+    "genres": [
+     "Visual Novel"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "first-snow",
+    "title": "First Snow",
+    "user": null,
+    "userCount": 0,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-10-27T10:44:01.029955+00:00",
+   "forced": 2232200,
+   "v": {
+    "appid": 2232200,
+    "name": "First Snow",
+    "neg": 11,
+    "owners": "0 .. 20,000",
+    "pos": 99,
+    "price": 9.99,
+    "publisher": "PsychoFlux Entertainment",
+    "tags": [
+     "Visual Novel",
+     "Dating Sim",
+     "Romance",
+     "Snow",
+     "2D",
+     "Story Rich",
+     "Fantasy",
+     "Anime",
+     "Text-Based",
+     "Multiple Endings",
+     "Cute",
+     "Casual",
+     "Atmospheric",
+     "Drama",
+     "Emotional",
+     "Interactive Fiction",
+     "Singleplayer",
+     "Indie",
+     "Nudity",
+     "LGBTQ+"
     ]
    }
   }
@@ -246776,6 +246902,41 @@
      "Romance",
      "Choices Matter"
     ]
+   }
+  }
+ },
+ "steam-2327660": {
+  "hltb": {
+   "at": "2026-10-27T10:44:06.305958+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-27T10:43:59.695348+00:00",
+   "v": {
+    "genres": [
+     "Party"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "pigeon-protocol",
+    "title": "Pigeon Protocol",
+    "user": null,
+    "userCount": 0,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-10-27T10:43:59.695791+00:00",
+   "forced": 2327660,
+   "v": {
+    "appid": 2327660,
+    "name": "Pigeon Protocol",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
    }
   }
  },
@@ -366092,6 +366253,69 @@
    }
   }
  },
+ "steam-3572580": {
+  "hltb": {
+   "at": "2026-10-27T10:44:08.345102+00:00",
+   "v": {
+    "comp": 3.9,
+    "extra": null,
+    "id": 176508,
+    "main": 1.6,
+    "title": "Hachishaku",
+    "year": 2025
+   }
+  },
+  "mc": {
+   "at": "2026-10-27T10:44:04.187307+00:00",
+   "v": {
+    "genres": [
+     "Action Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "hachishaku",
+    "title": "Hachishaku",
+    "user": null,
+    "userCount": 0,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-10-27T10:44:04.364103+00:00",
+   "forced": 3572580,
+   "v": {
+    "appid": 3572580,
+    "name": "Hachishaku",
+    "neg": 13,
+    "owners": "0 .. 20,000",
+    "pos": 82,
+    "price": 9.99,
+    "publisher": "Trash Panda Games",
+    "tags": [
+     "Exploration",
+     "Collectathon",
+     "Hunting",
+     "Walking Simulator",
+     "Character Customization",
+     "Sexual Content",
+     "3D",
+     "Horror",
+     "Adventure",
+     "First-Person",
+     "Third Person",
+     "Stealth",
+     "Atmospheric",
+     "Comedy",
+     "Mystery",
+     "Nudity",
+     "Survival Horror",
+     "Singleplayer",
+     "NSFW",
+     "Mature"
+    ]
+   }
+  }
+ },
  "steam-357300": {
   "hltb": {
    "at": "2026-10-26T12:57:49.650292+00:00",
@@ -399899,6 +400123,48 @@
    }
   }
  },
+ "steam-4059780": {
+  "hltb": {
+   "at": "2026-10-27T10:44:06.669197+00:00",
+   "v": {
+    "comp": null,
+    "extra": 32.4,
+    "id": 183691,
+    "main": null,
+    "title": "NGL Biathlon 2026",
+    "year": 2025
+   }
+  },
+  "mc": {
+   "at": "2026-10-27T10:43:59.696186+00:00",
+   "v": {
+    "genres": [
+     "Skiing"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "ngl-biathlon-2026",
+    "title": "NGL Biathlon 2026",
+    "user": null,
+    "userCount": 0,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-10-27T10:43:59.696581+00:00",
+   "forced": 4059780,
+   "v": {
+    "appid": 4059780,
+    "name": "NGL Biathlon 2026",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 17.99,
+    "publisher": "NordicGamesLab",
+    "tags": []
+   }
+  }
+ },
  "steam-4060150": {
   "hltb": {
    "at": "2026-10-26T13:55:48.550084+00:00",
@@ -411860,6 +412126,48 @@
    }
   }
  },
+ "steam-4298880": {
+  "hltb": {
+   "at": "2026-10-27T10:44:08.263708+00:00",
+   "v": {
+    "comp": 6.9,
+    "extra": 6.2,
+    "id": 183427,
+    "main": 6.0,
+    "title": "Timber Rush",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-10-27T10:44:01.841877+00:00",
+   "v": {
+    "genres": [
+     "Strategy"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "timber-rush",
+    "title": "Timber Rush",
+    "user": null,
+    "userCount": 1,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-10-27T10:44:03.232856+00:00",
+   "forced": 4298880,
+   "v": {
+    "appid": 4298880,
+    "name": "Timber Rush",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 4.99,
+    "publisher": "Allerton Apps",
+    "tags": []
+   }
+  }
+ },
  "steam-4301130": {
   "hltb": {
    "at": "2026-10-26T13:15:24.116674+00:00",
@@ -412277,6 +412585,48 @@
    "v": {
     "appid": 4311010,
     "name": "",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
+ "steam-4312190": {
+  "hltb": {
+   "at": "2026-10-27T10:44:07.153682+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 24144,
+    "main": null,
+    "title": "Crack'ed",
+    "year": 1988
+   }
+  },
+  "mc": {
+   "at": "2026-10-27T10:43:59.696814+00:00",
+   "v": {
+    "genres": [
+     "Simulation"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "crack",
+    "title": "CRACK",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-10-27T10:43:59.903407+00:00",
+   "forced": 4312190,
+   "v": {
+    "appid": 4312190,
+    "name": null,
     "neg": 0,
     "owners": "0 .. 20,000",
     "pos": 0,
@@ -476027,6 +476377,69 @@
      "Casual",
      "Indie",
      "Minimalist"
+    ]
+   }
+  }
+ },
+ "steam-7800": {
+  "hltb": {
+   "at": "2026-10-27T10:44:07.568377+00:00",
+   "v": {
+    "comp": 9.1,
+    "extra": 7.7,
+    "id": 9284,
+    "main": 6.0,
+    "title": "Stubbs the Zombie in Rebel Without a Pulse",
+    "year": 2005
+   }
+  },
+  "mc": {
+   "at": "2026-10-27T10:44:01.501790+00:00",
+   "v": {
+    "genres": [
+     "Action Adventure"
+    ],
+    "reviews": 55,
+    "score": 75,
+    "slug": "stubbs-the-zombie-in-rebel-without-a-pulse",
+    "title": "Stubbs the Zombie in Rebel Without a Pulse",
+    "user": 8,
+    "userCount": 40,
+    "year": 2005
+   }
+  },
+  "steam": {
+   "at": "2026-10-27T10:44:02.121531+00:00",
+   "forced": 7800,
+   "v": {
+    "appid": 7800,
+    "name": "Stubbs the Zombie in Rebel Without a Pulse",
+    "neg": 299,
+    "owners": "200,000 .. 500,000",
+    "pos": 1987,
+    "price": 19.99,
+    "publisher": "Aspyr",
+    "tags": [
+     "Zombies",
+     "Funny",
+     "Villain Protagonist",
+     "Violent",
+     "Gore",
+     "Action",
+     "Cartoony",
+     "Action-Adventure",
+     "Singleplayer",
+     "Third Person",
+     "3D",
+     "Adventure",
+     "Arcade",
+     "Dark Comedy",
+     "Alternate History",
+     "Local Co-Op",
+     "Retro",
+     "Lemmings",
+     "Outbreak Sim",
+     "Vehicular Combat"
     ]
    }
   }
