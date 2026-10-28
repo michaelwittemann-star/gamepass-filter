@@ -27463,8 +27463,7 @@
  },
  "9PHR6KG3D1RQ": {
   "hltb": {
-   "at": "2026-10-26T11:13:39.620458+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:03.707005+00:00",
    "v": null
   },
   "mc": {
@@ -28433,8 +28432,7 @@
  },
  "9PK7TLLPD7GV": {
   "hltb": {
-   "at": "2026-10-26T11:13:39.731403+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:03.707308+00:00",
    "v": null
   },
   "mc": {
@@ -28902,8 +28900,7 @@
  },
  "9PL89B9HCZ9W": {
   "hltb": {
-   "at": "2026-10-26T11:13:39.850364+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:03.707583+00:00",
    "v": null
   },
   "mc": {
@@ -29072,8 +29069,7 @@
  },
  "9PLFD17M47K3": {
   "hltb": {
-   "at": "2026-10-26T11:13:59.298324+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:05.379723+00:00",
    "v": null
   },
   "mc": {
@@ -29675,8 +29671,7 @@
  },
  "9PMQDM08SNK9": {
   "hltb": {
-   "at": "2026-10-26T11:13:59.394618+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:05.604819+00:00",
    "v": null
   },
   "mc": {
@@ -29760,8 +29755,7 @@
  },
  "9PMXPQ307Z5P": {
   "hltb": {
-   "at": "2026-10-26T11:13:59.395270+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:07.672916+00:00",
    "v": null
   },
   "mc": {
@@ -30109,6 +30103,47 @@
      "Action-Adventure",
      "Investigation"
     ]
+   }
+  }
+ },
+ "9PNRLJNDPP4G": {
+  "hltb": {
+   "at": "2026-10-28T11:31:07.711051+00:00",
+   "v": {
+    "comp": 21.9,
+    "extra": 20.0,
+    "id": 165387,
+    "main": 15.6,
+    "title": "The Séance of Blake Manor",
+    "year": 2025
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:03.707804+00:00",
+   "v": {
+    "genres": [
+     "First-Person Adventure"
+    ],
+    "reviews": 18,
+    "score": 89,
+    "slug": "the-seance-of-blake-manor",
+    "title": "The Seance of Blake Manor",
+    "user": 8.3,
+    "userCount": 48,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:03.708659+00:00",
+   "v": {
+    "appid": 1395520,
+    "name": "The Séance of Blake Manor",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 19.99,
+    "publisher": "Raw Fury",
+    "tags": []
    }
   }
  },
@@ -31335,8 +31370,7 @@
  },
  "BPBV3PCB0X44": {
   "hltb": {
-   "at": "2026-10-26T11:14:18.973904+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:07.859748+00:00",
    "v": null
   },
   "mc": {
@@ -31382,8 +31416,7 @@
  },
  "BPL68T0XK96W": {
   "hltb": {
-   "at": "2026-10-26T11:14:18.989587+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:08.877916+00:00",
    "v": null
   },
   "mc": {
@@ -31863,8 +31896,7 @@
  },
  "BQ192SFB694X": {
   "hltb": {
-   "at": "2026-10-26T11:14:19.032315+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:09.039908+00:00",
    "v": null
   },
   "mc": {
@@ -44418,8 +44450,7 @@
  },
  "luna-B0CXG1X89Z": {
   "hltb": {
-   "at": "2026-10-26T11:14:47.814734+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:10.072156+00:00",
    "v": null
   },
   "mc": {
@@ -44780,8 +44811,7 @@
  },
  "luna-B0DBPKQ68Y": {
   "hltb": {
-   "at": "2026-10-26T11:15:08.494932+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:12.507079+00:00",
    "v": null
   },
   "mc": {
@@ -44961,8 +44991,7 @@
  },
  "luna-B0DL14WZQB": {
   "hltb": {
-   "at": "2026-10-26T11:15:07.383283+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:11.203443+00:00",
    "v": null
   },
   "mc": {
@@ -46243,8 +46272,7 @@
  },
  "luna-B0FPTM87HH": {
   "hltb": {
-   "at": "2026-10-26T11:14:48.704963+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:10.200785+00:00",
    "v": null
   },
   "mc": {
@@ -46331,8 +46359,7 @@
  },
  "luna-B0FQP5TXPK": {
   "hltb": {
-   "at": "2026-10-26T11:15:27.932083+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:13.955949+00:00",
    "v": null
   },
   "mc": {
@@ -47318,8 +47345,7 @@
  },
  "luna-B0GFW2CQHT": {
   "hltb": {
-   "at": "2026-10-26T11:14:48.008105+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:10.110938+00:00",
    "v": null
   },
   "mc": {
@@ -47427,8 +47453,7 @@
  },
  "luna-B0GSSC24F7": {
   "hltb": {
-   "at": "2026-10-26T11:15:27.502499+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:13.723848+00:00",
    "v": null
   },
   "mc": {
@@ -47453,8 +47478,7 @@
  },
  "luna-B0GTRYV4BD": {
   "hltb": {
-   "at": "2026-10-26T11:15:27.326789+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:12.622005+00:00",
    "v": null
   },
   "mc": {
@@ -47866,8 +47890,7 @@
  },
  "luna-B0HMJMGD9L": {
   "hltb": {
-   "at": "2026-10-26T11:15:07.495855+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:11.286690+00:00",
    "v": null
   },
   "mc": {
@@ -48083,7 +48106,8 @@
  },
  "nf-81509258": {
   "hltb": {
-   "at": "2026-10-18T09:39:37.560422+00:00",
+   "at": "2026-10-28T11:31:38.662903+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -48952,7 +48976,7 @@
  },
  "nf-81597645": {
   "hltb": {
-   "at": "2026-10-26T11:16:35.870494+00:00",
+   "at": "2026-10-28T11:31:18.559505+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -49135,7 +49159,8 @@
  },
  "nf-81621583": {
   "hltb": {
-   "at": "2026-10-18T09:39:35.294149+00:00",
+   "at": "2026-10-28T11:31:38.381589+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -49216,7 +49241,7 @@
  },
  "nf-81629644": {
   "hltb": {
-   "at": "2026-10-26T11:16:36.588267+00:00",
+   "at": "2026-10-28T11:31:37.552611+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -49339,7 +49364,7 @@
  },
  "nf-81636736": {
   "hltb": {
-   "at": "2026-10-26T11:16:35.771367+00:00",
+   "at": "2026-10-28T11:31:18.467499+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -49430,8 +49455,7 @@
  },
  "nf-81665065": {
   "hltb": {
-   "at": "2026-10-26T11:16:16.382321+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:17.401434+00:00",
    "v": null
   },
   "mc": {
@@ -49445,7 +49469,7 @@
  },
  "nf-81665067": {
   "hltb": {
-   "at": "2026-10-26T11:16:17.084782+00:00",
+   "at": "2026-10-28T11:31:17.440937+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -49698,8 +49722,7 @@
  },
  "nf-81685070": {
   "hltb": {
-   "at": "2026-10-26T11:15:57.622142+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:15.970740+00:00",
    "v": null
   },
   "mc": {
@@ -49789,8 +49812,7 @@
  },
  "nf-81702464": {
   "hltb": {
-   "at": "2026-10-26T11:15:56.605801+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:14.268663+00:00",
    "v": null
   },
   "mc": {
@@ -50035,8 +50057,7 @@
  },
  "nf-81754209": {
   "hltb": {
-   "at": "2026-10-26T11:16:16.182163+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:17.132477+00:00",
    "v": null
   },
   "mc": {
@@ -50112,8 +50133,7 @@
  },
  "nf-81763213": {
   "hltb": {
-   "at": "2026-10-26T11:15:56.898912+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:31:15.316767+00:00",
    "v": null
   },
   "mc": {
@@ -60558,8 +60578,7 @@
  },
  "ps-10006482": {
   "hltb": {
-   "at": "2026-10-26T11:17:24.735781+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:32:13.326810+00:00",
    "v": null
   },
   "mc": {
@@ -61495,8 +61514,7 @@
  },
  "ps-10007630": {
   "hltb": {
-   "at": "2026-10-26T11:17:44.440750+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:32:16.074161+00:00",
    "v": null
   },
   "mc": {
@@ -61521,8 +61539,7 @@
  },
  "ps-10007632": {
   "hltb": {
-   "at": "2026-10-26T11:17:44.501248+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:32:16.374278+00:00",
    "v": null
   },
   "mc": {
@@ -62999,7 +63016,7 @@
  },
  "ps-10008667": {
   "hltb": {
-   "at": "2026-10-18T09:39:45.519687+00:00",
+   "at": "2026-10-28T11:32:16.779590+00:00",
    "v": null
   },
   "mc": {
@@ -65484,8 +65501,7 @@
  },
  "ps-10011762": {
   "hltb": {
-   "at": "2026-10-26T11:17:05.474600+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:32:11.510033+00:00",
    "v": null
   },
   "mc": {
@@ -70464,7 +70480,7 @@
  },
  "ps-205867": {
   "hltb": {
-   "at": "2026-10-18T09:39:38.807435+00:00",
+   "at": "2026-10-28T11:31:57.374317+00:00",
    "v": null
   },
   "mc": {
@@ -70575,8 +70591,7 @@
  },
  "ps-206958": {
   "hltb": {
-   "at": "2026-10-26T11:17:44.323062+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:32:14.485683+00:00",
    "v": null
   },
   "mc": {
@@ -70865,7 +70880,7 @@
  },
  "ps-212280": {
   "hltb": {
-   "at": "2026-10-18T09:39:38.828736+00:00",
+   "at": "2026-10-28T11:31:58.379845+00:00",
    "v": null
   },
   "mc": {
@@ -73278,8 +73293,7 @@
  },
  "ps-222943": {
   "hltb": {
-   "at": "2026-10-26T11:17:24.791105+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:32:13.886871+00:00",
    "v": null
   },
   "mc": {
@@ -73304,8 +73318,7 @@
  },
  "ps-222944": {
   "hltb": {
-   "at": "2026-10-26T11:17:24.933524+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:32:13.987662+00:00",
    "v": null
   },
   "mc": {
@@ -73919,7 +73932,7 @@
  },
  "ps-225519": {
   "hltb": {
-   "at": "2026-10-18T09:39:38.849290+00:00",
+   "at": "2026-10-28T11:31:58.536204+00:00",
    "v": null
   },
   "mc": {
@@ -75818,8 +75831,7 @@
  },
  "ps-229533": {
   "hltb": {
-   "at": "2026-10-26T11:17:05.158638+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:32:10.438490+00:00",
    "v": null
   },
   "mc": {
@@ -80083,8 +80095,7 @@
  },
  "ps-234014": {
   "hltb": {
-   "at": "2026-10-26T11:18:14.114791+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:32:17.109346+00:00",
    "v": null
   },
   "mc": {
@@ -81435,8 +81446,7 @@
  },
  "ps-234709": {
   "hltb": {
-   "at": "2026-10-26T11:17:05.124214+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:32:10.438164+00:00",
    "v": null
   },
   "mc": {
@@ -82500,9 +82510,15 @@
  },
  "steam-1003090": {
   "hltb": {
-   "at": "2026-10-26T18:18:42.189949+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:38:26.287939+00:00",
+   "v": {
+    "comp": 13.9,
+    "extra": 9.3,
+    "id": 68637,
+    "main": 7.1,
+    "title": "Through the Darkest of Times",
+    "year": 2020
+   }
   },
   "mc": {
    "at": "2026-10-26T18:16:40.931560+00:00",
@@ -83370,6 +83386,126 @@
      "Management",
      "Dark Fantasy",
      "Procedural Generation"
+    ]
+   }
+  }
+ },
+ "steam-1011940": {
+  "hltb": {
+   "at": "2026-10-28T11:38:25.021621+00:00",
+   "v": {
+    "comp": 40.3,
+    "extra": 18.1,
+    "id": 69615,
+    "main": 14.6,
+    "title": "Ideology in Friction",
+    "year": 2019
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:19.576465+00:00",
+   "v": {
+    "genres": [
+     "Visual Novel"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "ideology-in-friction",
+    "title": "Ideology in Friction",
+    "user": null,
+    "userCount": 2,
+    "year": 2019
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:18.228831+00:00",
+   "forced": 1011940,
+   "v": {
+    "appid": 1011940,
+    "name": "Ideology in Friction",
+    "neg": 212,
+    "owners": "100,000 .. 200,000",
+    "pos": 1456,
+    "price": 24.99,
+    "publisher": "Kagura Games",
+    "tags": [
+     "Sexual Content",
+     "Nudity",
+     "RPG",
+     "Mature",
+     "Indie",
+     "Female Protagonist",
+     "RPGMaker",
+     "Hentai",
+     "Anime",
+     "JRPG",
+     "Multiple Endings",
+     "NSFW",
+     "Memes",
+     "2D"
+    ]
+   }
+  }
+ },
+ "steam-1012030": {
+  "hltb": {
+   "at": "2026-10-28T11:37:21.730881+00:00",
+   "v": {
+    "comp": 12.5,
+    "extra": 10.2,
+    "id": 69614,
+    "main": 7.0,
+    "title": "Detective Girl of the Steam City",
+    "year": 2019
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:13.429593+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "detective-girl-of-the-steam-city",
+    "title": "Detective Girl of the Steam City",
+    "user": null,
+    "userCount": 3,
+    "year": 2019
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:45.872781+00:00",
+   "forced": 1012030,
+   "v": {
+    "appid": 1012030,
+    "name": "Detective Girl of the Steam City",
+    "neg": 153,
+    "owners": "200,000 .. 500,000",
+    "pos": 1749,
+    "price": 14.99,
+    "publisher": "Kagura Games",
+    "tags": [
+     "Sexual Content",
+     "RPG",
+     "Nudity",
+     "Female Protagonist",
+     "RPGMaker",
+     "Indie",
+     "Mature",
+     "Hentai",
+     "Steampunk",
+     "Anime",
+     "Adventure",
+     "JRPG",
+     "Multiple Endings",
+     "Detective",
+     "NSFW",
+     "Singleplayer",
+     "Memes",
+     "Visual Novel",
+     "Casual",
+     "Psychological Horror"
     ]
    }
   }
@@ -88098,6 +88234,63 @@
    }
   }
  },
+ "steam-1054950": {
+  "hltb": {
+   "at": "2026-10-28T11:35:48.029519+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:10.561157+00:00",
+   "v": {
+    "genres": [
+     "Rhythm"
+    ],
+    "reviews": 2,
+    "score": null,
+    "slug": "starstruck-hands-of-time",
+    "title": "Starstruck: Hands of Time",
+    "user": null,
+    "userCount": 0,
+    "year": 2024
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:35.032496+00:00",
+   "forced": 1054950,
+   "v": {
+    "appid": 1054950,
+    "name": "Starstruck: Hands of Time",
+    "neg": 13,
+    "owners": "0 .. 20,000",
+    "pos": 208,
+    "price": 19.99,
+    "publisher": "Createdelic, LLC",
+    "tags": [
+     "Rhythm",
+     "Time Travel",
+     "Story Rich",
+     "Physics",
+     "Narrative",
+     "Music",
+     "Experimental",
+     "Surreal",
+     "Comedy",
+     "Psychedelic",
+     "Well-Written",
+     "Cartoony",
+     "Nonlinear",
+     "Short",
+     "Indie",
+     "Adventure",
+     "Action",
+     "RPG",
+     "Casual",
+     "Gore"
+    ]
+   }
+  }
+ },
  "steam-1055210": {
   "hltb": {
    "at": "2026-10-23T15:10:22.765301+00:00",
@@ -88289,9 +88482,15 @@
  },
  "steam-105600": {
   "hltb": {
-   "at": "2026-10-26T12:33:46.215503+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:10.068091+00:00",
+   "v": {
+    "comp": 205.2,
+    "extra": 93.2,
+    "id": 9705,
+    "main": 51.8,
+    "title": "Terraria",
+    "year": 2011
+   }
   },
   "mc": {
    "at": "2026-10-26T12:33:16.925995+00:00",
@@ -92283,6 +92482,100 @@
    }
   }
  },
+ "steam-1078330": {
+  "hltb": {
+   "at": "2026-10-28T11:37:31.505781+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:17.191791+00:00",
+   "v": {
+    "genres": [
+     "JRPG"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "liz-the-tower-and-the-grimoire",
+    "title": "Liz ~The Tower and the Grimoire~",
+    "user": null,
+    "userCount": 1,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:11.402705+00:00",
+   "forced": 1078330,
+   "v": {
+    "appid": 1078330,
+    "name": "Liz ~The Tower and the Grimoire~",
+    "neg": 51,
+    "owners": "20,000 .. 50,000",
+    "pos": 454,
+    "price": 14.99,
+    "publisher": "Kagura Games",
+    "tags": [
+     "RPG",
+     "Indie",
+     "Sexual Content",
+     "Female Protagonist",
+     "Anime",
+     "RPGMaker",
+     "Nudity",
+     "JRPG",
+     "Hentai",
+     "Memes",
+     "NSFW"
+    ]
+   }
+  }
+ },
+ "steam-1078350": {
+  "hltb": {
+   "at": "2026-10-28T11:35:23.923005+00:00",
+   "v": {
+    "comp": null,
+    "extra": 22.8,
+    "id": 91607,
+    "main": 7.3,
+    "title": "Ambrosia",
+    "year": 2021
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:09.983166+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:35.003451+00:00",
+   "forced": 1078350,
+   "v": {
+    "appid": 1078350,
+    "name": "Ambrosia",
+    "neg": 151,
+    "owners": "200,000 .. 500,000",
+    "pos": 2393,
+    "price": 14.99,
+    "publisher": "Kagura Games",
+    "tags": [
+     "Sexual Content",
+     "Nudity",
+     "Hentai",
+     "Mature",
+     "RPG",
+     "Female Protagonist",
+     "RPGMaker",
+     "Indie",
+     "NSFW",
+     "JRPG",
+     "Anime",
+     "2D",
+     "Memes",
+     "FPS"
+    ]
+   }
+  }
+ },
  "steam-1078420": {
   "hltb": {
    "at": "2026-10-26T12:56:53.465495+00:00",
@@ -92747,7 +93040,7 @@
  },
  "steam-1083500": {
   "hltb": {
-   "at": "2026-10-26T11:56:57.082971+00:00",
+   "at": "2026-10-28T11:32:44.068048+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -92783,9 +93076,15 @@
  },
  "steam-1084020": {
   "hltb": {
-   "at": "2026-10-26T12:55:57.091475+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:25.041050+00:00",
+   "v": {
+    "comp": 79.0,
+    "extra": 50.5,
+    "id": 76549,
+    "main": 13.8,
+    "title": "TheoTown",
+    "year": 2019
+   }
   },
   "mc": {
    "at": "2026-10-26T12:47:10.796600+00:00",
@@ -93487,9 +93786,15 @@
  },
  "steam-1087760": {
   "hltb": {
-   "at": "2026-10-26T18:17:41.836240+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:38:24.135995+00:00",
+   "v": {
+    "comp": 6.6,
+    "extra": 5.6,
+    "id": 81125,
+    "main": 4.7,
+    "title": "The Gunk",
+    "year": 2021
+   }
   },
   "mc": {
    "at": "2026-10-26T18:16:15.924202+00:00",
@@ -100117,9 +100422,15 @@
  },
  "steam-1132190": {
   "hltb": {
-   "at": "2026-10-26T11:53:55.096562+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:32:19.565047+00:00",
+   "v": {
+    "comp": 60.8,
+    "extra": 22.5,
+    "id": 74851,
+    "main": 6.9,
+    "title": "Coloring Game: Little City",
+    "year": 2019
+   }
   },
   "mc": {
    "at": "2026-10-23T14:58:43.830907+00:00",
@@ -101406,6 +101717,65 @@
    }
   }
  },
+ "steam-1141100": {
+  "hltb": {
+   "at": "2026-10-28T11:38:11.474672+00:00",
+   "v": {
+    "comp": 27.2,
+    "extra": 20.0,
+    "id": 63797,
+    "main": 15.0,
+    "title": "Lilitales",
+    "year": 2019
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:19.214655+00:00",
+   "v": {
+    "genres": [
+     "JRPG"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "lilitales",
+    "title": "Lilitales",
+    "user": null,
+    "userCount": 0,
+    "year": 2019
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:14.715824+00:00",
+   "forced": 1141100,
+   "v": {
+    "appid": 1141100,
+    "name": "Lilitales",
+    "neg": 74,
+    "owners": "20,000 .. 50,000",
+    "pos": 549,
+    "price": 19.99,
+    "publisher": "Kagura Games",
+    "tags": [
+     "Sexual Content",
+     "RPG",
+     "Nudity",
+     "Indie",
+     "Female Protagonist",
+     "Mature",
+     "Anime",
+     "JRPG",
+     "Multiple Endings",
+     "Dungeon Crawler",
+     "Hentai",
+     "NSFW",
+     "Memes",
+     "Singleplayer",
+     "Visual Novel",
+     "RPGMaker"
+    ]
+   }
+  }
+ },
  "steam-1141290": {
   "hltb": {
    "at": "2026-10-23T15:02:57.370579+00:00",
@@ -101637,9 +102007,15 @@
  },
  "steam-1142810": {
   "hltb": {
-   "at": "2026-10-26T12:49:35.747045+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:13.673419+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 94229,
+    "main": 1.5,
+    "title": "Toasterball",
+    "year": 2023
+   }
   },
   "mc": {
    "at": "2026-10-26T12:43:10.932331+00:00",
@@ -104615,7 +104991,7 @@
  },
  "steam-1164050": {
   "hltb": {
-   "at": "2026-10-26T12:56:00.871780+00:00",
+   "at": "2026-10-28T11:34:26.225807+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -107339,7 +107715,7 @@
  },
  "steam-1178210": {
   "hltb": {
-   "at": "2026-10-26T18:16:39.382772+00:00",
+   "at": "2026-10-28T11:37:51.393387+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -111936,9 +112312,15 @@
  },
  "steam-1205960": {
   "hltb": {
-   "at": "2026-10-26T12:06:27.148992+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:38:26.170531+00:00",
+   "v": {
+    "comp": 2.5,
+    "extra": 1.6,
+    "id": 86449,
+    "main": 1.4,
+    "title": "My Cute Fuhrer",
+    "year": 2020
+   }
   },
   "mc": {
    "at": "2026-10-23T16:00:03.484848+00:00",
@@ -112728,9 +113110,15 @@
  },
  "steam-1210610": {
   "hltb": {
-   "at": "2026-10-26T13:13:25.307858+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:28.546346+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 80523,
+    "main": 2.2,
+    "title": "Lithium City",
+    "year": 2020
+   }
   },
   "mc": {
    "at": "2026-10-26T12:58:44.585666+00:00",
@@ -112848,9 +113236,15 @@
  },
  "steam-1211110": {
   "hltb": {
-   "at": "2026-10-26T12:50:36.381903+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:14.732839+00:00",
+   "v": {
+    "comp": null,
+    "extra": 5.5,
+    "id": 88734,
+    "main": 1.1,
+    "title": "Petal Crash",
+    "year": 2020
+   }
   },
   "mc": {
    "at": "2026-10-26T12:43:49.165387+00:00",
@@ -115044,6 +115438,69 @@
      "3D Platformer",
      "3D",
      "Family Friendly"
+    ]
+   }
+  }
+ },
+ "steam-1227890": {
+  "hltb": {
+   "at": "2026-10-28T11:36:21.218201+00:00",
+   "v": {
+    "comp": 15.9,
+    "extra": 11.3,
+    "id": 80458,
+    "main": 4.0,
+    "title": "Summer Memories",
+    "year": 2020
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:11.709404+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "summer-memories",
+    "title": "Summer Memories",
+    "user": 8.4,
+    "userCount": 13,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:38.043424+00:00",
+   "forced": 1227890,
+   "v": {
+    "appid": 1227890,
+    "name": "Summer Memories",
+    "neg": 1541,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 20258,
+    "price": 19.99,
+    "publisher": "Kagura Games",
+    "tags": [
+     "Sexual Content",
+     "Nudity",
+     "Mature",
+     "Hentai",
+     "Pixel Graphics",
+     "FPS",
+     "Anime",
+     "RPG",
+     "Simulation",
+     "Visual Novel",
+     "Multiple Endings",
+     "2D",
+     "Singleplayer",
+     "Time Management",
+     "JRPG",
+     "RPGMaker",
+     "Adventure",
+     "Indie",
+     "Funny",
+     "Memes"
     ]
    }
   }
@@ -117895,9 +118352,15 @@
  },
  "steam-1250": {
   "hltb": {
-   "at": "2026-10-26T11:18:14.259777+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:15.449501+00:00",
+   "v": {
+    "comp": 296.3,
+    "extra": 54.2,
+    "id": 4983,
+    "main": 17.6,
+    "title": "Killing Floor",
+    "year": 2009
+   }
   },
   "mc": {
    "at": "2026-10-26T11:14:58.239531+00:00",
@@ -120656,6 +121119,59 @@
    }
   }
  },
+ "steam-1269820": {
+  "hltb": {
+   "at": "2026-10-28T11:38:29.837859+00:00",
+   "v": {
+    "comp": null,
+    "extra": 24.0,
+    "id": 84203,
+    "main": 8.7,
+    "title": "Kozue's Strange Journey",
+    "year": 2020
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:22.528963+00:00",
+   "v": {
+    "genres": [
+     "JRPG"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "kozues-strange-journey",
+    "title": "Kozue's Strange Journey",
+    "user": null,
+    "userCount": 0,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:24.892813+00:00",
+   "forced": 1269820,
+   "v": {
+    "appid": 1269820,
+    "name": "Kozue's Strange Journey",
+    "neg": 31,
+    "owners": "20,000 .. 50,000",
+    "pos": 201,
+    "price": 14.99,
+    "publisher": "Kagura Games",
+    "tags": [
+     "RPG",
+     "Indie",
+     "Anime",
+     "Female Protagonist",
+     "JRPG",
+     "Sexual Content",
+     "RPGMaker",
+     "Multiple Endings",
+     "Nudity",
+     "Memes"
+    ]
+   }
+  }
+ },
  "steam-1269950": {
   "hltb": {
    "at": "2026-10-26T13:02:50.248575+00:00",
@@ -122261,6 +122777,57 @@
     "tags": [
      "Utilities",
      "Software"
+    ]
+   }
+  }
+ },
+ "steam-1279260": {
+  "hltb": {
+   "at": "2026-10-28T11:37:51.518993+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:18.603589+00:00",
+   "v": {
+    "genres": [
+     "JRPG"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "lelie-navigation",
+    "title": "Lelie Navigation!",
+    "user": null,
+    "userCount": 1,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:12.856960+00:00",
+   "forced": 1279260,
+   "v": {
+    "appid": 1279260,
+    "name": "Lelie Navigation!",
+    "neg": 34,
+    "owners": "20,000 .. 50,000",
+    "pos": 257,
+    "price": 14.99,
+    "publisher": "Kagura Games",
+    "tags": [
+     "RPG",
+     "Indie",
+     "Anime",
+     "Singleplayer",
+     "Adventure",
+     "Sexual Content",
+     "Female Protagonist",
+     "JRPG",
+     "Hentai",
+     "RPGMaker",
+     "Nudity",
+     "Memes",
+     "2D",
+     "Mature"
     ]
    }
   }
@@ -128052,9 +128619,15 @@
  },
  "steam-1321120": {
   "hltb": {
-   "at": "2026-10-26T12:33:44.765360+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:09.813187+00:00",
+   "v": {
+    "comp": 3.5,
+    "extra": 3.4,
+    "id": 162052,
+    "main": 2.2,
+    "title": "Matsuro Palette",
+    "year": 2020
+   }
   },
   "mc": {
    "at": "2026-10-26T12:33:15.191911+00:00",
@@ -129097,9 +129670,15 @@
  },
  "steam-1330890": {
   "hltb": {
-   "at": "2026-10-26T12:45:20.759449+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:18.861962+00:00",
+   "v": {
+    "comp": 13.2,
+    "extra": 7.4,
+    "id": 111192,
+    "main": 5.1,
+    "title": "Crystal Caves HD",
+    "year": 2020
+   }
   },
   "mc": {
    "at": "2026-10-26T12:40:07.698012+00:00",
@@ -129831,9 +130410,15 @@
  },
  "steam-1335790": {
   "hltb": {
-   "at": "2026-10-26T18:17:40.031685+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:38:24.102942+00:00",
+   "v": {
+    "comp": 8.2,
+    "extra": 5.5,
+    "id": 84033,
+    "main": 4.2,
+    "title": "Operation: Tango",
+    "year": 2021
+   }
   },
   "mc": {
    "at": "2026-10-26T18:16:13.966354+00:00",
@@ -130077,7 +130662,7 @@
  },
  "steam-1337530": {
   "hltb": {
-   "at": "2026-10-26T13:06:14.699242+00:00",
+   "at": "2026-10-28T11:35:48.548664+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -130710,7 +131295,7 @@
  },
  "steam-1340470": {
   "hltb": {
-   "at": "2026-10-26T11:55:58.189904+00:00",
+   "at": "2026-10-28T11:32:24.241816+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -135106,9 +135691,15 @@
  },
  "steam-1371750": {
   "hltb": {
-   "at": "2026-10-26T13:14:26.491106+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:37:09.250350+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 109871,
+    "main": 5.0,
+    "title": "T-Minus 30",
+    "year": 2021
+   }
   },
   "mc": {
    "at": "2026-10-26T12:59:14.573440+00:00",
@@ -135220,9 +135811,15 @@
  },
  "steam-1373510": {
   "hltb": {
-   "at": "2026-10-26T12:03:21.516573+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:37:23.949092+00:00",
+   "v": {
+    "comp": 10.1,
+    "extra": 8.1,
+    "id": 1189,
+    "main": 7.1,
+    "title": "BloodRayne",
+    "year": 2002
+   }
   },
   "mc": {
    "at": "2026-10-26T11:53:00.193483+00:00",
@@ -135888,6 +136485,69 @@
      "PvE",
      "Dark",
      "Post-apocalyptic"
+    ]
+   }
+  }
+ },
+ "steam-1378040": {
+  "hltb": {
+   "at": "2026-10-28T11:37:25.491465+00:00",
+   "v": {
+    "comp": 15.4,
+    "extra": null,
+    "id": 91636,
+    "main": 5.0,
+    "title": "Tear and the Library of Labyrinths",
+    "year": 2020
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:14.314479+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "tear-and-the-library-of-labyrinths",
+    "title": "Tear and the Library of Labyrinths",
+    "user": null,
+    "userCount": 0,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:03.941968+00:00",
+   "forced": 1378040,
+   "v": {
+    "appid": 1378040,
+    "name": "Tear and the Library of Labyrinths",
+    "neg": 26,
+    "owners": "20,000 .. 50,000",
+    "pos": 308,
+    "price": 19.99,
+    "publisher": "Kagura Games",
+    "tags": [
+     "Sexual Content",
+     "JRPG",
+     "RPG",
+     "Adventure",
+     "Anime",
+     "Female Protagonist",
+     "Fantasy",
+     "Nudity",
+     "Turn-Based Combat",
+     "Indie",
+     "Singleplayer",
+     "Hentai",
+     "Magic",
+     "2D",
+     "RPGMaker",
+     "Mature",
+     "Multiple Endings",
+     "NSFW",
+     "Memes",
+     "Funny"
     ]
    }
   }
@@ -138953,6 +139613,69 @@
    }
   }
  },
+ "steam-1400870": {
+  "hltb": {
+   "at": "2026-10-28T11:36:27.781735+00:00",
+   "v": {
+    "comp": 26.6,
+    "extra": 24.3,
+    "id": 80860,
+    "main": 5.4,
+    "title": "When The Night Comes",
+    "year": 2019
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:11.975687+00:00",
+   "v": {
+    "genres": [
+     "Visual Novel"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "when-the-night-comes",
+    "title": "When The Night Comes",
+    "user": null,
+    "userCount": 1,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:38.238306+00:00",
+   "forced": 1400870,
+   "v": {
+    "appid": 1400870,
+    "name": "When The Night Comes",
+    "neg": 20,
+    "owners": "0 .. 20,000",
+    "pos": 296,
+    "price": 12.99,
+    "publisher": "Lunaris Games",
+    "tags": [
+     "LGBTQ+",
+     "Visual Novel",
+     "Dating Sim",
+     "Romance",
+     "Supernatural",
+     "Horror",
+     "Dark Fantasy",
+     "Dark Humor",
+     "Interactive Fiction",
+     "Story Rich",
+     "Choices Matter",
+     "Multiple Endings",
+     "Gothic",
+     "Magic",
+     "Otome",
+     "Vampire",
+     "Werewolves",
+     "Singleplayer",
+     "Casual",
+     "Indie"
+    ]
+   }
+  }
+ },
  "steam-1402020": {
   "hltb": {
    "at": "2026-10-23T12:30:56.565018+00:00",
@@ -139388,9 +140111,15 @@
  },
  "steam-1404850": {
   "hltb": {
-   "at": "2026-10-26T13:02:11.453294+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:21.651326+00:00",
+   "v": {
+    "comp": 149.7,
+    "extra": 17.6,
+    "id": 87868,
+    "main": 3.3,
+    "title": "Luck be a Landlord",
+    "year": 2023
+   }
   },
   "mc": {
    "at": "2026-10-26T12:50:40.028604+00:00",
@@ -141443,9 +142172,15 @@
  },
  "steam-1419480": {
   "hltb": {
-   "at": "2026-10-26T18:11:30.191586+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:20.893423+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 84883,
+    "main": null,
+    "title": "Love's Sweet Garnish 2",
+    "year": 2018
+   }
   },
   "mc": {
    "at": "2026-10-26T18:11:14.231918+00:00",
@@ -146271,7 +147006,7 @@
  },
  "steam-1451720": {
   "hltb": {
-   "at": "2026-10-26T12:02:20.906285+00:00",
+   "at": "2026-10-28T11:36:29.628884+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -147288,6 +148023,69 @@
      "First-Person",
      "3D",
      "Singleplayer"
+    ]
+   }
+  }
+ },
+ "steam-1458300": {
+  "hltb": {
+   "at": "2026-10-28T11:35:18.805521+00:00",
+   "v": {
+    "comp": 4.5,
+    "extra": 3.7,
+    "id": 127028,
+    "main": 3.2,
+    "title": "The Gap",
+    "year": 2023
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:07.769563+00:00",
+   "v": {
+    "genres": [
+     "First-Person Adventure"
+    ],
+    "reviews": 6,
+    "score": 73,
+    "slug": "the-gap",
+    "title": "The Gap",
+    "user": 8.4,
+    "userCount": 10,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:25.968530+00:00",
+   "forced": 1458300,
+   "v": {
+    "appid": 1458300,
+    "name": "The Gap",
+    "neg": 5,
+    "owners": "20,000 .. 50,000",
+    "pos": 126,
+    "price": 19.99,
+    "publisher": "Crunching Koalas",
+    "tags": [
+     "Mystery",
+     "Atmospheric",
+     "Multiple Endings",
+     "Walking Simulator",
+     "First-Person",
+     "Mature",
+     "Casual",
+     "Short",
+     "Exploration",
+     "Adventure",
+     "Minimalist",
+     "Detective",
+     "Supernatural",
+     "Singleplayer",
+     "Drama",
+     "Thriller",
+     "Story Rich",
+     "Investigation",
+     "Psychological",
+     "Sci-fi"
     ]
    }
   }
@@ -151845,6 +152643,63 @@
    }
   }
  },
+ "steam-1496590": {
+  "hltb": {
+   "at": "2026-10-28T11:37:31.494207+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:17.023204+00:00",
+   "v": {
+    "genres": [
+     "Open-World Action"
+    ],
+    "reviews": 37,
+    "score": 77,
+    "slug": "tchia",
+    "title": "Tchia",
+    "user": 6.5,
+    "userCount": 178,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:09.799219+00:00",
+   "forced": 1496590,
+   "v": {
+    "appid": 1496590,
+    "name": "Tchia",
+    "neg": 42,
+    "owners": "50,000 .. 100,000",
+    "pos": 380,
+    "price": 29.99,
+    "publisher": "Kepler Interactive",
+    "tags": [
+     "Adventure",
+     "Open World",
+     "Sandbox",
+     "Colorful",
+     "Physics",
+     "Exploration",
+     "3D Platformer",
+     "Singleplayer",
+     "Character Customization",
+     "Third Person",
+     "Lore-Rich",
+     "3D",
+     "Platformer",
+     "Precision Platformer",
+     "Puzzle-Platformer",
+     "Cute",
+     "Funny",
+     "Story Rich",
+     "Stealth",
+     "Stylized"
+    ]
+   }
+  }
+ },
  "steam-1497450": {
   "hltb": {
    "at": "2026-10-26T13:58:20.809957+00:00",
@@ -153689,7 +154544,7 @@
  },
  "steam-1509590": {
   "hltb": {
-   "at": "2026-10-26T11:55:58.801499+00:00",
+   "at": "2026-10-28T11:32:25.093796+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -156103,9 +156958,15 @@
  },
  "steam-1527520": {
   "hltb": {
-   "at": "2026-10-26T13:15:27.378666+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:37:20.980299+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 93219,
+    "main": 0.5,
+    "title": "Bombing!!: A Graffiti Sandbox",
+    "year": 2021
+   }
   },
   "mc": {
    "at": "2026-10-26T12:59:40.636852+00:00",
@@ -157275,8 +158136,7 @@
  },
  "steam-15370": {
   "hltb": {
-   "at": "2026-10-26T13:09:16.545526+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:36:21.485185+00:00",
    "v": null
   },
   "mc": {
@@ -157671,9 +158531,15 @@
  },
  "steam-1540570": {
   "hltb": {
-   "at": "2026-10-26T12:32:43.423757+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:04.765087+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 170602,
+    "main": 17.8,
+    "title": "Fractal Block World",
+    "year": 2021
+   }
   },
   "mc": {
    "at": "2026-10-26T12:32:52.234155+00:00",
@@ -159141,6 +160007,64 @@
    }
   }
  },
+ "steam-1551560": {
+  "hltb": {
+   "at": "2026-10-28T11:37:29.491203+00:00",
+   "v": {
+    "comp": null,
+    "extra": 41.4,
+    "id": 127767,
+    "main": null,
+    "title": "Into the Nightmare",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:15.256219+00:00",
+   "v": {
+    "genres": [
+     "JRPG"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "into-the-nightmare",
+    "title": "Into the Nightmare",
+    "user": null,
+    "userCount": 0,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:06.188663+00:00",
+   "forced": 1551560,
+   "v": {
+    "appid": 1551560,
+    "name": "Into the Nightmare",
+    "neg": 15,
+    "owners": "20,000 .. 50,000",
+    "pos": 171,
+    "price": 14.99,
+    "publisher": "Kagura Games",
+    "tags": [
+     "RPG",
+     "JRPG",
+     "Anime",
+     "Singleplayer",
+     "Hentai",
+     "Sexual Content",
+     "Modern",
+     "Indie",
+     "RPGMaker",
+     "NSFW",
+     "Nudity",
+     "Female Protagonist",
+     "2D",
+     "Mature",
+     "LGBTQ+"
+    ]
+   }
+  }
+ },
  "steam-1552250": {
   "hltb": {
    "at": "2026-10-23T15:02:19.363823+00:00",
@@ -160499,7 +161423,7 @@
  },
  "steam-1562920": {
   "hltb": {
-   "at": "2026-10-26T12:47:26.748321+00:00",
+   "at": "2026-10-28T11:33:40.899281+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -167252,9 +168176,15 @@
  },
  "steam-1608230": {
   "hltb": {
-   "at": "2026-10-26T18:12:30.379504+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:21.785162+00:00",
+   "v": {
+    "comp": 6.4,
+    "extra": 5.2,
+    "id": 93459,
+    "main": 4.6,
+    "title": "Planet of Lana",
+    "year": 2023
+   }
   },
   "mc": {
    "at": "2026-10-26T18:12:37.613300+00:00",
@@ -172059,6 +172989,69 @@
    }
   }
  },
+ "steam-1668190": {
+  "hltb": {
+   "at": "2026-10-28T11:33:17.772945+00:00",
+   "v": {
+    "comp": 3.9,
+    "extra": 3.8,
+    "id": 116753,
+    "main": 3.2,
+    "title": "Once Upon a Jester",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:05.073652+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": 7,
+    "score": 78,
+    "slug": "once-upon-a-jester",
+    "title": "Once Upon a Jester",
+    "user": 8.4,
+    "userCount": 11,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:13.358830+00:00",
+   "forced": 1668190,
+   "v": {
+    "appid": 1668190,
+    "name": "Once Upon a Jester",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 208,
+    "price": 14.99,
+    "publisher": "Crunching Koalas",
+    "tags": [
+     "Story Rich",
+     "Adventure",
+     "Cute",
+     "Casual",
+     "Indie",
+     "2D",
+     "Mystery",
+     "Funny",
+     "Cartoon",
+     "Exploration",
+     "Music",
+     "Rhythm",
+     "Interactive Fiction",
+     "Choices Matter",
+     "Action-Adventure",
+     "Colorful",
+     "Singleplayer",
+     "Comedy",
+     "Side Scroller",
+     "Drama"
+    ]
+   }
+  }
+ },
  "steam-1668610": {
   "hltb": {
    "at": "2026-10-23T15:46:37.919808+00:00",
@@ -173107,8 +174100,7 @@
  },
  "steam-1678430": {
   "hltb": {
-   "at": "2026-10-26T12:03:21.777169+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:37:24.470513+00:00",
    "v": null
   },
   "mc": {
@@ -174695,9 +175687,15 @@
  },
  "steam-1692060": {
   "hltb": {
-   "at": "2026-10-26T13:01:12.683709+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:19.807902+00:00",
+   "v": {
+    "comp": 2.1,
+    "extra": null,
+    "id": 113900,
+    "main": 1.1,
+    "title": "Bad Dream: Stories",
+    "year": 2021
+   }
   },
   "mc": {
    "at": "2026-10-23T15:36:46.869062+00:00",
@@ -176069,8 +177067,7 @@
  },
  "steam-1704060": {
   "hltb": {
-   "at": "2026-10-26T12:06:29.323081+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:38:28.420760+00:00",
    "v": null
   },
   "mc": {
@@ -177850,8 +178847,7 @@
  },
  "steam-1719180": {
   "hltb": {
-   "at": "2026-10-26T11:59:05.758999+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:33:19.893219+00:00",
    "v": null
   },
   "mc": {
@@ -179938,9 +180934,15 @@
  },
  "steam-1736300": {
   "hltb": {
-   "at": "2026-10-26T13:01:09.208883+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:18.987090+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 102693,
+    "main": 3.8,
+    "title": "LIBLADE",
+    "year": 2021
+   }
   },
   "mc": {
    "at": "2026-10-26T12:50:01.432077+00:00",
@@ -180506,9 +181508,15 @@
  },
  "steam-1741120": {
   "hltb": {
-   "at": "2026-10-26T12:00:13.080334+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:22.282357+00:00",
+   "v": {
+    "comp": null,
+    "extra": 53.6,
+    "id": 19860,
+    "main": 41.5,
+    "title": "Fantasy General",
+    "year": 1996
+   }
   },
   "mc": {
    "at": "2026-10-23T15:33:03.528114+00:00",
@@ -185565,9 +186573,15 @@
  },
  "steam-1785940": {
   "hltb": {
-   "at": "2026-10-26T18:14:32.293204+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:37:22.211035+00:00",
+   "v": {
+    "comp": 8.0,
+    "extra": 7.5,
+    "id": 103780,
+    "main": 6.7,
+    "title": "COVEN",
+    "year": 2024
+   }
   },
   "mc": {
    "at": "2026-10-26T18:14:04.136236+00:00",
@@ -188376,9 +189390,15 @@
  },
  "steam-1815570": {
   "hltb": {
-   "at": "2026-10-26T18:15:34.433075+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:37:26.374492+00:00",
+   "v": {
+    "comp": 56.5,
+    "extra": 16.1,
+    "id": 124863,
+    "main": 6.2,
+    "title": "Aces & Adventures",
+    "year": 2023
+   }
   },
   "mc": {
    "at": "2026-10-26T18:14:39.624177+00:00",
@@ -189439,7 +190459,7 @@
  },
  "steam-1822910": {
   "hltb": {
-   "at": "2026-10-26T12:57:05.820714+00:00",
+   "at": "2026-10-28T11:34:46.286040+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -191528,6 +192548,69 @@
      "Logic",
      "Sci-fi",
      "Werewolves"
+    ]
+   }
+  }
+ },
+ "steam-1841240": {
+  "hltb": {
+   "at": "2026-10-28T11:38:28.780777+00:00",
+   "v": {
+    "comp": null,
+    "extra": 36.0,
+    "id": 129699,
+    "main": 11.7,
+    "title": "Fountains",
+    "year": 2024
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:22.061960+00:00",
+   "v": {
+    "genres": [
+     "Open-World Action"
+    ],
+    "reviews": 3,
+    "score": null,
+    "slug": "fountains",
+    "title": "FOUNTAINS",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:22.866710+00:00",
+   "forced": 1841240,
+   "v": {
+    "appid": 1841240,
+    "name": "FOUNTAINS",
+    "neg": 35,
+    "owners": "0 .. 20,000",
+    "pos": 249,
+    "price": 14.99,
+    "publisher": "Crunching Koalas",
+    "tags": [
+     "Souls-like",
+     "Metroidvania",
+     "Action RPG",
+     "RPG",
+     "Hack and Slash",
+     "Exploration",
+     "Dark Fantasy",
+     "Nonlinear",
+     "Choices Matter",
+     "Multiple Endings",
+     "2D",
+     "Top-Down",
+     "Lore-Rich",
+     "Singleplayer",
+     "Open World",
+     "Story Rich",
+     "Pixel Graphics",
+     "Fantasy",
+     "Magic",
+     "Medieval"
     ]
    }
   }
@@ -193691,8 +194774,7 @@
  },
  "steam-1864080": {
   "hltb": {
-   "at": "2026-10-26T11:55:56.142860+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:32:22.211351+00:00",
    "v": null
   },
   "mc": {
@@ -196109,6 +197191,63 @@
      "2D",
      "Psychological Horror",
      "Magic"
+    ]
+   }
+  }
+ },
+ "steam-1889740": {
+  "hltb": {
+   "at": "2026-10-28T11:34:46.385413+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:07.762858+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": 12,
+    "score": 75,
+    "slug": "paper-trail",
+    "title": "Paper Trail",
+    "user": 8.7,
+    "userCount": 118,
+    "year": 2024
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:21.163482+00:00",
+   "forced": 1889740,
+   "v": {
+    "appid": 1889740,
+    "name": "Paper Trail",
+    "neg": 20,
+    "owners": "0 .. 20,000",
+    "pos": 476,
+    "price": 19.99,
+    "publisher": "Newfangled Games",
+    "tags": [
+     "Puzzle",
+     "Indie",
+     "Nature",
+     "Atmospheric",
+     "Exploration",
+     "Adventure",
+     "Colorful",
+     "Singleplayer",
+     "2D",
+     "Top-Down",
+     "Cozy",
+     "Casual",
+     "Sokoban",
+     "Cartoon",
+     "Collectathon",
+     "Female Protagonist",
+     "Hand-drawn",
+     "Relaxing",
+     "Wholesome",
+     "Strategy"
     ]
    }
   }
@@ -199776,9 +200915,15 @@
  },
  "steam-1921740": {
   "hltb": {
-   "at": "2026-10-26T12:53:51.017236+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:19.069901+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 126392,
+    "main": null,
+    "title": "CRAYON SHINCHAN The Storm Called! FLAMING KASUKABE RUNNER!!",
+    "year": 2022
+   }
   },
   "mc": {
    "at": "2026-10-26T12:45:35.680647+00:00",
@@ -201484,9 +202629,15 @@
  },
  "steam-1935660": {
   "hltb": {
-   "at": "2026-10-26T11:58:06.054154+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:12.241520+00:00",
+   "v": {
+    "comp": 2.7,
+    "extra": 1.4,
+    "id": 118761,
+    "main": 1.0,
+    "title": "Chop Goblins",
+    "year": 2022
+   }
   },
   "mc": {
    "at": "2026-10-23T15:22:21.515892+00:00",
@@ -204153,9 +205304,15 @@
  },
  "steam-1957230": {
   "hltb": {
-   "at": "2026-10-26T12:53:52.887440+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:19.831183+00:00",
+   "v": {
+    "comp": null,
+    "extra": 5.7,
+    "id": 123268,
+    "main": null,
+    "title": "Employee of the Month",
+    "year": 2022
+   }
   },
   "mc": {
    "at": "2026-10-26T12:45:37.963012+00:00",
@@ -204690,8 +205847,7 @@
  },
  "steam-1961760": {
   "hltb": {
-   "at": "2026-10-26T18:14:34.142448+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:37:22.838358+00:00",
    "v": null
   },
   "mc": {
@@ -210123,9 +211279,15 @@
  },
  "steam-201010": {
   "hltb": {
-   "at": "2026-10-26T18:11:30.418315+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:23.742431+00:00",
+   "v": {
+    "comp": null,
+    "extra": 56.9,
+    "id": 3883,
+    "main": 21.2,
+    "title": "Geneforge 5: Overthrow",
+    "year": 2008
+   }
   },
   "mc": {
    "at": "2026-10-26T18:11:20.433028+00:00",
@@ -213448,9 +214610,15 @@
  },
  "steam-2054520": {
   "hltb": {
-   "at": "2026-10-26T12:49:32.400518+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:13.637793+00:00",
+   "v": {
+    "comp": 4.0,
+    "extra": 3.0,
+    "id": 173826,
+    "main": 2.1,
+    "title": "Gawr Gura: Quest for Bread",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-10-26T12:43:07.991434+00:00",
@@ -215110,9 +216278,15 @@
  },
  "steam-2064490": {
   "hltb": {
-   "at": "2026-10-26T12:59:04.562115+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:16.368139+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 142059,
+    "main": 7.9,
+    "title": "Art Reborn: Painting Connoisseur",
+    "year": 2023
+   }
   },
   "mc": {
    "at": "2026-10-26T12:49:04.197319+00:00",
@@ -216365,9 +217539,15 @@
  },
  "steam-2073250": {
   "hltb": {
-   "at": "2026-10-26T18:12:33.473836+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:22.821651+00:00",
+   "v": {
+    "comp": 22.2,
+    "extra": 10.3,
+    "id": 112702,
+    "main": 4.7,
+    "title": "Rift of the NecroDancer",
+    "year": 2025
+   }
   },
   "mc": {
    "at": "2026-10-26T18:12:40.479613+00:00",
@@ -217176,9 +218356,15 @@
  },
  "steam-2077380": {
   "hltb": {
-   "at": "2026-10-26T12:40:08.251515+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:14.623631+00:00",
+   "v": {
+    "comp": 3.0,
+    "extra": 2.7,
+    "id": 123484,
+    "main": 2.1,
+    "title": "The Multi-Medium",
+    "year": 2023
+   }
   },
   "mc": {
    "at": "2026-10-26T12:36:50.991463+00:00",
@@ -217277,8 +218463,7 @@
  },
  "steam-2077870": {
   "hltb": {
-   "at": "2026-10-26T11:53:51.884272+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:32:19.314196+00:00",
    "v": null
   },
   "mc": {
@@ -221245,9 +222430,15 @@
  },
  "steam-2107180": {
   "hltb": {
-   "at": "2026-10-26T12:54:54.183843+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:23.643299+00:00",
+   "v": {
+    "comp": 3.7,
+    "extra": 1.8,
+    "id": 160837,
+    "main": 1.1,
+    "title": "The Hungry Fly",
+    "year": 2024
+   }
   },
   "mc": {
    "at": "2026-10-26T12:46:33.251174+00:00",
@@ -222662,9 +223853,15 @@
  },
  "steam-211740": {
   "hltb": {
-   "at": "2026-10-26T13:03:15.094616+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:25.317719+00:00",
+   "v": {
+    "comp": 35.5,
+    "extra": 26.5,
+    "id": 10298,
+    "main": 20.4,
+    "title": "Thief II: The Metal Age",
+    "year": 2000
+   }
   },
   "mc": {
    "at": "2026-10-26T12:51:26.412436+00:00",
@@ -233468,9 +234665,15 @@
  },
  "steam-2206210": {
   "hltb": {
-   "at": "2026-10-26T18:10:30.393160+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:17.300328+00:00",
+   "v": {
+    "comp": 8.1,
+    "extra": 7.2,
+    "id": 67988,
+    "main": 5.9,
+    "title": "GYLT",
+    "year": 2019
+   }
   },
   "mc": {
    "at": "2026-10-26T18:10:33.099613+00:00",
@@ -234163,7 +235366,7 @@
  },
  "steam-2211730": {
   "hltb": {
-   "at": "2026-10-26T11:59:09.674541+00:00",
+   "at": "2026-10-28T11:33:21.076051+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -234964,9 +236167,15 @@
  },
  "steam-2217580": {
   "hltb": {
-   "at": "2026-10-26T13:10:19.939764+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:22.752820+00:00",
+   "v": {
+    "comp": 30.4,
+    "extra": 22.6,
+    "id": 142053,
+    "main": 17.2,
+    "title": "New Star GP",
+    "year": 2023
+   }
   },
   "mc": {
    "at": "2026-10-26T12:56:50.130826+00:00",
@@ -237221,9 +238430,15 @@
  },
  "steam-223730": {
   "hltb": {
-   "at": "2026-10-26T13:13:23.198609+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:28.117033+00:00",
+   "v": {
+    "comp": 29.5,
+    "extra": 10.8,
+    "id": 3614,
+    "main": 9.2,
+    "title": "Fly'N",
+    "year": 2012
+   }
   },
   "mc": {
    "at": "2026-10-26T12:58:43.253715+00:00",
@@ -238333,9 +239548,15 @@
  },
  "steam-224760": {
   "hltb": {
-   "at": "2026-10-26T13:02:09.275773+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:20.615922+00:00",
+   "v": {
+    "comp": 11.7,
+    "extra": 8.3,
+    "id": 3435,
+    "main": 6.0,
+    "title": "Fez",
+    "year": 2012
+   }
   },
   "mc": {
    "at": "2026-10-26T12:50:38.599315+00:00",
@@ -239324,9 +240545,15 @@
  },
  "steam-2251620": {
   "hltb": {
-   "at": "2026-10-26T18:16:40.062239+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:38:10.642025+00:00",
+   "v": {
+    "comp": 33.9,
+    "extra": null,
+    "id": 127823,
+    "main": null,
+    "title": "Sunrider 4: The Captain's Return",
+    "year": 2023
+   }
   },
   "mc": {
    "at": "2026-10-26T18:15:29.324501+00:00",
@@ -240296,9 +241523,15 @@
  },
  "steam-2262610": {
   "hltb": {
-   "at": "2026-10-26T12:32:41.712110+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:03.267480+00:00",
+   "v": {
+    "comp": 8.4,
+    "extra": 4.8,
+    "id": 128273,
+    "main": 2.4,
+    "title": "Endless Monday: Dreams and Deadlines",
+    "year": 2023
+   }
   },
   "mc": {
    "at": "2026-10-26T12:32:49.028773+00:00",
@@ -246273,9 +247506,15 @@
  },
  "steam-232090": {
   "hltb": {
-   "at": "2026-10-26T11:18:34.510064+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:37:30.145565+00:00",
+   "v": {
+    "comp": 130.9,
+    "extra": 94.3,
+    "id": 25991,
+    "main": 16.4,
+    "title": "Killing Floor 2",
+    "year": 2016
+   }
   },
   "mc": {
    "at": "2026-10-26T11:14:59.311374+00:00",
@@ -247291,8 +248530,7 @@
  },
  "steam-2330960": {
   "hltb": {
-   "at": "2026-10-26T13:08:18.492180+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:36:20.381194+00:00",
    "v": null
   },
   "mc": {
@@ -250036,6 +251274,69 @@
    }
   }
  },
+ "steam-2348400": {
+  "hltb": {
+   "at": "2026-10-28T11:37:23.404230+00:00",
+   "v": {
+    "comp": 13.5,
+    "extra": 6.5,
+    "id": 139192,
+    "main": 5.3,
+    "title": "Techno Banter",
+    "year": 2024
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:13.483279+00:00",
+   "v": {
+    "genres": [
+     "First-Person Adventure"
+    ],
+    "reviews": 3,
+    "score": null,
+    "slug": "techno-banter",
+    "title": "Techno Banter",
+    "user": null,
+    "userCount": 1,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:03.805961+00:00",
+   "forced": 2348400,
+   "v": {
+    "appid": 2348400,
+    "name": "Techno Banter",
+    "neg": 7,
+    "owners": "50,000 .. 100,000",
+    "pos": 84,
+    "price": 17.99,
+    "publisher": "Crunching Koalas",
+    "tags": [
+     "Retro",
+     "Conversation",
+     "Choices Matter",
+     "Multiple Endings",
+     "Electronic Music",
+     "2.5D",
+     "Dark Comedy",
+     "Story Rich",
+     "Psychedelic",
+     "Adventure",
+     "Underground",
+     "Futuristic",
+     "Interactive Fiction",
+     "Atmospheric",
+     "Pixel Graphics",
+     "First-Person",
+     "1980s",
+     "Cyberpunk",
+     "Exploration",
+     "Choose Your Own Adventure"
+    ]
+   }
+  }
+ },
  "steam-23490": {
   "hltb": {
    "at": "2026-10-23T12:27:51.711325+00:00",
@@ -250742,8 +252043,7 @@
  },
  "steam-2355220": {
   "hltb": {
-   "at": "2026-10-26T11:54:55.308593+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:32:21.126447+00:00",
    "v": null
   },
   "mc": {
@@ -251210,7 +252510,7 @@
  },
  "steam-235980": {
   "hltb": {
-   "at": "2026-10-26T12:47:27.010773+00:00",
+   "at": "2026-10-28T11:33:42.216120+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -252599,6 +253899,63 @@
      "Violent",
      "Controller",
      "Old School"
+    ]
+   }
+  }
+ },
+ "steam-2377420": {
+  "hltb": {
+   "at": "2026-10-28T11:37:22.039600+00:00",
+   "v": {
+    "comp": null,
+    "extra": 2.5,
+    "id": 134832,
+    "main": 1.6,
+    "title": "Eris Dysnomia",
+    "year": 2023
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:13.466637+00:00",
+   "v": {
+    "genres": [
+     "2D Beat-'Em-Up"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "eris-dysnomia",
+    "title": "Eris Dysnomia",
+    "user": null,
+    "userCount": 0,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:46.007663+00:00",
+   "forced": 2377420,
+   "v": {
+    "appid": 2377420,
+    "name": "Eris Dysnomia",
+    "neg": 18,
+    "owners": "0 .. 20,000",
+    "pos": 229,
+    "price": 12.99,
+    "publisher": "Kagura Games",
+    "tags": [
+     "Sexual Content",
+     "RPG",
+     "Hentai",
+     "2D",
+     "Action",
+     "Nudity",
+     "JRPG",
+     "Anime",
+     "Singleplayer",
+     "Mature",
+     "Female Protagonist",
+     "Indie",
+     "Pixel Graphics",
+     "NSFW"
     ]
    }
   }
@@ -256071,9 +257428,15 @@
  },
  "steam-2413620": {
   "hltb": {
-   "at": "2026-10-26T12:48:31.422487+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:02.183746+00:00",
+   "v": {
+    "comp": null,
+    "extra": 11.0,
+    "id": 143542,
+    "main": 4.4,
+    "title": "Pogo3D",
+    "year": 2023
+   }
   },
   "mc": {
    "at": "2026-10-26T12:42:14.858286+00:00",
@@ -256331,9 +257694,15 @@
  },
  "steam-2414630": {
   "hltb": {
-   "at": "2026-10-26T18:13:32.850862+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:24.715564+00:00",
+   "v": {
+    "comp": 7.8,
+    "extra": 5.4,
+    "id": 130951,
+    "main": 3.8,
+    "title": "Hollow Cocoon",
+    "year": 2023
+   }
   },
   "mc": {
    "at": "2026-10-26T18:13:15.017889+00:00",
@@ -259189,7 +260558,7 @@
  },
  "steam-2435180": {
   "hltb": {
-   "at": "2026-10-26T13:05:17.871414+00:00",
+   "at": "2026-10-28T11:35:47.901156+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -261400,8 +262769,7 @@
  },
  "steam-2459860": {
   "hltb": {
-   "at": "2026-10-26T13:15:25.250583+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:37:20.617005+00:00",
    "v": null
   },
   "mc": {
@@ -263637,6 +265005,66 @@
    }
   }
  },
+ "steam-2487060": {
+  "hltb": {
+   "at": "2026-10-28T11:38:26.431187+00:00",
+   "v": {
+    "comp": null,
+    "extra": 8.9,
+    "id": 147840,
+    "main": 7.5,
+    "title": "Anonymous Hacker Simulator",
+    "year": 2024
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:20.755567+00:00",
+   "v": {
+    "genres": [
+     "First-Person Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "anonymous-hacker-simulator",
+    "title": "Anonymous Hacker Simulator",
+    "user": 9.5,
+    "userCount": 35,
+    "year": 2024
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:19.538587+00:00",
+   "forced": 2487060,
+   "v": {
+    "appid": 2487060,
+    "name": "Anonymous Hacker Simulator",
+    "neg": 83,
+    "owners": "20,000 .. 50,000",
+    "pos": 506,
+    "price": 19.99,
+    "publisher": "G-DEVS.com",
+    "tags": [
+     "Simulation",
+     "Hacking",
+     "Typing",
+     "Immersive Sim",
+     "Sandbox",
+     "Crime",
+     "Detective",
+     "Stealth",
+     "Life Sim",
+     "3D",
+     "First-Person",
+     "Indie",
+     "Cyberpunk",
+     "Singleplayer",
+     "Realistic",
+     "Job Simulator",
+     "Programming"
+    ]
+   }
+  }
+ },
  "steam-2487390": {
   "hltb": {
    "at": "2026-10-26T12:45:49.315809+00:00",
@@ -264283,6 +265711,48 @@
      "Early Access",
      "Indie"
     ]
+   }
+  }
+ },
+ "steam-2495730": {
+  "hltb": {
+   "at": "2026-10-28T11:38:23.035810+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 192220,
+    "main": null,
+    "title": "Provoron",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:19.304025+00:00",
+   "v": {
+    "genres": [
+     "Action"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "provoron",
+    "title": "Provoron",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:15.063059+00:00",
+   "forced": 2495730,
+   "v": {
+    "appid": 2495730,
+    "name": "Provoron",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 9.99,
+    "publisher": "Spaghetti Cat",
+    "tags": []
    }
   }
  },
@@ -268828,9 +270298,15 @@
  },
  "steam-2535830": {
   "hltb": {
-   "at": "2026-10-26T12:38:07.945190+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:14.144280+00:00",
+   "v": {
+    "comp": 1.4,
+    "extra": 1.4,
+    "id": 107523,
+    "main": 1.1,
+    "title": "Squirrel Stapler",
+    "year": 2023
+   }
   },
   "mc": {
    "at": "2026-10-26T12:35:40.696509+00:00",
@@ -269199,7 +270675,7 @@
  },
  "steam-2538910": {
   "hltb": {
-   "at": "2026-10-26T13:13:25.313469+00:00",
+   "at": "2026-10-28T11:36:28.869503+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -272280,9 +273756,15 @@
  },
  "steam-2576460": {
   "hltb": {
-   "at": "2026-10-26T13:01:09.355054+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:19.474415+00:00",
+   "v": {
+    "comp": null,
+    "extra": 1.0,
+    "id": 153483,
+    "main": 0.4,
+    "title": "Angelstruck",
+    "year": 2024
+   }
   },
   "mc": {
    "at": "2026-10-26T12:50:01.694760+00:00",
@@ -273622,8 +275104,7 @@
  },
  "steam-259530": {
   "hltb": {
-   "at": "2026-10-26T12:01:18.922210+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:35:25.011291+00:00",
    "v": null
   },
   "mc": {
@@ -276477,8 +277958,7 @@
  },
  "steam-262940": {
   "hltb": {
-   "at": "2026-10-26T18:15:36.860222+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:37:27.141491+00:00",
    "v": null
   },
   "mc": {
@@ -279082,9 +280562,15 @@
  },
  "steam-2658470": {
   "hltb": {
-   "at": "2026-10-26T18:10:28.946330+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:16.646173+00:00",
+   "v": {
+    "comp": 3.1,
+    "extra": 3.0,
+    "id": 159211,
+    "main": 2.5,
+    "title": "Is This Game Trying to Kill Me?",
+    "year": 2024
+   }
   },
   "mc": {
    "at": "2026-10-26T18:10:33.034514+00:00",
@@ -280054,7 +281540,7 @@
  },
  "steam-2671320": {
   "hltb": {
-   "at": "2026-10-26T13:14:23.594526+00:00",
+   "at": "2026-10-28T11:36:49.543322+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -282980,9 +284466,15 @@
  },
  "steam-2701720": {
   "hltb": {
-   "at": "2026-10-26T12:32:42.456817+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:03.956474+00:00",
+   "v": {
+    "comp": null,
+    "extra": 34.1,
+    "id": 172101,
+    "main": null,
+    "title": "Wagotabi: A Japanese Journey",
+    "year": 2025
+   }
   },
   "mc": {
    "at": "2026-10-26T12:32:51.234657+00:00",
@@ -287156,9 +288648,15 @@
  },
  "steam-2745870": {
   "hltb": {
-   "at": "2026-10-26T13:10:21.446313+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:23.641329+00:00",
+   "v": {
+    "comp": 5.5,
+    "extra": 3.7,
+    "id": 169300,
+    "main": 2.9,
+    "title": "Warfare Legacy Collection",
+    "year": 2025
+   }
   },
   "mc": {
    "at": "2026-10-26T12:56:51.271975+00:00",
@@ -292078,7 +293576,7 @@
  },
  "steam-2794770": {
   "hltb": {
-   "at": "2026-10-26T18:16:37.807302+00:00",
+   "at": "2026-10-28T11:37:50.782282+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -292715,9 +294213,15 @@
  },
  "steam-2799350": {
   "hltb": {
-   "at": "2026-10-26T12:53:49.842573+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:18.737483+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 61859,
+    "main": null,
+    "title": "Emperor of Fading Suns",
+    "year": 1997
+   }
   },
   "mc": {
    "at": "2026-10-26T12:45:34.960669+00:00",
@@ -295140,6 +296644,69 @@
    }
   }
  },
+ "steam-2825530": {
+  "hltb": {
+   "at": "2026-10-28T11:37:21.061119+00:00",
+   "v": {
+    "comp": 12.6,
+    "extra": 7.0,
+    "id": 145870,
+    "main": 4.8,
+    "title": "Beholder: Conductor",
+    "year": 2025
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:13.193335+00:00",
+   "v": {
+    "genres": [
+     "Strategy"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "beholder-conductor",
+    "title": "Beholder: Conductor",
+    "user": 7.9,
+    "userCount": 23,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:41.671502+00:00",
+   "forced": 2825530,
+   "v": {
+    "appid": 2825530,
+    "name": "Beholder: Conductor",
+    "neg": 184,
+    "owners": "200,000 .. 500,000",
+    "pos": 1586,
+    "price": 13.99,
+    "publisher": "Alawar",
+    "tags": [
+     "Dystopian ",
+     "Choices Matter",
+     "Singleplayer",
+     "Indie",
+     "Story Rich",
+     "Point & Click",
+     "Strategy",
+     "Simulation",
+     "Political",
+     "Puzzle",
+     "Investigation",
+     "Pixel Graphics",
+     "Multiple Endings",
+     "2D",
+     "Trains",
+     "Atmospheric",
+     "Dark",
+     "Choose Your Own Adventure",
+     "Management",
+     "Adventure"
+    ]
+   }
+  }
+ },
  "steam-2825730": {
   "hltb": {
    "at": "2026-10-23T15:16:16.724735+00:00",
@@ -296262,8 +297829,7 @@
  },
  "steam-2834780": {
   "hltb": {
-   "at": "2026-10-26T12:00:12.647682+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:34:21.290595+00:00",
    "v": null
   },
   "mc": {
@@ -296875,9 +298441,15 @@
  },
  "steam-283920": {
   "hltb": {
-   "at": "2026-10-26T12:50:40.157633+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:15.115184+00:00",
+   "v": {
+    "comp": 0.7,
+    "extra": 0.6,
+    "id": 7404,
+    "main": 0.5,
+    "title": "Putt-Putt Joins the Parade",
+    "year": 1992
+   }
   },
   "mc": {
    "at": "2026-10-26T12:43:54.050392+00:00",
@@ -300343,9 +301915,15 @@
  },
  "steam-2864890": {
   "hltb": {
-   "at": "2026-10-26T13:11:20.936527+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:25.920089+00:00",
+   "v": {
+    "comp": 196.1,
+    "extra": 157.4,
+    "id": 151053,
+    "main": 140.6,
+    "title": "Magic Research 2",
+    "year": 2024
+   }
   },
   "mc": {
    "at": "2026-10-26T12:57:32.039670+00:00",
@@ -303162,7 +304740,7 @@
  },
  "steam-2891370": {
   "hltb": {
-   "at": "2026-10-26T12:48:27.440677+00:00",
+   "at": "2026-10-28T11:33:42.384609+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -303639,7 +305217,7 @@
  },
  "steam-2897580": {
   "hltb": {
-   "at": "2026-10-26T11:56:58.359166+00:00",
+   "at": "2026-10-28T11:32:43.327555+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -306058,9 +307636,15 @@
  },
  "steam-2918090": {
   "hltb": {
-   "at": "2026-10-26T18:18:45.185897+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:38:27.511621+00:00",
+   "v": {
+    "comp": 9.8,
+    "extra": 9.6,
+    "id": 156367,
+    "main": 6.3,
+    "title": "Fear The Timeloop",
+    "year": 2025
+   }
   },
   "mc": {
    "at": "2026-10-26T18:16:42.160275+00:00",
@@ -308621,9 +310205,15 @@
  },
  "steam-2945150": {
   "hltb": {
-   "at": "2026-10-26T13:08:19.940574+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:20.705331+00:00",
+   "v": {
+    "comp": 7.0,
+    "extra": 5.9,
+    "id": 176989,
+    "main": 5.2,
+    "title": "Feline Forensics and the Meowseum Mystery",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-10-26T12:55:09.678036+00:00",
@@ -308710,7 +310300,7 @@
  },
  "steam-294540": {
   "hltb": {
-   "at": "2026-10-26T12:47:24.926373+00:00",
+   "at": "2026-10-28T11:33:22.556960+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -310263,8 +311853,7 @@
  },
  "steam-2956820": {
   "hltb": {
-   "at": "2026-10-26T13:09:20.691984+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:36:22.414143+00:00",
    "v": null
   },
   "mc": {
@@ -311048,6 +312637,63 @@
     "price": 4.99,
     "publisher": "Ignita Games",
     "tags": []
+   }
+  }
+ },
+ "steam-2963550": {
+  "hltb": {
+   "at": "2026-10-28T11:37:30.976674+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:16.758794+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "game-of-fate-chasing-through-time",
+    "title": "Game of Fate: Chasing Through Time",
+    "user": null,
+    "userCount": 0,
+    "year": 2024
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:08.684299+00:00",
+   "forced": 2963550,
+   "v": {
+    "appid": 2963550,
+    "name": "Game of Fate: Chasing Through Time",
+    "neg": 86,
+    "owners": "20,000 .. 50,000",
+    "pos": 834,
+    "price": 10.99,
+    "publisher": "EpicDream Games",
+    "tags": [
+     "FMV",
+     "Dating Sim",
+     "Immersive Sim",
+     "Mystery",
+     "Cinematic",
+     "Multiple Endings",
+     "Lore-Rich",
+     "Choose Your Own Adventure",
+     "Interactive Fiction",
+     "Story Rich",
+     "First-Person",
+     "RPG",
+     "Puzzle-Platformer",
+     "Drama",
+     "Emotional",
+     "Simulation",
+     "Detective",
+     "Logic",
+     "Singleplayer",
+     "Adventure"
+    ]
    }
   }
  },
@@ -315501,9 +317147,15 @@
  },
  "steam-3002510": {
   "hltb": {
-   "at": "2026-10-26T13:07:19.979015+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:19.105285+00:00",
+   "v": {
+    "comp": 2.3,
+    "extra": 2.3,
+    "id": 131627,
+    "main": 2.2,
+    "title": "Repose",
+    "year": 2025
+   }
   },
   "mc": {
    "at": "2026-10-26T12:54:26.900300+00:00",
@@ -316889,6 +318541,41 @@
      "Platformer",
      "Action"
     ]
+   }
+  }
+ },
+ "steam-3024130": {
+  "hltb": {
+   "at": "2026-10-28T11:36:19.281426+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:10.636777+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "pao-pao",
+    "title": "Pao Pao",
+    "user": null,
+    "userCount": 0,
+    "year": 2097
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:36.139703+00:00",
+   "forced": 3024130,
+   "v": {
+    "appid": 3024130,
+    "name": "Purrville",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
    }
   }
  },
@@ -323373,9 +325060,15 @@
  },
  "steam-3081830": {
   "hltb": {
-   "at": "2026-10-26T13:06:18.012315+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:07.954848+00:00",
+   "v": {
+    "comp": null,
+    "extra": 5.0,
+    "id": 145729,
+    "main": 1.1,
+    "title": "Flare Nuinui Quest",
+    "year": null
+   }
   },
   "mc": {
    "at": "2026-10-26T12:53:24.509384+00:00",
@@ -323472,9 +325165,15 @@
  },
  "steam-3082100": {
   "hltb": {
-   "at": "2026-10-26T11:54:54.418157+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:32:20.857717+00:00",
+   "v": {
+    "comp": 25.4,
+    "extra": 14.5,
+    "id": 151858,
+    "main": 4.2,
+    "title": "Day of the Shell",
+    "year": 2025
+   }
   },
   "mc": {
    "at": "2026-10-23T15:04:43.840077+00:00",
@@ -324276,9 +325975,15 @@
  },
  "steam-3093050": {
   "hltb": {
-   "at": "2026-10-26T12:51:42.489977+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:16.357870+00:00",
+   "v": {
+    "comp": 9.8,
+    "extra": null,
+    "id": 171185,
+    "main": 5.5,
+    "title": "Kill The Music",
+    "year": 2025
+   }
   },
   "mc": {
    "at": "2026-10-26T12:44:27.124617+00:00",
@@ -327477,8 +329182,7 @@
  },
  "steam-3129930": {
   "hltb": {
-   "at": "2026-10-26T12:58:03.940688+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:35:04.857509+00:00",
    "v": null
   },
   "mc": {
@@ -336034,6 +337738,41 @@
    }
   }
  },
+ "steam-3218580": {
+  "hltb": {
+   "at": "2026-10-28T11:38:27.386041+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:21.592252+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "cellveillance",
+    "title": "Cellveillance",
+    "user": null,
+    "userCount": 0,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:22.249170+00:00",
+   "forced": 3218580,
+   "v": {
+    "appid": 3218580,
+    "name": "Cellveillance",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 15.99,
+    "publisher": "EpicDream Games",
+    "tags": []
+   }
+  }
+ },
  "steam-3218820": {
   "hltb": {
    "at": "2026-10-26T11:55:33.377385+00:00",
@@ -336512,9 +338251,15 @@
  },
  "steam-322330": {
   "hltb": {
-   "at": "2026-10-26T12:54:56.213057+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:23.880490+00:00",
+   "v": {
+    "comp": 216.5,
+    "extra": 110.3,
+    "id": 23828,
+    "main": 34.3,
+    "title": "Don't Starve Together",
+    "year": 2014
+   }
   },
   "mc": {
    "at": "2026-10-26T12:46:33.810955+00:00",
@@ -339893,9 +341638,15 @@
  },
  "steam-32640": {
   "hltb": {
-   "at": "2026-10-26T13:12:22.922038+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:27.332769+00:00",
+   "v": {
+    "comp": 10.0,
+    "extra": 6.1,
+    "id": 12004,
+    "main": 5.8,
+    "title": "Delta Force: Land Warrior",
+    "year": 2000
+   }
   },
   "mc": {
    "at": "2026-10-26T12:58:06.929151+00:00",
@@ -341228,9 +342979,15 @@
  },
  "steam-3275880": {
   "hltb": {
-   "at": "2026-10-26T12:33:44.369208+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:09.011244+00:00",
+   "v": {
+    "comp": 6.3,
+    "extra": 5.8,
+    "id": 175352,
+    "main": 3.8,
+    "title": "Chronoquartz",
+    "year": 2025
+   }
   },
   "mc": {
    "at": "2026-10-26T12:33:14.868038+00:00",
@@ -342313,9 +344070,15 @@
  },
  "steam-3293150": {
   "hltb": {
-   "at": "2026-10-26T11:54:52.062322+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:32:20.490589+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 191190,
+    "main": null,
+    "title": "Keep Looking",
+    "year": 2024
+   }
   },
   "mc": {
    "at": "2026-10-23T15:04:10.864913+00:00",
@@ -343027,9 +344790,15 @@
  },
  "steam-3303780": {
   "hltb": {
-   "at": "2026-10-26T13:07:17.796799+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:08.369420+00:00",
+   "v": {
+    "comp": null,
+    "extra": 2.8,
+    "id": 138399,
+    "main": 1.8,
+    "title": "Code Bunny",
+    "year": 2020
+   }
   },
   "mc": {
    "at": "2026-10-26T12:54:23.690225+00:00",
@@ -345932,6 +347701,48 @@
    }
   }
  },
+ "steam-3339880": {
+  "hltb": {
+   "at": "2026-10-28T11:33:15.852478+00:00",
+   "v": {
+    "comp": 9.0,
+    "extra": 8.1,
+    "id": 162784,
+    "main": 6.1,
+    "title": "OFF",
+    "year": 2025
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:03.711236+00:00",
+   "v": {
+    "genres": [
+     "JRPG"
+    ],
+    "reviews": 23,
+    "score": 83,
+    "slug": "off",
+    "title": "OFF",
+    "user": 7.6,
+    "userCount": 26,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:12.218913+00:00",
+   "forced": 3339880,
+   "v": {
+    "appid": 3339880,
+    "name": "OFF",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 14.99,
+    "publisher": "Fangamer",
+    "tags": []
+   }
+  }
+ },
  "steam-3340750": {
   "hltb": {
    "at": "2026-10-23T14:50:32.331537+00:00",
@@ -346426,7 +348237,7 @@
  },
  "steam-3347620": {
   "hltb": {
-   "at": "2026-10-26T12:02:19.787716+00:00",
+   "at": "2026-10-28T11:36:29.160134+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -349106,9 +350917,15 @@
  },
  "steam-337350": {
   "hltb": {
-   "at": "2026-10-26T12:52:45.825203+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:18.644398+00:00",
+   "v": {
+    "comp": 8.5,
+    "extra": 5.9,
+    "id": 32039,
+    "main": 2.5,
+    "title": "Flywrench",
+    "year": 2015
+   }
   },
   "mc": {
    "at": "2026-10-26T12:44:57.209036+00:00",
@@ -350272,9 +352089,15 @@
  },
  "steam-3382070": {
   "hltb": {
-   "at": "2026-10-26T12:54:53.176396+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:22.405150+00:00",
+   "v": {
+    "comp": 28.0,
+    "extra": null,
+    "id": 181890,
+    "main": 10.5,
+    "title": "Queen of Treasure Isle",
+    "year": 2025
+   }
   },
   "mc": {
    "at": "2026-10-26T12:46:28.962070+00:00",
@@ -353006,6 +354829,41 @@
    }
   }
  },
+ "steam-3406910": {
+  "hltb": {
+   "at": "2026-10-28T11:38:27.355208+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:21.249355+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "game-of-fate-3-clash-of-crowns",
+    "title": "Game Of Fate 3: Clash Of Crowns",
+    "user": null,
+    "userCount": 0,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:20.608204+00:00",
+   "forced": 3406910,
+   "v": {
+    "appid": 3406910,
+    "name": "Game Of Fate 3：Clash Of Crowns",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 16.79,
+    "publisher": "EpicDream Games",
+    "tags": []
+   }
+  }
+ },
  "steam-340800": {
   "hltb": {
    "at": "2026-10-23T16:14:47.403772+00:00",
@@ -354504,7 +356362,7 @@
  },
  "steam-3426490": {
   "hltb": {
-   "at": "2026-10-26T11:56:57.331289+00:00",
+   "at": "2026-10-28T11:32:44.899595+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -355155,9 +357013,15 @@
  },
  "steam-343370": {
   "hltb": {
-   "at": "2026-10-26T13:08:17.051475+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:20.158736+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 23906,
+    "main": 2.9,
+    "title": "Slammed!",
+    "year": 2013
+   }
   },
   "mc": {
    "at": "2026-10-26T12:55:07.783732+00:00",
@@ -357424,9 +359288,15 @@
  },
  "steam-3454590": {
   "hltb": {
-   "at": "2026-10-26T11:58:06.751550+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:13.552515+00:00",
+   "v": {
+    "comp": 306.8,
+    "extra": 138.1,
+    "id": 167286,
+    "main": 125.7,
+    "title": "Cornerpond",
+    "year": 2025
+   }
   },
   "mc": {
    "at": "2026-10-23T15:22:21.934644+00:00",
@@ -358520,9 +360390,15 @@
  },
  "steam-3470170": {
   "hltb": {
-   "at": "2026-10-26T12:45:22.899026+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:19.378738+00:00",
+   "v": {
+    "comp": 4.2,
+    "extra": null,
+    "id": 178647,
+    "main": null,
+    "title": "Queens Casino",
+    "year": 2025
+   }
   },
   "mc": {
    "at": "2026-10-26T12:40:08.335052+00:00",
@@ -360158,9 +362034,15 @@
  },
  "steam-3488900": {
   "hltb": {
-   "at": "2026-10-26T12:51:39.636748+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:15.855154+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 179565,
+    "main": null,
+    "title": "Kiloton",
+    "year": 2025
+   }
   },
   "mc": {
    "at": "2026-10-26T12:44:23.559617+00:00",
@@ -364139,8 +366021,7 @@
  },
  "steam-354680": {
   "hltb": {
-   "at": "2026-10-26T12:06:30.095079+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:38:28.819565+00:00",
    "v": null
   },
   "mc": {
@@ -365702,8 +367583,7 @@
  },
  "steam-3566070": {
   "hltb": {
-   "at": "2026-10-26T11:53:50.577134+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:32:18.236698+00:00",
    "v": null
   },
   "mc": {
@@ -365738,9 +367618,15 @@
  },
  "steam-3566200": {
   "hltb": {
-   "at": "2026-10-26T13:07:20.219712+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:19.617457+00:00",
+   "v": {
+    "comp": null,
+    "extra": 13.9,
+    "id": 127340,
+    "main": null,
+    "title": "Pocket City 2",
+    "year": 2023
+   }
   },
   "mc": {
    "at": "2026-10-26T12:54:28.592986+00:00",
@@ -367210,7 +369096,7 @@
  },
  "steam-358360": {
   "hltb": {
-   "at": "2026-10-26T12:02:22.398035+00:00",
+   "at": "2026-10-28T11:36:49.172877+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -368313,7 +370199,7 @@
  },
  "steam-3594120": {
   "hltb": {
-   "at": "2026-10-26T13:04:14.948542+00:00",
+   "at": "2026-10-28T11:35:27.302244+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -371987,9 +373873,15 @@
  },
  "steam-3641010": {
   "hltb": {
-   "at": "2026-10-26T13:00:06.236046+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:18.715048+00:00",
+   "v": {
+    "comp": 43.0,
+    "extra": 14.0,
+    "id": 183027,
+    "main": 10.2,
+    "title": "Derelict Star",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-10-26T12:49:32.811220+00:00",
@@ -372240,7 +374132,7 @@
  },
  "steam-364390": {
   "hltb": {
-   "at": "2026-10-26T12:57:03.686659+00:00",
+   "at": "2026-10-28T11:34:26.477281+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -372873,6 +374765,41 @@
      "Co-op",
      "Walking Simulator"
     ]
+   }
+  }
+ },
+ "steam-3653250": {
+  "hltb": {
+   "at": "2026-10-28T11:34:02.193380+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:07.053878+00:00",
+   "v": {
+    "genres": [
+     "Virtual Career"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "sporting-goods-shop",
+    "title": "Sporting Goods Shop",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:19.911809+00:00",
+   "forced": 3653250,
+   "v": {
+    "appid": 3653250,
+    "name": "Sporting Goods Shop",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 11.99,
+    "publisher": "Business Tycoon, Gamersky Games",
+    "tags": []
    }
   }
  },
@@ -376801,6 +378728,42 @@
    }
   }
  },
+ "steam-3702120": {
+  "hltb": {
+   "at": "2026-10-28T11:33:20.559093+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:06.031962+00:00",
+   "v": {
+    "genres": [
+     "First-Person Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "life-and-shadow-celestial-call",
+    "title": "Life & Shadow: Celestial Call",
+    "user": null,
+    "userCount": 0,
+    "year": 2097
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:17.977067+00:00",
+   "forced": 3702120,
+   "v": {
+    "appid": 3702120,
+    "name": "Life & Shadow: Celestial Call",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
  "steam-3702160": {
   "hltb": {
    "at": "2026-10-26T11:54:21.693367+00:00",
@@ -376827,9 +378790,15 @@
  },
  "steam-370280": {
   "hltb": {
-   "at": "2026-10-26T12:01:22.412455+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:26.234764+00:00",
+   "v": {
+    "comp": 2.6,
+    "extra": 1.4,
+    "id": 36467,
+    "main": 0.7,
+    "title": "Season of 12 Colors",
+    "year": 2016
+   }
   },
   "mc": {
    "at": "2026-10-23T15:37:20.312189+00:00",
@@ -378786,9 +380755,15 @@
  },
  "steam-3730600": {
   "hltb": {
-   "at": "2026-10-26T12:04:23.288591+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:37:28.617148+00:00",
+   "v": {
+    "comp": null,
+    "extra": 6.5,
+    "id": 169157,
+    "main": 1.5,
+    "title": "Aestheta",
+    "year": 2025
+   }
   },
   "mc": {
    "at": "2026-10-23T15:50:44.537352+00:00",
@@ -379902,7 +381877,7 @@
  },
  "steam-3748640": {
   "hltb": {
-   "at": "2026-10-26T13:05:15.313178+00:00",
+   "at": "2026-10-28T11:35:28.738383+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -380230,9 +382205,15 @@
  },
  "steam-3755350": {
   "hltb": {
-   "at": "2026-10-26T12:45:19.787559+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:18.728415+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 192739,
+    "main": null,
+    "title": "Alice Nation",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-10-26T12:40:06.216565+00:00",
@@ -384009,9 +385990,15 @@
  },
  "steam-3819640": {
   "hltb": {
-   "at": "2026-10-26T13:03:11.641759+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:23.951992+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 187434,
+    "main": null,
+    "title": "Megastore Simulator",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-10-26T12:51:23.778627+00:00",
@@ -384872,9 +386859,15 @@
  },
  "steam-3829620": {
   "hltb": {
-   "at": "2026-10-26T12:03:23.631835+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:37:24.707273+00:00",
+   "v": {
+    "comp": 6.5,
+    "extra": 4.1,
+    "id": 179240,
+    "main": 3.3,
+    "title": "Execute",
+    "year": 2025
+   }
   },
   "mc": {
    "at": "2026-10-26T11:53:05.283042+00:00",
@@ -388844,8 +390837,7 @@
  },
  "steam-3883710": {
   "hltb": {
-   "at": "2026-10-26T12:48:29.939288+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:34:00.691945+00:00",
    "v": null
   },
   "mc": {
@@ -390087,9 +392079,15 @@
  },
  "steam-3902800": {
   "hltb": {
-   "at": "2026-10-26T12:52:46.288272+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:17.939071+00:00",
+   "v": {
+    "comp": null,
+    "extra": 1.9,
+    "id": 175590,
+    "main": 1.6,
+    "title": "[HERROR] Gas Station Case",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-10-26T12:44:58.762683+00:00",
@@ -392167,6 +394165,48 @@
    }
   }
  },
+ "steam-3920300": {
+  "hltb": {
+   "at": "2026-10-28T11:34:16.909082+00:00",
+   "v": {
+    "comp": 1.1,
+    "extra": null,
+    "id": 188669,
+    "main": null,
+    "title": "Mothkeep",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:07.579734+00:00",
+   "v": {
+    "genres": [
+     "Simulation"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "mothkeep",
+    "title": "Mothkeep",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:20.046549+00:00",
+   "forced": 3920300,
+   "v": {
+    "appid": 3920300,
+    "name": "Mothkeep",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 4.99,
+    "publisher": "Ivette Schmidt",
+    "tags": []
+   }
+  }
+ },
  "steam-392070": {
   "hltb": {
    "at": "2026-10-26T13:59:49.166898+00:00",
@@ -392834,9 +394874,15 @@
  },
  "steam-393190": {
   "hltb": {
-   "at": "2026-10-26T18:10:30.736404+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:17.500450+00:00",
+   "v": {
+    "comp": 3.7,
+    "extra": 3.0,
+    "id": 34468,
+    "main": 3.0,
+    "title": "TSIOQUE",
+    "year": 2018
+   }
   },
   "mc": {
    "at": "2026-10-26T18:10:33.743569+00:00",
@@ -393962,9 +396008,15 @@
  },
  "steam-3954990": {
   "hltb": {
-   "at": "2026-10-26T13:12:22.618299+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:27.023008+00:00",
+   "v": {
+    "comp": 1.4,
+    "extra": null,
+    "id": 187974,
+    "main": 1.4,
+    "title": "S.A.N.D.Y. - Beach Cleaner",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-10-26T12:58:06.287639+00:00",
@@ -394495,9 +396547,15 @@
  },
  "steam-396350": {
   "hltb": {
-   "at": "2026-10-26T12:40:08.258030+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:14.907177+00:00",
+   "v": {
+    "comp": 10.8,
+    "extra": 3.4,
+    "id": 43520,
+    "main": 1.1,
+    "title": "Bleed 2",
+    "year": 2017
+   }
   },
   "mc": {
    "at": "2026-10-26T12:36:51.243826+00:00",
@@ -394544,6 +396602,48 @@
      "Bullet Time",
      "Side Scroller"
     ]
+   }
+  }
+ },
+ "steam-3965430": {
+  "hltb": {
+   "at": "2026-10-28T11:35:20.090465+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 182688,
+    "main": null,
+    "title": "The Mailroom",
+    "year": null
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:08.702755+00:00",
+   "v": {
+    "genres": [
+     "First-Person Adventure"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "the-mailroom",
+    "title": "The Mailroom",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:33.767673+00:00",
+   "forced": 3965430,
+   "v": {
+    "appid": 3965430,
+    "name": "",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
    }
   }
  },
@@ -398234,9 +400334,15 @@
  },
  "steam-4030830": {
   "hltb": {
-   "at": "2026-10-26T12:50:37.954760+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:15.071914+00:00",
+   "v": {
+    "comp": 107.7,
+    "extra": null,
+    "id": 188999,
+    "main": null,
+    "title": "Focus Grove",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-10-26T12:43:53.821392+00:00",
@@ -399970,9 +402076,15 @@
  },
  "steam-405820": {
   "hltb": {
-   "at": "2026-10-26T12:01:18.916958+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:22.866104+00:00",
+   "v": {
+    "comp": 9.9,
+    "extra": 8.8,
+    "id": 10704,
+    "main": 7.1,
+    "title": "Turok",
+    "year": 2008
+   }
   },
   "mc": {
    "at": "2026-10-26T11:52:39.470491+00:00",
@@ -400780,9 +402892,15 @@
  },
  "steam-4078110": {
   "hltb": {
-   "at": "2026-10-26T13:11:23.802637+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:26.259856+00:00",
+   "v": {
+    "comp": 10.4,
+    "extra": null,
+    "id": 189245,
+    "main": null,
+    "title": "Suncraft",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-10-26T12:57:34.236554+00:00",
@@ -403347,9 +405465,15 @@
  },
  "steam-4127490": {
   "hltb": {
-   "at": "2026-10-26T13:14:26.118514+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:37:08.762708+00:00",
+   "v": {
+    "comp": 12.3,
+    "extra": null,
+    "id": 177947,
+    "main": 2.7,
+    "title": "MoriyaRhythm",
+    "year": 2025
+   }
   },
   "mc": {
    "at": "2026-10-26T12:59:14.495446+00:00",
@@ -403488,9 +405612,15 @@
  },
  "steam-4131730": {
   "hltb": {
-   "at": "2026-10-26T12:34:51.249435+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:11.156948+00:00",
+   "v": {
+    "comp": 10.4,
+    "extra": 5.5,
+    "id": 188155,
+    "main": 1.7,
+    "title": "VHOLUME",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-10-26T12:33:52.213027+00:00",
@@ -409328,6 +411458,42 @@
    }
   }
  },
+ "steam-4251070": {
+  "hltb": {
+   "at": "2026-10-28T11:32:21.616406+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:03.710446+00:00",
+   "v": {
+    "genres": [
+     "First-Person Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "silent-wounds-the-doll",
+    "title": "Silent Wounds - The Doll",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:12.053663+00:00",
+   "forced": 4251070,
+   "v": {
+    "appid": 4251070,
+    "name": "",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
  "steam-4251580": {
   "hltb": {
    "at": "2026-10-23T14:58:25.096177+00:00",
@@ -409777,9 +411943,15 @@
  },
  "steam-426050": {
   "hltb": {
-   "at": "2026-10-26T12:04:26.390265+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:37:28.819038+00:00",
+   "v": {
+    "comp": 3.7,
+    "extra": 3.6,
+    "id": 61124,
+    "main": 3.5,
+    "title": "LEGIE",
+    "year": 2007
+   }
   },
   "mc": {
    "at": "2026-10-23T15:50:46.537825+00:00",
@@ -410979,9 +413151,15 @@
  },
  "steam-428550": {
   "hltb": {
-   "at": "2026-10-26T13:02:09.806049+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:21.031896+00:00",
+   "v": {
+    "comp": 10.0,
+    "extra": 5.5,
+    "id": 35555,
+    "main": 4.5,
+    "title": "Momodora: Reverie Under the Moonlight",
+    "year": 2016
+   }
   },
   "mc": {
    "at": "2026-10-26T12:50:38.621254+00:00",
@@ -416035,9 +418213,15 @@
  },
  "steam-4398770": {
   "hltb": {
-   "at": "2026-10-26T12:04:23.155458+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:37:27.729320+00:00",
+   "v": {
+    "comp": 1.2,
+    "extra": null,
+    "id": 188176,
+    "main": null,
+    "title": "Barking from the Dark",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-10-23T15:50:44.056552+00:00",
@@ -418043,8 +420227,7 @@
  },
  "steam-4450570": {
   "hltb": {
-   "at": "2026-10-26T12:51:41.119956+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:34:16.287094+00:00",
    "v": null
   },
   "mc": {
@@ -418531,6 +420714,65 @@
     "price": null,
     "publisher": "",
     "tags": []
+   }
+  }
+ },
+ "steam-446810": {
+  "hltb": {
+   "at": "2026-10-28T11:38:25.206075+00:00",
+   "v": {
+    "comp": 13.6,
+    "extra": 9.4,
+    "id": 45023,
+    "main": 7.5,
+    "title": "Blossom Tales: The Sleeping King",
+    "year": 2017
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:20.163335+00:00",
+   "v": {
+    "genres": [
+     "Open-World Action"
+    ],
+    "reviews": 16,
+    "score": 80,
+    "slug": "blossom-tales-the-sleeping-king",
+    "title": "Blossom Tales: The Sleeping King",
+    "user": 7.7,
+    "userCount": 113,
+    "year": 2017
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:18.389752+00:00",
+   "forced": 446810,
+   "v": {
+    "appid": 446810,
+    "name": "Blossom Tales: The Sleeping King",
+    "neg": 91,
+    "owners": "0 .. 20,000",
+    "pos": 601,
+    "price": 14.99,
+    "publisher": "FDG Entertainment",
+    "tags": [
+     "Action-Adventure",
+     "Retro",
+     "Indie",
+     "Pixel Graphics",
+     "Action",
+     "Adventure",
+     "Female Protagonist",
+     "Open World",
+     "Great Soundtrack",
+     "Top-Down",
+     "RPG",
+     "2D",
+     "Singleplayer",
+     "Action RPG",
+     "Fantasy",
+     "Exploration"
+    ]
    }
   }
  },
@@ -419693,6 +421935,69 @@
    }
   }
  },
+ "steam-449610": {
+  "hltb": {
+   "at": "2026-10-28T11:37:30.145827+00:00",
+   "v": {
+    "comp": 23.9,
+    "extra": 20.6,
+    "id": 62946,
+    "main": 18.1,
+    "title": "Monster Boy and the Cursed Kingdom",
+    "year": 2018
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:16.648644+00:00",
+   "v": {
+    "genres": [
+     "Metroidvania"
+    ],
+    "reviews": 24,
+    "score": 86,
+    "slug": "monster-boy-and-the-cursed-kingdom",
+    "title": "Monster Boy and the Cursed Kingdom",
+    "user": 7.8,
+    "userCount": 216,
+    "year": 2018
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:07.296882+00:00",
+   "forced": 449610,
+   "v": {
+    "appid": 449610,
+    "name": "Monster Boy and the Cursed Kingdom",
+    "neg": 267,
+    "owners": "100,000 .. 200,000",
+    "pos": 2188,
+    "price": 29.99,
+    "publisher": "FDG Entertainment",
+    "tags": [
+     "Adventure",
+     "Action",
+     "Indie",
+     "Metroidvania",
+     "Platformer",
+     "2D",
+     "Side Scroller",
+     "Singleplayer",
+     "Exploration",
+     "Anime",
+     "Cute",
+     "Colorful",
+     "Fantasy",
+     "Great Soundtrack",
+     "Action-Adventure",
+     "Cartoon",
+     "Sequel",
+     "Kickstarter",
+     "Difficult",
+     "Puzzle"
+    ]
+   }
+  }
+ },
  "steam-450120": {
   "hltb": {
    "at": "2026-10-26T13:55:31.143130+00:00",
@@ -419791,9 +422096,15 @@
  },
  "steam-4502710": {
   "hltb": {
-   "at": "2026-10-26T13:04:14.379249+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:26.397156+00:00",
+   "v": {
+    "comp": 39.1,
+    "extra": null,
+    "id": 188652,
+    "main": null,
+    "title": "Stonewards",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-10-26T12:51:58.118824+00:00",
@@ -425345,7 +427656,7 @@
  },
  "steam-4668890": {
   "hltb": {
-   "at": "2026-10-26T13:05:15.397819+00:00",
+   "at": "2026-10-28T11:35:27.448696+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -425721,9 +428032,15 @@
  },
  "steam-467760": {
   "hltb": {
-   "at": "2026-10-26T13:06:14.940113+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:07.746821+00:00",
+   "v": {
+    "comp": null,
+    "extra": 5.6,
+    "id": 42037,
+    "main": null,
+    "title": "Trapper's Delight",
+    "year": 2016
+   }
   },
   "mc": {
    "at": "2026-10-26T12:53:21.622534+00:00",
@@ -426286,9 +428603,15 @@
  },
  "steam-470310": {
   "hltb": {
-   "at": "2026-10-26T18:12:31.680636+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:22.606191+00:00",
+   "v": {
+    "comp": 164.4,
+    "extra": 111.6,
+    "id": 59875,
+    "main": 84.5,
+    "title": "Troubleshooter: Abandoned Children",
+    "year": 2017
+   }
   },
   "mc": {
    "at": "2026-10-26T18:12:39.244763+00:00",
@@ -426678,9 +429001,15 @@
  },
  "steam-473920": {
   "hltb": {
-   "at": "2026-10-26T11:59:07.819206+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:20.043164+00:00",
+   "v": {
+    "comp": 5.5,
+    "extra": 4.0,
+    "id": 40080,
+    "main": 2.8,
+    "title": "Corinne Cross's Dead & Breakfast",
+    "year": 2016
+   }
   },
   "mc": {
    "at": "2026-10-23T15:27:28.637882+00:00",
@@ -427304,6 +429633,42 @@
     "pos": 0,
     "price": null,
     "publisher": "",
+    "tags": []
+   }
+  }
+ },
+ "steam-4760480": {
+  "hltb": {
+   "at": "2026-10-28T11:36:48.758805+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:12.164431+00:00",
+   "v": {
+    "genres": [
+     "FPS"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "you-are-empty-absolute-edition",
+    "title": "You Are Empty: Absolute Edition",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:40.493381+00:00",
+   "forced": 4760480,
+   "v": {
+    "appid": 4760480,
+    "name": "You Are Empty: Absolute Edition",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 7.99,
+    "publisher": "Strategy First, BillionTech",
     "tags": []
    }
   }
@@ -428587,9 +430952,15 @@
  },
  "steam-483980": {
   "hltb": {
-   "at": "2026-10-26T12:34:50.112794+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:10.910526+00:00",
+   "v": {
+    "comp": 5.1,
+    "extra": 4.1,
+    "id": 5481,
+    "main": 3.1,
+    "title": "Mad Father",
+    "year": 2012
+   }
   },
   "mc": {
    "at": "2026-10-26T12:33:50.389457+00:00",
@@ -432779,6 +435150,41 @@
    }
   }
  },
+ "steam-4984870": {
+  "hltb": {
+   "at": "2026-10-28T11:33:17.960033+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:05.563710+00:00",
+   "v": {
+    "genres": [
+     "Action Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "selkies-salvageco",
+    "title": "Selkie's Salvage&Co.",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:14.509554+00:00",
+   "forced": 4984870,
+   "v": {
+    "appid": 4984870,
+    "name": "",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
  "steam-498570": {
   "hltb": {
    "at": "2026-10-23T16:46:46.083024+00:00",
@@ -433777,9 +436183,15 @@
  },
  "steam-5027520": {
   "hltb": {
-   "at": "2026-10-26T13:11:22.522982+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:25.625704+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 191598,
+    "main": null,
+    "title": "Megastore: Tidy Up Together",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-10-26T12:57:32.841444+00:00",
@@ -435424,8 +437836,7 @@
  },
  "steam-512460": {
   "hltb": {
-   "at": "2026-10-26T12:05:26.126560+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:38:11.641961+00:00",
    "v": null
   },
   "mc": {
@@ -436747,9 +439158,15 @@
  },
  "steam-518790": {
   "hltb": {
-   "at": "2026-10-26T11:18:14.210455+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:37:25.746051+00:00",
+   "v": {
+    "comp": 172.0,
+    "extra": 78.2,
+    "id": 43633,
+    "main": 24.6,
+    "title": "The Hunter: Call of the Wild",
+    "year": 2017
+   }
   },
   "mc": {
    "at": "2026-10-26T11:14:55.000297+00:00",
@@ -437412,8 +439829,7 @@
  },
  "steam-522040": {
   "hltb": {
-   "at": "2026-10-26T12:49:31.426453+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:34:11.983611+00:00",
    "v": null
   },
   "mc": {
@@ -439897,6 +442313,41 @@
    }
   }
  },
+ "steam-5372440": {
+  "hltb": {
+   "at": "2026-10-28T11:32:17.980307+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:03.709562+00:00",
+   "v": {
+    "genres": [
+     "Simulation"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "the-onion-voting-simulator-3d",
+    "title": "The Onion Voting Simulator 3D",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:03.710035+00:00",
+   "forced": 5372440,
+   "v": {
+    "appid": 5372440,
+    "name": null,
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
  "steam-538070": {
   "hltb": {
    "at": "2026-10-26T13:17:00.865427+00:00",
@@ -440667,9 +443118,15 @@
  },
  "steam-544970": {
   "hltb": {
-   "at": "2026-10-26T12:58:07.611311+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:06.324337+00:00",
+   "v": {
+    "comp": 2.1,
+    "extra": 2.1,
+    "id": 42712,
+    "main": 2.1,
+    "title": "Milkmaid of the Milky Way",
+    "year": 2017
+   }
   },
   "mc": {
    "at": "2026-10-26T12:48:20.253006+00:00",
@@ -444518,9 +446975,15 @@
  },
  "steam-568090": {
   "hltb": {
-   "at": "2026-10-26T12:41:11.204630+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:33:15.524303+00:00",
+   "v": {
+    "comp": 1.9,
+    "extra": 1.6,
+    "id": 42544,
+    "main": 1.3,
+    "title": "Tattletail",
+    "year": 2016
+   }
   },
   "mc": {
    "at": "2026-10-26T12:37:20.179174+00:00",
@@ -444575,8 +447038,7 @@
  },
  "steam-568220": {
   "hltb": {
-   "at": "2026-10-26T18:11:33.411764+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:34:24.507272+00:00",
    "v": null
   },
   "mc": {
@@ -449439,9 +451901,15 @@
  },
  "steam-593640": {
   "hltb": {
-   "at": "2026-10-26T13:10:22.838082+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:23.809320+00:00",
+   "v": {
+    "comp": 1.8,
+    "extra": 1.6,
+    "id": 91972,
+    "main": 1.5,
+    "title": "Papetura",
+    "year": 2021
+   }
   },
   "mc": {
    "at": "2026-10-26T12:56:51.393830+00:00",
@@ -449712,9 +452180,15 @@
  },
  "steam-595430": {
   "hltb": {
-   "at": "2026-10-26T13:12:20.920142+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:26.722807+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 51724,
+    "main": null,
+    "title": "Sky Knights",
+    "year": 2017
+   }
   },
   "mc": {
    "at": "2026-10-26T12:58:06.245141+00:00",
@@ -452445,9 +454919,15 @@
  },
  "steam-606680": {
   "hltb": {
-   "at": "2026-10-26T13:04:14.904925+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:27.231870+00:00",
+   "v": {
+    "comp": 15.8,
+    "extra": 13.2,
+    "id": 8546,
+    "main": 12.6,
+    "title": "Silver",
+    "year": 1999
+   }
   },
   "mc": {
    "at": "2026-10-26T12:51:59.084228+00:00",
@@ -455093,9 +457573,15 @@
  },
  "steam-620210": {
   "hltb": {
-   "at": "2026-10-26T18:13:31.641436+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:24.570935+00:00",
+   "v": {
+    "comp": 18.3,
+    "extra": 18.3,
+    "id": 54999,
+    "main": 15.4,
+    "title": "Fatal Twelve",
+    "year": 2018
+   }
   },
   "mc": {
    "at": "2026-10-26T18:13:13.911481+00:00",
@@ -456427,9 +458913,15 @@
  },
  "steam-630830": {
   "hltb": {
-   "at": "2026-10-26T13:15:24.221846+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:37:09.443263+00:00",
+   "v": {
+    "comp": 5.0,
+    "extra": 3.8,
+    "id": 54421,
+    "main": null,
+    "title": "The Legacy: Forgotten Gates",
+    "year": 2017
+   }
   },
   "mc": {
    "at": "2026-10-26T12:59:38.202069+00:00",
@@ -458978,9 +461470,15 @@
  },
  "steam-652410": {
   "hltb": {
-   "at": "2026-10-26T12:58:07.208769+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:06.219089+00:00",
+   "v": {
+    "comp": null,
+    "extra": 26.5,
+    "id": 59740,
+    "main": 17.2,
+    "title": "Brigand: Oaxaca",
+    "year": 2017
+   }
   },
   "mc": {
    "at": "2026-10-26T12:48:18.550269+00:00",
@@ -459495,9 +461993,15 @@
  },
  "steam-655480": {
   "hltb": {
-   "at": "2026-10-26T12:59:05.539567+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:17.588059+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 51375,
+    "main": 13.2,
+    "title": "Solar Settlers",
+    "year": 2017
+   }
   },
   "mc": {
    "at": "2026-10-26T12:49:04.380757+00:00",
@@ -459933,9 +462437,15 @@
  },
  "steam-658150": {
   "hltb": {
-   "at": "2026-10-26T12:00:10.541456+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:34:20.854254+00:00",
+   "v": {
+    "comp": 4.8,
+    "extra": null,
+    "id": 56674,
+    "main": 4.2,
+    "title": "Skeleton Boomerang",
+    "year": 2017
+   }
   },
   "mc": {
    "at": "2026-10-26T11:52:25.577126+00:00",
@@ -460093,6 +462603,69 @@
      "Destruction",
      "Sequel",
      "Abstract"
+    ]
+   }
+  }
+ },
+ "steam-658850": {
+  "hltb": {
+   "at": "2026-10-28T11:35:21.376038+00:00",
+   "v": {
+    "comp": 18.0,
+    "extra": 7.8,
+    "id": 62048,
+    "main": 3.8,
+    "title": "Do Not Feed the Monkeys",
+    "year": 2018
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:09.274192+00:00",
+   "v": {
+    "genres": [
+     "Simulation"
+    ],
+    "reviews": 18,
+    "score": 77,
+    "slug": "do-not-feed-the-monkeys",
+    "title": "Do Not Feed the Monkeys",
+    "user": 8,
+    "userCount": 27,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:31:34.092622+00:00",
+   "forced": 658850,
+   "v": {
+    "appid": 658850,
+    "name": "Do Not Feed the Monkeys",
+    "neg": 692,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 10334,
+    "price": 15.99,
+    "publisher": "Alawar",
+    "tags": [
+     "Point & Click",
+     "Political Sim",
+     "Management",
+     "Dark Humor",
+     "Strategy",
+     "Choices Matter",
+     "2D",
+     "Multiple Endings",
+     "Story Rich",
+     "Pixel Graphics",
+     "Funny",
+     "Simulation",
+     "Adventure",
+     "Dystopian ",
+     "Resource Management",
+     "Singleplayer",
+     "Atmospheric",
+     "Sexual Content",
+     "Mature",
+     "Nudity"
     ]
    }
   }
@@ -461557,9 +464130,15 @@
  },
  "steam-668210": {
   "hltb": {
-   "at": "2026-10-26T13:03:11.975795+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:25.110821+00:00",
+   "v": {
+    "comp": 5.4,
+    "extra": 3.7,
+    "id": 49687,
+    "main": 2.1,
+    "title": "Super Fancy Pants Adventure",
+    "year": 2017
+   }
   },
   "mc": {
    "at": "2026-10-26T12:51:24.670563+00:00",
@@ -461785,8 +464364,7 @@
  },
  "steam-668980": {
   "hltb": {
-   "at": "2026-10-26T12:05:24.958384+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:38:21.984911+00:00",
    "v": null
   },
   "mc": {
@@ -464584,9 +467162,15 @@
  },
  "steam-686770": {
   "hltb": {
-   "at": "2026-10-26T13:00:04.493450+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:17.927410+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 109910,
+    "main": 3.5,
+    "title": "The Wind and Wilting Blossom",
+    "year": 2020
+   }
   },
   "mc": {
    "at": "2026-10-26T12:49:32.232966+00:00",
@@ -464631,9 +467215,15 @@
  },
  "steam-687260": {
   "hltb": {
-   "at": "2026-10-26T18:18:41.839350+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:38:25.350572+00:00",
+   "v": {
+    "comp": 12.6,
+    "extra": 7.9,
+    "id": 48879,
+    "main": 5.2,
+    "title": "Tokyo Dark",
+    "year": 2017
+   }
   },
   "mc": {
    "at": "2026-10-26T18:16:38.765480+00:00",
@@ -465292,9 +467882,15 @@
  },
  "steam-694280": {
   "hltb": {
-   "at": "2026-10-26T18:17:38.898255+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:38:23.937587+00:00",
+   "v": {
+    "comp": 54.3,
+    "extra": 18.5,
+    "id": 74558,
+    "main": 11.8,
+    "title": "Zombie Army 4: Dead War",
+    "year": 2020
+   }
   },
   "mc": {
    "at": "2026-10-26T18:16:12.314629+00:00",
@@ -473798,8 +476394,7 @@
  },
  "steam-760890": {
   "hltb": {
-   "at": "2026-10-26T11:58:03.443102+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-10-28T11:33:11.998144+00:00",
    "v": null
   },
   "mc": {
@@ -475858,9 +478453,15 @@
  },
  "steam-774651": {
   "hltb": {
-   "at": "2026-10-26T12:05:27.647770+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:38:22.782171+00:00",
+   "v": {
+    "comp": 8.5,
+    "extra": 5.4,
+    "id": 46489,
+    "main": 3.1,
+    "title": "Mighty Gunvolt Burst",
+    "year": 2017
+   }
   },
   "mc": {
    "at": "2026-10-26T11:53:23.412874+00:00",
@@ -477847,9 +480448,15 @@
  },
  "steam-791770": {
   "hltb": {
-   "at": "2026-10-26T18:14:34.184800+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:37:23.239357+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 87332,
+    "main": null,
+    "title": "Try To Fall Asleep",
+    "year": 2019
+   }
   },
   "mc": {
    "at": "2026-10-26T18:14:05.535432+00:00",
@@ -483661,9 +486268,15 @@
  },
  "steam-846030": {
   "hltb": {
-   "at": "2026-10-26T13:09:18.833565+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:21.727730+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 67853,
+    "main": 24.1,
+    "title": "ΔV: Rings of Saturn",
+    "year": 2019
+   }
   },
   "mc": {
    "at": "2026-10-26T12:55:42.171532+00:00",
@@ -485763,9 +488376,15 @@
  },
  "steam-864100": {
   "hltb": {
-   "at": "2026-10-26T12:59:07.193827+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:35:17.627619+00:00",
+   "v": {
+    "comp": 2.1,
+    "extra": 2.0,
+    "id": 62127,
+    "main": 1.9,
+    "title": "Sagebrush",
+    "year": 2018
+   }
   },
   "mc": {
    "at": "2026-10-26T12:49:06.251245+00:00",
@@ -488896,9 +491515,15 @@
  },
  "steam-891510": {
   "hltb": {
-   "at": "2026-10-26T18:13:33.861958+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:36:24.876275+00:00",
+   "v": {
+    "comp": 10.0,
+    "extra": 5.9,
+    "id": 60594,
+    "main": 5.9,
+    "title": "Love's Sweet Garnish",
+    "year": 2017
+   }
   },
   "mc": {
    "at": "2026-10-26T18:13:15.698596+00:00",
@@ -490413,9 +493038,15 @@
  },
  "steam-914020": {
   "hltb": {
-   "at": "2026-10-26T18:15:36.641959+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-10-28T11:37:26.541069+00:00",
+   "v": {
+    "comp": 10.5,
+    "extra": 10.4,
+    "id": 69609,
+    "main": 9.2,
+    "title": "Gibbous - A Cthulhu Adventure",
+    "year": 2019
+   }
   },
   "mc": {
    "at": "2026-10-26T18:14:42.954224+00:00",
@@ -490875,7 +493506,7 @@
  },
  "steam-916730": {
   "hltb": {
-   "at": "2026-10-26T12:55:59.726432+00:00",
+   "at": "2026-10-28T11:34:25.157134+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -495360,7 +497991,7 @@
  },
  "steam-951000": {
   "hltb": {
-   "at": "2026-10-26T12:57:04.876184+00:00",
+   "at": "2026-10-28T11:34:45.035044+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -497529,6 +500160,62 @@
      "Shooter",
      "Zombies",
      "Indie"
+    ]
+   }
+  }
+ },
+ "steam-965670": {
+  "hltb": {
+   "at": "2026-10-28T11:37:27.585669+00:00",
+   "v": {
+    "comp": 8.5,
+    "extra": 7.1,
+    "id": 64066,
+    "main": null,
+    "title": "Niplheim's Hunter - Branded Azel",
+    "year": 2017
+   }
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:15.211516+00:00",
+   "v": {
+    "genres": [
+     "RPG"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "niplheims-hunter-branded-azel",
+    "title": "Niplheim's Hunter - Branded Azel",
+    "user": null,
+    "userCount": 1,
+    "year": 2019
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:06.177370+00:00",
+   "forced": 965670,
+   "v": {
+    "appid": 965670,
+    "name": "Niplheim's Hunter - Branded Azel",
+    "neg": 78,
+    "owners": "20,000 .. 50,000",
+    "pos": 714,
+    "price": 19.99,
+    "publisher": "Kagura Games",
+    "tags": [
+     "RPG",
+     "Sexual Content",
+     "Nudity",
+     "Mature",
+     "Female Protagonist",
+     "Hentai",
+     "NSFW",
+     "RPGMaker",
+     "Anime",
+     "JRPG",
+     "Adventure",
+     "Singleplayer",
+     "Fantasy"
     ]
    }
   }
@@ -500791,6 +503478,62 @@
      "Indie",
      "RPG",
      "Magic"
+    ]
+   }
+  }
+ },
+ "steam-992300": {
+  "hltb": {
+   "at": "2026-10-28T11:37:26.054961+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-28T11:31:15.101881+00:00",
+   "v": {
+    "genres": [
+     "Action RPG"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "bloody-spell",
+    "title": "Bloody Spell",
+    "user": 7.2,
+    "userCount": 30,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-10-28T11:32:05.356928+00:00",
+   "forced": 992300,
+   "v": {
+    "appid": 992300,
+    "name": "嗜血印 Bloody Spell",
+    "neg": 3806,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 31311,
+    "price": 24.99,
+    "publisher": "艺龙游戏",
+    "tags": [
+     "Nudity",
+     "Sexual Content",
+     "Female Protagonist",
+     "Action RPG",
+     "Hack and Slash",
+     "Action",
+     "Martial Arts",
+     "3D",
+     "Open World",
+     "Rogue-like",
+     "Singleplayer",
+     "Violent",
+     "Rogue-lite",
+     "Multiplayer",
+     "RPG",
+     "3D Vision",
+     "Gore",
+     "Online Co-Op",
+     "Adventure",
+     "Indie"
     ]
    }
   }
