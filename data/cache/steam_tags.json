@@ -968,6 +968,33 @@
    "Action"
   ]
  },
+ "1023690": {
+  "at": "2026-10-30T11:32:26.057093+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1023690/library_600x900.jpg?t=1734022582",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1023690/header.jpg?t=1734022582",
+  "tags": [
+   "LGBTQ+",
+   "Visual Novel",
+   "Cute",
+   "Female Protagonist",
+   "Choices Matter",
+   "Multiple Endings",
+   "Story Rich",
+   "Anime",
+   "Singleplayer",
+   "Adventure",
+   "Romance",
+   "Sexual Content",
+   "Dating Sim",
+   "2D",
+   "Casual",
+   "Fantasy",
+   "Hand-drawn",
+   "Simulation",
+   "Emotional",
+   "Sequel"
+  ]
+ },
  "1025250": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1025250/portrait.png?t=1675614483",
@@ -43472,6 +43499,33 @@
    "Platformer",
    "Singleplayer",
    "Post-apocalyptic"
+  ]
+ },
+ "1718160": {
+  "at": "2026-10-30T11:32:26.057093+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1718160/be535af348174ffb129496861ba5a2023290e120/library_capsule.jpg?t=1784866109",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1718160/c5b67fcee59e302de293a71631dbbde3581bf208/header.jpg?t=1784866109",
+  "tags": [
+   "Action",
+   "Shoot 'Em Up",
+   "Bullet Hell",
+   "Arcade",
+   "Shooter",
+   "Top-Down Shooter",
+   "Top-Down",
+   "Sci-fi",
+   "Singleplayer",
+   "Combat",
+   "Multiplayer",
+   "2D",
+   "Difficult",
+   "Anime",
+   "Score Attack",
+   "Local Co-Op",
+   "Retro",
+   "Pixel Graphics",
+   "Co-op",
+   "Local Multiplayer"
   ]
  },
  "1718910": {
@@ -119329,6 +119383,30 @@
    "Retro"
   ]
  },
+ "314180": {
+  "at": "2026-10-30T11:32:26.057093+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/314180/library_600x900.jpg?t=1723878286",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/314180/header.jpg?t=1723878286",
+  "tags": [
+   "Bullet Hell",
+   "Shoot 'Em Up",
+   "Action",
+   "Arcade",
+   "Anime",
+   "Female Protagonist",
+   "Gothic",
+   "Indie",
+   "Great Soundtrack",
+   "Side Scroller",
+   "Shooter",
+   "Cute",
+   "Funny",
+   "2D",
+   "Difficult",
+   "Singleplayer",
+   "Local Co-Op"
+  ]
+ },
  "314330": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/314330/library_600x900.jpg?t=1784475704",
@@ -135417,6 +135495,33 @@
    "Singleplayer"
   ]
  },
+ "349250": {
+  "at": "2026-10-30T11:32:26.057093+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/349250/library_600x900.jpg?t=1681233034",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/349250/header.jpg?t=1681233034",
+  "tags": [
+   "Action",
+   "Indie",
+   "Platformer",
+   "Female Protagonist",
+   "Level Editor",
+   "Great Soundtrack",
+   "2D",
+   "Robots",
+   "Colorful",
+   "Side Scroller",
+   "Cute",
+   "Futuristic",
+   "Sci-fi",
+   "Arcade",
+   "Destruction",
+   "Retro",
+   "Cats",
+   "Cyberpunk",
+   "Bullet Hell",
+   "Puzzle Platformer"
+  ]
+ },
  "3493780": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3493780/1879ce8997526878086d673c34c440a170ebbe02/library_600x900.jpg?t=1788352995",
@@ -147124,6 +147229,27 @@
    "Creature Collector"
   ]
  },
+ "377860": {
+  "at": "2026-10-30T11:32:26.057093+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/377860/library_600x900.jpg?t=1765985423",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/377860/header.jpg?t=1765985423",
+  "tags": [
+   "Bullet Hell",
+   "Shoot 'Em Up",
+   "Arcade",
+   "Action",
+   "Great Soundtrack",
+   "Anime",
+   "Difficult",
+   "Female Protagonist",
+   "2D",
+   "Classic",
+   "Singleplayer",
+   "Shooter",
+   "Local Co-Op",
+   "Score Attack"
+  ]
+ },
  "3779380": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3779380/3b7281381f8cfe3fffaa1fef39dfdd11fb16ebf7/library_capsule.jpg?t=1779350376",
@@ -147290,6 +147416,52 @@
    "Interactive Fiction",
    "Cute",
    "Cinematic"
+  ]
+ },
+ "378750": {
+  "at": "2026-10-30T11:32:26.057093+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/378750/library_600x900.jpg?t=1789102916",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/378750/header.jpg?t=1789102916",
+  "tags": [
+   "Action",
+   "Physics",
+   "Indie",
+   "Precision Platformer",
+   "Anime",
+   "2.5D",
+   "Female Protagonist",
+   "Platformer",
+   "Difficult",
+   "Puzzle Platformer",
+   "Cute",
+   "Sexual Content"
+  ]
+ },
+ "378770": {
+  "at": "2026-10-30T11:32:26.057093+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/378770/library_600x900.jpg?t=1698788862",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/378770/header.jpg?t=1698788862",
+  "tags": [
+   "Bullet Hell",
+   "Shoot 'Em Up",
+   "Top-Down Shooter",
+   "Shooter",
+   "Arcade",
+   "2D",
+   "Top-Down",
+   "Action",
+   "Anime",
+   "Colorful",
+   "Space",
+   "Pixel Graphics",
+   "Sci-fi",
+   "Score Attack",
+   "1990's",
+   "Retro",
+   "Combat",
+   "Singleplayer",
+   "Time Attack",
+   "2.5D"
   ]
  },
  "3788120": {
@@ -151010,6 +151182,29 @@
    "2D",
    "Short",
    "Lovecraftian"
+  ]
+ },
+ "3889480": {
+  "at": "2026-10-30T11:32:26.057093+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3889480/6fc96f134cdbb5cb0016d77957dfdf4d21b9318b/library_capsule.jpg?t=1784487123",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3889480/bb15fb9c282c2ed4316c3abd69b5dd374df05267/header.jpg?t=1784487123",
+  "tags": [
+   "Exploration",
+   "3D",
+   "Adventure",
+   "First-Person",
+   "Horror",
+   "Psychological Horror",
+   "Story Rich",
+   "Realistic",
+   "Mystery",
+   "Singleplayer",
+   "Survival Horror",
+   "Supernatural",
+   "Action-Adventure",
+   "Atmospheric",
+   "1980s",
+   "Dark"
   ]
  },
  "3890400": {
@@ -164888,6 +165083,20 @@
    "Dark Comedy"
   ]
  },
+ "435970": {
+  "at": "2026-10-30T11:32:26.057093+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/435970/library_600x900.jpg?t=1697768248",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/435970/header.jpg?t=1697768248",
+  "tags": [
+   "Indie",
+   "Action",
+   "Shoot 'Em Up",
+   "Bullet Hell",
+   "Great Soundtrack",
+   "Anime",
+   "Female Protagonist"
+  ]
+ },
  "436150": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/436150/b8f375ece07e86c96d17b859fe5ffd56a62e9d0e/library_capsule.jpg?t=1790000800",
@@ -171870,6 +172079,28 @@
    "Open World"
   ]
  },
+ "4813190": {
+  "at": "2026-10-30T11:32:26.057093+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4813190/ce2a83efb1bcb3137a7121875c96e656e4454d86/library_capsule.jpg?t=1791143474",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4813190/6eaeb83e707c36e2f3c8c90e5b6c04cd00100221/header.jpg?t=1791143474",
+  "tags": [
+   "RPG",
+   "Adventure",
+   "Horror",
+   "2D",
+   "Choices Matter",
+   "Pixel Graphics",
+   "Multiple Endings",
+   "Thriller",
+   "Atmospheric",
+   "Mystery",
+   "Indie",
+   "Retro",
+   "Singleplayer",
+   "Cozy",
+   "Short"
+  ]
+ },
  "4813850": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4813850/c0f1708923553b8897dd2f932607a86d3840cac0/library_capsule.jpg?t=1792654045",
@@ -172148,6 +172379,33 @@
    "Singleplayer",
    "Nostalgia",
    "Free to Play"
+  ]
+ },
+ "485040": {
+  "at": "2026-10-30T11:32:26.057093+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/485040/library_600x900.jpg?t=1776401119",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/485040/header.jpg?t=1776401119",
+  "tags": [
+   "LGBTQ+",
+   "Visual Novel",
+   "Cute",
+   "Female Protagonist",
+   "Choices Matter",
+   "Multiple Endings",
+   "Story Rich",
+   "Anime",
+   "Singleplayer",
+   "Adventure",
+   "Romance",
+   "Sexual Content",
+   "Dating Sim",
+   "Hand-drawn",
+   "Emotional",
+   "2D",
+   "Memes",
+   "Casual",
+   "Simulation",
+   "Cozy"
   ]
  },
  "485510": {
@@ -183832,6 +184090,33 @@
    "Story Rich"
   ]
  },
+ "629650": {
+  "at": "2026-10-30T11:32:26.057093+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/629650/library_600x900.jpg?t=1737024453",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/629650/header.jpg?t=1737024453",
+  "tags": [
+   "Visual Novel",
+   "Story Rich",
+   "Anime",
+   "Multiple Endings",
+   "Choices Matter",
+   "Singleplayer",
+   "Adventure",
+   "Romance",
+   "Music",
+   "Rhythm",
+   "Atmospheric",
+   "Cute",
+   "Fantasy",
+   "Dating Sim",
+   "Hand-drawn",
+   "Emotional",
+   "Casual",
+   "Psychological Horror",
+   "Replay Value",
+   "Great Soundtrack"
+  ]
+ },
  "629760": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/629760/library_600x900.jpg?t=1777933284",
@@ -190082,6 +190367,33 @@
    "Anime"
   ]
  },
+ "744050": {
+  "at": "2026-10-30T11:32:26.057093+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/744050/library_600x900.jpg?t=1696963117",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/744050/header.jpg?t=1696963117",
+  "tags": [
+   "Shoot 'Em Up",
+   "Bullet Hell",
+   "Arcade",
+   "Action",
+   "Shooter",
+   "Difficult",
+   "Sci-fi",
+   "2D",
+   "Singleplayer",
+   "Top-Down",
+   "Colorful",
+   "Stylized",
+   "Space",
+   "Score Attack",
+   "Psychedelic",
+   "Old School",
+   "Pixel Graphics",
+   "Retro",
+   "Futuristic",
+   "Aliens"
+  ]
+ },
  "744190": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/744190/library_600x900.jpg?t=1746052913",
@@ -192804,6 +193116,33 @@
    "Dark Humor",
    "Funny",
    "Retro"
+  ]
+ },
+ "795510": {
+  "at": "2026-10-30T11:32:26.057093+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/795510/library_600x900.jpg?t=1729702207",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/795510/header.jpg?t=1729702207",
+  "tags": [
+   "Action",
+   "Anime",
+   "2D Fighter",
+   "Fighting",
+   "Female Protagonist",
+   "Nudity",
+   "Arcade",
+   "Alternate History",
+   "PvP",
+   "Cute",
+   "LGBTQ+",
+   "Controller",
+   "Local Multiplayer",
+   "Multiplayer",
+   "Singleplayer",
+   "3D",
+   "Character Customization",
+   "Competitive",
+   "Martial Arts",
+   "Remake"
   ]
  },
  "797620": {

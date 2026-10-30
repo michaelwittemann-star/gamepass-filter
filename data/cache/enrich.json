@@ -84792,6 +84792,62 @@
    }
   }
  },
+ "steam-1023690": {
+  "hltb": {
+   "at": "2026-10-30T11:32:13.165130+00:00",
+   "v": {
+    "comp": 30.2,
+    "extra": 28.2,
+    "id": 66406,
+    "main": 15.4,
+    "title": "Nurse Love Syndrome",
+    "year": 2011
+   }
+  },
+  "mc": {
+   "at": "2026-10-30T11:32:16.205236+00:00",
+   "v": {
+    "genres": [
+     "Visual Novel"
+    ],
+    "reviews": 2,
+    "score": null,
+    "slug": "nurse-love-syndrome",
+    "title": "Nurse Love Syndrome",
+    "user": null,
+    "userCount": 2,
+    "year": 2019
+   }
+  },
+  "steam": {
+   "at": "2026-10-30T11:32:17.437853+00:00",
+   "forced": 1023690,
+   "v": {
+    "appid": 1023690,
+    "name": "Nurse Love Syndrome",
+    "neg": 15,
+    "owners": "20,000 .. 50,000",
+    "pos": 247,
+    "price": 39.99,
+    "publisher": "KOMODO",
+    "tags": [
+     "Adventure",
+     "LGBTQ+",
+     "Visual Novel",
+     "Female Protagonist",
+     "Anime",
+     "Romance",
+     "Nudity",
+     "Sexual Content",
+     "Singleplayer",
+     "Story Rich",
+     "Multiple Endings",
+     "Cute",
+     "2D"
+    ]
+   }
+  }
+ },
  "steam-1025250": {
   "hltb": {
    "at": "2026-10-26T13:17:00.186440+00:00",
@@ -180154,6 +180210,62 @@
      "Platformer",
      "Singleplayer",
      "Post-apocalyptic"
+    ]
+   }
+  }
+ },
+ "steam-1718160": {
+  "hltb": {
+   "at": "2026-10-30T11:32:10.461728+00:00",
+   "v": {
+    "comp": 30.0,
+    "extra": 22.2,
+    "id": 108534,
+    "main": 0.6,
+    "title": "Crimzon Clover - World EXplosion",
+    "year": 2021
+   }
+  },
+  "mc": {
+   "at": "2026-10-30T11:32:10.706163+00:00",
+   "v": {
+    "genres": [
+     "Vertical Shoot-'Em-Up"
+    ],
+    "reviews": 6,
+    "score": 85,
+    "slug": "crimzon-clover-world-explosion",
+    "title": "Crimzon Clover - World EXplosion",
+    "user": 7.8,
+    "userCount": 20,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-10-30T11:32:10.786347+00:00",
+   "forced": 1718160,
+   "v": {
+    "appid": 1718160,
+    "name": "Crimzon Clover World EXplosion",
+    "neg": 8,
+    "owners": "20,000 .. 50,000",
+    "pos": 300,
+    "price": 19.99,
+    "publisher": "KOMODO",
+    "tags": [
+     "Action",
+     "Shoot 'Em Up",
+     "Arcade",
+     "Bullet Hell",
+     "Shooter",
+     "Top-Down Shooter",
+     "Top-Down",
+     "Sci-fi",
+     "Flight",
+     "Indie",
+     "Combat",
+     "Singleplayer",
+     "Multiplayer"
     ]
    }
   }
@@ -332846,6 +332958,64 @@
    }
   }
  },
+ "steam-314180": {
+  "hltb": {
+   "at": "2026-10-30T11:32:08.362812+00:00",
+   "v": {
+    "comp": 22.7,
+    "extra": 4.4,
+    "id": 2375,
+    "main": 0.8,
+    "title": "Deathsmiles",
+    "year": 2007
+   }
+  },
+  "mc": {
+   "at": "2026-10-30T11:32:08.362552+00:00",
+   "v": {
+    "genres": [
+     "Horizontal Shoot-'Em-Up"
+    ],
+    "reviews": 29,
+    "score": 76,
+    "slug": "deathsmiles",
+    "title": "Deathsmiles",
+    "user": 7.7,
+    "userCount": 36,
+    "year": 2010
+   }
+  },
+  "steam": {
+   "at": "2026-10-30T11:32:08.557421+00:00",
+   "forced": 314180,
+   "v": {
+    "appid": 314180,
+    "name": "Deathsmiles",
+    "neg": 18,
+    "owners": "20,000 .. 50,000",
+    "pos": 526,
+    "price": 19.99,
+    "publisher": "KOMODO",
+    "tags": [
+     "Shoot 'Em Up",
+     "Bullet Hell",
+     "Action",
+     "Arcade",
+     "Anime",
+     "Indie",
+     "Gothic",
+     "Female Protagonist",
+     "Great Soundtrack",
+     "Side Scroller",
+     "Shooter",
+     "Cute",
+     "2D",
+     "Difficult",
+     "Local Co-Op"
+    ]
+   }
+  }
+ },
  "steam-314330": {
   "hltb": {
    "at": "2026-10-26T13:07:46.044902+00:00",
@@ -364973,6 +365143,69 @@
    }
   }
  },
+ "steam-349250": {
+  "hltb": {
+   "at": "2026-10-30T11:32:10.266382+00:00",
+   "v": {
+    "comp": 48.0,
+    "extra": 10.9,
+    "id": 40248,
+    "main": 7.0,
+    "title": "Copy Kitty",
+    "year": 2016
+   }
+  },
+  "mc": {
+   "at": "2026-10-30T11:32:08.363144+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": 3,
+    "score": null,
+    "slug": "copy-kitty",
+    "title": "Copy Kitty",
+    "user": 7.7,
+    "userCount": 7,
+    "year": 2018
+   }
+  },
+  "steam": {
+   "at": "2026-10-30T11:32:09.659145+00:00",
+   "forced": 349250,
+   "v": {
+    "appid": 349250,
+    "name": "Copy Kitty",
+    "neg": 10,
+    "owners": "20,000 .. 50,000",
+    "pos": 373,
+    "price": 14.99,
+    "publisher": "KOMODO",
+    "tags": [
+     "Action",
+     "Indie",
+     "Platformer",
+     "Level Editor",
+     "Great Soundtrack",
+     "Female Protagonist",
+     "2D",
+     "Robots",
+     "Colorful",
+     "Side Scroller",
+     "Cute",
+     "Futuristic",
+     "Sci-fi",
+     "Destruction",
+     "Arcade",
+     "Retro",
+     "Cats",
+     "Cyberpunk",
+     "Bullet Hell",
+     "Puzzle-Platformer"
+    ]
+   }
+  }
+ },
  "steam-3493780": {
   "hltb": {
    "at": "2026-10-26T11:56:24.688531+00:00",
@@ -386484,6 +386717,63 @@
    }
   }
  },
+ "steam-377860": {
+  "hltb": {
+   "at": "2026-10-30T11:32:08.360287+00:00",
+   "v": {
+    "comp": 30.8,
+    "extra": 5.4,
+    "id": 13896,
+    "main": 0.8,
+    "title": "Mushihime-sama",
+    "year": 2004
+   }
+  },
+  "mc": {
+   "at": "2026-10-30T11:32:08.359589+00:00",
+   "v": {
+    "genres": [
+     "Vertical Shoot-'Em-Up"
+    ],
+    "reviews": 13,
+    "score": 84,
+    "slug": "mushihimesama",
+    "title": "Mushihimesama",
+    "user": 7.7,
+    "userCount": 14,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-10-30T11:32:08.360722+00:00",
+   "forced": 377860,
+   "v": {
+    "appid": 377860,
+    "name": "Mushihimesama",
+    "neg": 45,
+    "owners": "50,000 .. 100,000",
+    "pos": 1372,
+    "price": 19.99,
+    "publisher": "KOMODO",
+    "tags": [
+     "Bullet Hell",
+     "Shoot 'Em Up",
+     "Arcade",
+     "Action",
+     "Great Soundtrack",
+     "Anime",
+     "Difficult",
+     "Female Protagonist",
+     "2D",
+     "Classic",
+     "Singleplayer",
+     "Shooter",
+     "Local Co-Op",
+     "Score Attack"
+    ]
+   }
+  }
+ },
  "steam-3779380": {
   "hltb": {
    "at": "2026-10-26T13:55:55.549472+00:00",
@@ -386848,6 +387138,53 @@
    }
   }
  },
+ "steam-378750": {
+  "hltb": {
+   "at": "2026-10-30T11:32:13.070244+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-30T11:32:13.871039+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": 8,
+    "score": 76,
+    "slug": "sayonara-umihara-kawase-plus",
+    "title": "Sayonara UmiharaKawase +",
+    "user": 8.2,
+    "userCount": 15,
+    "year": 2015
+   }
+  },
+  "steam": {
+   "at": "2026-10-30T11:32:15.224406+00:00",
+   "forced": 378750,
+   "v": {
+    "appid": 378750,
+    "name": "Sayonara Umihara Kawase",
+    "neg": 9,
+    "owners": "20,000 .. 50,000",
+    "pos": 155,
+    "price": 14.99,
+    "publisher": "KOMODO",
+    "tags": [
+     "Action",
+     "Physics",
+     "Indie",
+     "Precision Platformer",
+     "Anime",
+     "2.5D",
+     "Female Protagonist",
+     "Platformer",
+     "Difficult",
+     "Puzzle-Platformer",
+     "Cute"
+    ]
+   }
+  }
+ },
  "steam-378760": {
   "hltb": {
    "at": "2026-10-23T17:04:04.301334+00:00",
@@ -386901,6 +387238,55 @@
      "Exploration",
      "Turn-Based Strategy",
      "Sandbox"
+    ]
+   }
+  }
+ },
+ "steam-378770": {
+  "hltb": {
+   "at": "2026-10-30T11:32:11.683835+00:00",
+   "v": {
+    "comp": 5.8,
+    "extra": 3.8,
+    "id": 14826,
+    "main": 1.9,
+    "title": "Eschatos",
+    "year": 2011
+   }
+  },
+  "mc": {
+   "at": "2026-10-30T11:32:11.842030+00:00",
+   "v": {
+    "genres": [
+     "Vertical Shoot-'Em-Up"
+    ],
+    "reviews": 5,
+    "score": 86,
+    "slug": "eschatos",
+    "title": "Eschatos",
+    "user": 8.5,
+    "userCount": 8,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-10-30T11:32:12.971551+00:00",
+   "forced": 378770,
+   "v": {
+    "appid": 378770,
+    "name": "ESCHATOS",
+    "neg": 8,
+    "owners": "20,000 .. 50,000",
+    "pos": 250,
+    "price": 14.99,
+    "publisher": "KOMODO",
+    "tags": [
+     "Action",
+     "Shoot 'Em Up",
+     "Great Soundtrack",
+     "Bullet Hell",
+     "Arcade",
+     "Shooter"
     ]
    }
   }
@@ -393889,6 +394275,41 @@
      "Short",
      "Lovecraftian"
     ]
+   }
+  }
+ },
+ "steam-3889480": {
+  "hltb": {
+   "at": "2026-10-30T11:32:14.711254+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-30T11:32:19.649160+00:00",
+   "v": {
+    "genres": [
+     "First-Person Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "thekku-island",
+    "title": "Thekku Island",
+    "user": null,
+    "userCount": 1,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-10-30T11:32:20.757145+00:00",
+   "forced": 3889480,
+   "v": {
+    "appid": 3889480,
+    "name": "Thekku Island",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 7.99,
+    "publisher": "Ales Devs Games",
+    "tags": []
    }
   }
  },
@@ -419825,6 +420246,48 @@
    }
   }
  },
+ "steam-435970": {
+  "hltb": {
+   "at": "2026-10-30T11:32:10.501580+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-10-30T11:32:11.744292+00:00",
+   "v": {
+    "genres": [
+     "Vertical Shoot-'Em-Up"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "refrain-prism-memories",
+    "title": "RefRain - prism memories -",
+    "user": null,
+    "userCount": 2,
+    "year": 2016
+   }
+  },
+  "steam": {
+   "at": "2026-10-30T11:32:11.891756+00:00",
+   "forced": 435970,
+   "v": {
+    "appid": 435970,
+    "name": "RefRain - prism memories -",
+    "neg": 3,
+    "owners": "20,000 .. 50,000",
+    "pos": 123,
+    "price": 14.99,
+    "publisher": "KOMODO",
+    "tags": [
+     "Indie",
+     "Action",
+     "Shoot 'Em Up",
+     "Bullet Hell",
+     "Great Soundtrack",
+     "Anime"
+    ]
+   }
+  }
+ },
  "steam-436150": {
   "hltb": {
    "at": "2026-10-23T17:01:46.331846+00:00",
@@ -433730,6 +434193,48 @@
    }
   }
  },
+ "steam-4813190": {
+  "hltb": {
+   "at": "2026-10-30T11:32:11.767562+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 192034,
+    "main": 2.4,
+    "title": "Camp Whittlewood",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-10-30T11:32:12.001406+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "camp-whittlewood",
+    "title": "Camp Whittlewood",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-10-30T11:32:14.177377+00:00",
+   "forced": 4813190,
+   "v": {
+    "appid": 4813190,
+    "name": null,
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
  "steam-4813850": {
   "hltb": {
    "at": "2026-10-23T15:22:17.130228+00:00",
@@ -434304,6 +434809,69 @@
      "Singleplayer",
      "Nostalgia",
      "Free to Play"
+    ]
+   }
+  }
+ },
+ "steam-485040": {
+  "hltb": {
+   "at": "2026-10-30T11:32:13.108767+00:00",
+   "v": {
+    "comp": 15.8,
+    "extra": 14.6,
+    "id": 38941,
+    "main": 11.4,
+    "title": "Nurse Love Addiction",
+    "year": 2015
+   }
+  },
+  "mc": {
+   "at": "2026-10-30T11:32:14.205286+00:00",
+   "v": {
+    "genres": [
+     "Visual Novel"
+    ],
+    "reviews": 3,
+    "score": null,
+    "slug": "nurse-love-addiction",
+    "title": "Nurse Love Addiction",
+    "user": 7,
+    "userCount": 4,
+    "year": 2017
+   }
+  },
+  "steam": {
+   "at": "2026-10-30T11:32:16.331091+00:00",
+   "forced": 485040,
+   "v": {
+    "appid": 485040,
+    "name": "Nurse Love Addiction",
+    "neg": 59,
+    "owners": "20,000 .. 50,000",
+    "pos": 762,
+    "price": 39.99,
+    "publisher": "KOMODO",
+    "tags": [
+     "Female Protagonist",
+     "Anime",
+     "Visual Novel",
+     "Nudity",
+     "Sexual Content",
+     "Mature",
+     "Romance",
+     "LGBTQ+",
+     "Dating Sim",
+     "Simulation",
+     "Adventure",
+     "Cute",
+     "Story Rich",
+     "Psychological Horror",
+     "Singleplayer",
+     "Great Soundtrack",
+     "2D",
+     "Memes",
+     "Multiple Endings",
+     "Choices Matter"
     ]
    }
   }
@@ -462403,6 +462971,63 @@
    }
   }
  },
+ "steam-629650": {
+  "hltb": {
+   "at": "2026-10-30T11:32:08.361684+00:00",
+   "v": {
+    "comp": 30.7,
+    "extra": 25.6,
+    "id": 9529,
+    "main": 9.7,
+    "title": "Symphonic Rain",
+    "year": 2004
+   }
+  },
+  "mc": {
+   "at": "2026-10-30T11:32:08.361087+00:00",
+   "v": {
+    "genres": [
+     "Visual Novel"
+    ],
+    "reviews": 2,
+    "score": null,
+    "slug": "symphonic-rain",
+    "title": "Symphonic Rain",
+    "user": null,
+    "userCount": 1,
+    "year": 2017
+   }
+  },
+  "steam": {
+   "at": "2026-10-30T11:32:08.361910+00:00",
+   "forced": 629650,
+   "v": {
+    "appid": 629650,
+    "name": "Symphonic Rain",
+    "neg": 34,
+    "owners": "20,000 .. 50,000",
+    "pos": 915,
+    "price": 39.99,
+    "publisher": "KOMODO",
+    "tags": [
+     "Visual Novel",
+     "Music",
+     "Great Soundtrack",
+     "Multiple Endings",
+     "Rhythm",
+     "Adventure",
+     "Atmospheric",
+     "Anime",
+     "Cute",
+     "Fantasy",
+     "Story Rich",
+     "Romance",
+     "Drama",
+     "Singleplayer"
+    ]
+   }
+  }
+ },
  "steam-629770": {
   "hltb": {
    "at": "2026-10-26T18:16:09.319741+00:00",
@@ -477720,6 +478345,58 @@
    }
   }
  },
+ "steam-744050": {
+  "hltb": {
+   "at": "2026-10-30T11:32:14.538514+00:00",
+   "v": {
+    "comp": null,
+    "extra": 6.7,
+    "id": 8855,
+    "main": 1.2,
+    "title": "Space Invaders Extreme",
+    "year": 2008
+   }
+  },
+  "mc": {
+   "at": "2026-10-30T11:32:17.916969+00:00",
+   "v": {
+    "genres": [
+     "Vertical Shoot-'Em-Up"
+    ],
+    "reviews": 41,
+    "score": 85,
+    "slug": "space-invaders-extreme",
+    "title": "Space Invaders Extreme",
+    "user": 6.9,
+    "userCount": 17,
+    "year": 2008
+   }
+  },
+  "steam": {
+   "at": "2026-10-30T11:32:19.672151+00:00",
+   "forced": 744050,
+   "v": {
+    "appid": 744050,
+    "name": "Space Invaders Extreme",
+    "neg": 22,
+    "owners": "20,000 .. 50,000",
+    "pos": 214,
+    "price": 19.99,
+    "publisher": "KOMODO, TAITO CORP.",
+    "tags": [
+     "Action",
+     "Shoot 'Em Up",
+     "Arcade",
+     "Retro",
+     "2D",
+     "Great Soundtrack",
+     "Space",
+     "Shooter",
+     "Bullet Hell"
+    ]
+   }
+  }
+ },
  "steam-744190": {
   "hltb": {
    "at": "2026-10-25T09:55:43.906708+00:00",
@@ -484942,6 +485619,55 @@
      "Funny",
      "Dark Humor",
      "Retro"
+    ]
+   }
+  }
+ },
+ "steam-795510": {
+  "hltb": {
+   "at": "2026-10-30T11:32:14.386873+00:00",
+   "v": {
+    "comp": 4.2,
+    "extra": null,
+    "id": 68291,
+    "main": 2.7,
+    "title": "Koihime Enbu RyoRaiRai",
+    "year": 2016
+   }
+  },
+  "mc": {
+   "at": "2026-10-30T11:32:17.461543+00:00",
+   "v": {
+    "genres": [
+     "2D Fighting"
+    ],
+    "reviews": 3,
+    "score": null,
+    "slug": "koihime-enbu-ryorairai",
+    "title": "Koihime Enbu RyoRaiRai",
+    "user": null,
+    "userCount": 3,
+    "year": 2018
+   }
+  },
+  "steam": {
+   "at": "2026-10-30T11:32:18.548573+00:00",
+   "forced": 795510,
+   "v": {
+    "appid": 795510,
+    "name": "Koihime Enbu RyoRaiRai",
+    "neg": 15,
+    "owners": "0 .. 20,000",
+    "pos": 153,
+    "price": 11.99,
+    "publisher": "KOMODO",
+    "tags": [
+     "Action",
+     "Anime",
+     "2D Fighter",
+     "Fighting",
+     "Female Protagonist",
+     "Nudity"
     ]
    }
   }
