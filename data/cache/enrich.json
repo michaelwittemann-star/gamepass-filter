@@ -86842,6 +86842,69 @@
    }
   }
  },
+ "steam-1037120": {
+  "hltb": {
+   "at": "2026-11-01T12:00:26.235338+00:00",
+   "v": {
+    "comp": 10.1,
+    "extra": 10.1,
+    "id": 62985,
+    "main": 9.6,
+    "title": "Mutropolis",
+    "year": 2021
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:53.058393+00:00",
+   "v": {
+    "genres": [
+     "Point-and-Click"
+    ],
+    "reviews": 12,
+    "score": 71,
+    "slug": "mutropolis",
+    "title": "Mutropolis",
+    "user": 7.7,
+    "userCount": 15,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:57.394235+00:00",
+   "forced": 1037120,
+   "v": {
+    "appid": 1037120,
+    "name": "Mutropolis",
+    "neg": 21,
+    "owners": "0 .. 20,000",
+    "pos": 176,
+    "price": 19.99,
+    "publisher": "Application Systems Heidelberg",
+    "tags": [
+     "Indie",
+     "Adventure",
+     "Detective",
+     "Point & Click",
+     "Mystery",
+     "Atmospheric",
+     "Puzzle",
+     "2D",
+     "Singleplayer",
+     "Third Person",
+     "Cartoony",
+     "Funny",
+     "Cute",
+     "Hand-drawn",
+     "Comedy",
+     "Sci-fi",
+     "Fantasy",
+     "Retro",
+     "Story Rich",
+     "Classic"
+    ]
+   }
+  }
+ },
  "steam-1037190": {
   "hltb": {
    "at": "2026-10-26T12:43:56.501889+00:00",
@@ -96241,6 +96304,69 @@
    }
   }
  },
+ "steam-1098280": {
+  "hltb": {
+   "at": "2026-11-01T11:59:19.138323+00:00",
+   "v": {
+    "comp": 18.0,
+    "extra": 15.9,
+    "id": 102597,
+    "main": 8.6,
+    "title": "Mago",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:23.987285+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "mago",
+    "title": "Mago",
+    "user": 7.9,
+    "userCount": 17,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:28.793504+00:00",
+   "forced": 1098280,
+   "v": {
+    "appid": 1098280,
+    "name": "Mago",
+    "neg": 56,
+    "owners": "20,000 .. 50,000",
+    "pos": 827,
+    "price": 14.99,
+    "publisher": "Dream Potion Games",
+    "tags": [
+     "Indie",
+     "Adventure",
+     "Platformer",
+     "Pixel Graphics",
+     "2D",
+     "Retro",
+     "Great Soundtrack",
+     "Funny",
+     "Difficult",
+     "Singleplayer",
+     "Action",
+     "Side Scroller",
+     "Cartoony",
+     "Colorful",
+     "Cartoon",
+     "Co-op",
+     "Bullet Hell",
+     "Multiplayer",
+     "Atmospheric",
+     "Shoot 'Em Up"
+    ]
+   }
+  }
+ },
  "steam-1098340": {
   "hltb": {
    "at": "2026-10-23T15:54:34.340835+00:00",
@@ -97353,6 +97479,63 @@
      "2D",
      "Cute",
      "Psychological Horror"
+    ]
+   }
+  }
+ },
+ "steam-1107300": {
+  "hltb": {
+   "at": "2026-11-01T12:00:02.216396+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:40.879473+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": 5,
+    "score": 68,
+    "slug": "down-in-bermuda",
+    "title": "Down in Bermuda",
+    "user": 5.7,
+    "userCount": 14,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:46.126261+00:00",
+   "forced": 1107300,
+   "v": {
+    "appid": 1107300,
+    "name": "Down in Bermuda",
+    "neg": 148,
+    "owners": "0 .. 20,000",
+    "pos": 1235,
+    "price": 19.99,
+    "publisher": "Yak & Co",
+    "tags": [
+     "Puzzle",
+     "Hidden Object",
+     "Point & Click",
+     "Adventure",
+     "Relaxing",
+     "Mystery",
+     "Story Rich",
+     "Cozy",
+     "Family Friendly",
+     "Wholesome",
+     "Detective",
+     "Escape Room",
+     "Cute",
+     "Isometric",
+     "Stylized",
+     "Indie",
+     "Casual",
+     "Colorful",
+     "3D",
+     "Cartoon"
     ]
    }
   }
@@ -103910,9 +104093,15 @@
  },
  "steam-1149620": {
   "hltb": {
-   "at": "2026-10-31T11:04:32.750612+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-11-01T12:00:22.969776+00:00",
+   "v": {
+    "comp": 29.3,
+    "extra": 16.9,
+    "id": 89898,
+    "main": 12.3,
+    "title": "Gas Station Simulator",
+    "year": 2021
+   }
   },
   "mc": {
    "at": "2026-10-29T11:39:43.317268+00:00",
@@ -110649,6 +110838,69 @@
      "Indie",
      "Story Rich",
      "Visual Novel"
+    ]
+   }
+  }
+ },
+ "steam-1190000": {
+  "hltb": {
+   "at": "2026-11-01T11:59:15.352155+00:00",
+   "v": {
+    "comp": 105.8,
+    "extra": 53.8,
+    "id": 96762,
+    "main": 24.2,
+    "title": "Car Mechanic Simulator 2021",
+    "year": 2021
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:13.864369+00:00",
+   "v": {
+    "genres": [
+     "Virtual Career"
+    ],
+    "reviews": 5,
+    "score": 70,
+    "slug": "car-mechanic-simulator-2021",
+    "title": "Car Mechanic Simulator 2021",
+    "user": 7.2,
+    "userCount": 66,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:15.169159+00:00",
+   "forced": 1190000,
+   "v": {
+    "appid": 1190000,
+    "name": "Car Mechanic Simulator 2021",
+    "neg": 1211,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 28630,
+    "price": 24.99,
+    "publisher": "PlayWay S.A.",
+    "tags": [
+     "Simulation",
+     "Automobile Sim",
+     "Realistic",
+     "Sandbox",
+     "Moddable",
+     "Driving",
+     "Racing",
+     "3D",
+     "Singleplayer",
+     "Education",
+     "First-Person",
+     "Immersive Sim",
+     "Puzzle",
+     "Open World",
+     "Atmospheric",
+     "Adventure",
+     "Minigames",
+     "VR",
+     "Indie",
+     "Strategy"
     ]
    }
   }
@@ -130641,6 +130893,69 @@
    }
   }
  },
+ "steam-1328350": {
+  "hltb": {
+   "at": "2026-11-01T11:59:18.293402+00:00",
+   "v": {
+    "comp": 24.4,
+    "extra": 15.1,
+    "id": 104456,
+    "main": 12.2,
+    "title": "Turbo Overkill",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:21.549234+00:00",
+   "v": {
+    "genres": [
+     "FPS"
+    ],
+    "reviews": 13,
+    "score": 86,
+    "slug": "turbo-overkill",
+    "title": "Turbo Overkill",
+    "user": 7.8,
+    "userCount": 103,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:26.285229+00:00",
+   "forced": 1328350,
+   "v": {
+    "appid": 1328350,
+    "name": "Turbo Overkill",
+    "neg": 325,
+    "owners": "200,000 .. 500,000",
+    "pos": 6161,
+    "price": 19.99,
+    "publisher": "Apogee Entertainment",
+    "tags": [
+     "FPS",
+     "Boomer Shooter",
+     "Action",
+     "Cyberpunk",
+     "Shooter",
+     "Indie",
+     "Retro",
+     "Fast-Paced",
+     "Pixel Graphics",
+     "Violent",
+     "Gore",
+     "Singleplayer",
+     "Combat",
+     "First-Person",
+     "Arena Shooter",
+     "Sci-fi",
+     "Difficult",
+     "Multiplayer",
+     "Great Soundtrack",
+     "Controller"
+    ]
+   }
+  }
+ },
  "steam-1329110": {
   "hltb": {
    "at": "2026-10-23T15:37:57.391530+00:00",
@@ -140132,6 +140447,69 @@
    }
   }
  },
+ "steam-1395030": {
+  "hltb": {
+   "at": "2026-11-01T11:59:20.547328+00:00",
+   "v": {
+    "comp": 7.0,
+    "extra": 6.6,
+    "id": 36847,
+    "main": 6.0,
+    "title": "Kathy Rain",
+    "year": 2016
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:26.650651+00:00",
+   "v": {
+    "genres": [
+     "Point-and-Click"
+    ],
+    "reviews": 25,
+    "score": 77,
+    "slug": "kathy-rain",
+    "title": "Kathy Rain",
+    "user": 7.7,
+    "userCount": 114,
+    "year": 2016
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:33.056976+00:00",
+   "forced": 1395030,
+   "v": {
+    "appid": 1395030,
+    "name": "Kathy Rain: Director's Cut",
+    "neg": 54,
+    "owners": "100,000 .. 200,000",
+    "pos": 867,
+    "price": 14.99,
+    "publisher": "Raw Fury",
+    "tags": [
+     "Point & Click",
+     "Female Protagonist",
+     "Detective",
+     "Pixel Graphics",
+     "1990's",
+     "Mystery",
+     "Investigation",
+     "Story Rich",
+     "Puzzle",
+     "Adventure",
+     "Emotional",
+     "Atmospheric",
+     "Exploration",
+     "Visual Novel",
+     "Hand-drawn",
+     "Dark",
+     "2D",
+     "Singleplayer",
+     "Soundtrack",
+     "Narrative"
+    ]
+   }
+  }
+ },
  "steam-1395230": {
   "hltb": {
    "at": "2026-10-23T15:15:40.265008+00:00",
@@ -145909,6 +146287,69 @@
    }
   }
  },
+ "steam-1435790": {
+  "hltb": {
+   "at": "2026-11-01T11:59:18.175567+00:00",
+   "v": {
+    "comp": 15.5,
+    "extra": 11.5,
+    "id": 99223,
+    "main": 7.6,
+    "title": "Escape Simulator",
+    "year": 2021
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:21.427566+00:00",
+   "v": {
+    "genres": [
+     "First-Person Adventure"
+    ],
+    "reviews": 4,
+    "score": 82,
+    "slug": "escape-simulator",
+    "title": "Escape Simulator",
+    "user": 7.3,
+    "userCount": 56,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:25.180474+00:00",
+   "forced": 1435790,
+   "v": {
+    "appid": 1435790,
+    "name": "Escape Simulator",
+    "neg": 1027,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 16281,
+    "price": 19.99,
+    "publisher": "Pine Studio",
+    "tags": [
+     "Puzzle",
+     "Co-op",
+     "Multiplayer",
+     "Escape Room",
+     "First-Person",
+     "Adventure",
+     "Online Co-Op",
+     "Mystery",
+     "Controller",
+     "Singleplayer",
+     "Family Friendly",
+     "Casual",
+     "Simulation",
+     "Indie",
+     "VR",
+     "Story Rich",
+     "Investigation",
+     "Point & Click",
+     "Exploration",
+     "Level Editor"
+    ]
+   }
+  }
+ },
  "steam-1436680": {
   "hltb": {
    "at": "2026-10-26T12:01:07.909631+00:00",
@@ -151459,6 +151900,69 @@
      "PvE",
      "Old School",
      "Cute"
+    ]
+   }
+  }
+ },
+ "steam-1477170": {
+  "hltb": {
+   "at": "2026-11-01T12:00:25.461857+00:00",
+   "v": {
+    "comp": null,
+    "extra": 15.0,
+    "id": 145812,
+    "main": 12.0,
+    "title": "Empires Shall Fall",
+    "year": 2024
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:51.855620+00:00",
+   "v": {
+    "genres": [
+     "Turn-Based Tactics"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "empires-shall-fall",
+    "title": "Empires Shall Fall",
+    "user": null,
+    "userCount": 0,
+    "year": 2024
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:55.161566+00:00",
+   "forced": 1477170,
+   "v": {
+    "appid": 1477170,
+    "name": "Empires Shall Fall",
+    "neg": 11,
+    "owners": "0 .. 20,000",
+    "pos": 106,
+    "price": 12.99,
+    "publisher": "Weird Penguin Games, Electronic Sheep Games",
+    "tags": [
+     "Strategy",
+     "Turn-Based Strategy",
+     "Turn-Based Tactics",
+     "2D",
+     "Tactical",
+     "Tanks",
+     "Hand-drawn",
+     "World War I",
+     "Turn-Based Combat",
+     "Lovecraftian",
+     "PvP",
+     "Military",
+     "Alternate History",
+     "Level Editor",
+     "PvE",
+     "Multiplayer",
+     "Singleplayer",
+     "Local Multiplayer",
+     "Co-op",
+     "Wargame"
     ]
    }
   }
@@ -192256,6 +192760,69 @@
    }
   }
  },
+ "steam-1822240": {
+  "hltb": {
+   "at": "2026-11-01T11:59:17.339532+00:00",
+   "v": {
+    "comp": 2.1,
+    "extra": 1.5,
+    "id": 160506,
+    "main": 1.2,
+    "title": "Stars In The Trash",
+    "year": 2024
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:20.735924+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": 7,
+    "score": 81,
+    "slug": "stars-in-the-trash",
+    "title": "Stars In The Trash",
+    "user": 9.2,
+    "userCount": 19,
+    "year": 2024
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:22.953265+00:00",
+   "forced": 1822240,
+   "v": {
+    "appid": 1822240,
+    "name": "Stars In The Trash",
+    "neg": 2,
+    "owners": "0 .. 20,000",
+    "pos": 240,
+    "price": 11.99,
+    "publisher": "Valhalla Cats, IndieArk",
+    "tags": [
+     "Adventure",
+     "Atmospheric",
+     "Cute",
+     "Hand-drawn",
+     "Cats",
+     "Family Friendly",
+     "Cartoon",
+     "Singleplayer",
+     "2D",
+     "Story Rich",
+     "Platformer",
+     "Exploration",
+     "Linear",
+     "Indie",
+     "Dog",
+     "Casual",
+     "Emotional",
+     "Cinematic",
+     "Puzzle",
+     "Wholesome"
+    ]
+   }
+  }
+ },
  "steam-1822450": {
   "hltb": {
    "at": "2026-10-26T13:57:14.583183+00:00",
@@ -198661,6 +199228,69 @@
    }
   }
  },
+ "steam-1882500": {
+  "hltb": {
+   "at": "2026-11-01T11:59:13.864167+00:00",
+   "v": {
+    "comp": 47.8,
+    "extra": 32.2,
+    "id": 139467,
+    "main": 24.2,
+    "title": "Cattails: Wildwood Story",
+    "year": 2023
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:13.863930+00:00",
+   "v": {
+    "genres": [
+     "Virtual Life"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "cattails-wildwood-story",
+    "title": "Cattails: Wildwood Story",
+    "user": 8.5,
+    "userCount": 6,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:14.081254+00:00",
+   "forced": 1882500,
+   "v": {
+    "appid": 1882500,
+    "name": "Cattails: Wildwood Story",
+    "neg": 36,
+    "owners": "50,000 .. 100,000",
+    "pos": 1502,
+    "price": 19.99,
+    "publisher": "Falcon Development",
+    "tags": [
+     "Cats",
+     "Life Sim",
+     "Farming Sim",
+     "Wholesome",
+     "RPG",
+     "Simulation",
+     "Pixel Graphics",
+     "Colony Sim",
+     "Character Customization",
+     "Romance",
+     "Cute",
+     "Colorful",
+     "Nature",
+     "Building",
+     "Mining",
+     "City Builder",
+     "Base-Building",
+     "Relaxing",
+     "Immersive Sim",
+     "Cozy"
+    ]
+   }
+  }
+ },
  "steam-1883260": {
   "hltb": {
    "at": "2026-10-26T12:02:10.100292+00:00",
@@ -198990,6 +199620,69 @@
      "Family Friendly",
      "Cats",
      "Indie"
+    ]
+   }
+  }
+ },
+ "steam-1886070": {
+  "hltb": {
+   "at": "2026-11-01T11:59:21.512552+00:00",
+   "v": {
+    "comp": 9.0,
+    "extra": 8.3,
+    "id": 117255,
+    "main": 6.0,
+    "title": "USAC: Code Breach",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:31.021408+00:00",
+   "v": {
+    "genres": [
+     "FPS"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "usac-code-breach",
+    "title": "USAC: Code Breach",
+    "user": null,
+    "userCount": 1,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:37.239471+00:00",
+   "forced": 1886070,
+   "v": {
+    "appid": 1886070,
+    "name": "USAC: Code Breach",
+    "neg": 68,
+    "owners": "20,000 .. 50,000",
+    "pos": 940,
+    "price": 14.99,
+    "publisher": "Questions Factory",
+    "tags": [
+     "Online Co-Op",
+     "Puzzle",
+     "FPS",
+     "Psychological Horror",
+     "Cyberpunk",
+     "Shooter",
+     "Investigation",
+     "Difficult",
+     "Adventure",
+     "Dystopian ",
+     "Action-Adventure",
+     "Realistic",
+     "Immersive",
+     "Transhumanism",
+     "Combat",
+     "Hacking",
+     "Resource Management",
+     "Multiplayer",
+     "Co-op",
+     "Local Co-Op"
     ]
    }
   }
@@ -199333,6 +200026,69 @@
      "Relaxing",
      "Wholesome",
      "Strategy"
+    ]
+   }
+  }
+ },
+ "steam-1889890": {
+  "hltb": {
+   "at": "2026-11-01T11:59:17.554542+00:00",
+   "v": {
+    "comp": 10.4,
+    "extra": 10.2,
+    "id": 160981,
+    "main": 7.0,
+    "title": "Shinehill",
+    "year": 2024
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:21.272611+00:00",
+   "v": {
+    "genres": [
+     "RPG"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "shinehill",
+    "title": "Shinehill",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:24.077320+00:00",
+   "forced": 1889890,
+   "v": {
+    "appid": 1889890,
+    "name": "Shinehill",
+    "neg": 3,
+    "owners": "0 .. 20,000",
+    "pos": 98,
+    "price": 10.99,
+    "publisher": "Peach Bite",
+    "tags": [
+     "Early Access",
+     "RPG",
+     "Pixel Graphics",
+     "Story Rich",
+     "Dating Sim",
+     "Life Sim",
+     "Choices Matter",
+     "Open World",
+     "Exploration",
+     "Cute",
+     "Adventure",
+     "Anime",
+     "Farming Sim",
+     "Fishing",
+     "Puzzle",
+     "Casual",
+     "Singleplayer",
+     "Indie",
+     "2D",
+     "Crafting"
     ]
    }
   }
@@ -222400,6 +223156,30 @@
    }
   }
  },
+ "steam-2089060": {
+  "hltb": {
+   "at": "2026-11-01T12:00:25.799983+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:52.937958+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:56.298930+00:00",
+   "forced": 2089060,
+   "v": {
+    "appid": 2089060,
+    "name": "Furry Boss",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
  "steam-2089140": {
   "hltb": {
    "at": "2026-10-23T15:57:02.935723+00:00",
@@ -237185,6 +237965,63 @@
      "Third Person",
      "Singleplayer",
      "Survival Horror"
+    ]
+   }
+  }
+ },
+ "steam-2206270": {
+  "hltb": {
+   "at": "2026-11-01T11:59:43.427865+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:38.471098+00:00",
+   "v": {
+    "genres": [
+     "FPS"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "vampire-hunters",
+    "title": "Vampire Hunters",
+    "user": 7,
+    "userCount": 5,
+    "year": 2024
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:44.063209+00:00",
+   "forced": 2206270,
+   "v": {
+    "appid": 2206270,
+    "name": "Vampire Hunters",
+    "neg": 144,
+    "owners": "20,000 .. 50,000",
+    "pos": 1375,
+    "price": 14.99,
+    "publisher": "Gamecraft Studios",
+    "tags": [
+     "Action Roguelike",
+     "FPS",
+     "Bullet Hell",
+     "Boomer Shooter",
+     "Rogue-lite",
+     "Arena Shooter",
+     "Score Attack",
+     "Retro",
+     "Vampire",
+     "Indie",
+     "Arcade",
+     "Rogue-like",
+     "Early Access",
+     "Looter Shooter",
+     "Action",
+     "Old School",
+     "Shooter",
+     "RPG",
+     "Singleplayer",
+     "3D"
     ]
    }
   }
@@ -285940,7 +286777,7 @@
  },
  "steam-268650": {
   "hltb": {
-   "at": "2026-10-31T11:04:31.822875+00:00",
+   "at": "2026-11-01T11:59:42.905454+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -287246,6 +288083,41 @@
      "Story Rich",
      "Multiple Endings"
     ]
+   }
+  }
+ },
+ "steam-2697730": {
+  "hltb": {
+   "at": "2026-11-01T11:59:13.863321+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:13.863017+00:00",
+   "v": {
+    "genres": [
+     "Aircraft Combat Sim"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "super-cloud-fight",
+    "title": "Super Cloud Fight",
+    "user": null,
+    "userCount": 0,
+    "year": 2097
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:13.863712+00:00",
+   "forced": 2697730,
+   "v": {
+    "appid": 2697730,
+    "name": "Super Cloud Fight",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 19.99,
+    "publisher": "QuwaPlay et al.",
+    "tags": []
    }
   }
  },
@@ -304512,6 +305384,69 @@
    }
   }
  },
+ "steam-2860450": {
+  "hltb": {
+   "at": "2026-11-01T12:00:24.759118+00:00",
+   "v": {
+    "comp": 9.6,
+    "extra": null,
+    "id": 154268,
+    "main": null,
+    "title": "Happy Sheepies",
+    "year": 2024
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:47.378827+00:00",
+   "v": {
+    "genres": [
+     "Tycoon"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "happy-sheepies",
+    "title": "Happy Sheepies",
+    "user": 9.5,
+    "userCount": 4,
+    "year": 2024
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:52.812510+00:00",
+   "forced": 2860450,
+   "v": {
+    "appid": 2860450,
+    "name": "Happy Sheepies",
+    "neg": 67,
+    "owners": "0 .. 20,000",
+    "pos": 344,
+    "price": 19.99,
+    "publisher": "Berker Games",
+    "tags": [
+     "Management",
+     "Casual",
+     "Farming Sim",
+     "Relaxing",
+     "Survival",
+     "Simulation",
+     "Automation",
+     "Hand-drawn",
+     "Resource Management",
+     "Cute",
+     "Time Management",
+     "God Game",
+     "Cartoony",
+     "Crafting",
+     "Stylized",
+     "2D",
+     "Strategy",
+     "Colorful",
+     "Top-Down",
+     "Sandbox"
+    ]
+   }
+  }
+ },
  "steam-2860990": {
   "hltb": {
    "at": "2026-10-23T16:01:47.480519+00:00",
@@ -304635,6 +305570,48 @@
      "Controller",
      "Open World"
     ]
+   }
+  }
+ },
+ "steam-2861210": {
+  "hltb": {
+   "at": "2026-11-01T11:59:19.251161+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 180658,
+    "main": null,
+    "title": "HYPNOS",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:24.113687+00:00",
+   "v": {
+    "genres": [
+     "First-Person Adventure"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "hypnos",
+    "title": "HYPNOS",
+    "user": null,
+    "userCount": 0,
+    "year": 2097
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:29.464617+00:00",
+   "forced": 2861210,
+   "v": {
+    "appid": 2861210,
+    "name": "HYPNOS",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 19.9,
+    "publisher": "Redlock Studio",
+    "tags": []
    }
   }
  },
@@ -323419,9 +324396,15 @@
  },
  "steam-3032830": {
   "hltb": {
-   "at": "2026-10-31T11:04:32.579500+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-11-01T12:00:21.651012+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 169154,
+    "main": 4.4,
+    "title": "Katanaut",
+    "year": 2025
+   }
   },
   "mc": {
    "at": "2026-10-31T11:04:27.505511+00:00",
@@ -332214,6 +333197,69 @@
    }
   }
  },
+ "steam-3124550": {
+  "hltb": {
+   "at": "2026-11-01T12:00:24.305653+00:00",
+   "v": {
+    "comp": 43.0,
+    "extra": null,
+    "id": 173522,
+    "main": null,
+    "title": "Liquor Store Simulator",
+    "year": 2025
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:46.073209+00:00",
+   "v": {
+    "genres": [
+     "Virtual Career"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "liquor-store-simulator",
+    "title": "Liquor Store Simulator",
+    "user": null,
+    "userCount": 1,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:51.684412+00:00",
+   "forced": 3124550,
+   "v": {
+    "appid": 3124550,
+    "name": "Liquor Store Simulator",
+    "neg": 12,
+    "owners": "0 .. 20,000",
+    "pos": 130,
+    "price": 11.99,
+    "publisher": "PlayWay S.A.",
+    "tags": [
+     "Simulation",
+     "Management",
+     "Economy",
+     "Singleplayer",
+     "Trading",
+     "Immersive Sim",
+     "First-Person",
+     "Indie",
+     "Realistic",
+     "Resource Management",
+     "Casual",
+     "Early Access",
+     "Life Sim",
+     "Capitalism",
+     "Sandbox",
+     "Design & Illustration",
+     "Family Friendly",
+     "Atmospheric",
+     "Relaxing",
+     "3D"
+    ]
+   }
+  }
+ },
  "steam-3125120": {
   "hltb": {
    "at": "2026-10-26T12:45:55.251830+00:00",
@@ -332273,6 +333319,63 @@
      "Dark",
      "Jump Scare",
      "Level Editor"
+    ]
+   }
+  }
+ },
+ "steam-3125890": {
+  "hltb": {
+   "at": "2026-11-01T11:59:23.546179+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:35.721884+00:00",
+   "v": {
+    "genres": [
+     "Defense"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "mineral-defense",
+    "title": "Mineral Defense",
+    "user": null,
+    "userCount": 0,
+    "year": 2024
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:41.846334+00:00",
+   "forced": 3125890,
+   "v": {
+    "appid": 3125890,
+    "name": "Mineral Defense",
+    "neg": 11,
+    "owners": "20,000 .. 50,000",
+    "pos": 162,
+    "price": 14.99,
+    "publisher": "Corestone Games",
+    "tags": [
+     "Strategy",
+     "Rogue-lite",
+     "Tower Defense",
+     "Card Game",
+     "Rogue-like",
+     "3D",
+     "Base-Building",
+     "Casual",
+     "Deckbuilding",
+     "Procedural Generation",
+     "Colorful",
+     "Stylized",
+     "Fantasy",
+     "Management",
+     "Sci-fi",
+     "Space",
+     "Building",
+     "Robots",
+     "Aliens",
+     "Futuristic"
     ]
    }
   }
@@ -334797,6 +335900,63 @@
    }
   }
  },
+ "steam-3150440": {
+  "hltb": {
+   "at": "2026-11-01T11:59:43.576531+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:40.205705+00:00",
+   "v": {
+    "genres": [
+     "Virtual Career"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "laundry-store-simulator",
+    "title": "Laundry Store Simulator",
+    "user": null,
+    "userCount": 0,
+    "year": 2024
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:45.185697+00:00",
+   "forced": 3150440,
+   "v": {
+    "appid": 3150440,
+    "name": "Laundry Store Simulator",
+    "neg": 130,
+    "owners": "50,000 .. 100,000",
+    "pos": 876,
+    "price": 11.99,
+    "publisher": "PlayWay S.A.",
+    "tags": [
+     "Simulation",
+     "Management",
+     "Time Management",
+     "Realistic",
+     "First-Person",
+     "Comedy",
+     "Economy",
+     "3D",
+     "Funny",
+     "Sandbox",
+     "Conversation",
+     "Indie",
+     "Nonlinear",
+     "Singleplayer",
+     "Physics",
+     "Inventory Management",
+     "Resource Management",
+     "Early Access",
+     "Job Simulator",
+     "Tutorial"
+    ]
+   }
+  }
+ },
  "steam-3150720": {
   "hltb": {
    "at": "2026-10-23T15:46:38.845262+00:00",
@@ -334883,7 +336043,7 @@
  },
  "steam-3151380": {
   "hltb": {
-   "at": "2026-10-31T11:04:52.137268+00:00",
+   "at": "2026-11-01T12:00:02.770594+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -340075,6 +341235,69 @@
      "Indie",
      "Horror",
      "Dating Sim"
+    ]
+   }
+  }
+ },
+ "steam-320300": {
+  "hltb": {
+   "at": "2026-11-01T11:59:20.306319+00:00",
+   "v": {
+    "comp": 50.1,
+    "extra": 32.4,
+    "id": 26474,
+    "main": 15.0,
+    "title": "Car Mechanic Simulator 2015",
+    "year": 2015
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:26.605456+00:00",
+   "v": {
+    "genres": [
+     "Virtual Career"
+    ],
+    "reviews": 6,
+    "score": 68,
+    "slug": "car-mechanic-simulator-2015",
+    "title": "Car Mechanic Simulator 2015",
+    "user": 8.2,
+    "userCount": 138,
+    "year": 2015
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:31.850293+00:00",
+   "forced": 320300,
+   "v": {
+    "appid": 320300,
+    "name": "Car Mechanic Simulator 2015",
+    "neg": 1106,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 13466,
+    "price": 19.99,
+    "publisher": "PlayWay S.A.",
+    "tags": [
+     "Automobile Sim",
+     "Simulation",
+     "Singleplayer",
+     "Building",
+     "Driving",
+     "Education",
+     "Racing",
+     "First-Person",
+     "Management",
+     "Puzzle",
+     "Realistic",
+     "Casual",
+     "Multiplayer",
+     "Great Soundtrack",
+     "Atmospheric",
+     "Mod",
+     "Funny",
+     "Sandbox",
+     "Open World",
+     "Action"
     ]
    }
   }
@@ -353026,6 +354249,69 @@
    }
   }
  },
+ "steam-335670": {
+  "hltb": {
+   "at": "2026-11-01T11:59:15.646784+00:00",
+   "v": {
+    "comp": 25.0,
+    "extra": 15.2,
+    "id": 24233,
+    "main": 10.9,
+    "title": "LISA: The Painful",
+    "year": 2014
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:16.287048+00:00",
+   "v": {
+    "genres": [
+     "RPG"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "lisa-the-painful-definitive-edition",
+    "title": "LISA: The Painful - Definitive Edition",
+    "user": 9.5,
+    "userCount": 4,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:16.125449+00:00",
+   "forced": 335670,
+   "v": {
+    "appid": 335670,
+    "name": "LISA: The Painful",
+    "neg": 644,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 13949,
+    "price": 19.99,
+    "publisher": "Serenity Forge",
+    "tags": [
+     "Dark Humor",
+     "RPG",
+     "Story Rich",
+     "Psychological Horror",
+     "Post-apocalyptic",
+     "RPGMaker",
+     "Indie",
+     "Choices Matter",
+     "Pixel Graphics",
+     "Dark",
+     "JRPG",
+     "Adventure",
+     "Singleplayer",
+     "Party-Based RPG",
+     "2D",
+     "Funny",
+     "Atmospheric",
+     "Comedy",
+     "Horror",
+     "Side Scroller"
+    ]
+   }
+  }
+ },
  "steam-3356700": {
   "hltb": {
    "at": "2026-10-23T14:57:52.324910+00:00",
@@ -357265,6 +358551,30 @@
    }
   }
  },
+ "steam-3395300": {
+  "hltb": {
+   "at": "2026-11-01T11:59:22.181765+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:34.571682+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:38.354743+00:00",
+   "forced": 3395300,
+   "v": {
+    "appid": 3395300,
+    "name": "哎呦!这么多美女呀!",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 18.99,
+    "publisher": "Hangzhou Miqi Technology Co.,Ltd",
+    "tags": []
+   }
+  }
+ },
  "steam-3395500": {
   "hltb": {
    "at": "2026-10-23T14:57:17.094465+00:00",
@@ -360430,6 +361740,42 @@
      "Family Friendly",
      "2D"
     ]
+   }
+  }
+ },
+ "steam-3430450": {
+  "hltb": {
+   "at": "2026-11-01T12:00:02.884709+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:43.491286+00:00",
+   "v": {
+    "genres": [
+     "Virtual Career"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "zombie-graveyard-simulator",
+    "title": "Zombie Graveyard Simulator",
+    "user": null,
+    "userCount": 1,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:47.401288+00:00",
+   "forced": 3430450,
+   "v": {
+    "appid": 3430450,
+    "name": "Zombie Graveyard Simulator",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 14.99,
+    "publisher": "PlayWay S.A.",
+    "tags": []
    }
   }
  },
@@ -370654,6 +372000,41 @@
     "pos": 0,
     "price": null,
     "publisher": "",
+    "tags": []
+   }
+  }
+ },
+ "steam-3554450": {
+  "hltb": {
+   "at": "2026-11-01T12:00:22.242061+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:44.079186+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "escape-from-timokha-2-army",
+    "title": "ESCAPE FROM TIMOKHA 2: ARMY",
+    "user": null,
+    "userCount": 0,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:48.348080+00:00",
+   "forced": 3554450,
+   "v": {
+    "appid": 3554450,
+    "name": "ESCAPE FROM TIMOKHA 2: ARMY",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 2.99,
+    "publisher": "Team GZ",
     "tags": []
    }
   }
@@ -384274,6 +385655,30 @@
     "pos": 0,
     "price": 9.99,
     "publisher": "Kwalee",
+    "tags": []
+   }
+  }
+ },
+ "steam-3723050": {
+  "hltb": {
+   "at": "2026-11-01T11:59:16.616502+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:17.782937+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:20.579086+00:00",
+   "forced": 3723050,
+   "v": {
+    "appid": 3723050,
+    "name": "Beta Hazard",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "娜豆传媒",
     "tags": []
    }
   }
@@ -398934,6 +400339,41 @@
    }
   }
  },
+ "steam-3927170": {
+  "hltb": {
+   "at": "2026-11-01T11:59:20.797907+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:28.002797+00:00",
+   "v": {
+    "genres": [
+     "First-Person Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "ch13-rest-stop",
+    "title": "CH13: Rest Stop",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:34.063458+00:00",
+   "forced": 3927170,
+   "v": {
+    "appid": 3927170,
+    "name": "",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
  "steam-3928990": {
   "hltb": {
    "at": "2026-10-26T13:48:04.571647+00:00",
@@ -406927,6 +408367,69 @@
     "price": 0.99,
     "publisher": "117PS",
     "tags": []
+   }
+  }
+ },
+ "steam-407130": {
+  "hltb": {
+   "at": "2026-11-01T12:00:24.268035+00:00",
+   "v": {
+    "comp": 30.4,
+    "extra": 29.7,
+    "id": 75487,
+    "main": 25.1,
+    "title": "Tank Mechanic Simulator",
+    "year": 2020
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:45.582027+00:00",
+   "v": {
+    "genres": [
+     "Virtual Career"
+    ],
+    "reviews": 4,
+    "score": 57,
+    "slug": "tank-mechanic-simulator",
+    "title": "Tank Mechanic Simulator",
+    "user": 5.7,
+    "userCount": 9,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:51.190216+00:00",
+   "forced": 407130,
+   "v": {
+    "appid": 407130,
+    "name": "Tank Mechanic Simulator",
+    "neg": 960,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 7346,
+    "price": 19.99,
+    "publisher": "PlayWay S.A.",
+    "tags": [
+     "Tanks",
+     "Simulation",
+     "World War II",
+     "Realistic",
+     "Singleplayer",
+     "First-Person",
+     "Building",
+     "Relaxing",
+     "Action",
+     "Indie",
+     "Management",
+     "Walking Simulator",
+     "Crafting",
+     "Economy",
+     "Casual",
+     "Exploration",
+     "Resource Management",
+     "Adventure",
+     "Atmospheric",
+     "Family Friendly"
+    ]
    }
   }
  },
@@ -419177,6 +420680,48 @@
    }
   }
  },
+ "steam-4310610": {
+  "hltb": {
+   "at": "2026-11-01T11:59:23.269783+00:00",
+   "v": {
+    "comp": 3.3,
+    "extra": 3.3,
+    "id": 186954,
+    "main": 3.2,
+    "title": "The Skin Stapler",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:35.405918+00:00",
+   "v": {
+    "genres": [
+     "Survival"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "the-skin-stapler",
+    "title": "The Skin Stapler",
+    "user": 6,
+    "userCount": 4,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:40.729439+00:00",
+   "forced": 4310610,
+   "v": {
+    "appid": 4310610,
+    "name": "The Skin Stapler",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 14.99,
+    "publisher": "Assemble Entertainment",
+    "tags": []
+   }
+  }
+ },
  "steam-4311000": {
   "hltb": {
    "at": "2026-10-23T14:58:10.631718+00:00",
@@ -422494,6 +424039,42 @@
    "forced": 4385600,
    "v": {
     "appid": 4385600,
+    "name": "",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
+ "steam-4385780": {
+  "hltb": {
+   "at": "2026-11-01T11:59:23.998625+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:38.103581+00:00",
+   "v": {
+    "genres": [
+     "Roguelike"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "maldhalla",
+    "title": "Maldhalla",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:42.943565+00:00",
+   "forced": 4385780,
+   "v": {
+    "appid": 4385780,
     "name": "",
     "neg": 0,
     "owners": "0 .. 20,000",
@@ -428477,6 +430058,48 @@
    }
   }
  },
+ "steam-4547970": {
+  "hltb": {
+   "at": "2026-11-01T11:59:22.391833+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 189466,
+    "main": null,
+    "title": "Pih 2",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:34.741866+00:00",
+   "v": {
+    "genres": [
+     "FPS"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "pih-2",
+    "title": "Pih 2",
+    "user": null,
+    "userCount": 2,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:39.629061+00:00",
+   "forced": 4547970,
+   "v": {
+    "appid": 4547970,
+    "name": "Pih 2",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 9.99,
+    "publisher": "BecomeANobody",
+    "tags": []
+   }
+  }
+ },
  "steam-455400": {
   "hltb": {
    "at": "2026-10-23T16:10:38.864699+00:00",
@@ -428941,6 +430564,69 @@
      "Story Rich",
      "Futuristic",
      "Violent"
+    ]
+   }
+  }
+ },
+ "steam-457210": {
+  "hltb": {
+   "at": "2026-11-01T11:59:16.329748+00:00",
+   "v": {
+    "comp": 39.4,
+    "extra": 8.4,
+    "id": 38997,
+    "main": 3.7,
+    "title": "SEUM: Speedrunners from Hell",
+    "year": 2016
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:17.736469+00:00",
+   "v": {
+    "genres": [
+     "FPS"
+    ],
+    "reviews": 5,
+    "score": 77,
+    "slug": "seum-speedrunners-from-hell",
+    "title": "SEUM: Speedrunners from Hell",
+    "user": 7.8,
+    "userCount": 13,
+    "year": 2017
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:19.481052+00:00",
+   "forced": 457210,
+   "v": {
+    "appid": 457210,
+    "name": "SEUM: Speedrunners from Hell",
+    "neg": 153,
+    "owners": "200,000 .. 500,000",
+    "pos": 2808,
+    "price": 14.99,
+    "publisher": "Pine Studio",
+    "tags": [
+     "3D Platformer",
+     "Parkour",
+     "Precision Platformer",
+     "First-Person",
+     "Platformer",
+     "Racing",
+     "Difficult",
+     "FPS",
+     "Fast-Paced",
+     "Action",
+     "Level Editor",
+     "Puzzle-Platformer",
+     "Indie",
+     "Great Soundtrack",
+     "Puzzle",
+     "Multiplayer",
+     "Horror",
+     "Singleplayer",
+     "Runner",
+     "Demons"
     ]
    }
   }
@@ -439213,6 +440899,41 @@
    }
   }
  },
+ "steam-4950600": {
+  "hltb": {
+   "at": "2026-11-01T11:59:17.254975+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:18.450413+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "happy-propaganda",
+    "title": "HAPPY PROPAGANDA",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:21.874306+00:00",
+   "forced": 4950600,
+   "v": {
+    "appid": 4950600,
+    "name": null,
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
  "steam-4951190": {
   "hltb": {
    "at": "2026-10-23T16:19:02.767334+00:00",
@@ -441397,7 +443118,7 @@
  },
  "steam-503560": {
   "hltb": {
-   "at": "2026-10-31T11:04:13.360070+00:00",
+   "at": "2026-11-01T11:59:24.227572+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -441777,6 +443498,41 @@
      "RPG",
      "Casual"
     ]
+   }
+  }
+ },
+ "steam-5051410": {
+  "hltb": {
+   "at": "2026-11-01T11:59:13.861648+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:13.860982+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "mistbound-city",
+    "title": "Mistbound City",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:13.862512+00:00",
+   "forced": 5051410,
+   "v": {
+    "appid": 5051410,
+    "name": null,
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
    }
   }
  },
@@ -444100,9 +445856,15 @@
  },
  "steam-518150": {
   "hltb": {
-   "at": "2026-10-31T11:04:13.325543+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-11-01T11:59:23.088268+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 158067,
+    "main": null,
+    "title": "INTRUDER",
+    "year": 2023
+   }
   },
   "mc": {
    "at": "2026-10-31T11:04:25.045498+00:00",
@@ -447756,9 +449518,15 @@
  },
  "steam-537800": {
   "hltb": {
-   "at": "2026-10-31T11:04:51.172793+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-11-01T12:00:23.397436+00:00",
+   "v": {
+    "comp": 26.0,
+    "extra": 18.7,
+    "id": 51082,
+    "main": 15.5,
+    "title": "Bomber Crew",
+    "year": 2017
+   }
   },
   "mc": {
    "at": "2026-10-29T20:34:48.340808+00:00",
@@ -455758,6 +457526,69 @@
    }
   }
  },
+ "steam-585420": {
+  "hltb": {
+   "at": "2026-11-01T11:59:19.373222+00:00",
+   "v": {
+    "comp": 57.6,
+    "extra": 29.1,
+    "id": 56055,
+    "main": 14.2,
+    "title": "Trailmakers",
+    "year": 2018
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:24.190551+00:00",
+   "v": {
+    "genres": [
+     "Sandbox"
+    ],
+    "reviews": 3,
+    "score": null,
+    "slug": "trailmakers",
+    "title": "Trailmakers",
+    "user": 6.8,
+    "userCount": 29,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:30.724928+00:00",
+   "forced": 585420,
+   "v": {
+    "appid": 585420,
+    "name": "Trailmakers",
+    "neg": 2106,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 25941,
+    "price": 24.99,
+    "publisher": "Flashbulb",
+    "tags": [
+     "Space",
+     "Action",
+     "Family Friendly",
+     "Co-op Campaign",
+     "Online Co-Op",
+     "Singleplayer",
+     "Adventure",
+     "Action-Adventure",
+     "Colorful",
+     "Building",
+     "Racing",
+     "Open World",
+     "Sandbox",
+     "Vehicular Combat",
+     "Multiplayer",
+     "Crafting",
+     "Survival",
+     "Exploration",
+     "Physics",
+     "Jet"
+    ]
+   }
+  }
+ },
  "steam-58560": {
   "hltb": {
    "at": "2026-10-23T16:39:42.269289+00:00",
@@ -457435,6 +459266,69 @@
      "Female Protagonist",
      "2D",
      "Hentai"
+    ]
+   }
+  }
+ },
+ "steam-592480": {
+  "hltb": {
+   "at": "2026-11-01T12:00:25.342828+00:00",
+   "v": {
+    "comp": 13.1,
+    "extra": 9.4,
+    "id": 67984,
+    "main": 8.2,
+    "title": "Knights And Bikes",
+    "year": 2019
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:51.199997+00:00",
+   "v": {
+    "genres": [
+     "Action Adventure"
+    ],
+    "reviews": null,
+    "score": 79,
+    "slug": "knights-and-bikes",
+    "title": "Knights and Bikes",
+    "user": 7.1,
+    "userCount": 60,
+    "year": 2019
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:54.080755+00:00",
+   "forced": 592480,
+   "v": {
+    "appid": 592480,
+    "name": "Knights And Bikes",
+    "neg": 57,
+    "owners": "0 .. 20,000",
+    "pos": 524,
+    "price": 19.99,
+    "publisher": "Foam Sword, PLAYISM",
+    "tags": [
+     "Online Co-Op",
+     "Local Co-Op",
+     "Adventure",
+     "Story Rich",
+     "Action-Adventure",
+     "Co-op",
+     "Puzzle",
+     "Action",
+     "Colorful",
+     "Cute",
+     "Female Protagonist",
+     "Co-op Campaign",
+     "Controller",
+     "2D",
+     "Hand-drawn",
+     "Retro",
+     "1980s",
+     "Multiplayer",
+     "Singleplayer",
+     "Bikes"
     ]
    }
   }
@@ -464832,6 +466726,69 @@
    }
   }
  },
+ "steam-631570": {
+  "hltb": {
+   "at": "2026-11-01T11:59:18.465275+00:00",
+   "v": {
+    "comp": 9.2,
+    "extra": 7.6,
+    "id": 66302,
+    "main": 6.0,
+    "title": "Whispers of a Machine",
+    "year": 2019
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:22.915094+00:00",
+   "v": {
+    "genres": [
+     "Point-and-Click"
+    ],
+    "reviews": 19,
+    "score": 77,
+    "slug": "whispers-of-a-machine",
+    "title": "Whispers of a Machine",
+    "user": 7.5,
+    "userCount": 64,
+    "year": 2019
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:27.392278+00:00",
+   "forced": 631570,
+   "v": {
+    "appid": 631570,
+    "name": "Whispers of a Machine",
+    "neg": 119,
+    "owners": "200,000 .. 500,000",
+    "pos": 1721,
+    "price": 14.99,
+    "publisher": "Raw Fury",
+    "tags": [
+     "Adventure",
+     "Point & Click",
+     "Detective",
+     "Sci-fi",
+     "Female Protagonist",
+     "Cyberpunk",
+     "Pixel Graphics",
+     "2D",
+     "Singleplayer",
+     "Mystery",
+     "Choices Matter",
+     "Puzzle",
+     "Noir",
+     "Retro",
+     "Story Rich",
+     "Atmospheric",
+     "Futuristic",
+     "Post-apocalyptic",
+     "2.5D",
+     "Exploration"
+    ]
+   }
+  }
+ },
  "steam-63200": {
   "hltb": {
    "at": "2026-10-25T09:56:36.210347+00:00",
@@ -464886,6 +466843,51 @@
      "Cartoon",
      "Shooter",
      "Free to Play"
+    ]
+   }
+  }
+ },
+ "steam-634160": {
+  "hltb": {
+   "at": "2026-11-01T11:59:16.216373+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:17.101815+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:18.519082+00:00",
+   "forced": 634160,
+   "v": {
+    "appid": 634160,
+    "name": "Cattails | Become a Cat!",
+    "neg": 105,
+    "owners": "20,000 .. 50,000",
+    "pos": 2487,
+    "price": 14.99,
+    "publisher": "Falcon Development",
+    "tags": [
+     "Cats",
+     "Life Sim",
+     "RPG",
+     "Pixel Graphics",
+     "Romance",
+     "Cute",
+     "2D",
+     "Family Friendly",
+     "Character Customization",
+     "Colony Sim",
+     "Mining",
+     "Casual",
+     "Simulation",
+     "Survival",
+     "Nature",
+     "Relaxing",
+     "Open World",
+     "Colorful",
+     "Singleplayer",
+     "Controller"
     ]
    }
   }
@@ -465847,6 +467849,63 @@
    }
   }
  },
+ "steam-63910": {
+  "hltb": {
+   "at": "2026-11-01T11:59:21.282349+00:00",
+   "v": {
+    "comp": 78.6,
+    "extra": 62.8,
+    "id": 5018,
+    "main": 27.7,
+    "title": "King's Bounty: Crossworlds",
+    "year": 2010
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:30.714415+00:00",
+   "v": {
+    "genres": [
+     "Turn-Based Strategy"
+    ],
+    "reviews": 13,
+    "score": 78,
+    "slug": "kings-bounty-crossworlds",
+    "title": "King's Bounty: Crossworlds",
+    "user": 8.4,
+    "userCount": 141,
+    "year": 2010
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:36.280993+00:00",
+   "forced": 63910,
+   "v": {
+    "appid": 63910,
+    "name": "King's Bounty: Crossworlds",
+    "neg": 121,
+    "owners": "200,000 .. 500,000",
+    "pos": 1320,
+    "price": 14.99,
+    "publisher": "Fulqrum Publishing",
+    "tags": [
+     "RPG",
+     "Strategy",
+     "Turn-Based Strategy",
+     "Turn-Based",
+     "Hex Grid",
+     "Fantasy",
+     "Adventure",
+     "Female Protagonist",
+     "Atmospheric",
+     "Singleplayer",
+     "Turn-Based Combat",
+     "Tactical RPG",
+     "Tactical",
+     "Strategy RPG"
+    ]
+   }
+  }
+ },
  "steam-6400": {
   "hltb": {
    "at": "2026-10-26T13:35:16.475384+00:00",
@@ -466592,6 +468651,69 @@
      "Horror",
      "Difficult",
      "Trading Card Game"
+    ]
+   }
+  }
+ },
+ "steam-645630": {
+  "hltb": {
+   "at": "2026-11-01T11:59:21.019506+00:00",
+   "v": {
+    "comp": 86.2,
+    "extra": 84.3,
+    "id": 48426,
+    "main": 27.9,
+    "title": "Car Mechanic Simulator 2018",
+    "year": 2017
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:29.129531+00:00",
+   "v": {
+    "genres": [
+     "Virtual Career"
+    ],
+    "reviews": 2,
+    "score": null,
+    "slug": "car-mechanic-simulator-2018",
+    "title": "Car Mechanic Simulator 2018",
+    "user": 6.4,
+    "userCount": 74,
+    "year": 2017
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:35.176673+00:00",
+   "forced": 645630,
+   "v": {
+    "appid": 645630,
+    "name": "Car Mechanic Simulator 2018",
+    "neg": 4456,
+    "owners": "2,000,000 .. 5,000,000",
+    "pos": 47065,
+    "price": 19.99,
+    "publisher": "PlayWay S.A.",
+    "tags": [
+     "Simulation",
+     "Automobile Sim",
+     "Driving",
+     "Building",
+     "Realistic",
+     "Racing",
+     "Multiplayer",
+     "Singleplayer",
+     "First-Person",
+     "Sandbox",
+     "Education",
+     "Crafting",
+     "Moddable",
+     "Open World",
+     "Physics",
+     "Management",
+     "Strategy",
+     "Great Soundtrack",
+     "Co-op",
+     "Memes"
     ]
    }
   }
@@ -475567,6 +477689,69 @@
      "Crafting",
      "Base-Building",
      "2D"
+    ]
+   }
+  }
+ },
+ "steam-704850": {
+  "hltb": {
+   "at": "2026-11-01T12:00:22.290697+00:00",
+   "v": {
+    "comp": 27.8,
+    "extra": 19.0,
+    "id": 62315,
+    "main": 13.1,
+    "title": "Thief Simulator",
+    "year": 2018
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:44.752380+00:00",
+   "v": {
+    "genres": [
+     "Virtual Career"
+    ],
+    "reviews": 2,
+    "score": null,
+    "slug": "thief-simulator",
+    "title": "Thief Simulator",
+    "user": 6.9,
+    "userCount": 115,
+    "year": 2018
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:49.606347+00:00",
+   "forced": 704850,
+   "v": {
+    "appid": 704850,
+    "name": "Thief Simulator",
+    "neg": 4206,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 31601,
+    "price": 19.99,
+    "publisher": "PlayWay S.A.",
+    "tags": [
+     "Simulation",
+     "Stealth",
+     "Singleplayer",
+     "Crime",
+     "First-Person",
+     "Open World",
+     "Adventure",
+     "Heist",
+     "Action",
+     "Indie",
+     "Co-op",
+     "Sandbox",
+     "Funny",
+     "Exploration",
+     "Realistic",
+     "FPS",
+     "RPG",
+     "Silent Protagonist",
+     "Atmospheric",
+     "Immersive Sim"
     ]
    }
   }
@@ -485301,9 +487486,15 @@
  },
  "steam-780310": {
   "hltb": {
-   "at": "2026-10-31T11:04:12.531196+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-11-01T11:59:22.655620+00:00",
+   "v": {
+    "comp": 58.8,
+    "extra": 34.6,
+    "id": 80159,
+    "main": 23.4,
+    "title": "The Riftbreaker",
+    "year": 2021
+   }
   },
   "mc": {
    "at": "2026-10-29T20:34:46.565012+00:00",
@@ -487022,9 +489213,15 @@
  },
  "steam-793460": {
   "hltb": {
-   "at": "2026-10-31T11:04:51.993596+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-11-01T12:00:23.888701+00:00",
+   "v": {
+    "comp": 34.6,
+    "extra": 18.3,
+    "id": 77546,
+    "main": 10.1,
+    "title": "112 Operator",
+    "year": 2020
+   }
   },
   "mc": {
    "at": "2026-10-31T11:04:28.239930+00:00",
@@ -487937,6 +490134,69 @@
      "Story Rich",
      "Mystery",
      "Anime"
+    ]
+   }
+  }
+ },
+ "steam-801480": {
+  "hltb": {
+   "at": "2026-11-01T11:59:15.652227+00:00",
+   "v": {
+    "comp": 5.7,
+    "extra": 4.5,
+    "id": 39290,
+    "main": 4.3,
+    "title": "Agent A: A Puzzle in Disguise",
+    "year": 2015
+   }
+  },
+  "mc": {
+   "at": "2026-11-01T11:59:17.040512+00:00",
+   "v": {
+    "genres": [
+     "Point-and-Click"
+    ],
+    "reviews": 9,
+    "score": 79,
+    "slug": "agent-a-a-puzzle-in-disguise",
+    "title": "Agent A: A Puzzle In Disguise",
+    "user": 7.4,
+    "userCount": 52,
+    "year": 2019
+   }
+  },
+  "steam": {
+   "at": "2026-11-01T11:59:17.249846+00:00",
+   "forced": 801480,
+   "v": {
+    "appid": 801480,
+    "name": "Agent A: A puzzle in disguise",
+    "neg": 258,
+    "owners": "200,000 .. 500,000",
+    "pos": 5230,
+    "price": 19.99,
+    "publisher": "Yak & Co",
+    "tags": [
+     "Logic",
+     "Point & Click",
+     "Puzzle",
+     "Exploration",
+     "Escape Room",
+     "Hidden Object",
+     "Mystery",
+     "Detective",
+     "Singleplayer",
+     "Controller",
+     "Funny",
+     "Adventure",
+     "Female Protagonist",
+     "Story Rich",
+     "Family Friendly",
+     "Cozy",
+     "Investigation",
+     "Wholesome",
+     "Retro",
+     "Casual"
     ]
    }
   }
