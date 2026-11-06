@@ -42956,6 +42956,33 @@
    "FPS"
   ]
  },
+ "1674820": {
+  "at": "2026-11-06T13:08:06.500502+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1674820/library_600x900.jpg?t=1778155079",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1674820/header.jpg?t=1778155079",
+  "tags": [
+   "Action RTS",
+   "City Builder",
+   "Multiplayer",
+   "Strategy",
+   "Base Building",
+   "RTS",
+   "Real Time Tactics",
+   "Isometric",
+   "Historical",
+   "Co-op",
+   "Online Co-Op",
+   "Pixel Graphics",
+   "PvP",
+   "Real-Time",
+   "Tutorial",
+   "Tactical",
+   "2D",
+   "Retro",
+   "Combat",
+   "Colorful"
+  ]
+ },
  "1674890": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1674890/library_600x900.jpg?t=1767351732",
@@ -80176,6 +80203,33 @@
    "Puzzle"
   ]
  },
+ "2307260": {
+  "at": "2026-11-06T13:08:06.500502+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2307260/library_600x900.jpg?t=1727974133",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2307260/header.jpg?t=1727974133",
+  "tags": [
+   "Card Game",
+   "Level Editor",
+   "PvP",
+   "Singleplayer",
+   "Multiplayer",
+   "Free to Play",
+   "Trading Card Game",
+   "Game Development",
+   "Card Battler",
+   "Deckbuilding",
+   "Turn-Based Strategy",
+   "Strategy",
+   "2D",
+   "3D",
+   "Turn-Based Combat",
+   "Moddable",
+   "Sandbox",
+   "Simulation",
+   "Indie",
+   "Early Access"
+  ]
+ },
  "2308000": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2308000/library_600x900.jpg?t=1730134423",
@@ -88563,6 +88617,26 @@
    "PvE",
    "Realistic",
    "Strategy"
+  ]
+ },
+ "2448570": {
+  "at": "2026-11-06T13:08:06.500502+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2448570/a5822f10392dc9a4aa402e553b3a53e22cb5f9ad/library_capsule.jpg?t=1793919166",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2448570/a12ed683c51938590f28400c89cd8c8204e1e8db/header.jpg?t=1793919166",
+  "tags": [
+   "Action",
+   "1990's",
+   "Racing",
+   "Arcade",
+   "Combat",
+   "Combat Racing",
+   "Driving",
+   "FMV",
+   "Motorbike",
+   "Retro",
+   "Soundtrack",
+   "Vehicular Combat",
+   "Artificial Intelligence"
   ]
  },
  "2448980": {
@@ -181545,6 +181619,33 @@
    "Racing"
   ]
  },
+ "4986750": {
+  "at": "2026-11-06T13:08:06.500502+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4986750/0da657625a620f03b6f112b9506d59d5025f3010/library_capsule.jpg?t=1793627917",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4986750/3053d0f00b11e52701acb59000e19bbef906526d/header.jpg?t=1793627917",
+  "tags": [
+   "Simulation",
+   "Psychological Horror",
+   "Cute",
+   "Anime",
+   "Exploration",
+   "3D",
+   "First-Person",
+   "Walking Simulator",
+   "Horror",
+   "Stylized",
+   "Atmospheric",
+   "Dark",
+   "Indie",
+   "Dark Comedy",
+   "Romance",
+   "Choices Matter",
+   "Female Protagonist",
+   "Multiple Endings",
+   "Hentai",
+   "Singleplayer"
+  ]
+ },
  "4991240": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4991240/25a32b11bd9ce731302dafa42db39f3e58b0be84/library_capsule.jpg?t=1792148825",
@@ -183544,6 +183645,33 @@
    "Score Attack",
    "Artificial Intelligence",
    "Atmospheric"
+  ]
+ },
+ "5190580": {
+  "at": "2026-11-06T13:08:06.500502+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5190580/4075cc39b9e925ee82e2301374054fb86f243d72/library_capsule.jpg?t=1793300989",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5190580/1f274f8282617700a1da4fd43b33d17e7fee7218/header.jpg?t=1793300989",
+  "tags": [
+   "Exploration",
+   "Platformer",
+   "Precision Platformer",
+   "First-Person",
+   "3D Platformer",
+   "Open World",
+   "Atmospheric",
+   "Dystopian ",
+   "Female Protagonist",
+   "Adventure",
+   "3D",
+   "LGBTQ+",
+   "Controller",
+   "Post-apocalyptic",
+   "Hidden Object",
+   "Free to Play",
+   "Indie",
+   "Nonlinear",
+   "Sci-fi",
+   "Stylized"
   ]
  },
  "519080": {
