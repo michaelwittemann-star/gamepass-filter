@@ -16358,7 +16358,7 @@
  },
  "9NRQVQ7ZRM7Z": {
   "hltb": {
-   "at": "2026-10-29T11:39:32.591102+00:00",
+   "at": "2026-11-08T12:04:16.136551+00:00",
    "v": null
   },
   "mc": {
@@ -49174,7 +49174,7 @@
  },
  "nf-81509258": {
   "hltb": {
-   "at": "2026-10-29T11:39:35.465596+00:00",
+   "at": "2026-11-08T12:04:22.910737+00:00",
    "v": null
   },
   "mc": {
@@ -50043,7 +50043,7 @@
  },
  "nf-81597645": {
   "hltb": {
-   "at": "2026-10-29T11:39:34.280383+00:00",
+   "at": "2026-11-08T12:04:21.985507+00:00",
    "v": null
   },
   "mc": {
@@ -50165,8 +50165,7 @@
  },
  "nf-81616396": {
   "hltb": {
-   "at": "2026-11-07T11:53:21.743434+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:04:18.026184+00:00",
    "v": null
   },
   "mc": {
@@ -50226,7 +50225,7 @@
  },
  "nf-81621583": {
   "hltb": {
-   "at": "2026-10-29T11:39:34.599706+00:00",
+   "at": "2026-11-08T12:04:22.878047+00:00",
    "v": null
   },
   "mc": {
@@ -50307,7 +50306,7 @@
  },
  "nf-81629644": {
   "hltb": {
-   "at": "2026-10-29T11:39:34.420785+00:00",
+   "at": "2026-11-08T12:04:22.199483+00:00",
    "v": null
   },
   "mc": {
@@ -50429,7 +50428,7 @@
  },
  "nf-81636736": {
   "hltb": {
-   "at": "2026-10-29T11:39:32.592706+00:00",
+   "at": "2026-11-08T12:04:21.917005+00:00",
    "v": null
   },
   "mc": {
@@ -50519,8 +50518,7 @@
  },
  "nf-81665065": {
   "hltb": {
-   "at": "2026-11-07T11:54:00.320152+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:04:21.062412+00:00",
    "v": null
   },
   "mc": {
@@ -50534,7 +50532,7 @@
  },
  "nf-81665067": {
   "hltb": {
-   "at": "2026-10-29T11:39:32.592297+00:00",
+   "at": "2026-11-08T12:04:21.314869+00:00",
    "v": null
   },
   "mc": {
@@ -50797,8 +50795,7 @@
  },
  "nf-81685070": {
   "hltb": {
-   "at": "2026-11-07T11:53:59.697793+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:04:20.056459+00:00",
    "v": null
   },
   "mc": {
@@ -50888,8 +50885,7 @@
  },
  "nf-81702464": {
   "hltb": {
-   "at": "2026-11-07T11:53:40.972437+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:04:19.339643+00:00",
    "v": null
   },
   "mc": {
@@ -51134,8 +51130,7 @@
  },
  "nf-81754209": {
   "hltb": {
-   "at": "2026-11-07T11:54:00.262259+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:04:20.385569+00:00",
    "v": null
   },
   "mc": {
@@ -51211,8 +51206,7 @@
  },
  "nf-81763213": {
   "hltb": {
-   "at": "2026-11-07T11:53:41.025598+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:04:19.983098+00:00",
    "v": null
   },
   "mc": {
@@ -51619,8 +51613,7 @@
  },
  "nf-81984005": {
   "hltb": {
-   "at": "2026-11-07T11:53:40.457670+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:04:18.327843+00:00",
    "v": null
   },
   "mc": {
@@ -51634,8 +51627,7 @@
  },
  "nf-81993046": {
   "hltb": {
-   "at": "2026-11-07T11:53:21.634431+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:04:16.136954+00:00",
    "v": null
   },
   "mc": {
@@ -51747,8 +51739,7 @@
  },
  "nf-82048611": {
   "hltb": {
-   "at": "2026-11-07T11:53:21.211939+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:04:16.136794+00:00",
    "v": null
   },
   "mc": {
@@ -99523,9 +99514,15 @@
  },
  "steam-1106840": {
   "hltb": {
-   "at": "2026-11-07T12:00:05.601558+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-11-08T12:06:36.439170+00:00",
+   "v": {
+    "comp": 50.5,
+    "extra": 31.7,
+    "id": 77981,
+    "main": 22.9,
+    "title": "Hydroneer",
+    "year": 2020
+   }
   },
   "mc": {
    "at": "2026-11-07T11:53:25.137641+00:00",
@@ -102776,8 +102773,7 @@
  },
  "steam-1126310": {
   "hltb": {
-   "at": "2026-11-07T11:56:43.455133+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:05:30.071023+00:00",
    "v": null
   },
   "mc": {
@@ -113502,8 +113498,7 @@
  },
  "steam-1186880": {
   "hltb": {
-   "at": "2026-11-07T11:59:36.504869+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:06:34.911489+00:00",
    "v": null
   },
   "mc": {
@@ -125826,7 +125821,7 @@
  },
  "steam-1271280": {
   "hltb": {
-   "at": "2026-11-07T11:58:09.930165+00:00",
+   "at": "2026-11-08T12:06:15.074807+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -163126,9 +163121,15 @@
  },
  "steam-1522820": {
   "hltb": {
-   "at": "2026-11-07T12:00:05.654602+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-11-08T12:06:36.816812+00:00",
+   "v": {
+    "comp": 46.3,
+    "extra": 16.3,
+    "id": 80923,
+    "main": 10.2,
+    "title": "Orcs Must Die! 3",
+    "year": 2021
+   }
   },
   "mc": {
    "at": "2026-11-07T11:53:25.341831+00:00",
@@ -168446,6 +168447,63 @@
      "Indie",
      "Sailing",
      "3D"
+    ]
+   }
+  }
+ },
+ "steam-1562700": {
+  "hltb": {
+   "at": "2026-11-08T12:04:47.365691+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-08T12:04:16.138183+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": 7,
+    "score": 83,
+    "slug": "sanabi",
+    "title": "SANABI",
+    "user": 8.3,
+    "userCount": 126,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-11-08T12:04:16.138494+00:00",
+   "forced": 1562700,
+   "v": {
+    "appid": 1562700,
+    "name": "SANABI",
+    "neg": 943,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 35011,
+    "price": 14.99,
+    "publisher": "NEOWIZ",
+    "tags": [
+     "Pixel Graphics",
+     "Story Rich",
+     "Action",
+     "Cyberpunk",
+     "Adventure",
+     "2D Platformer",
+     "Singleplayer",
+     "Action-Adventure",
+     "2D",
+     "Platformer",
+     "Indie",
+     "Retro",
+     "Difficult",
+     "Side Scroller",
+     "Atmospheric",
+     "Great Soundtrack",
+     "Precision Platformer",
+     "Linear",
+     "Sci-fi",
+     "Dystopian "
     ]
    }
   }
@@ -175184,8 +175242,7 @@
  },
  "steam-1602930": {
   "hltb": {
-   "at": "2026-11-07T11:59:17.910505+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:06:34.501687+00:00",
    "v": null
   },
   "mc": {
@@ -180587,7 +180644,7 @@
  },
  "steam-1665500": {
   "hltb": {
-   "at": "2026-11-07T11:55:36.908126+00:00",
+   "at": "2026-11-08T12:05:05.808312+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -185335,7 +185392,7 @@
  },
  "steam-1704060": {
   "hltb": {
-   "at": "2026-11-07T12:00:25.796001+00:00",
+   "at": "2026-11-08T12:06:38.067295+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -187235,8 +187292,7 @@
  },
  "steam-1719180": {
   "hltb": {
-   "at": "2026-11-07T11:55:56.580538+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:05:26.513305+00:00",
    "v": null
   },
   "mc": {
@@ -188420,8 +188476,7 @@
  },
  "steam-1727660": {
   "hltb": {
-   "at": "2026-11-07T11:55:07.328103+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:04:26.051366+00:00",
    "v": null
   },
   "mc": {
@@ -196689,9 +196744,15 @@
  },
  "steam-1800940": {
   "hltb": {
-   "at": "2026-11-07T11:58:29.844584+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-11-08T12:06:27.507877+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 139812,
+    "main": null,
+    "title": "The Enjenir",
+    "year": 2023
+   }
   },
   "mc": {
    "at": "2026-11-02T13:38:56.216679+00:00",
@@ -197078,6 +197139,69 @@
      "Satire",
      "Dystopian ",
      "Singleplayer"
+    ]
+   }
+  }
+ },
+ "steam-1804270": {
+  "hltb": {
+   "at": "2026-11-08T12:07:16.724759+00:00",
+   "v": {
+    "comp": null,
+    "extra": 3.4,
+    "id": 94249,
+    "main": 1.3,
+    "title": "Swordship",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-11-08T12:04:20.909396+00:00",
+   "v": {
+    "genres": [
+     "Arcade"
+    ],
+    "reviews": 6,
+    "score": 77,
+    "slug": "swordship",
+    "title": "Swordship",
+    "user": 8,
+    "userCount": 4,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-11-08T12:04:26.363005+00:00",
+   "forced": 1804270,
+   "v": {
+    "appid": 1804270,
+    "name": "Swordship",
+    "neg": 10,
+    "owners": "0 .. 20,000",
+    "pos": 111,
+    "price": 19.99,
+    "publisher": "Thunderful Publishing",
+    "tags": [
+     "Arcade",
+     "Minimalist",
+     "Rogue-like",
+     "Shoot 'Em Up",
+     "Score Attack",
+     "Tactical",
+     "Action Roguelike",
+     "Bullet Hell",
+     "Stylized",
+     "Colorful",
+     "Top-Down",
+     "Futuristic",
+     "Sci-fi",
+     "Singleplayer",
+     "Real Time Tactics",
+     "Action",
+     "Cartoon",
+     "3D",
+     "Indie",
+     "Comic Book"
     ]
    }
   }
@@ -205423,8 +205547,7 @@
  },
  "steam-1879640": {
   "hltb": {
-   "at": "2026-11-07T11:58:58.553843+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:06:33.378920+00:00",
    "v": null
   },
   "mc": {
@@ -209045,6 +209168,48 @@
      "Great Soundtrack",
      "Gothic"
     ]
+   }
+  }
+ },
+ "steam-1910150": {
+  "hltb": {
+   "at": "2026-11-08T12:05:30.886073+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 175974,
+    "main": null,
+    "title": "Walk of Life",
+    "year": 2025
+   }
+  },
+  "mc": {
+   "at": "2026-11-08T12:04:17.930127+00:00",
+   "v": {
+    "genres": [
+     "Virtual Life"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "walk-of-life",
+    "title": "Walk of Life",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-08T12:04:19.679888+00:00",
+   "forced": 1910150,
+   "v": {
+    "appid": 1910150,
+    "name": "Walk of Life",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 19.99,
+    "publisher": "Porcelain Fortress",
+    "tags": []
    }
   }
  },
@@ -225279,7 +225444,7 @@
  },
  "steam-20540": {
   "hltb": {
-   "at": "2026-11-07T11:57:51.420030+00:00",
+   "at": "2026-11-08T12:05:56.131004+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -225427,6 +225592,69 @@
      "Experimental",
      "Music",
      "Indie"
+    ]
+   }
+  }
+ },
+ "steam-2055050": {
+  "hltb": {
+   "at": "2026-11-08T12:06:35.846650+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 140347,
+    "main": 20.7,
+    "title": "Cavalry Girls",
+    "year": 2023
+   }
+  },
+  "mc": {
+   "at": "2026-11-08T12:04:20.240917+00:00",
+   "v": {
+    "genres": [
+     "Top-Down Shoot-'Em-Up"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "cavalry-girls",
+    "title": "Cavalry Girls",
+    "user": null,
+    "userCount": 2,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-11-08T12:04:25.248647+00:00",
+   "forced": 2055050,
+   "v": {
+    "appid": 2055050,
+    "name": "Cavalry Girls",
+    "neg": 177,
+    "owners": "100,000 .. 200,000",
+    "pos": 1480,
+    "price": 15.99,
+    "publisher": "OKJOY",
+    "tags": [
+     "Top-Down Shooter",
+     "Mechs",
+     "Anime",
+     "Gun Customization",
+     "Shooter",
+     "Singleplayer",
+     "Female Protagonist",
+     "RTS",
+     "Tower Defense",
+     "Automation",
+     "Real Time Tactics",
+     "Arcade",
+     "JRPG",
+     "RPG",
+     "Dystopian ",
+     "2D",
+     "Co-op",
+     "Top-Down",
+     "Sci-fi",
+     "Strategy"
     ]
    }
   }
@@ -229302,8 +229530,7 @@
  },
  "steam-2077870": {
   "hltb": {
-   "at": "2026-11-07T11:54:48.791560+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:04:25.983845+00:00",
    "v": null
   },
   "mc": {
@@ -233935,8 +234162,7 @@
  },
  "steam-2110460": {
   "hltb": {
-   "at": "2026-11-07T11:54:29.547393+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:04:24.032435+00:00",
    "v": null
   },
   "mc": {
@@ -257720,8 +257946,7 @@
  },
  "steam-2302540": {
   "hltb": {
-   "at": "2026-11-07T11:54:27.660481+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:04:23.097337+00:00",
    "v": null
   },
   "mc": {
@@ -259982,8 +260207,7 @@
  },
  "steam-2320500": {
   "hltb": {
-   "at": "2026-11-07T11:59:17.858066+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:06:34.278323+00:00",
    "v": null
   },
   "mc": {
@@ -260666,7 +260890,8 @@
  },
  "steam-2327660": {
   "hltb": {
-   "at": "2026-10-27T10:44:06.305958+00:00",
+   "at": "2026-11-08T12:04:27.890814+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -266270,8 +266495,7 @@
  },
  "steam-2374000": {
   "hltb": {
-   "at": "2026-11-07T11:59:37.240208+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:06:35.397746+00:00",
    "v": null
   },
   "mc": {
@@ -284091,7 +284315,8 @@
  },
  "steam-2538910": {
   "hltb": {
-   "at": "2026-10-29T11:40:40.130174+00:00",
+   "at": "2026-11-08T12:05:36.638626+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -297907,8 +298132,7 @@
  },
  "steam-2695080": {
   "hltb": {
-   "at": "2026-11-07T11:56:14.592154+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:05:27.198307+00:00",
    "v": null
   },
   "mc": {
@@ -298255,8 +298479,7 @@
  },
  "steam-2697490": {
   "hltb": {
-   "at": "2026-11-07T11:58:29.233295+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:06:26.467688+00:00",
    "v": null
   },
   "mc": {
@@ -301667,8 +301890,7 @@
  },
  "steam-2729480": {
   "hltb": {
-   "at": "2026-11-07T11:58:09.979256+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:06:15.598605+00:00",
    "v": null
   },
   "mc": {
@@ -312728,8 +312950,7 @@
  },
  "steam-2834780": {
   "hltb": {
-   "at": "2026-11-07T11:57:22.005511+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:05:34.090443+00:00",
    "v": null
   },
   "mc": {
@@ -325454,7 +325675,7 @@
  },
  "steam-294540": {
   "hltb": {
-   "at": "2026-10-29T11:39:41.780987+00:00",
+   "at": "2026-11-08T12:05:29.286668+00:00",
    "v": null
   },
   "mc": {
@@ -327566,6 +327787,69 @@
      "Episodic",
      "Fishing",
      "Multiplayer"
+    ]
+   }
+  }
+ },
+ "steam-2961880": {
+  "hltb": {
+   "at": "2026-11-08T12:06:30.137385+00:00",
+   "v": {
+    "comp": 40.3,
+    "extra": null,
+    "id": 154167,
+    "main": 29.6,
+    "title": "Grocery Store Simulator",
+    "year": 2024
+   }
+  },
+  "mc": {
+   "at": "2026-11-08T12:04:19.702537+00:00",
+   "v": {
+    "genres": [
+     "Virtual Career"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "grocery-store-simulator",
+    "title": "Grocery Store Simulator",
+    "user": null,
+    "userCount": 0,
+    "year": 2097
+   }
+  },
+  "steam": {
+   "at": "2026-11-08T12:04:23.010675+00:00",
+   "forced": 2961880,
+   "v": {
+    "appid": 2961880,
+    "name": "Grocery Store Simulator",
+    "neg": 390,
+    "owners": "200,000 .. 500,000",
+    "pos": 5007,
+    "price": 14.99,
+    "publisher": "EXPERIMENT ONE",
+    "tags": [
+     "Online Co-Op",
+     "Multiplayer",
+     "Indie",
+     "First-Person",
+     "Simulation",
+     "Co-op",
+     "Inventory Management",
+     "Resource Management",
+     "Management",
+     "Economy",
+     "Singleplayer",
+     "Sandbox",
+     "Casual",
+     "Relaxing",
+     "Immersive Sim",
+     "Strategy",
+     "3D",
+     "Family Friendly",
+     "Choices Matter",
+     "Retro"
     ]
    }
   }
@@ -334151,9 +334435,15 @@
  },
  "steam-3024130": {
   "hltb": {
-   "at": "2026-11-07T11:59:37.183744+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-11-08T12:06:35.181211+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 193128,
+    "main": null,
+    "title": "PAO PAO",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-10-28T11:31:10.636777+00:00",
@@ -341355,7 +341645,7 @@
  },
  "steam-3088700": {
   "hltb": {
-   "at": "2026-11-07T11:55:55.358780+00:00",
+   "at": "2026-11-08T12:05:06.888253+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -345321,8 +345611,7 @@
  },
  "steam-3129930": {
   "hltb": {
-   "at": "2026-11-07T11:56:43.743306+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:05:30.983014+00:00",
    "v": null
   },
   "mc": {
@@ -348433,8 +348722,7 @@
  },
  "steam-3165500": {
   "hltb": {
-   "at": "2026-11-07T11:57:22.187098+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:05:34.824162+00:00",
    "v": null
   },
   "mc": {
@@ -354312,7 +354600,7 @@
  },
  "steam-3218580": {
   "hltb": {
-   "at": "2026-11-07T12:00:25.052893+00:00",
+   "at": "2026-11-08T12:06:37.794996+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -356398,6 +356686,42 @@
    }
   }
  },
+ "steam-3238580": {
+  "hltb": {
+   "at": "2026-11-08T12:04:46.447632+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-08T12:04:16.137378+00:00",
+   "v": {
+    "genres": [
+     "Management"
+    ],
+    "reviews": 23,
+    "score": 77,
+    "slug": "a-world-of-keflings",
+    "title": "A World of Keflings",
+    "user": 6.9,
+    "userCount": 40,
+    "year": 2010
+   }
+  },
+  "steam": {
+   "at": "2026-11-08T12:04:16.137962+00:00",
+   "forced": 3238580,
+   "v": {
+    "appid": 3238580,
+    "name": "A World of Keflings",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 11.99,
+    "publisher": "NinjaBee",
+    "tags": []
+   }
+  }
+ },
  "steam-3238670": {
   "hltb": {
    "at": "2026-10-26T13:31:29.543164+00:00",
@@ -358059,8 +358383,7 @@
  },
  "steam-3257150": {
   "hltb": {
-   "at": "2026-11-07T11:57:50.260034+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:06:29.392559+00:00",
    "v": null
   },
   "mc": {
@@ -365255,7 +365578,7 @@
  },
  "steam-3347620": {
   "hltb": {
-   "at": "2026-10-29T11:40:41.192347+00:00",
+   "at": "2026-11-08T12:06:29.212402+00:00",
    "v": null
   },
   "mc": {
@@ -367600,8 +367923,7 @@
  },
  "steam-3370100": {
   "hltb": {
-   "at": "2026-11-07T11:58:58.021736+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:06:33.071654+00:00",
    "v": null
   },
   "mc": {
@@ -371056,9 +371378,15 @@
  },
  "steam-3398110": {
   "hltb": {
-   "at": "2026-11-07T12:00:06.497228+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-11-08T12:06:37.115217+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 182889,
+    "main": null,
+    "title": "The Walking Trade",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-11-07T11:53:25.457242+00:00",
@@ -372170,8 +372498,7 @@
  },
  "steam-3406910": {
   "hltb": {
-   "at": "2026-11-07T12:00:24.996419+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:06:37.373544+00:00",
    "v": null
   },
   "mc": {
@@ -372363,7 +372690,7 @@
  },
  "steam-341000": {
   "hltb": {
-   "at": "2026-11-07T11:57:50.603982+00:00",
+   "at": "2026-11-08T12:05:55.643369+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -379931,8 +380258,7 @@
  },
  "steam-3491230": {
   "hltb": {
-   "at": "2026-11-07T11:57:22.632637+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:05:35.150087+00:00",
    "v": null
   },
   "mc": {
@@ -383964,7 +384290,7 @@
  },
  "steam-354680": {
   "hltb": {
-   "at": "2026-11-07T12:00:44.360347+00:00",
+   "at": "2026-11-08T12:06:38.307884+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -385220,7 +385546,8 @@
  },
  "steam-3562530": {
   "hltb": {
-   "at": "2026-10-29T11:41:38.785460+00:00",
+   "at": "2026-11-08T12:06:57.747281+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -385617,8 +385944,7 @@
  },
  "steam-3566070": {
   "hltb": {
-   "at": "2026-11-07T11:54:48.696164+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:04:25.062101+00:00",
    "v": null
   },
   "mc": {
@@ -386409,9 +386735,15 @@
  },
  "steam-3577020": {
   "hltb": {
-   "at": "2026-11-07T11:57:02.780071+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
-   "v": null
+   "at": "2026-11-08T12:05:31.788018+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 193547,
+    "main": 4.0,
+    "title": "Clean Start",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-11-07T11:53:15.534122+00:00",
@@ -387174,7 +387506,8 @@
  },
  "steam-358360": {
   "hltb": {
-   "at": "2026-10-29T11:40:41.515445+00:00",
+   "at": "2026-11-08T12:05:36.925274+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -387303,8 +387636,7 @@
  },
  "steam-3583970": {
   "hltb": {
-   "at": "2026-11-07T11:55:56.154960+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:05:26.342170+00:00",
    "v": null
   },
   "mc": {
@@ -390428,8 +390760,7 @@
  },
  "steam-3619760": {
   "hltb": {
-   "at": "2026-11-07T11:57:02.977811+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:05:33.161486+00:00",
    "v": null
   },
   "mc": {
@@ -390618,8 +390949,7 @@
  },
  "steam-3620740": {
   "hltb": {
-   "at": "2026-11-07T11:56:44.201118+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:05:32.955164+00:00",
    "v": null
   },
   "mc": {
@@ -395167,8 +395497,7 @@
  },
  "steam-3676850": {
   "hltb": {
-   "at": "2026-11-07T11:58:29.278728+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:06:27.365415+00:00",
    "v": null
   },
   "mc": {
@@ -397782,7 +398111,7 @@
  },
  "steam-3709650": {
   "hltb": {
-   "at": "2026-10-29T11:41:37.932024+00:00",
+   "at": "2026-11-08T12:06:36.132794+00:00",
    "v": null
   },
   "mc": {
@@ -403173,8 +403502,7 @@
  },
  "steam-3794270": {
   "hltb": {
-   "at": "2026-11-07T11:59:17.283291+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:06:33.965458+00:00",
    "v": null
   },
   "mc": {
@@ -405428,6 +405756,30 @@
    }
   }
  },
+ "steam-3826290": {
+  "hltb": {
+   "at": "2026-11-08T12:05:29.452044+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-08T12:04:17.427938+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-11-08T12:04:18.555187+00:00",
+   "forced": 3826290,
+   "v": {
+    "appid": 3826290,
+    "name": "",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
  "steam-3826670": {
   "hltb": {
    "at": "2026-10-26T13:14:22.935078+00:00",
@@ -406152,8 +406504,7 @@
  },
  "steam-3834120": {
   "hltb": {
-   "at": "2026-11-07T11:55:08.328938+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:04:26.904621+00:00",
    "v": null
   },
   "mc": {
@@ -408433,7 +408784,7 @@
  },
  "steam-3864530": {
   "hltb": {
-   "at": "2026-11-07T11:55:36.147469+00:00",
+   "at": "2026-11-08T12:04:47.430470+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -420283,8 +420634,7 @@
  },
  "steam-403430": {
   "hltb": {
-   "at": "2026-11-07T11:58:10.608573+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:06:15.738464+00:00",
    "v": null
   },
   "mc": {
@@ -426374,8 +426724,7 @@
  },
  "steam-4152310": {
   "hltb": {
-   "at": "2026-11-07T11:56:15.382073+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:05:28.180335+00:00",
    "v": null
   },
   "mc": {
@@ -426662,8 +427011,7 @@
  },
  "steam-4158400": {
   "hltb": {
-   "at": "2026-11-07T11:54:29.399146+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:04:23.951680+00:00",
    "v": null
   },
   "mc": {
@@ -431486,7 +431834,8 @@
  },
  "steam-4251070": {
   "hltb": {
-   "at": "2026-10-29T11:39:36.652184+00:00",
+   "at": "2026-11-08T12:04:27.029320+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -432163,8 +432512,7 @@
  },
  "steam-4264230": {
   "hltb": {
-   "at": "2026-11-07T11:55:08.385546+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:04:26.978417+00:00",
    "v": null
   },
   "mc": {
@@ -433331,8 +433679,7 @@
  },
  "steam-4286410": {
   "hltb": {
-   "at": "2026-11-07T11:56:15.817692+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:05:28.659982+00:00",
    "v": null
   },
   "mc": {
@@ -433356,8 +433703,15 @@
  },
  "steam-4287040": {
   "hltb": {
-   "at": "2026-10-29T11:40:24.814543+00:00",
-   "v": null
+   "at": "2026-11-08T12:05:36.023592+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 193134,
+    "main": null,
+    "title": "Vampy's Big Day",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-10-29T11:39:36.135819+00:00",
@@ -435393,6 +435747,41 @@
    }
   }
  },
+ "steam-4318080": {
+  "hltb": {
+   "at": "2026-11-08T12:05:26.265516+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-08T12:04:16.139127+00:00",
+   "v": {
+    "genres": [
+     "FPS"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "alteredblood-plus-ab-plus-",
+    "title": "ALTEREDBLOOD+ [AB+]",
+    "user": null,
+    "userCount": 0,
+    "year": 2097
+   }
+  },
+  "steam": {
+   "at": "2026-11-08T12:04:17.436577+00:00",
+   "forced": 4318080,
+   "v": {
+    "appid": 4318080,
+    "name": "",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
  "steam-4319350": {
   "hltb": {
    "at": "2026-10-23T16:47:07.447995+00:00",
@@ -437151,7 +437540,7 @@
  },
  "steam-4356780": {
   "hltb": {
-   "at": "2026-10-29T11:40:39.188993+00:00",
+   "at": "2026-11-08T12:06:28.263429+00:00",
    "v": null
   },
   "mc": {
@@ -439099,7 +439488,7 @@
  },
  "steam-440550": {
   "hltb": {
-   "at": "2026-11-07T12:00:45.001130+00:00",
+   "at": "2026-11-08T12:06:57.585371+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -439989,7 +440378,8 @@
  },
  "steam-4429430": {
   "hltb": {
-   "at": "2026-10-29T11:39:38.375771+00:00",
+   "at": "2026-11-08T12:04:27.856869+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -441631,7 +442021,7 @@
  },
  "steam-447800": {
   "hltb": {
-   "at": "2026-11-07T12:00:44.402876+00:00",
+   "at": "2026-11-08T12:06:57.284074+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -445633,8 +446023,7 @@
  },
  "steam-4580600": {
   "hltb": {
-   "at": "2026-11-07T11:58:57.687674+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:06:31.596940+00:00",
    "v": null
   },
   "mc": {
@@ -448734,7 +449123,7 @@
  },
  "steam-466810": {
   "hltb": {
-   "at": "2026-11-07T11:55:37.347630+00:00",
+   "at": "2026-11-08T12:05:06.823050+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -448778,7 +449167,7 @@
  },
  "steam-4668890": {
   "hltb": {
-   "at": "2026-10-29T11:40:37.140802+00:00",
+   "at": "2026-11-08T12:05:35.723846+00:00",
    "v": null
   },
   "mc": {
@@ -450292,7 +450681,7 @@
  },
  "steam-4740420": {
   "hltb": {
-   "at": "2026-10-29T11:40:24.600559+00:00",
+   "at": "2026-11-08T12:05:31.682339+00:00",
    "v": null
   },
   "mc": {
@@ -457851,7 +458240,7 @@
  },
  "steam-5013160": {
   "hltb": {
-   "at": "2026-10-29T11:40:40.009233+00:00",
+   "at": "2026-11-08T12:05:32.037507+00:00",
    "v": null
   },
   "mc": {
@@ -458478,7 +458867,7 @@
    }
   },
   "mc": {
-   "at": "2026-10-29T11:39:40.156723+00:00",
+   "at": "2026-11-08T12:04:18.301518+00:00",
    "v": null
   },
   "steam": {
@@ -460244,6 +460633,62 @@
    }
   }
  },
+ "steam-512790": {
+  "hltb": {
+   "at": "2026-11-08T12:06:31.103868+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-08T12:04:20.031378+00:00",
+   "v": {
+    "genres": [
+     "First-Person Adventure"
+    ],
+    "reviews": 5,
+    "score": 83,
+    "slug": "quern-undying-thoughts",
+    "title": "Quern - Undying Thoughts",
+    "user": 8.4,
+    "userCount": 45,
+    "year": 2016
+   }
+  },
+  "steam": {
+   "at": "2026-11-08T12:04:24.105638+00:00",
+   "forced": 512790,
+   "v": {
+    "appid": 512790,
+    "name": "Quern - Undying Thoughts",
+    "neg": 296,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 3248,
+    "price": 24.99,
+    "publisher": "Blue Brain Games, Zadbox Entertainment",
+    "tags": [
+     "Adventure",
+     "Puzzle",
+     "Mystery",
+     "Atmospheric",
+     "Exploration",
+     "Walking Simulator",
+     "Singleplayer",
+     "First-Person",
+     "Story Rich",
+     "Narration",
+     "3D",
+     "Investigation",
+     "Soundtrack",
+     "Cinematic",
+     "Relaxing",
+     "Steampunk",
+     "Surreal",
+     "Drama",
+     "Point & Click",
+     "Open World"
+    ]
+   }
+  }
+ },
  "steam-512890": {
   "hltb": {
    "at": "2026-10-26T12:52:40.657763+00:00",
@@ -461718,6 +462163,48 @@
    }
   }
  },
+ "steam-5190030": {
+  "hltb": {
+   "at": "2026-11-08T12:05:25.256611+00:00",
+   "v": {
+    "comp": null,
+    "extra": 1.4,
+    "id": 192729,
+    "main": null,
+    "title": "Tidy Up the Town",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-11-08T12:04:16.138885+00:00",
+   "v": {
+    "genres": [
+     "Simulation"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "tidy-up-the-town",
+    "title": "Tidy Up the Town",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-08T12:04:16.323272+00:00",
+   "forced": 5190030,
+   "v": {
+    "appid": 5190030,
+    "name": null,
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
  "steam-5190580": {
   "hltb": {
    "at": "2026-11-06T13:08:02.936395+00:00",
@@ -462335,8 +462822,7 @@
  },
  "steam-5220090": {
   "hltb": {
-   "at": "2026-11-07T11:57:03.407067+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:05:33.166896+00:00",
    "v": null
   },
   "mc": {
@@ -464828,6 +465314,41 @@
    }
   }
  },
+ "steam-5335850": {
+  "hltb": {
+   "at": "2026-11-08T12:07:17.077084+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-08T12:04:21.780585+00:00",
+   "v": {
+    "genres": [
+     "RPG"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "idle-abyss-princesses",
+    "title": "Idle Abyss Princesses",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-08T12:04:27.455179+00:00",
+   "forced": 5335850,
+   "v": {
+    "appid": 5335850,
+    "name": "Idle Abyss Princesses",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 5.99,
+    "publisher": "Mirako",
+    "tags": []
+   }
+  }
+ },
  "steam-533780": {
   "hltb": {
    "at": "2026-10-23T12:31:13.258844+00:00",
@@ -465095,8 +465616,15 @@
  },
  "steam-5356470": {
   "hltb": {
-   "at": "2026-10-29T11:39:35.673164+00:00",
-   "v": null
+   "at": "2026-11-08T12:04:24.995972+00:00",
+   "v": {
+    "comp": 1.4,
+    "extra": 1.1,
+    "id": 193109,
+    "main": 0.6,
+    "title": "Playable Archive",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-10-29T11:39:32.592902+00:00",
@@ -465245,8 +465773,7 @@
  },
  "steam-5372440": {
   "hltb": {
-   "at": "2026-11-07T11:54:47.795955+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-08T12:04:25.030574+00:00",
    "v": null
   },
   "mc": {
@@ -475489,6 +476016,58 @@
      "Anime",
      "Survival",
      "Psychological Horror"
+    ]
+   }
+  }
+ },
+ "steam-591630": {
+  "hltb": {
+   "at": "2026-11-08T12:05:56.351309+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-08T12:04:18.245936+00:00",
+   "v": {
+    "genres": [
+     "3D Platformer"
+    ],
+    "reviews": 13,
+    "score": 78,
+    "slug": "candleman",
+    "title": "Candleman",
+    "user": 7.1,
+    "userCount": 39,
+    "year": 2017
+   }
+  },
+  "steam": {
+   "at": "2026-11-08T12:04:21.871378+00:00",
+   "forced": 591630,
+   "v": {
+    "appid": 591630,
+    "name": "Candleman: The Complete Journey",
+    "neg": 94,
+    "owners": "20,000 .. 50,000",
+    "pos": 1126,
+    "price": 14.99,
+    "publisher": "Candleman Games",
+    "tags": [
+     "Action",
+     "Indie",
+     "Adventure",
+     "RPG",
+     "Puzzle",
+     "Platformer",
+     "Story Rich",
+     "Drama",
+     "3D Platformer",
+     "Linear",
+     "Singleplayer",
+     "Atmospheric",
+     "Puzzle-Platformer",
+     "Horror",
+     "Dark"
     ]
    }
   }
@@ -511179,6 +511758,63 @@
      "RPG",
      "Economy",
      "Space"
+    ]
+   }
+  }
+ },
+ "steam-829660": {
+  "hltb": {
+   "at": "2026-11-08T12:05:36.145151+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-08T12:04:18.107792+00:00",
+   "v": {
+    "genres": [
+     "Board"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "no-time-to-relax",
+    "title": "No Time to Relax",
+    "user": 7.8,
+    "userCount": 5,
+    "year": 2019
+   }
+  },
+  "steam": {
+   "at": "2026-11-08T12:04:20.781333+00:00",
+   "forced": 829660,
+   "v": {
+    "appid": 829660,
+    "name": "No Time to Relax",
+    "neg": 189,
+    "owners": "200,000 .. 500,000",
+    "pos": 2195,
+    "price": 13.99,
+    "publisher": "Porcelain Fortress",
+    "tags": [
+     "Multiplayer",
+     "4 Player Local",
+     "Board Game",
+     "Funny",
+     "Casual",
+     "Simulation",
+     "Strategy",
+     "Local Multiplayer",
+     "Indie",
+     "Singleplayer",
+     "Controller",
+     "2D",
+     "Cute",
+     "Relaxing",
+     "Strategy RPG",
+     "Cartoony",
+     "Time Management",
+     "Tabletop",
+     "Turn-Based Strategy",
+     "Colorful"
     ]
    }
   }
