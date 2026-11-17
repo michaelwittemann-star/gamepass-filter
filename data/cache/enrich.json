@@ -4500,6 +4500,40 @@
    }
   }
  },
+ "9N3P3TRJGWV0": {
+  "hltb": {
+   "at": "2026-11-17T14:33:54.705043+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:33:54.704386+00:00",
+   "v": {
+    "genres": [
+     "Open-World Action"
+    ],
+    "reviews": 4,
+    "score": 76,
+    "slug": "paw-patrol-dino-world",
+    "title": "PAW Patrol: Dino World",
+    "user": 5.6,
+    "userCount": 5,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:33:54.705349+00:00",
+   "v": {
+    "appid": 3525790,
+    "name": "PAW Patrol™: Dino World",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 39.99,
+    "publisher": "Outright Games Ltd.",
+    "tags": []
+   }
+  }
+ },
  "9N42CT1J5WGW": {
   "hltb": {
    "at": "2026-10-15T13:32:14.429977+00:00",
@@ -26738,8 +26772,7 @@
  },
  "9PDGC1Z6ZHTP": {
   "hltb": {
-   "at": "2026-11-16T13:47:56.443403+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:33:54.706019+00:00",
    "v": null
   },
   "mc": {
@@ -28247,8 +28280,7 @@
  },
  "9PHPDGTRVGGL": {
   "hltb": {
-   "at": "2026-11-16T13:47:56.730230+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:33:54.706277+00:00",
    "v": null
   },
   "mc": {
@@ -28303,7 +28335,7 @@
  },
  "9PHR6KG3D1RQ": {
   "hltb": {
-   "at": "2026-11-07T11:53:11.384099+00:00",
+   "at": "2026-11-17T14:33:56.597900+00:00",
    "v": null
   },
   "mc": {
@@ -28593,8 +28625,7 @@
  },
  "9PJBKF27C16M": {
   "hltb": {
-   "at": "2026-11-16T13:47:57.323473+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:33:56.751896+00:00",
    "v": null
   },
   "mc": {
@@ -29273,7 +29304,7 @@
  },
  "9PK7TLLPD7GV": {
   "hltb": {
-   "at": "2026-11-07T11:53:11.384342+00:00",
+   "at": "2026-11-17T14:33:57.607017+00:00",
    "v": null
   },
   "mc": {
@@ -29782,7 +29813,7 @@
  },
  "9PL89B9HCZ9W": {
   "hltb": {
-   "at": "2026-11-07T11:53:12.979225+00:00",
+   "at": "2026-11-17T14:33:57.715444+00:00",
    "v": null
   },
   "mc": {
@@ -29951,7 +29982,7 @@
  },
  "9PLFD17M47K3": {
   "hltb": {
-   "at": "2026-11-07T11:53:13.058569+00:00",
+   "at": "2026-11-17T14:33:57.975881+00:00",
    "v": null
   },
   "mc": {
@@ -30553,7 +30584,7 @@
  },
  "9PMQDM08SNK9": {
   "hltb": {
-   "at": "2026-11-07T11:53:14.170107+00:00",
+   "at": "2026-11-17T14:33:58.690790+00:00",
    "v": null
   },
   "mc": {
@@ -30637,7 +30668,7 @@
  },
  "9PMXPQ307Z5P": {
   "hltb": {
-   "at": "2026-11-07T11:53:14.284189+00:00",
+   "at": "2026-11-17T14:33:58.945947+00:00",
    "v": null
   },
   "mc": {
@@ -32273,7 +32304,7 @@
  },
  "BPBV3PCB0X44": {
   "hltb": {
-   "at": "2026-11-07T11:53:14.450190+00:00",
+   "at": "2026-11-17T14:33:59.727711+00:00",
    "v": null
   },
   "mc": {
@@ -32319,7 +32350,7 @@
  },
  "BPL68T0XK96W": {
   "hltb": {
-   "at": "2026-11-07T11:53:15.187779+00:00",
+   "at": "2026-11-17T14:33:59.909976+00:00",
    "v": null
   },
   "mc": {
@@ -32799,7 +32830,7 @@
  },
  "BQ192SFB694X": {
   "hltb": {
-   "at": "2026-11-07T11:53:15.494178+00:00",
+   "at": "2026-11-17T14:34:00.951158+00:00",
    "v": null
   },
   "mc": {
@@ -33994,8 +34025,7 @@
  },
  "BRGPD72KHM3Q": {
   "hltb": {
-   "at": "2026-11-16T13:48:16.646903+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:34:01.941812+00:00",
    "v": null
   },
   "mc": {
@@ -34050,8 +34080,7 @@
  },
  "BRJLJ6RPLQTJ": {
   "hltb": {
-   "at": "2026-11-16T13:48:16.889202+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:34:02.907428+00:00",
    "v": null
   },
   "mc": {
@@ -34604,7 +34633,7 @@
  },
  "BRT1K9FV4LRR": {
   "hltb": {
-   "at": "2026-11-07T11:53:16.041006+00:00",
+   "at": "2026-11-17T14:34:03.875155+00:00",
    "v": null
   },
   "mc": {
@@ -36573,7 +36602,7 @@
  },
  "BV2ZVP7PJZWL": {
   "hltb": {
-   "at": "2026-11-07T11:53:16.289048+00:00",
+   "at": "2026-11-17T14:34:04.245392+00:00",
    "v": null
   },
   "mc": {
@@ -36711,7 +36740,7 @@
  },
  "BV83SM3191S5": {
   "hltb": {
-   "at": "2026-11-07T11:53:16.371247+00:00",
+   "at": "2026-11-17T14:34:04.387140+00:00",
    "v": null
   },
   "mc": {
@@ -37005,7 +37034,7 @@
  },
  "BVQ3V30ZXVT5": {
   "hltb": {
-   "at": "2026-11-07T11:53:16.918087+00:00",
+   "at": "2026-11-17T14:34:04.839363+00:00",
    "v": null
   },
   "mc": {
@@ -37126,7 +37155,7 @@
  },
  "BW3T6SNS15BH": {
   "hltb": {
-   "at": "2026-11-07T11:53:17.167903+00:00",
+   "at": "2026-11-17T14:34:05.211928+00:00",
    "v": null
   },
   "mc": {
@@ -37533,7 +37562,7 @@
  },
  "BWT5L9P3L60X": {
   "hltb": {
-   "at": "2026-11-07T11:53:17.231992+00:00",
+   "at": "2026-11-17T14:34:08.864486+00:00",
    "v": null
   },
   "mc": {
@@ -37838,8 +37867,7 @@
  },
  "BX8FPDDRCLWT": {
   "hltb": {
-   "at": "2026-11-16T13:48:17.337436+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:34:08.900137+00:00",
    "v": null
   },
   "mc": {
@@ -45739,7 +45767,7 @@
  },
  "luna-B0CXG1X89Z": {
   "hltb": {
-   "at": "2026-11-07T11:53:17.398459+00:00",
+   "at": "2026-11-17T14:34:09.700910+00:00",
    "v": null
   },
   "mc": {
@@ -46100,7 +46128,7 @@
  },
  "luna-B0DBPKQ68Y": {
   "hltb": {
-   "at": "2026-11-07T11:53:19.008439+00:00",
+   "at": "2026-11-17T14:34:13.536939+00:00",
    "v": null
   },
   "mc": {
@@ -47254,7 +47282,7 @@
  },
  "luna-B0FJL4V43D": {
   "hltb": {
-   "at": "2026-11-16T13:48:59.182525+00:00",
+   "at": "2026-11-17T14:34:19.048907+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -47562,7 +47590,7 @@
  },
  "luna-B0FPTM87HH": {
   "hltb": {
-   "at": "2026-11-07T11:53:18.155621+00:00",
+   "at": "2026-11-17T14:34:11.598419+00:00",
    "v": null
   },
   "mc": {
@@ -47649,7 +47677,7 @@
  },
  "luna-B0FQP5TXPK": {
   "hltb": {
-   "at": "2026-11-07T11:53:19.982040+00:00",
+   "at": "2026-11-17T14:34:18.051800+00:00",
    "v": null
   },
   "mc": {
@@ -48697,7 +48725,7 @@
  },
  "luna-B0GFW2CQHT": {
   "hltb": {
-   "at": "2026-11-07T11:53:18.106604+00:00",
+   "at": "2026-11-17T14:34:10.650663+00:00",
    "v": null
   },
   "mc": {
@@ -48805,7 +48833,7 @@
  },
  "luna-B0GSSC24F7": {
   "hltb": {
-   "at": "2026-11-07T11:53:19.893766+00:00",
+   "at": "2026-11-17T14:34:17.010905+00:00",
    "v": null
   },
   "mc": {
@@ -48830,7 +48858,8 @@
  },
  "luna-B0GTRYV4BD": {
   "hltb": {
-   "at": "2026-11-07T11:53:19.500114+00:00",
+   "at": "2026-11-17T14:34:14.374069+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -49242,7 +49271,7 @@
  },
  "luna-B0HMJMGD9L": {
   "hltb": {
-   "at": "2026-11-07T11:53:18.262576+00:00",
+   "at": "2026-11-17T14:34:13.448379+00:00",
    "v": null
   },
   "mc": {
@@ -51186,7 +51215,8 @@
  },
  "nf-81677232": {
   "hltb": {
-   "at": "2026-11-07T11:53:20.361261+00:00",
+   "at": "2026-11-17T14:34:33.924175+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -51833,8 +51863,7 @@
  },
  "nf-81770857": {
   "hltb": {
-   "at": "2026-11-16T13:49:19.473190+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:34:53.555566+00:00",
    "v": null
   },
   "mc": {
@@ -52101,7 +52130,7 @@
  },
  "nf-81946667": {
   "hltb": {
-   "at": "2026-11-16T13:49:00.921827+00:00",
+   "at": "2026-11-17T14:34:42.118446+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -52288,8 +52317,7 @@
  },
  "nf-82041758": {
   "hltb": {
-   "at": "2026-11-16T13:49:20.952298+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:34:59.826822+00:00",
    "v": null
   },
   "mc": {
@@ -52317,7 +52345,7 @@
  },
  "nf-82050895": {
   "hltb": {
-   "at": "2026-11-16T13:49:00.786719+00:00",
+   "at": "2026-11-17T14:34:22.604706+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -52332,8 +52360,7 @@
  },
  "nf-82071014": {
   "hltb": {
-   "at": "2026-11-16T13:49:20.807660+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:34:58.370682+00:00",
    "v": null
   },
   "mc": {
@@ -52347,7 +52374,8 @@
  },
  "nf-82089527": {
   "hltb": {
-   "at": "2026-11-07T11:53:20.852244+00:00",
+   "at": "2026-11-17T14:34:38.698529+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -60092,8 +60120,7 @@
  },
  "ps-10004604": {
   "hltb": {
-   "at": "2026-11-16T13:50:04.576817+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:35:14.764200+00:00",
    "v": null
   },
   "mc": {
@@ -62571,7 +62598,8 @@
  },
  "ps-10006482": {
   "hltb": {
-   "at": "2026-11-07T11:54:24.601049+00:00",
+   "at": "2026-11-17T14:35:08.164902+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -62916,7 +62944,7 @@
  },
  "ps-10007237": {
   "hltb": {
-   "at": "2026-11-16T13:50:25.234027+00:00",
+   "at": "2026-11-17T14:35:19.236677+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -63508,7 +63536,7 @@
  },
  "ps-10007630": {
   "hltb": {
-   "at": "2026-11-07T11:54:25.677212+00:00",
+   "at": "2026-11-17T14:35:10.840610+00:00",
    "v": null
   },
   "mc": {
@@ -63533,7 +63561,7 @@
  },
  "ps-10007632": {
   "hltb": {
-   "at": "2026-11-07T11:54:25.806260+00:00",
+   "at": "2026-11-17T14:35:11.775861+00:00",
    "v": null
   },
   "mc": {
@@ -65010,7 +65038,8 @@
  },
  "ps-10008667": {
   "hltb": {
-   "at": "2026-11-07T11:54:26.648701+00:00",
+   "at": "2026-11-17T14:35:27.681982+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -65613,7 +65642,7 @@
  },
  "ps-10009028": {
   "hltb": {
-   "at": "2026-11-07T11:54:21.106586+00:00",
+   "at": "2026-11-17T14:35:02.840456+00:00",
    "v": null
   },
   "mc": {
@@ -67557,7 +67586,7 @@
  },
  "ps-10011762": {
   "hltb": {
-   "at": "2026-11-07T11:54:23.511445+00:00",
+   "at": "2026-11-17T14:35:07.594923+00:00",
    "v": null
   },
   "mc": {
@@ -68835,8 +68864,7 @@
  },
  "ps-10017591": {
   "hltb": {
-   "at": "2026-11-16T13:50:24.344301+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:35:17.958266+00:00",
    "v": null
   },
   "mc": {
@@ -72201,8 +72229,7 @@
  },
  "ps-205132": {
   "hltb": {
-   "at": "2026-11-16T13:50:04.357627+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:35:04.455903+00:00",
    "v": null
   },
   "mc": {
@@ -72662,7 +72689,7 @@
  },
  "ps-205867": {
   "hltb": {
-   "at": "2026-11-07T11:54:18.887947+00:00",
+   "at": "2026-11-17T14:35:00.887912+00:00",
    "v": null
   },
   "mc": {
@@ -72773,7 +72800,7 @@
  },
  "ps-206958": {
   "hltb": {
-   "at": "2026-11-07T11:54:25.486320+00:00",
+   "at": "2026-11-17T14:35:09.876631+00:00",
    "v": null
   },
   "mc": {
@@ -72787,8 +72814,7 @@
  },
  "ps-207034": {
   "hltb": {
-   "at": "2026-11-16T13:50:05.204202+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:35:16.973440+00:00",
    "v": null
   },
   "mc": {
@@ -73063,7 +73089,7 @@
  },
  "ps-212280": {
   "hltb": {
-   "at": "2026-11-07T11:54:19.586962+00:00",
+   "at": "2026-11-17T14:35:00.986827+00:00",
    "v": null
   },
   "mc": {
@@ -75476,7 +75502,7 @@
  },
  "ps-222943": {
   "hltb": {
-   "at": "2026-11-07T11:54:24.791113+00:00",
+   "at": "2026-11-17T14:35:08.789863+00:00",
    "v": null
   },
   "mc": {
@@ -75501,7 +75527,7 @@
  },
  "ps-222944": {
   "hltb": {
-   "at": "2026-11-07T11:54:24.979808+00:00",
+   "at": "2026-11-17T14:35:09.304447+00:00",
    "v": null
   },
   "mc": {
@@ -76115,7 +76141,7 @@
  },
  "ps-225519": {
   "hltb": {
-   "at": "2026-11-07T11:54:20.244492+00:00",
+   "at": "2026-11-17T14:35:01.778899+00:00",
    "v": null
   },
   "mc": {
@@ -77092,7 +77118,7 @@
  },
  "ps-228618": {
   "hltb": {
-   "at": "2026-11-16T13:50:24.559600+00:00",
+   "at": "2026-11-17T14:35:18.897784+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -78077,7 +78103,7 @@
  },
  "ps-229533": {
   "hltb": {
-   "at": "2026-11-07T11:54:23.282700+00:00",
+   "at": "2026-11-17T14:35:05.438180+00:00",
    "v": null
   },
   "mc": {
@@ -79002,7 +79028,7 @@
  },
  "ps-231136": {
   "hltb": {
-   "at": "2026-11-07T11:54:21.013747+00:00",
+   "at": "2026-11-17T14:35:02.742688+00:00",
    "v": null
   },
   "mc": {
@@ -80191,7 +80217,7 @@
  },
  "ps-232391": {
   "hltb": {
-   "at": "2026-11-07T11:54:22.655782+00:00",
+   "at": "2026-11-17T14:35:03.939189+00:00",
    "v": null
   },
   "mc": {
@@ -81832,7 +81858,7 @@
  },
  "ps-233592": {
   "hltb": {
-   "at": "2026-11-07T11:54:21.326011+00:00",
+   "at": "2026-11-17T14:35:02.957683+00:00",
    "v": null
   },
   "mc": {
@@ -82032,7 +82058,7 @@
  },
  "ps-233883": {
   "hltb": {
-   "at": "2026-11-07T11:54:26.528612+00:00",
+   "at": "2026-11-17T14:35:13.825477+00:00",
    "v": null
   },
   "mc": {
@@ -82046,7 +82072,7 @@
  },
  "ps-233884": {
   "hltb": {
-   "at": "2026-11-07T11:54:26.380071+00:00",
+   "at": "2026-11-17T14:35:12.873249+00:00",
    "v": null
   },
   "mc": {
@@ -83692,7 +83718,7 @@
  },
  "ps-234709": {
   "hltb": {
-   "at": "2026-11-07T11:54:23.082351+00:00",
+   "at": "2026-11-17T14:35:04.746834+00:00",
    "v": null
   },
   "mc": {
@@ -90556,6 +90582,58 @@
    }
   }
  },
+ "steam-10500": {
+  "hltb": {
+   "at": "2026-11-17T14:41:27.282569+00:00",
+   "v": {
+    "comp": 217.3,
+    "extra": 140.7,
+    "id": 116323,
+    "main": 60.0,
+    "title": "Total War: Empire - Definitive Edition",
+    "year": 2009
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:25.959063+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:03.696476+00:00",
+   "forced": 10500,
+   "v": {
+    "appid": 10500,
+    "name": "Total War: EMPIRE – Definitive Edition",
+    "neg": 2265,
+    "owners": "2,000,000 .. 5,000,000",
+    "pos": 19254,
+    "price": 19.99,
+    "publisher": "SEGA, Feral Interactive (Mac), Feral Interactive (Linux)",
+    "tags": [
+     "Strategy",
+     "Historical",
+     "Military",
+     "Grand Strategy",
+     "Turn-Based Strategy",
+     "War",
+     "Tactical",
+     "RTS",
+     "Multiplayer",
+     "Singleplayer",
+     "Turn-Based",
+     "Naval",
+     "Real Time Tactics",
+     "Action",
+     "Great Soundtrack",
+     "Turn-Based Tactics",
+     "Atmospheric",
+     "Classic",
+     "Adventure",
+     "Violent"
+    ]
+   }
+  }
+ },
  "steam-105000": {
   "hltb": {
    "at": "2026-10-23T12:37:32.726476+00:00",
@@ -90619,7 +90697,7 @@
  },
  "steam-1051290": {
   "hltb": {
-   "at": "2026-11-07T11:58:54.793389+00:00",
+   "at": "2026-11-17T14:41:20.481318+00:00",
    "v": null
   },
   "mc": {
@@ -95309,7 +95387,7 @@
  },
  "steam-1076500": {
   "hltb": {
-   "at": "2026-11-07T11:55:28.563036+00:00",
+   "at": "2026-11-17T14:36:16.525502+00:00",
    "v": null
   },
   "mc": {
@@ -95365,8 +95443,7 @@
  },
  "steam-1076550": {
   "hltb": {
-   "at": "2026-11-16T14:02:01.660826+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:41:10.538978+00:00",
    "v": null
   },
   "mc": {
@@ -95395,6 +95472,69 @@
      "Classic",
      "Pixel Graphics",
      "Retro"
+    ]
+   }
+  }
+ },
+ "steam-1076620": {
+  "hltb": {
+   "at": "2026-11-17T14:37:23.917010+00:00",
+   "v": {
+    "comp": 3.1,
+    "extra": 2.5,
+    "id": 96547,
+    "main": 2.0,
+    "title": "Svoboda 1945: Liberation",
+    "year": 2021
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:33:59.807996+00:00",
+   "v": {
+    "genres": [
+     "Visual Novel"
+    ],
+    "reviews": 5,
+    "score": 81,
+    "slug": "svoboda-1945",
+    "title": "Svoboda 1945",
+    "user": null,
+    "userCount": 2,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:04.867934+00:00",
+   "forced": 1076620,
+   "v": {
+    "appid": 1076620,
+    "name": "Svoboda 1945: Liberation",
+    "neg": 2,
+    "owners": "20,000 .. 50,000",
+    "pos": 166,
+    "price": 15.99,
+    "publisher": "Charles Games",
+    "tags": [
+     "Singleplayer",
+     "Visual Novel",
+     "Emotional",
+     "Adventure",
+     "Historical",
+     "World War II",
+     "Choices Matter",
+     "War",
+     "Cinematic",
+     "Conversation",
+     "Story Rich",
+     "Realistic",
+     "FMV",
+     "Choose Your Own Adventure",
+     "Drama",
+     "Atmospheric",
+     "Hand-drawn",
+     "Investigation",
+     "Narrative",
+     "Multiple Endings"
     ]
    }
   }
@@ -99654,6 +99794,56 @@
    }
   }
  },
+ "steam-1100420": {
+  "hltb": {
+   "at": "2026-11-17T14:40:07.307617+00:00",
+   "v": {
+    "comp": 36.7,
+    "extra": 26.9,
+    "id": 7268,
+    "main": 17.2,
+    "title": "Praetorians",
+    "year": 2003
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:14.168188+00:00",
+   "v": {
+    "genres": [
+     "Real-Time Strategy"
+    ],
+    "reviews": 8,
+    "score": 56,
+    "slug": "praetorians-hd-remaster",
+    "title": "Praetorians HD Remaster",
+    "user": 7.5,
+    "userCount": 15,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:36.005904+00:00",
+   "forced": 1100420,
+   "v": {
+    "appid": 1100420,
+    "name": "Praetorians - HD Remaster",
+    "neg": 85,
+    "owners": "50,000 .. 100,000",
+    "pos": 900,
+    "price": 19.99,
+    "publisher": "Kalypso Media",
+    "tags": [
+     "Strategy",
+     "RTS",
+     "Old School",
+     "Real Time Tactics",
+     "Multiplayer",
+     "Rome",
+     "Historical"
+    ]
+   }
+  }
+ },
  "steam-1100990": {
   "hltb": {
    "at": "2026-10-26T13:03:11.436567+00:00",
@@ -100386,6 +100576,118 @@
    }
   }
  },
+ "steam-1105500": {
+  "hltb": {
+   "at": "2026-11-17T14:40:30.580560+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:18.741213+00:00",
+   "v": {
+    "genres": [
+     "Open-World Action"
+    ],
+    "reviews": 8,
+    "score": 78,
+    "slug": "yakuza-4-remastered",
+    "title": "Yakuza 4 Remastered",
+    "user": 7.4,
+    "userCount": 231,
+    "year": 2019
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:47.149297+00:00",
+   "forced": 1105500,
+   "v": {
+    "appid": 1105500,
+    "name": "Yakuza 4 Remastered",
+    "neg": 548,
+    "owners": "200,000 .. 500,000",
+    "pos": 5842,
+    "price": 19.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Action",
+     "Adventure",
+     "Beat 'em up",
+     "Open World",
+     "RPG",
+     "Action RPG",
+     "Third Person",
+     "Story Rich",
+     "Crime",
+     "Drama",
+     "Comedy",
+     "Violent",
+     "Singleplayer",
+     "Funny",
+     "JRPG",
+     "Combat",
+     "Anime",
+     "Great Soundtrack",
+     "Sexual Content"
+    ]
+   }
+  }
+ },
+ "steam-1105510": {
+  "hltb": {
+   "at": "2026-11-17T14:42:13.438832+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:31.909101+00:00",
+   "v": {
+    "genres": [
+     "Open-World Action"
+    ],
+    "reviews": 7,
+    "score": 82,
+    "slug": "yakuza-5-remastered",
+    "title": "Yakuza 5 Remastered",
+    "user": 7.9,
+    "userCount": 268,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:17.141304+00:00",
+   "forced": 1105510,
+   "v": {
+    "appid": 1105510,
+    "name": "Yakuza 5 Remastered",
+    "neg": 673,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 5658,
+    "price": 19.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Action",
+     "Adventure",
+     "Beat 'em up",
+     "Open World",
+     "Crime",
+     "RPG",
+     "Action RPG",
+     "Drama",
+     "Story Rich",
+     "Third Person",
+     "Comedy",
+     "Funny",
+     "Singleplayer",
+     "Violent",
+     "JRPG",
+     "Combat",
+     "Anime",
+     "Great Soundtrack",
+     "Rhythm",
+     "Sexual Content"
+    ]
+   }
+  }
+ },
  "steam-1105620": {
   "hltb": {
    "at": "2026-10-23T16:59:44.293759+00:00",
@@ -101058,8 +101360,7 @@
  },
  "steam-1111210": {
   "hltb": {
-   "at": "2026-11-16T13:54:38.956702+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:36:57.817584+00:00",
    "v": null
   },
   "mc": {
@@ -101462,6 +101763,69 @@
      "Crafting",
      "Medieval",
      "Loot"
+    ]
+   }
+  }
+ },
+ "steam-1113000": {
+  "hltb": {
+   "at": "2026-11-17T14:37:04.556127+00:00",
+   "v": {
+    "comp": 132.7,
+    "extra": 84.3,
+    "id": 6974,
+    "main": 67.0,
+    "title": "Persona 4 Golden",
+    "year": 2012
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:33:54.708132+00:00",
+   "v": {
+    "genres": [
+     "JRPG"
+    ],
+    "reviews": 61,
+    "score": 93,
+    "slug": "persona-4-golden",
+    "title": "Persona 4 Golden",
+    "user": 9.1,
+    "userCount": 2963,
+    "year": 2012
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:33:54.741295+00:00",
+   "forced": 1113000,
+   "v": {
+    "appid": 1113000,
+    "name": "Persona 4 Golden",
+    "neg": 2079,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 69889,
+    "price": 19.99,
+    "publisher": "SEGA",
+    "tags": [
+     "JRPG",
+     "Great Soundtrack",
+     "Story Rich",
+     "Anime",
+     "Turn-Based Combat",
+     "RPG",
+     "Singleplayer",
+     "Party-Based RPG",
+     "Mystery",
+     "Emotional",
+     "Multiple Endings",
+     "Turn-Based Strategy",
+     "Detective",
+     "Dating Sim",
+     "Colorful",
+     "Adventure",
+     "Strategy",
+     "Visual Novel",
+     "Violent",
+     "Turn-Based"
     ]
    }
   }
@@ -104990,7 +105354,7 @@
  },
  "steam-1131740": {
   "hltb": {
-   "at": "2026-11-07T11:58:52.977951+00:00",
+   "at": "2026-11-17T14:41:17.824490+00:00",
    "v": null
   },
   "mc": {
@@ -105315,8 +105679,7 @@
  },
  "steam-1132730": {
   "hltb": {
-   "at": "2026-11-16T14:03:04.859146+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:42:08.774759+00:00",
    "v": null
   },
   "mc": {
@@ -106218,7 +106581,8 @@
  },
  "steam-1139890": {
   "hltb": {
-   "at": "2026-11-07T11:56:42.599859+00:00",
+   "at": "2026-11-17T14:38:41.555283+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -107149,7 +107513,7 @@
  },
  "steam-1144800": {
   "hltb": {
-   "at": "2026-11-07T11:55:31.239637+00:00",
+   "at": "2026-11-17T14:36:20.518872+00:00",
    "v": null
   },
   "mc": {
@@ -108997,7 +109361,7 @@
  },
  "steam-1155590": {
   "hltb": {
-   "at": "2026-11-07T11:55:30.353833+00:00",
+   "at": "2026-11-17T14:36:18.609709+00:00",
    "v": null
   },
   "mc": {
@@ -110316,8 +110680,7 @@
  },
  "steam-1164000": {
   "hltb": {
-   "at": "2026-11-16T14:06:13.823065+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:43:17.253926+00:00",
    "v": null
   },
   "mc": {
@@ -112409,8 +112772,7 @@
  },
  "steam-1174390": {
   "hltb": {
-   "at": "2026-11-16T14:00:55.922982+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:40:25.124280+00:00",
    "v": null
   },
   "mc": {
@@ -122407,7 +122769,7 @@
  },
  "steam-1233540": {
   "hltb": {
-   "at": "2026-11-07T11:58:52.929310+00:00",
+   "at": "2026-11-17T14:41:16.366989+00:00",
    "v": null
   },
   "mc": {
@@ -122679,6 +123041,121 @@
    }
   }
  },
+ "steam-1234940": {
+  "hltb": {
+   "at": "2026-11-17T14:41:09.407020+00:00",
+   "v": {
+    "comp": 29.3,
+    "extra": 18.5,
+    "id": 91161,
+    "main": 2.3,
+    "title": "Astronarch",
+    "year": 2021
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:21.706903+00:00",
+   "v": {
+    "genres": [
+     "Roguelike"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "astronarch",
+    "title": "Astronarch",
+    "user": 7.3,
+    "userCount": 4,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:54.271612+00:00",
+   "forced": 1234940,
+   "v": {
+    "appid": 1234940,
+    "name": "Astronarch",
+    "neg": 115,
+    "owners": "100,000 .. 200,000",
+    "pos": 982,
+    "price": 14.99,
+    "publisher": "Dale Turner",
+    "tags": [
+     "Strategy",
+     "Indie",
+     "Auto Battler",
+     "RPG",
+     "Casual",
+     "Rogue-like",
+     "Party-Based RPG",
+     "Pixel Graphics",
+     "Rogue-lite"
+    ]
+   }
+  }
+ },
+ "steam-1235140": {
+  "hltb": {
+   "at": "2026-11-17T14:39:08.481408+00:00",
+   "v": {
+    "comp": 103.0,
+    "extra": 68.0,
+    "id": 71931,
+    "main": 46.1,
+    "title": "Yakuza: Like a Dragon",
+    "year": 2020
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:07.054060+00:00",
+   "v": {
+    "genres": [
+     "JRPG"
+    ],
+    "reviews": 56,
+    "score": 84,
+    "slug": "yakuza-like-a-dragon",
+    "title": "Yakuza: Like a Dragon",
+    "user": 8.2,
+    "userCount": 1313,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:20.421234+00:00",
+   "forced": 1235140,
+   "v": {
+    "appid": 1235140,
+    "name": "Yakuza: Like a Dragon",
+    "neg": 1701,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 26597,
+    "price": 19.99,
+    "publisher": "SEGA",
+    "tags": [
+     "RPG",
+     "Adventure",
+     "Action",
+     "Turn-Based Combat",
+     "JRPG",
+     "Story Rich",
+     "Turn-Based",
+     "Open World",
+     "Singleplayer",
+     "Funny",
+     "Crime",
+     "Comedy",
+     "Violent",
+     "Great Soundtrack",
+     "Sexual Content",
+     "Minigames",
+     "Nudity",
+     "Third Person",
+     "Anime",
+     "Party-Based RPG"
+    ]
+   }
+  }
+ },
  "steam-12360": {
   "hltb": {
    "at": "2026-10-23T12:33:26.305403+00:00",
@@ -122899,6 +123376,69 @@
      "Multiplayer",
      "Magic",
      "Psychological Horror"
+    ]
+   }
+  }
+ },
+ "steam-1237320": {
+  "hltb": {
+   "at": "2026-11-17T14:41:26.193235+00:00",
+   "v": {
+    "comp": 26.9,
+    "extra": 21.9,
+    "id": 101251,
+    "main": 16.4,
+    "title": "Sonic Frontiers",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:25.488884+00:00",
+   "v": {
+    "genres": [
+     "3D Platformer"
+    ],
+    "reviews": 95,
+    "score": 70,
+    "slug": "sonic-frontiers",
+    "title": "Sonic Frontiers",
+    "user": 8.1,
+    "userCount": 4062,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:02.720742+00:00",
+   "forced": 1237320,
+   "v": {
+    "appid": 1237320,
+    "name": "Sonic Frontiers",
+    "neg": 2301,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 20626,
+    "price": 39.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Open World",
+     "3D Platformer",
+     "Adventure",
+     "Action",
+     "Exploration",
+     "Singleplayer",
+     "Fast-Paced",
+     "Action-Adventure",
+     "3D",
+     "Third Person",
+     "Platformer",
+     "Story Rich",
+     "Combat",
+     "Lore-Rich",
+     "Great Soundtrack",
+     "Colorful",
+     "Fantasy",
+     "Action RPG",
+     "Comedy",
+     "Hack and Slash"
     ]
    }
   }
@@ -124391,6 +124931,63 @@
    }
   }
  },
+ "steam-1247360": {
+  "hltb": {
+   "at": "2026-11-17T14:40:11.690538+00:00",
+   "v": {
+    "comp": 27.8,
+    "extra": 14.1,
+    "id": 106481,
+    "main": 8.9,
+    "title": "Grand Mountain Adventure",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:15.843027+00:00",
+   "v": {
+    "genres": [
+     "Skiing"
+    ],
+    "reviews": 4,
+    "score": 86,
+    "slug": "grand-mountain-adventure-wonderlands",
+    "title": "Grand Mountain Adventure: Wonderlands",
+    "user": 8.5,
+    "userCount": 11,
+    "year": 2019
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:40.435587+00:00",
+   "forced": 1247360,
+   "v": {
+    "appid": 1247360,
+    "name": "Grand Mountain Adventure: Wonderlands",
+    "neg": 36,
+    "owners": "0 .. 20,000",
+    "pos": 383,
+    "price": 19.99,
+    "publisher": "Microids",
+    "tags": [
+     "Simulation",
+     "Adventure",
+     "Sports",
+     "Casual",
+     "Indie",
+     "Racing",
+     "Skiing",
+     "Snowboarding",
+     "Open World",
+     "3D",
+     "Multiplayer",
+     "Co-op",
+     "Singleplayer",
+     "Beautiful"
+    ]
+   }
+  }
+ },
  "steam-1247940": {
   "hltb": {
    "at": "2026-10-26T13:27:40.487306+00:00",
@@ -124843,8 +125440,7 @@
  },
  "steam-12500": {
   "hltb": {
-   "at": "2026-11-16T14:05:52.943272+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:43:14.507275+00:00",
    "v": null
   },
   "mc": {
@@ -125872,7 +126468,7 @@
  },
  "steam-1257810": {
   "hltb": {
-   "at": "2026-11-16T14:00:57.422246+00:00",
+   "at": "2026-11-17T14:40:25.845493+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -126097,7 +126693,7 @@
  },
  "steam-1258710": {
   "hltb": {
-   "at": "2026-11-07T11:57:49.671487+00:00",
+   "at": "2026-11-17T14:40:11.372911+00:00",
    "v": null
   },
   "mc": {
@@ -126563,6 +127159,115 @@
    }
   }
  },
+ "steam-1259840": {
+  "hltb": {
+   "at": "2026-11-17T14:41:04.910158+00:00",
+   "v": {
+    "comp": 8.8,
+    "extra": 7.3,
+    "id": 76467,
+    "main": 7.0,
+    "title": "The House of Da Vinci 2",
+    "year": 2020
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:20.539033+00:00",
+   "v": {
+    "genres": [
+     "Point-and-Click"
+    ],
+    "reviews": 2,
+    "score": null,
+    "slug": "the-house-of-da-vinci-2",
+    "title": "The House of Da Vinci 2",
+    "user": 7.9,
+    "userCount": 9,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:51.524226+00:00",
+   "forced": 1259840,
+   "v": {
+    "appid": 1259840,
+    "name": "The House of Da Vinci 2",
+    "neg": 163,
+    "owners": "100,000 .. 200,000",
+    "pos": 1813,
+    "price": 19.99,
+    "publisher": "Blue Brain Games",
+    "tags": [
+     "Adventure",
+     "Indie",
+     "Strategy",
+     "Puzzle",
+     "Point & Click",
+     "Mystery",
+     "3D",
+     "Escape Room",
+     "First-Person"
+    ]
+   }
+  }
+ },
+ "steam-1260590": {
+  "hltb": {
+   "at": "2026-11-17T14:41:49.118802+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:29.124503+00:00",
+   "v": {
+    "genres": [
+     "Card Battle"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "hadean-tactics",
+    "title": "Hadean Tactics",
+    "user": null,
+    "userCount": 1,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:09.352074+00:00",
+   "forced": 1260590,
+   "v": {
+    "appid": 1260590,
+    "name": "Hadean Tactics",
+    "neg": 182,
+    "owners": "100,000 .. 200,000",
+    "pos": 1574,
+    "price": 19.99,
+    "publisher": "Emberfish Games",
+    "tags": [
+     "Roguelike Deckbuilder",
+     "Auto Battler",
+     "Card Battler",
+     "Rogue-like",
+     "Card Game",
+     "Deckbuilding",
+     "Dungeon Crawler",
+     "Rogue-lite",
+     "Strategy RPG",
+     "Turn-Based Strategy",
+     "Strategy",
+     "Choices Matter",
+     "Procedural Generation",
+     "Turn-Based Combat",
+     "Stylized",
+     "Dark Fantasy",
+     "Fantasy",
+     "Singleplayer",
+     "Indie",
+     "Real Time Tactics"
+    ]
+   }
+  }
+ },
  "steam-1260810": {
   "hltb": {
    "at": "2026-10-26T13:16:40.527751+00:00",
@@ -126845,8 +127550,7 @@
  },
  "steam-1264350": {
   "hltb": {
-   "at": "2026-11-16T13:55:43.440105+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:37:20.859895+00:00",
    "v": null
   },
   "mc": {
@@ -127350,8 +128054,7 @@
  },
  "steam-1268860": {
   "hltb": {
-   "at": "2026-11-16T13:56:25.498515+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:37:51.632571+00:00",
    "v": null
   },
   "mc": {
@@ -129610,7 +130313,7 @@
  },
  "steam-1280930": {
   "hltb": {
-   "at": "2026-11-16T13:57:47.735741+00:00",
+   "at": "2026-11-17T14:38:41.600693+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -130859,7 +131562,7 @@
  },
  "steam-1285080": {
   "hltb": {
-   "at": "2026-11-16T14:06:59.161495+00:00",
+   "at": "2026-11-17T14:43:33.569233+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -132457,6 +133160,69 @@
    }
   }
  },
+ "steam-1293170": {
+  "hltb": {
+   "at": "2026-11-17T14:39:10.947702+00:00",
+   "v": {
+    "comp": 8.3,
+    "extra": 4.1,
+    "id": 140534,
+    "main": 2.5,
+    "title": "Bzzzt",
+    "year": 2023
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:10.002723+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": 6,
+    "score": 91,
+    "slug": "bzzzt",
+    "title": "Bzzzt",
+    "user": 8.3,
+    "userCount": 27,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:27.013971+00:00",
+   "forced": 1293170,
+   "v": {
+    "appid": 1293170,
+    "name": "BZZZT",
+    "neg": 402,
+    "owners": "100,000 .. 200,000",
+    "pos": 1073,
+    "price": 11.99,
+    "publisher": "CINEMAX GAMES",
+    "tags": [
+     "Precision Platformer",
+     "Score Attack",
+     "Pixel Graphics",
+     "Soundtrack",
+     "2D Platformer",
+     "Difficult",
+     "Funny",
+     "Time Attack",
+     "Controller",
+     "2D",
+     "Cute",
+     "Colorful",
+     "Fast-Paced",
+     "Action",
+     "Platformer",
+     "Indie",
+     "Robots",
+     "Singleplayer",
+     "Arcade",
+     "Perma Death"
+    ]
+   }
+  }
+ },
  "steam-1293180": {
   "hltb": {
    "at": "2026-10-26T12:34:55.025218+00:00",
@@ -133178,6 +133944,69 @@
      "Great Soundtrack",
      "Nudity",
      "Adventure"
+    ]
+   }
+  }
+ },
+ "steam-1300100": {
+  "hltb": {
+   "at": "2026-11-17T14:43:12.573521+00:00",
+   "v": {
+    "comp": 3.7,
+    "extra": null,
+    "id": 100931,
+    "main": 2.7,
+    "title": "Spectacular Sparky",
+    "year": 2021
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:38.215901+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "spectacular-sparky",
+    "title": "Spectacular Sparky",
+    "user": null,
+    "userCount": 1,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:32.637054+00:00",
+   "forced": 1300100,
+   "v": {
+    "appid": 1300100,
+    "name": "Spectacular Sparky",
+    "neg": 19,
+    "owners": "0 .. 20,000",
+    "pos": 138,
+    "price": 14.99,
+    "publisher": "Nicalis, Inc.",
+    "tags": [
+     "Action",
+     "Platformer",
+     "Side Scroller",
+     "Shooter",
+     "Story Rich",
+     "Pixel Graphics",
+     "Space",
+     "Sci-fi",
+     "Retro",
+     "Old School",
+     "Comedy",
+     "Funny",
+     "Controller",
+     "Colorful",
+     "Shoot 'Em Up",
+     "Singleplayer",
+     "Arcade",
+     "2D Platformer",
+     "Cartoon",
+     "Flight"
     ]
    }
   }
@@ -134578,8 +135407,7 @@
  },
  "steam-1306750": {
   "hltb": {
-   "at": "2026-11-16T13:55:23.454247+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:37:15.970153+00:00",
    "v": null
   },
   "mc": {
@@ -135436,8 +136264,7 @@
  },
  "steam-1318940": {
   "hltb": {
-   "at": "2026-11-16T13:53:15.016401+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:36:14.242146+00:00",
    "v": null
   },
   "mc": {
@@ -136345,7 +137172,7 @@
  },
  "steam-1325470": {
   "hltb": {
-   "at": "2026-11-07T12:00:02.644895+00:00",
+   "at": "2026-11-17T14:43:11.729670+00:00",
    "v": null
   },
   "mc": {
@@ -139533,6 +140360,51 @@
    }
   }
  },
+ "steam-1346770": {
+  "hltb": {
+   "at": "2026-11-17T14:42:09.991107+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:31.315870+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:13.758191+00:00",
+   "forced": 1346770,
+   "v": {
+    "appid": 1346770,
+    "name": "YAKIMOCHI STREAM",
+    "neg": 21,
+    "owners": "0 .. 20,000",
+    "pos": 228,
+    "price": 24.99,
+    "publisher": "mirai works, OTAKU Plan",
+    "tags": [
+     "Nudity",
+     "Sexual Content",
+     "Visual Novel",
+     "Comedy",
+     "Dating Sim",
+     "Casual",
+     "Story Rich",
+     "Anime",
+     "Cute",
+     "Adventure",
+     "FPS",
+     "Relaxing",
+     "Funny",
+     "Multiple Endings",
+     "Singleplayer",
+     "2D",
+     "Romance",
+     "Lore-Rich",
+     "Narration",
+     "NSFW"
+    ]
+   }
+  }
+ },
  "steam-1346840": {
   "hltb": {
    "at": "2026-10-26T18:16:36.500663+00:00",
@@ -139940,6 +140812,69 @@
      "Indie",
      "2D",
      "Singleplayer"
+    ]
+   }
+  }
+ },
+ "steam-1348180": {
+  "hltb": {
+   "at": "2026-11-17T14:38:07.079988+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 151612,
+    "main": null,
+    "title": "From Frontier",
+    "year": 2020
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:01.084808+00:00",
+   "v": {
+    "genres": [
+     "JRPG"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "from-frontier",
+    "title": "From Frontier",
+    "user": null,
+    "userCount": 0,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:08.207874+00:00",
+   "forced": 1348180,
+   "v": {
+    "appid": 1348180,
+    "name": "From Frontier",
+    "neg": 8,
+    "owners": "20,000 .. 50,000",
+    "pos": 336,
+    "price": 15.99,
+    "publisher": "OTAKU Plan",
+    "tags": [
+     "Sexual Content",
+     "Nudity",
+     "JRPG",
+     "Mystery Dungeon",
+     "Romance",
+     "Anime",
+     "RPG",
+     "Party-Based RPG",
+     "2D",
+     "Cute",
+     "Turn-Based Combat",
+     "Funny",
+     "Colorful",
+     "Fantasy",
+     "Magic",
+     "Adventure",
+     "Singleplayer",
+     "RPGMaker",
+     "Crafting",
+     "Beautiful"
     ]
    }
   }
@@ -141010,6 +141945,69 @@
      "Moddable",
      "Programming",
      "Old School"
+    ]
+   }
+  }
+ },
+ "steam-1359120": {
+  "hltb": {
+   "at": "2026-11-17T14:42:15.085238+00:00",
+   "v": {
+    "comp": 78.9,
+    "extra": 41.4,
+    "id": 96414,
+    "main": 6.5,
+    "title": "The Dungeon Beneath",
+    "year": 2020
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:34.216837+00:00",
+   "v": {
+    "genres": [
+     "Roguelike"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "the-dungeon-beneath",
+    "title": "The Dungeon Beneath",
+    "user": null,
+    "userCount": 1,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:21.577729+00:00",
+   "forced": 1359120,
+   "v": {
+    "appid": 1359120,
+    "name": "The Dungeon Beneath",
+    "neg": 95,
+    "owners": "50,000 .. 100,000",
+    "pos": 748,
+    "price": 14.99,
+    "publisher": "Puzzle Box Games",
+    "tags": [
+     "Turn-Based Tactics",
+     "Auto Battler",
+     "Rogue-lite",
+     "Tactical RPG",
+     "Perma Death",
+     "Turn-Based Strategy",
+     "Rogue-like",
+     "Strategy",
+     "2D",
+     "Turn-Based Combat",
+     "Pixel Graphics",
+     "Tactical",
+     "Retro",
+     "Fantasy",
+     "Dungeon Crawler",
+     "Procedural Generation",
+     "Indie",
+     "Singleplayer",
+     "Combat",
+     "PvE"
     ]
    }
   }
@@ -142637,6 +143635,69 @@
      "Online Co-Op",
      "Arcade",
      "Controller"
+    ]
+   }
+  }
+ },
+ "steam-1367550": {
+  "hltb": {
+   "at": "2026-11-17T14:39:08.746937+00:00",
+   "v": {
+    "comp": 40.0,
+    "extra": 17.5,
+    "id": 63190,
+    "main": 9.0,
+    "title": "Kingdom Rush Vengeance",
+    "year": 2018
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:07.947208+00:00",
+   "v": {
+    "genres": [
+     "Defense"
+    ],
+    "reviews": 6,
+    "score": 88,
+    "slug": "kingdom-rush-vengeance",
+    "title": "Kingdom Rush Vengeance",
+    "user": 7.7,
+    "userCount": 55,
+    "year": 2018
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:22.742541+00:00",
+   "forced": 1367550,
+   "v": {
+    "appid": 1367550,
+    "name": "Kingdom Rush Vengeance - Tower Defense",
+    "neg": 545,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 9248,
+    "price": 19.99,
+    "publisher": "Ironhide Game Studio",
+    "tags": [
+     "Tower Defense",
+     "Strategy",
+     "Singleplayer",
+     "2D",
+     "Difficult",
+     "Medieval",
+     "Cartoon",
+     "Choices Matter",
+     "Adventure",
+     "Demons",
+     "Action",
+     "Action-Adventure",
+     "Colorful",
+     "Fantasy",
+     "Cartoony",
+     "Dark",
+     "Family Friendly",
+     "Tactical RPG",
+     "2D Fighter",
+     "Trading Card Game"
     ]
    }
   }
@@ -145236,8 +146297,7 @@
  },
  "steam-1383720": {
   "hltb": {
-   "at": "2026-11-16T13:58:28.730238+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:39:05.386728+00:00",
    "v": null
   },
   "mc": {
@@ -146163,6 +147223,63 @@
      "Simulation",
      "Top-Down Shooter",
      "Controller"
+    ]
+   }
+  }
+ },
+ "steam-1388590": {
+  "hltb": {
+   "at": "2026-11-17T14:39:41.181817+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:13.200744+00:00",
+   "v": {
+    "genres": [
+     "Open-World Action"
+    ],
+    "reviews": 97,
+    "score": 83,
+    "slug": "yakuza-6-the-song-of-life",
+    "title": "Yakuza 6: The Song of Life",
+    "user": 8.5,
+    "userCount": 702,
+    "year": 2018
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:33.769653+00:00",
+   "forced": 1388590,
+   "v": {
+    "appid": 1388590,
+    "name": "Yakuza 6: The Song of Life",
+    "neg": 503,
+    "owners": "200,000 .. 500,000",
+    "pos": 6732,
+    "price": 19.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Action",
+     "Adventure",
+     "Open World",
+     "Beat 'em up",
+     "RPG",
+     "Action RPG",
+     "Crime",
+     "Story Rich",
+     "Third Person",
+     "Comedy",
+     "Drama",
+     "Violent",
+     "JRPG",
+     "Singleplayer",
+     "Sexual Content",
+     "Funny",
+     "Combat",
+     "Anime",
+     "Great Soundtrack",
+     "Mature"
     ]
    }
   }
@@ -150785,8 +151902,7 @@
  },
  "steam-1420060": {
   "hltb": {
-   "at": "2026-11-16T13:52:33.535081+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:36:09.711454+00:00",
    "v": null
   },
   "mc": {
@@ -153062,6 +154178,69 @@
    }
   }
  },
+ "steam-1432680": {
+  "hltb": {
+   "at": "2026-11-17T14:41:22.445090+00:00",
+   "v": {
+    "comp": 1.6,
+    "extra": 1.5,
+    "id": 106845,
+    "main": 1.4,
+    "title": "Mechanic 8230: Escape from Ilgrot",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:24.766768+00:00",
+   "v": {
+    "genres": [
+     "Point-and-Click"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "mechanic-8230-escape-from-ilgrot",
+    "title": "Mechanic 8230: Escape from Ilgrot",
+    "user": null,
+    "userCount": 1,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:00.423941+00:00",
+   "forced": 1432680,
+   "v": {
+    "appid": 1432680,
+    "name": "Mechanic 8230: Escape from Ilgrot",
+    "neg": 10,
+    "owners": "20,000 .. 50,000",
+    "pos": 98,
+    "price": 12.99,
+    "publisher": "Nudiventra",
+    "tags": [
+     "Family Friendly",
+     "Casual",
+     "Point & Click",
+     "Robots",
+     "Cyberpunk",
+     "Sci-fi",
+     "Adventure",
+     "Puzzle",
+     "1990's",
+     "Space",
+     "Post-apocalyptic",
+     "Hand-drawn",
+     "Hidden Object",
+     "3D",
+     "Singleplayer",
+     "Atmospheric",
+     "Retro",
+     "Crafting",
+     "Stylized",
+     "Transhumanism"
+    ]
+   }
+  }
+ },
  "steam-1432750": {
   "hltb": {
    "at": "2026-10-23T16:45:56.814747+00:00",
@@ -155118,8 +156297,7 @@
  },
  "steam-1446920": {
   "hltb": {
-   "at": "2026-11-16T13:51:27.230063+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:35:59.100942+00:00",
    "v": null
   },
   "mc": {
@@ -157830,6 +159008,58 @@
    }
   }
  },
+ "steam-1462650": {
+  "hltb": {
+   "at": "2026-11-17T14:40:08.985619+00:00",
+   "v": {
+    "comp": null,
+    "extra": 8.5,
+    "id": 120527,
+    "main": 7.2,
+    "title": "Last Embryo: Either of Brave to Story",
+    "year": 2020
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:15.019559+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:38.211376+00:00",
+   "forced": 1462650,
+   "v": {
+    "appid": 1462650,
+    "name": "LAST EMBRYO -EITHER OF BRAVE TO STORY-",
+    "neg": 40,
+    "owners": "0 .. 20,000",
+    "pos": 540,
+    "price": 12.99,
+    "publisher": "OTAKU Plan",
+    "tags": [
+     "Sexual Content",
+     "Nudity",
+     "JRPG",
+     "RPG",
+     "Turn-Based Tactics",
+     "Adventure",
+     "Anime",
+     "Fantasy",
+     "Cute",
+     "Hentai",
+     "Multiple Endings",
+     "2D",
+     "Colorful",
+     "Magic",
+     "Turn-Based Combat",
+     "Indie",
+     "Singleplayer",
+     "Turn-Based Strategy",
+     "Female Protagonist",
+     "RPGMaker"
+    ]
+   }
+  }
+ },
  "steam-1462810": {
   "hltb": {
    "at": "2026-10-25T09:56:40.324807+00:00",
@@ -160443,6 +161673,69 @@
    }
   }
  },
+ "steam-1484620": {
+  "hltb": {
+   "at": "2026-11-17T14:42:12.018116+00:00",
+   "v": {
+    "comp": 16.8,
+    "extra": 10.4,
+    "id": 108379,
+    "main": 10.0,
+    "title": "Arcade Spirits: The New Challengers",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:31.648541+00:00",
+   "v": {
+    "genres": [
+     "Visual Novel"
+    ],
+    "reviews": 5,
+    "score": 74,
+    "slug": "arcade-spirits-the-new-challengers",
+    "title": "Arcade Spirits: The New Challengers",
+    "user": null,
+    "userCount": 3,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:15.970546+00:00",
+   "forced": 1484620,
+   "v": {
+    "appid": 1484620,
+    "name": "Arcade Spirits: The New Challengers",
+    "neg": 17,
+    "owners": "0 .. 20,000",
+    "pos": 149,
+    "price": 19.99,
+    "publisher": "PQube",
+    "tags": [
+     "Visual Novel",
+     "LGBTQ+",
+     "Story Rich",
+     "Adventure",
+     "Romance",
+     "Hand-drawn",
+     "Casual",
+     "Dating Sim",
+     "Interactive Fiction",
+     "Arcade",
+     "Character Customization",
+     "Drama",
+     "Choices Matter",
+     "Emotional",
+     "2D",
+     "Retro",
+     "Indie",
+     "Funny",
+     "Singleplayer",
+     "Otome"
+    ]
+   }
+  }
+ },
  "steam-1484720": {
   "hltb": {
    "at": "2026-10-24T09:38:08.183682+00:00",
@@ -161861,8 +163154,7 @@
  },
  "steam-1494140": {
   "hltb": {
-   "at": "2026-11-16T14:06:14.021186+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:43:21.301608+00:00",
    "v": null
   },
   "mc": {
@@ -163441,8 +164733,7 @@
  },
  "steam-1507190": {
   "hltb": {
-   "at": "2026-11-16T14:00:35.443957+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:40:20.456554+00:00",
    "v": null
   },
   "mc": {
@@ -164045,7 +165336,7 @@
  },
  "steam-1508920": {
   "hltb": {
-   "at": "2026-11-07T11:57:44.153732+00:00",
+   "at": "2026-11-17T14:39:20.262452+00:00",
    "v": null
   },
   "mc": {
@@ -165565,10 +166856,72 @@
    }
   }
  },
+ "steam-1516080": {
+  "hltb": {
+   "at": "2026-11-17T14:42:09.784454+00:00",
+   "v": {
+    "comp": null,
+    "extra": 5.5,
+    "id": 97116,
+    "main": null,
+    "title": "That Time I Got Reincarnated as an Orc",
+    "year": 2021
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:30.289961+00:00",
+   "v": {
+    "genres": [
+     "JRPG"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "that-time-i-got-reincarnated-as-an-orc",
+    "title": "That Time I Got Reincarnated as an Orc",
+    "user": null,
+    "userCount": 0,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:12.673807+00:00",
+   "forced": 1516080,
+   "v": {
+    "appid": 1516080,
+    "name": "That Time I Got Reincarnated as an Orc",
+    "neg": 36,
+    "owners": "50,000 .. 100,000",
+    "pos": 348,
+    "price": 18.99,
+    "publisher": "OTAKU Plan",
+    "tags": [
+     "Nudity",
+     "Sexual Content",
+     "JRPG",
+     "Adventure",
+     "Comedy",
+     "Dungeon Crawler",
+     "Mystery Dungeon",
+     "Exploration",
+     "RPG",
+     "Turn-Based Strategy",
+     "Multiple Endings",
+     "2D",
+     "Turn-Based Tactics",
+     "Anime",
+     "Cute",
+     "Story Rich",
+     "Fantasy",
+     "Singleplayer",
+     "Hentai",
+     "RPGMaker"
+    ]
+   }
+  }
+ },
  "steam-15170": {
   "hltb": {
-   "at": "2026-11-16T14:04:08.135730+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:42:14.442937+00:00",
    "v": null
   },
   "mc": {
@@ -168286,7 +169639,7 @@
  },
  "steam-15370": {
   "hltb": {
-   "at": "2026-11-07T11:57:46.194892+00:00",
+   "at": "2026-11-17T14:39:55.456794+00:00",
    "v": null
   },
   "mc": {
@@ -168397,7 +169750,8 @@
  },
  "steam-15380": {
   "hltb": {
-   "at": "2026-11-07T12:00:00.362007+00:00",
+   "at": "2026-11-17T14:42:40.350128+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -171478,6 +172832,69 @@
    }
   }
  },
+ "steam-1558510": {
+  "hltb": {
+   "at": "2026-11-17T14:39:01.273106+00:00",
+   "v": {
+    "comp": null,
+    "extra": 21.4,
+    "id": 124859,
+    "main": null,
+    "title": "MECHANICA: A Ballad of the Rabbit and Mercury",
+    "year": 2021
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:06.270953+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "mechanica-a-ballad-of-the-rabbit-and-mercury",
+    "title": "MECHANICA: A Ballad of the Rabbit and Mercury",
+    "user": null,
+    "userCount": 0,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:18.204349+00:00",
+   "forced": 1558510,
+   "v": {
+    "appid": 1558510,
+    "name": "MECHANICA: A Ballad of the Rabbit and Mercury",
+    "neg": 38,
+    "owners": "50,000 .. 100,000",
+    "pos": 799,
+    "price": 19.99,
+    "publisher": "OTAKU Plan",
+    "tags": [
+     "Sexual Content",
+     "Nudity",
+     "Time Management",
+     "Cyberpunk",
+     "Visual Novel",
+     "Puzzle",
+     "JRPG",
+     "Anime",
+     "Indie",
+     "Cute",
+     "Time Travel",
+     "Lore-Rich",
+     "Story Rich",
+     "Colorful",
+     "Post-apocalyptic",
+     "Sci-fi",
+     "Drama",
+     "Adventure",
+     "Futuristic",
+     "Singleplayer"
+    ]
+   }
+  }
+ },
  "steam-1558800": {
   "hltb": {
    "at": "2026-11-14T12:24:52.828201+00:00",
@@ -171874,6 +173291,69 @@
      "Singleplayer",
      "Relaxing",
      "Nudity"
+    ]
+   }
+  }
+ },
+ "steam-1561340": {
+  "hltb": {
+   "at": "2026-11-17T14:42:59.904927+00:00",
+   "v": {
+    "comp": 12.0,
+    "extra": 7.3,
+    "id": 106973,
+    "main": 4.2,
+    "title": "Berserk Boy",
+    "year": 2024
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:38.072719+00:00",
+   "v": {
+    "genres": [
+     "Metroidvania"
+    ],
+    "reviews": 16,
+    "score": 83,
+    "slug": "berserk-boy",
+    "title": "Berserk Boy",
+    "user": 6.7,
+    "userCount": 26,
+    "year": 2024
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:31.607539+00:00",
+   "forced": 1561340,
+   "v": {
+    "appid": 1561340,
+    "name": "Berserk Boy",
+    "neg": 46,
+    "owners": "0 .. 20,000",
+    "pos": 302,
+    "price": 20.0,
+    "publisher": "BerserkBoy Games",
+    "tags": [
+     "Action-Adventure",
+     "2D",
+     "Old School",
+     "2D Platformer",
+     "Action",
+     "Platformer",
+     "Adventure",
+     "Singleplayer",
+     "Sci-fi",
+     "Anime",
+     "Retro",
+     "Pixel Graphics",
+     "Side Scroller",
+     "Difficult",
+     "Robots",
+     "Hack and Slash",
+     "Female Protagonist",
+     "Story Rich",
+     "Soundtrack",
+     "Metroidvania"
     ]
    }
   }
@@ -172589,6 +174069,63 @@
    }
   }
  },
+ "steam-1569090": {
+  "hltb": {
+   "at": "2026-11-17T14:41:49.197668+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:29.460983+00:00",
+   "v": {
+    "genres": [
+     "Roguelike"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "vivid-knight",
+    "title": "Vivid Knight",
+    "user": null,
+    "userCount": 0,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:10.417386+00:00",
+   "forced": 1569090,
+   "v": {
+    "appid": 1569090,
+    "name": "Vivid Knight",
+    "neg": 159,
+    "owners": "100,000 .. 200,000",
+    "pos": 1497,
+    "price": 14.99,
+    "publisher": "Asobism.Co.,Ltd",
+    "tags": [
+     "Rogue-like",
+     "Roguelike Deckbuilder",
+     "Inventory Management",
+     "Choices Matter",
+     "Difficult",
+     "Rogue-lite",
+     "Dungeon Crawler",
+     "2D",
+     "Strategy",
+     "Simulation",
+     "Cute",
+     "Auto Battler",
+     "Replay Value",
+     "Fantasy",
+     "Medieval",
+     "Procedural Generation",
+     "Turn-Based Tactics",
+     "Anime",
+     "Singleplayer",
+     "Mystery Dungeon"
+    ]
+   }
+  }
+ },
  "steam-1569150": {
   "hltb": {
    "at": "2026-11-14T12:22:56.387604+00:00",
@@ -172773,7 +174310,7 @@
  },
  "steam-1569550": {
   "hltb": {
-   "at": "2026-11-07T11:59:55.751801+00:00",
+   "at": "2026-11-17T14:42:16.688337+00:00",
    "v": null
   },
   "mc": {
@@ -173456,6 +174993,69 @@
      "Colorful",
      "Cinematic",
      "Exploration"
+    ]
+   }
+  }
+ },
+ "steam-1571940": {
+  "hltb": {
+   "at": "2026-11-17T14:40:08.850548+00:00",
+   "v": {
+    "comp": 21.7,
+    "extra": 18.1,
+    "id": 111734,
+    "main": 16.9,
+    "title": "Ctrl Alt Ego",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:14.805787+00:00",
+   "v": {
+    "genres": [
+     "Action Adventure"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "ctrl-alt-ego",
+    "title": "Ctrl Alt Ego",
+    "user": 7.9,
+    "userCount": 9,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:37.157636+00:00",
+   "forced": 1571940,
+   "v": {
+    "appid": 1571940,
+    "name": "Ctrl Alt Ego",
+    "neg": 47,
+    "owners": "50,000 .. 100,000",
+    "pos": 658,
+    "price": 19.99,
+    "publisher": "MindThunk",
+    "tags": [
+     "Immersive Sim",
+     "Puzzle",
+     "Sandbox",
+     "Physics",
+     "Stealth",
+     "Philosophical",
+     "Dark Comedy",
+     "FPS",
+     "RPG",
+     "Sci-fi",
+     "Robots",
+     "Hacking",
+     "Nonlinear",
+     "Immersive",
+     "Indie",
+     "Retro",
+     "First-Person",
+     "Singleplayer",
+     "Action",
+     "Programming"
     ]
    }
   }
@@ -174894,7 +176494,7 @@
  },
  "steam-1581220": {
   "hltb": {
-   "at": "2026-11-16T13:54:16.939577+00:00",
+   "at": "2026-11-17T14:36:21.995883+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -175014,7 +176614,7 @@
  },
  "steam-1581950": {
   "hltb": {
-   "at": "2026-11-07T11:55:29.374645+00:00",
+   "at": "2026-11-17T14:36:16.727590+00:00",
    "v": null
   },
   "mc": {
@@ -175770,6 +177370,69 @@
      "PvE",
      "Violent",
      "Gore"
+    ]
+   }
+  }
+ },
+ "steam-1586700": {
+  "hltb": {
+   "at": "2026-11-17T14:38:14.716159+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 5674,
+    "main": 10.0,
+    "title": "Marsupilami",
+    "year": 1995
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:02.737623+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": 7,
+    "score": 68,
+    "slug": "marsupilami-hoobadventure",
+    "title": "Marsupilami: Hoobadventure",
+    "user": 6.5,
+    "userCount": 43,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:10.497277+00:00",
+   "forced": 1586700,
+   "v": {
+    "appid": 1586700,
+    "name": "MARSUPILAMI - HOOBADVENTURE",
+    "neg": 29,
+    "owners": "0 .. 20,000",
+    "pos": 476,
+    "price": 19.99,
+    "publisher": "Microids",
+    "tags": [
+     "Adventure",
+     "Platformer",
+     "2D",
+     "Singleplayer",
+     "Colorful",
+     "Action",
+     "Comic Book",
+     "Family Friendly",
+     "Funny",
+     "Arcade",
+     "Action-Adventure",
+     "Side Scroller",
+     "Exploration",
+     "2D Platformer",
+     "Cartoony",
+     "Cute",
+     "Anime",
+     "Comedy",
+     "Physics",
+     "Controller"
     ]
    }
   }
@@ -178849,6 +180512,65 @@
    }
   }
  },
+ "steam-1602010": {
+  "hltb": {
+   "at": "2026-11-17T14:42:25.470336+00:00",
+   "v": {
+    "comp": 67.1,
+    "extra": 22.0,
+    "id": 21257,
+    "main": 10.5,
+    "title": "Persona 4 Arena Ultimax",
+    "year": 2014
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:36.830518+00:00",
+   "v": {
+    "genres": [
+     "2D Fighting"
+    ],
+    "reviews": 38,
+    "score": 84,
+    "slug": "persona-4-arena-ultimax",
+    "title": "Persona 4 Arena Ultimax",
+    "user": 7.7,
+    "userCount": 169,
+    "year": 2014
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:28.244353+00:00",
+   "forced": 1602010,
+   "v": {
+    "appid": 1602010,
+    "name": "Persona 4 Arena Ultimax",
+    "neg": 526,
+    "owners": "200,000 .. 500,000",
+    "pos": 3461,
+    "price": 29.99,
+    "publisher": "SEGA",
+    "tags": [
+     "2D Fighter",
+     "Action",
+     "Fighting",
+     "Anime",
+     "Story Rich",
+     "Multiplayer",
+     "2D",
+     "Great Soundtrack",
+     "Visual Novel",
+     "Singleplayer",
+     "JRPG",
+     "Arcade",
+     "Local Multiplayer",
+     "Funny",
+     "Colorful",
+     "Sexual Content"
+    ]
+   }
+  }
+ },
  "steam-1602560": {
   "hltb": {
    "at": "2026-11-03T13:26:28.249676+00:00",
@@ -179093,6 +180815,63 @@
      "Sandbox",
      "Mechs",
      "Procedural Generation"
+    ]
+   }
+  }
+ },
+ "steam-1603640": {
+  "hltb": {
+   "at": "2026-11-17T14:41:52.360351+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:29.676414+00:00",
+   "v": {
+    "genres": [
+     "Point-and-Click"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "the-house-of-da-vinci-3",
+    "title": "The House of Da Vinci 3",
+    "user": 8.3,
+    "userCount": 4,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:11.570685+00:00",
+   "forced": 1603640,
+   "v": {
+    "appid": 1603640,
+    "name": "The House of Da Vinci 3",
+    "neg": 120,
+    "owners": "50,000 .. 100,000",
+    "pos": 1048,
+    "price": 19.99,
+    "publisher": "Blue Brain Games",
+    "tags": [
+     "Adventure",
+     "Puzzle",
+     "Indie",
+     "Point & Click",
+     "Casual",
+     "Exploration",
+     "Hidden Object",
+     "3D",
+     "First-Person",
+     "Realistic",
+     "Atmospheric",
+     "Detective",
+     "Historical",
+     "Logic",
+     "Mystery",
+     "Time Travel",
+     "Story Rich",
+     "Singleplayer",
+     "Escape Room",
+     "Strategy"
     ]
    }
   }
@@ -183389,8 +185168,7 @@
  },
  "steam-1647740": {
   "hltb": {
-   "at": "2026-11-16T13:56:44.750464+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:38:04.660216+00:00",
    "v": null
   },
   "mc": {
@@ -183498,6 +185276,132 @@
      "Co-op Campaign",
      "2D Platformer",
      "Indie"
+    ]
+   }
+  }
+ },
+ "steam-1648560": {
+  "hltb": {
+   "at": "2026-11-17T14:44:14.706131+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 151629,
+    "main": null,
+    "title": "Nursery Slime",
+    "year": 2021
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:47.072544+00:00",
+   "v": {
+    "genres": [
+     "JRPG"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "nursery-slime",
+    "title": "Nursery Slime",
+    "user": null,
+    "userCount": 0,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:52.689062+00:00",
+   "forced": 1648560,
+   "v": {
+    "appid": 1648560,
+    "name": "Nursery Slime",
+    "neg": 18,
+    "owners": "20,000 .. 50,000",
+    "pos": 149,
+    "price": 13.99,
+    "publisher": "OTAKU Plan",
+    "tags": [
+     "Sexual Content",
+     "Nudity",
+     "RPG",
+     "Adventure",
+     "JRPG",
+     "Mystery Dungeon",
+     "Story Rich",
+     "Dungeon Crawler",
+     "2D",
+     "Anime",
+     "Cute",
+     "Colorful",
+     "Third Person",
+     "Fantasy",
+     "Funny",
+     "Turn-Based Tactics",
+     "Turn-Based Combat",
+     "Singleplayer",
+     "RPGMaker",
+     "Heist"
+    ]
+   }
+  }
+ },
+ "steam-1649080": {
+  "hltb": {
+   "at": "2026-11-17T14:42:13.905900+00:00",
+   "v": {
+    "comp": 66.5,
+    "extra": 51.1,
+    "id": 94194,
+    "main": 27.2,
+    "title": "Two Point Campus",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:32.066208+00:00",
+   "v": {
+    "genres": [
+     "Tycoon"
+    ],
+    "reviews": 68,
+    "score": 83,
+    "slug": "two-point-campus",
+    "title": "Two Point Campus",
+    "user": 7.1,
+    "userCount": 99,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:18.219937+00:00",
+   "forced": 1649080,
+   "v": {
+    "appid": 1649080,
+    "name": "Two Point Campus",
+    "neg": 823,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 5711,
+    "price": 29.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Management",
+     "Simulation",
+     "Building",
+     "Strategy",
+     "City Builder",
+     "Casual",
+     "Sandbox",
+     "Funny",
+     "Cartoony",
+     "Isometric",
+     "Comedy",
+     "Singleplayer",
+     "Family Friendly",
+     "Indie",
+     "Economy",
+     "Tactical",
+     "Replay Value",
+     "Education",
+     "Cute",
+     "Retro"
     ]
    }
   }
@@ -183910,6 +185814,69 @@
     "price": null,
     "publisher": "",
     "tags": []
+   }
+  }
+ },
+ "steam-1658930": {
+  "hltb": {
+   "at": "2026-11-17T14:42:57.885204+00:00",
+   "v": {
+    "comp": 25.1,
+    "extra": null,
+    "id": 145648,
+    "main": null,
+    "title": "Blazing Aries",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:37.429142+00:00",
+   "v": {
+    "genres": [
+     "Action RPG"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "blazing-aries",
+    "title": "Blazing Aries",
+    "user": null,
+    "userCount": 0,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:30.443766+00:00",
+   "forced": 1658930,
+   "v": {
+    "appid": 1658930,
+    "name": "Blazing Aries",
+    "neg": 33,
+    "owners": "0 .. 20,000",
+    "pos": 298,
+    "price": 18.99,
+    "publisher": "OTAKU Plan",
+    "tags": [
+     "Hentai",
+     "Nudity",
+     "Sexual Content",
+     "Action-Adventure",
+     "JRPG",
+     "NSFW",
+     "Dungeon Crawler",
+     "Action",
+     "RPG",
+     "Adventure",
+     "Action RPG",
+     "2D",
+     "Anime",
+     "Third Person",
+     "Female Protagonist",
+     "Fantasy",
+     "Lore-Rich",
+     "Singleplayer",
+     "Combat",
+     "Traditional Roguelike"
+    ]
    }
   }
  },
@@ -192212,7 +194179,7 @@
    }
   },
   "mc": {
-   "at": "2026-11-07T11:53:20.548720+00:00",
+   "at": "2026-11-17T14:34:27.739843+00:00",
    "v": null
   },
   "steam": {
@@ -193064,6 +195031,69 @@
      "Tabletop",
      "Supernatural",
      "Nonlinear"
+    ]
+   }
+  }
+ },
+ "steam-1730590": {
+  "hltb": {
+   "at": "2026-11-17T14:41:28.440397+00:00",
+   "v": {
+    "comp": 11.3,
+    "extra": 10.4,
+    "id": 109185,
+    "main": 8.9,
+    "title": "The Entropy Centre",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:27.596956+00:00",
+   "v": {
+    "genres": [
+     "First-Person Adventure"
+    ],
+    "reviews": 16,
+    "score": 80,
+    "slug": "the-entropy-centre",
+    "title": "The Entropy Centre",
+    "user": 7.1,
+    "userCount": 41,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:07.144809+00:00",
+   "forced": 1730590,
+   "v": {
+    "appid": 1730590,
+    "name": "The Entropy Centre",
+    "neg": 367,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 3312,
+    "price": 19.99,
+    "publisher": "Playstack",
+    "tags": [
+     "Puzzle",
+     "First-Person",
+     "Sci-fi",
+     "Story Rich",
+     "Futuristic",
+     "Funny",
+     "Female Protagonist",
+     "Adventure",
+     "Time Manipulation",
+     "Post-apocalyptic",
+     "Singleplayer",
+     "Atmospheric",
+     "Exploration",
+     "Space",
+     "Physics",
+     "Puzzle-Platformer",
+     "Difficult",
+     "FPS",
+     "Artificial Intelligence",
+     "Platformer"
     ]
    }
   }
@@ -194333,6 +196363,69 @@
      "Romance",
      "Cartoon",
      "Cartoony"
+    ]
+   }
+  }
+ },
+ "steam-1740720": {
+  "hltb": {
+   "at": "2026-11-17T14:43:28.310826+00:00",
+   "v": {
+    "comp": 65.0,
+    "extra": 26.9,
+    "id": 101233,
+    "main": 9.9,
+    "title": "Have a Nice Death",
+    "year": 2023
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:43.551663+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": 27,
+    "score": 81,
+    "slug": "have-a-nice-death",
+    "title": "Have a Nice Death",
+    "user": 7.3,
+    "userCount": 119,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:43.695138+00:00",
+   "forced": 1740720,
+   "v": {
+    "appid": 1740720,
+    "name": "Have a Nice Death",
+    "neg": 1351,
+    "owners": "200,000 .. 500,000",
+    "pos": 8588,
+    "price": 24.99,
+    "publisher": "Arc Games",
+    "tags": [
+     "Action Roguelike",
+     "Hack and Slash",
+     "Singleplayer",
+     "2D",
+     "Funny",
+     "Action",
+     "2D Platformer",
+     "Cartoony",
+     "Dark Humor",
+     "Cartoon",
+     "Rogue-like",
+     "Gothic",
+     "Rogue-lite",
+     "Controller",
+     "Comedy",
+     "Indie",
+     "Combat",
+     "Metroidvania",
+     "Early Access",
+     "Platformer"
     ]
    }
   }
@@ -197101,7 +199194,7 @@
  },
  "steam-1765350": {
   "hltb": {
-   "at": "2026-11-07T11:55:34.448158+00:00",
+   "at": "2026-11-17T14:37:05.226035+00:00",
    "v": null
   },
   "mc": {
@@ -197451,7 +199544,7 @@
  },
  "steam-1767320": {
   "hltb": {
-   "at": "2026-11-07T11:55:26.516881+00:00",
+   "at": "2026-11-17T14:36:03.391026+00:00",
    "v": null
   },
   "mc": {
@@ -198084,7 +200177,7 @@
  },
  "steam-1773700": {
   "hltb": {
-   "at": "2026-11-07T11:59:58.559645+00:00",
+   "at": "2026-11-17T14:42:21.324521+00:00",
    "v": null
   },
   "mc": {
@@ -200238,7 +202331,7 @@
  },
  "steam-1788850": {
   "hltb": {
-   "at": "2026-11-07T11:57:48.877549+00:00",
+   "at": "2026-11-17T14:40:10.170660+00:00",
    "v": null
   },
   "mc": {
@@ -201443,6 +203536,69 @@
      "Linear",
      "Early Access",
      "Cute"
+    ]
+   }
+  }
+ },
+ "steam-1802850": {
+  "hltb": {
+   "at": "2026-11-17T14:38:16.984558+00:00",
+   "v": {
+    "comp": null,
+    "extra": 13.0,
+    "id": 125249,
+    "main": null,
+    "title": "Yes My Lord",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:03.098100+00:00",
+   "v": {
+    "genres": [
+     "JRPG"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "yes-my-lord",
+    "title": "Yes My Lord",
+    "user": null,
+    "userCount": 0,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:12.602386+00:00",
+   "forced": 1802850,
+   "v": {
+    "appid": 1802850,
+    "name": "Yes My Lord",
+    "neg": 5,
+    "owners": "20,000 .. 50,000",
+    "pos": 184,
+    "price": 14.99,
+    "publisher": "OTAKU Plan",
+    "tags": [
+     "Sexual Content",
+     "Nudity",
+     "NSFW",
+     "JRPG",
+     "Adventure",
+     "RPG",
+     "Mystery Dungeon",
+     "Story Rich",
+     "Multiple Endings",
+     "2D",
+     "Turn-Based Strategy",
+     "Turn-Based Tactics",
+     "Anime",
+     "Cute",
+     "Colorful",
+     "Fantasy",
+     "Turn-Based Combat",
+     "Singleplayer",
+     "RPGMaker",
+     "Romance"
     ]
    }
   }
@@ -204743,7 +206899,8 @@
  },
  "steam-1827680": {
   "hltb": {
-   "at": "2026-11-07T11:54:28.450800+00:00",
+   "at": "2026-11-17T14:35:38.447245+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -208763,7 +210920,7 @@
  },
  "steam-1864080": {
   "hltb": {
-   "at": "2026-11-07T11:55:28.508607+00:00",
+   "at": "2026-11-17T14:36:13.283157+00:00",
    "v": null
   },
   "mc": {
@@ -209230,6 +211387,69 @@
      "Story Rich",
      "Cult Classic",
      "Horror"
+    ]
+   }
+  }
+ },
+ "steam-1866630": {
+  "hltb": {
+   "at": "2026-11-17T14:44:11.886780+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 145202,
+    "main": 4.0,
+    "title": "Throne of Bone",
+    "year": 2024
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:46.950959+00:00",
+   "v": {
+    "genres": [
+     "Card Battle"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "throne-of-bone",
+    "title": "Throne of Bone",
+    "user": null,
+    "userCount": 0,
+    "year": 2097
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:51.537983+00:00",
+   "forced": 1866630,
+   "v": {
+    "appid": 1866630,
+    "name": "Throne of Bone",
+    "neg": 35,
+    "owners": "0 .. 20,000",
+    "pos": 263,
+    "price": 16.99,
+    "publisher": "Windmill Slam",
+    "tags": [
+     "Strategy",
+     "Rogue-like",
+     "Card Battler",
+     "Auto Battler",
+     "Fantasy",
+     "Deckbuilding",
+     "Card Game",
+     "Dark Fantasy",
+     "Turn-Based Strategy",
+     "Procedural Generation",
+     "Turn-Based Combat",
+     "Dungeon Crawler",
+     "Singleplayer",
+     "2D",
+     "Hand-drawn",
+     "Replay Value",
+     "Roguelike Deckbuilder",
+     "Turn-Based Tactics",
+     "Cartoon",
+     "First-Person"
     ]
    }
   }
@@ -214607,6 +216827,69 @@
      "Realistic",
      "Walking Simulator",
      "Simulation"
+    ]
+   }
+  }
+ },
+ "steam-1917920": {
+  "hltb": {
+   "at": "2026-11-17T14:40:09.786827+00:00",
+   "v": {
+    "comp": 14.9,
+    "extra": 14.2,
+    "id": 106798,
+    "main": 12.9,
+    "title": "Polda 7",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:15.464387+00:00",
+   "v": {
+    "genres": [
+     "Point-and-Click"
+    ],
+    "reviews": 3,
+    "score": null,
+    "slug": "polda-7",
+    "title": "Polda 7",
+    "user": 6.2,
+    "userCount": 17,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:39.364224+00:00",
+   "forced": 1917920,
+   "v": {
+    "appid": 1917920,
+    "name": "Polda 7",
+    "neg": 42,
+    "owners": "20,000 .. 50,000",
+    "pos": 647,
+    "price": 17.99,
+    "publisher": "Zima software",
+    "tags": [
+     "Adventure",
+     "Point & Click",
+     "Clicker",
+     "Choose Your Own Adventure",
+     "2D",
+     "Comic Book",
+     "Cartoon",
+     "Hand-drawn",
+     "Stylized",
+     "Cartoony",
+     "Atmospheric",
+     "Detective",
+     "Drama",
+     "Comedy",
+     "Hacking",
+     "Aliens",
+     "Politics",
+     "Satire",
+     "Sci-fi",
+     "Old School"
     ]
    }
   }
@@ -223748,8 +226031,7 @@
  },
  "steam-1985500": {
   "hltb": {
-   "at": "2026-11-16T13:52:32.686182+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:36:07.700118+00:00",
    "v": null
   },
   "mc": {
@@ -224334,8 +226616,7 @@
  },
  "steam-1990050": {
   "hltb": {
-   "at": "2026-11-16T14:05:53.784319+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:43:16.519469+00:00",
    "v": null
   },
   "mc": {
@@ -224437,6 +226718,69 @@
      "Indie",
      "Magic",
      "Stylized"
+    ]
+   }
+  }
+ },
+ "steam-1990590": {
+  "hltb": {
+   "at": "2026-11-17T14:43:12.676418+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 144262,
+    "main": null,
+    "title": "Nightmare Hunter",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:38.737270+00:00",
+   "v": {
+    "genres": [
+     "Top-Down Shoot-'Em-Up"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "nightmare-hunter",
+    "title": "Nightmare Hunter",
+    "user": null,
+    "userCount": 0,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:33.800729+00:00",
+   "forced": 1990590,
+   "v": {
+    "appid": 1990590,
+    "name": "Nightmare Hunter",
+    "neg": 15,
+    "owners": "0 .. 20,000",
+    "pos": 131,
+    "price": 15.99,
+    "publisher": "OTAKU Plan",
+    "tags": [
+     "Nudity",
+     "Sexual Content",
+     "Mystery Dungeon",
+     "Adventure",
+     "RPG",
+     "Turn-Based Strategy",
+     "2D",
+     "Fantasy",
+     "Story Rich",
+     "Female Protagonist",
+     "Singleplayer",
+     "Anime",
+     "RPGMaker",
+     "JRPG",
+     "Mature",
+     "Hentai",
+     "NSFW",
+     "LGBTQ+",
+     "Family Friendly",
+     "Open World"
     ]
    }
   }
@@ -230401,6 +232745,69 @@
    }
   }
  },
+ "steam-205230": {
+  "hltb": {
+   "at": "2026-11-17T14:43:32.591876+00:00",
+   "v": {
+    "comp": 9.7,
+    "extra": 9.0,
+    "id": 4395,
+    "main": 7.6,
+    "title": "Hell Yeah! Wrath of the Dead Rabbit",
+    "year": 2012
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:45.740603+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": 32,
+    "score": 70,
+    "slug": "hell-yeah-wrath-of-the-dead-rabbit",
+    "title": "Hell Yeah! Wrath of the Dead Rabbit",
+    "user": 8.3,
+    "userCount": 35,
+    "year": 2012
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:48.274557+00:00",
+   "forced": 205230,
+   "v": {
+    "appid": 205230,
+    "name": "Hell Yeah! Wrath of the Dead Rabbit",
+    "neg": 93,
+    "owners": "100,000 .. 200,000",
+    "pos": 563,
+    "price": 14.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Platformer",
+     "Action",
+     "2D",
+     "Comedy",
+     "Singleplayer",
+     "Funny",
+     "Metroidvania",
+     "Gore",
+     "Adventure",
+     "Great Soundtrack",
+     "Side Scroller",
+     "Violent",
+     "Indie",
+     "Controller",
+     "Cartoony",
+     "Cute",
+     "Dark Humor",
+     "Difficult",
+     "Colorful",
+     "2D Platformer"
+    ]
+   }
+  }
+ },
  "steam-20530": {
   "hltb": {
    "at": "2026-10-26T13:56:26.848574+00:00",
@@ -231069,6 +233476,132 @@
      "Elf",
      "Character Customization",
      "Sexual Content"
+    ]
+   }
+  }
+ },
+ "steam-2058180": {
+  "hltb": {
+   "at": "2026-11-17T14:39:09.128349+00:00",
+   "v": {
+    "comp": 99.4,
+    "extra": 46.2,
+    "id": 60754,
+    "main": 27.6,
+    "title": "Judgment",
+    "year": 2018
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:08.172321+00:00",
+   "v": {
+    "genres": [
+     "Open-World Action"
+    ],
+    "reviews": 89,
+    "score": 80,
+    "slug": "judgment",
+    "title": "Judgment",
+    "user": 8.5,
+    "userCount": 800,
+    "year": 2019
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:23.800875+00:00",
+   "forced": 2058180,
+   "v": {
+    "appid": 2058180,
+    "name": "Judgment",
+    "neg": 553,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 9190,
+    "price": 39.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Action",
+     "Adventure",
+     "Beat 'em up",
+     "Action-Adventure",
+     "3D Fighter",
+     "Cinematic",
+     "3D",
+     "Third Person",
+     "Hack and Slash",
+     "Realistic",
+     "Crime",
+     "Conspiracy",
+     "Detective",
+     "Dark",
+     "Drama",
+     "Investigation",
+     "Foreign",
+     "Gambling",
+     "Martial Arts",
+     "Logic"
+    ]
+   }
+  }
+ },
+ "steam-2058190": {
+  "hltb": {
+   "at": "2026-11-17T14:39:09.453828+00:00",
+   "v": {
+    "comp": 107.4,
+    "extra": 53.4,
+    "id": 92446,
+    "main": 24.3,
+    "title": "Lost Judgment",
+    "year": 2021
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:09.123182+00:00",
+   "v": {
+    "genres": [
+     "Open-World Action"
+    ],
+    "reviews": 83,
+    "score": 82,
+    "slug": "lost-judgment",
+    "title": "Lost Judgment",
+    "user": 8.5,
+    "userCount": 463,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:24.893662+00:00",
+   "forced": 2058190,
+   "v": {
+    "appid": 2058190,
+    "name": "Lost Judgment",
+    "neg": 428,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 7238,
+    "price": 39.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Action",
+     "Adventure",
+     "Beat 'em up",
+     "Action-Adventure",
+     "3D Fighter",
+     "Cinematic",
+     "Realistic",
+     "Third Person",
+     "Hack and Slash",
+     "Crime",
+     "Conspiracy",
+     "Detective",
+     "Dark",
+     "Drama",
+     "Investigation",
+     "Foreign",
+     "Gambling",
+     "Martial Arts",
+     "Logic",
+     "Modern"
     ]
    }
   }
@@ -234891,7 +237424,7 @@
  },
  "steam-2079950": {
   "hltb": {
-   "at": "2026-11-07T12:00:04.590650+00:00",
+   "at": "2026-11-17T14:43:19.147319+00:00",
    "v": null
   },
   "mc": {
@@ -235826,6 +238359,69 @@
      "RPG",
      "PvE",
      "Colorful"
+    ]
+   }
+  }
+ },
+ "steam-2087610": {
+  "hltb": {
+   "at": "2026-11-17T14:38:05.693845+00:00",
+   "v": {
+    "comp": 8.1,
+    "extra": 7.2,
+    "id": 137908,
+    "main": 4.6,
+    "title": "UFO: Unidentified Falling Objects",
+    "year": 2023
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:00.551589+00:00",
+   "v": {
+    "genres": [
+     "Action Puzzle"
+    ],
+    "reviews": 4,
+    "score": 76,
+    "slug": "ufo-unidentified-falling-objects",
+    "title": "UFO: Unidentified Falling Objects",
+    "user": null,
+    "userCount": 2,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:07.074150+00:00",
+   "forced": 2087610,
+   "v": {
+    "appid": 2087610,
+    "name": "UFO: Unidentified Falling Objects",
+    "neg": 3,
+    "owners": "20,000 .. 50,000",
+    "pos": 143,
+    "price": 14.99,
+    "publisher": "Arc Games",
+    "tags": [
+     "2D Platformer",
+     "Puzzle-Platformer",
+     "Puzzle",
+     "PvP",
+     "Platformer",
+     "Arcade",
+     "2D",
+     "Cute",
+     "Action",
+     "Split Screen",
+     "Controller",
+     "Colorful",
+     "Pixel Graphics",
+     "Family Friendly",
+     "Sci-fi",
+     "Space",
+     "Score Attack",
+     "Retro",
+     "Local Multiplayer",
+     "Indie"
     ]
    }
   }
@@ -237925,6 +240521,69 @@
    }
   }
  },
+ "steam-2099790": {
+  "hltb": {
+   "at": "2026-11-17T14:41:15.200222+00:00",
+   "v": {
+    "comp": 12.0,
+    "extra": null,
+    "id": 127577,
+    "main": null,
+    "title": "The Monstrous Horror Show",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:23.201467+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "the-monstrous-horror-show",
+    "title": "The Monstrous Horror Show",
+    "user": null,
+    "userCount": 0,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:57.133077+00:00",
+   "forced": 2099790,
+   "v": {
+    "appid": 2099790,
+    "name": "The Monstrous Horror Show",
+    "neg": 24,
+    "owners": "20,000 .. 50,000",
+    "pos": 227,
+    "price": 14.99,
+    "publisher": "OTAKU Plan",
+    "tags": [
+     "Side Scroller",
+     "Puzzle",
+     "Story Rich",
+     "Sexual Content",
+     "Nudity",
+     "Horror",
+     "NSFW",
+     "Multiple Endings",
+     "Anime",
+     "RPG",
+     "Adventure",
+     "Exploration",
+     "Dungeon Crawler",
+     "Atmospheric",
+     "Real Time Tactics",
+     "Female Protagonist",
+     "Visual Novel",
+     "Choices Matter",
+     "Singleplayer",
+     "Cute"
+    ]
+   }
+  }
+ },
  "steam-2100": {
   "hltb": {
    "at": "2026-11-14T12:24:54.370767+00:00",
@@ -238472,7 +241131,7 @@
  },
  "steam-2103710": {
   "hltb": {
-   "at": "2026-11-07T11:57:41.842744+00:00",
+   "at": "2026-11-17T14:39:14.812900+00:00",
    "v": null
   },
   "mc": {
@@ -240463,7 +243122,7 @@
  },
  "steam-2116620": {
   "hltb": {
-   "at": "2026-11-07T12:00:02.791267+00:00",
+   "at": "2026-11-17T14:43:12.265635+00:00",
    "v": null
   },
   "mc": {
@@ -241664,6 +244323,62 @@
      "Pixel Graphics",
      "Noir",
      "Atmospheric"
+    ]
+   }
+  }
+ },
+ "steam-212480": {
+  "hltb": {
+   "at": "2026-11-17T14:39:08.587490+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:07.566945+00:00",
+   "v": {
+    "genres": [
+     "Auto Racing"
+    ],
+    "reviews": 38,
+    "score": 82,
+    "slug": "sonic-and-all-stars-racing-transformed",
+    "title": "Sonic & All-Stars Racing Transformed",
+    "user": 8.3,
+    "userCount": 308,
+    "year": 2012
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:21.581947+00:00",
+   "forced": 212480,
+   "v": {
+    "appid": 212480,
+    "name": "Sonic & All-Stars Racing Transformed Collection",
+    "neg": 779,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 11164,
+    "price": 19.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Racing",
+     "Local Multiplayer",
+     "Multiplayer",
+     "Great Soundtrack",
+     "Local Co-Op",
+     "Sports",
+     "Split Screen",
+     "Arcade",
+     "Replay Value",
+     "4 Player Local",
+     "Controller",
+     "Family Friendly",
+     "Online Co-Op",
+     "Singleplayer",
+     "Fast-Paced",
+     "Colorful",
+     "Action",
+     "Co-op",
+     "Adventure",
+     "Touch-Friendly"
     ]
    }
   }
@@ -244384,6 +247099,69 @@
     "price": null,
     "publisher": "Games Incubator, PlayWay S.A.",
     "tags": []
+   }
+  }
+ },
+ "steam-214950": {
+  "hltb": {
+   "at": "2026-11-17T14:42:23.207179+00:00",
+   "v": {
+    "comp": 252.4,
+    "extra": 97.2,
+    "id": 10547,
+    "main": 46.5,
+    "title": "Total War: Rome II",
+    "year": 2013
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:35.818391+00:00",
+   "v": {
+    "genres": [
+     "Real-Time Strategy"
+    ],
+    "reviews": 71,
+    "score": 76,
+    "slug": "total-war-rome-ii",
+    "title": "Total War: Rome II",
+    "user": 4.5,
+    "userCount": 4076,
+    "year": 2013
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:26.027742+00:00",
+   "forced": 214950,
+   "v": {
+    "appid": 214950,
+    "name": "Total War: ROME II - Emperor Edition",
+    "neg": 7050,
+    "owners": "2,000,000 .. 5,000,000",
+    "pos": 48008,
+    "price": 29.99,
+    "publisher": "SEGA, Feral Interactive",
+    "tags": [
+     "Strategy",
+     "Historical",
+     "Turn-Based Strategy",
+     "Grand Strategy",
+     "Rome",
+     "Tactical",
+     "War",
+     "Multiplayer",
+     "RTS",
+     "Real Time Tactics",
+     "Turn-Based",
+     "Singleplayer",
+     "Online Co-Op",
+     "Turn-Based Tactics",
+     "Simulation",
+     "Co-op",
+     "Moddable",
+     "Action",
+     "Atmospheric",
+     "Education"
+    ]
    }
   }
  },
@@ -247203,6 +249981,69 @@
     "price": null,
     "publisher": "orange pineapple tea",
     "tags": []
+   }
+  }
+ },
+ "steam-2169830": {
+  "hltb": {
+   "at": "2026-11-17T14:41:15.399248+00:00",
+   "v": {
+    "comp": null,
+    "extra": 20.5,
+    "id": 141133,
+    "main": null,
+    "title": "How a Retired Strategist Saved the Country",
+    "year": 2023
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:23.451657+00:00",
+   "v": {
+    "genres": [
+     "Turn-Based Strategy"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "how-a-retired-strategist-saved-the-country",
+    "title": "How a Retired Strategist Saved the Country",
+    "user": null,
+    "userCount": 0,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:58.225908+00:00",
+   "forced": 2169830,
+   "v": {
+    "appid": 2169830,
+    "name": "How a Retired Strategist Saved the Country",
+    "neg": 23,
+    "owners": "20,000 .. 50,000",
+    "pos": 225,
+    "price": 13.99,
+    "publisher": "OTAKU Plan",
+    "tags": [
+     "Sexual Content",
+     "Nudity",
+     "Strategy RPG",
+     "NSFW",
+     "Strategy",
+     "Adventure",
+     "City Builder",
+     "Fantasy",
+     "Resource Management",
+     "Singleplayer",
+     "Simulation",
+     "Visual Novel",
+     "Anime",
+     "Real Time Tactics",
+     "Wargame",
+     "Building",
+     "Medieval",
+     "Economy",
+     "Historical",
+     "RPG"
+    ]
    }
   }
  },
@@ -251243,7 +254084,7 @@
  },
  "steam-2200380": {
   "hltb": {
-   "at": "2026-11-16T13:54:38.648481+00:00",
+   "at": "2026-11-17T14:36:42.203858+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -251468,8 +254309,7 @@
  },
  "steam-220090": {
   "hltb": {
-   "at": "2026-11-16T14:05:11.196801+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:42:35.189635+00:00",
    "v": null
   },
   "mc": {
@@ -253215,6 +256055,69 @@
     "price": 9.99,
     "publisher": "Hidden Trap, TrueColor Games",
     "tags": []
+   }
+  }
+ },
+ "steam-2213500": {
+  "hltb": {
+   "at": "2026-11-17T14:40:26.118479+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 147114,
+    "main": 1.7,
+    "title": "Sven - Completely Screwed",
+    "year": 2023
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:18.524479+00:00",
+   "v": {
+    "genres": [
+     "Action"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "sven-completely-screwed",
+    "title": "Sven - Completely Screwed",
+    "user": null,
+    "userCount": 0,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:46.022944+00:00",
+   "forced": 2213500,
+   "v": {
+    "appid": 2213500,
+    "name": "Sven - Completely Screwed",
+    "neg": 10,
+    "owners": "0 .. 20,000",
+    "pos": 141,
+    "price": 14.99,
+    "publisher": "Markt+Technik Verlag GmbH",
+    "tags": [
+     "Action",
+     "Arcade",
+     "Comedy",
+     "Local Co-Op",
+     "Local Multiplayer",
+     "3D",
+     "Cartoon",
+     "Funny",
+     "Cartoony",
+     "Colorful",
+     "Isometric",
+     "Split Screen",
+     "PvP",
+     "Dark Comedy",
+     "Controller",
+     "Singleplayer",
+     "Multiplayer",
+     "Co-op",
+     "Sexual Content",
+     "Mature"
+    ]
    }
   }
  },
@@ -255063,6 +257966,69 @@
    }
   }
  },
+ "steam-2227450": {
+  "hltb": {
+   "at": "2026-11-17T14:39:14.095715+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 161388,
+    "main": null,
+    "title": "Oyabu Clinic Deathcare Corporation",
+    "year": 2023
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:11.612164+00:00",
+   "v": {
+    "genres": [
+     "Strategy"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "oyabu-clinic-deathcare-corporation",
+    "title": "Oyabu Clinic Deathcare Corporation",
+    "user": null,
+    "userCount": 0,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:30.455332+00:00",
+   "forced": 2227450,
+   "v": {
+    "appid": 2227450,
+    "name": "Oyabu Clinic Deathcare Corporation",
+    "neg": 12,
+    "owners": "20,000 .. 50,000",
+    "pos": 207,
+    "price": 14.99,
+    "publisher": "GAMER Plan",
+    "tags": [
+     "Medical Sim",
+     "Dark Comedy",
+     "Turn-Based Tactics",
+     "JRPG",
+     "RPG",
+     "Horror",
+     "Management",
+     "2D",
+     "Cyberpunk",
+     "Funny",
+     "Story Rich",
+     "Dark Humor",
+     "Turn-Based Combat",
+     "Multiple Endings",
+     "Simulation",
+     "Choices Matter",
+     "Anime",
+     "Comedy",
+     "Satire",
+     "Futuristic"
+    ]
+   }
+  }
+ },
  "steam-2229560": {
   "hltb": {
    "at": "2026-10-26T13:46:15.487533+00:00",
@@ -255768,8 +258734,7 @@
  },
  "steam-2234960": {
   "hltb": {
-   "at": "2026-11-16T14:02:44.486740+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:41:23.388803+00:00",
    "v": null
   },
   "mc": {
@@ -260940,6 +263905,52 @@
    }
   }
  },
+ "steam-227600": {
+  "hltb": {
+   "at": "2026-11-17T14:40:45.417456+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:18.956229+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:48.247664+00:00",
+   "forced": 227600,
+   "v": {
+    "appid": 227600,
+    "name": "Castle of Illusion",
+    "neg": 341,
+    "owners": "200,000 .. 500,000",
+    "pos": 3211,
+    "price": 14.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Platformer",
+     "Adventure",
+     "Remake",
+     "Casual",
+     "Family Friendly",
+     "Singleplayer",
+     "Retro",
+     "Classic",
+     "Colorful",
+     "Great Soundtrack",
+     "2.5D",
+     "Short",
+     "2D",
+     "Cartoon",
+     "Difficult",
+     "3D Platformer",
+     "Atmospheric",
+     "Cartoony",
+     "Cute",
+     "Fantasy"
+    ]
+   }
+  }
+ },
  "steam-2276930": {
   "hltb": {
    "at": "2026-10-23T12:39:21.159098+00:00",
@@ -261799,6 +264810,69 @@
      "Story Rich",
      "Mature",
      "Great Soundtrack"
+    ]
+   }
+  }
+ },
+ "steam-2283380": {
+  "hltb": {
+   "at": "2026-11-17T14:43:26.841234+00:00",
+   "v": {
+    "comp": null,
+    "extra": 26.9,
+    "id": 88704,
+    "main": null,
+    "title": "Charrua Soccer",
+    "year": 2020
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:42.101976+00:00",
+   "v": {
+    "genres": [
+     "Soccer"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "charrua-soccer-mirror-edition",
+    "title": "Charrua Soccer - Mirror Edition",
+    "user": null,
+    "userCount": 0,
+    "year": 2097
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:40.413378+00:00",
+   "forced": 2283380,
+   "v": {
+    "appid": 2283380,
+    "name": "Charrua Soccer - Pro Edition",
+    "neg": 9,
+    "owners": "0 .. 20,000",
+    "pos": 98,
+    "price": 11.99,
+    "publisher": "BATOVI Games",
+    "tags": [
+     "Arcade",
+     "Football (Soccer)",
+     "Anime",
+     "Action",
+     "Cartoon",
+     "Sports",
+     "Horror",
+     "e-sports",
+     "Parody ",
+     "PvE",
+     "PvP",
+     "Character Customization",
+     "3D",
+     "Funny",
+     "Controller",
+     "Casual",
+     "Co-op",
+     "Party",
+     "Multiplayer",
+     "Simulation"
     ]
    }
   }
@@ -264576,6 +267650,49 @@
    }
   }
  },
+ "steam-2307300": {
+  "hltb": {
+   "at": "2026-11-17T14:43:22.268118+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:41.873504+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:39.410538+00:00",
+   "forced": 2307300,
+   "v": {
+    "appid": 2307300,
+    "name": "Kurone's Feelings ~Apprentice Witch of Starfall Village~",
+    "neg": 11,
+    "owners": "0 .. 20,000",
+    "pos": 100,
+    "price": 14.99,
+    "publisher": "OTAKU Plan",
+    "tags": [
+     "Sexual Content",
+     "Nudity",
+     "NSFW",
+     "Adventure",
+     "RPG",
+     "JRPG",
+     "Visual Novel",
+     "Life Sim",
+     "Exploration",
+     "2D",
+     "Colorful",
+     "Fantasy",
+     "Indie",
+     "Female Protagonist",
+     "Story Rich",
+     "Singleplayer",
+     "Hentai",
+     "Anime"
+    ]
+   }
+  }
+ },
  "steam-2308000": {
   "hltb": {
    "at": "2026-10-26T12:03:12.987460+00:00",
@@ -265630,7 +268747,7 @@
  },
  "steam-2317560": {
   "hltb": {
-   "at": "2026-11-07T11:55:29.413007+00:00",
+   "at": "2026-11-17T14:36:17.377167+00:00",
    "v": null
   },
   "mc": {
@@ -267206,7 +270323,7 @@
  },
  "steam-2330960": {
   "hltb": {
-   "at": "2026-11-07T11:57:45.024990+00:00",
+   "at": "2026-11-17T14:39:23.043997+00:00",
    "v": null
   },
   "mc": {
@@ -270782,7 +273899,7 @@
  },
  "steam-2355220": {
   "hltb": {
-   "at": "2026-11-07T11:55:27.364176+00:00",
+   "at": "2026-11-17T14:36:04.549335+00:00",
    "v": null
   },
   "mc": {
@@ -271902,6 +275019,48 @@
    }
   }
  },
+ "steam-2364580": {
+  "hltb": {
+   "at": "2026-11-17T14:39:01.160166+00:00",
+   "v": {
+    "comp": 33.4,
+    "extra": 15.6,
+    "id": 182399,
+    "main": 7.0,
+    "title": "Titanium Court",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:04.909121+00:00",
+   "v": {
+    "genres": [
+     "Strategy"
+    ],
+    "reviews": 16,
+    "score": 85,
+    "slug": "titanium-court",
+    "title": "Titanium Court",
+    "user": 6.1,
+    "userCount": 26,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:17.134403+00:00",
+   "forced": 2364580,
+   "v": {
+    "appid": 2364580,
+    "name": "Titanium Court",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 14.99,
+    "publisher": "Fellow Traveller",
+    "tags": []
+   }
+  }
+ },
  "steam-2365500": {
   "hltb": {
    "at": "2026-11-13T13:17:57.514350+00:00",
@@ -272026,8 +275185,7 @@
  },
  "steam-2367230": {
   "hltb": {
-   "at": "2026-11-16T14:04:08.398948+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:42:14.984454+00:00",
    "v": null
   },
   "mc": {
@@ -272534,6 +275692,69 @@
    }
   }
  },
+ "steam-2375550": {
+  "hltb": {
+   "at": "2026-11-17T14:37:11.639328+00:00",
+   "v": {
+    "comp": 33.1,
+    "extra": 21.7,
+    "id": 113584,
+    "main": 12.7,
+    "title": "Like a Dragon Gaiden: The Man Who Erased His Name",
+    "year": 2023
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:33:59.059757+00:00",
+   "v": {
+    "genres": [
+     "Action Adventure"
+    ],
+    "reviews": 68,
+    "score": 78,
+    "slug": "like-a-dragon-gaiden-the-man-who-erased-his-name",
+    "title": "Like a Dragon Gaiden: The Man Who Erased His Name",
+    "user": 8.2,
+    "userCount": 381,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:02.660923+00:00",
+   "forced": 2375550,
+   "v": {
+    "appid": 2375550,
+    "name": "Like a Dragon Gaiden: The Man Who Erased His Name",
+    "neg": 357,
+    "owners": "200,000 .. 500,000",
+    "pos": 9974,
+    "price": 49.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Action",
+     "Beat 'em up",
+     "Action RPG",
+     "Action-Adventure",
+     "Sexual Content",
+     "Story Rich",
+     "Violent",
+     "Singleplayer",
+     "Open World",
+     "Martial Arts",
+     "JRPG",
+     "Comedy",
+     "Gore",
+     "Adventure",
+     "Hack and Slash",
+     "Great Soundtrack",
+     "Emotional",
+     "Third Person",
+     "Dog",
+     "Mature"
+    ]
+   }
+  }
+ },
  "steam-237630": {
   "hltb": {
    "at": "2026-10-23T16:42:45.192099+00:00",
@@ -272599,7 +275820,7 @@
  },
  "steam-2376540": {
   "hltb": {
-   "at": "2026-11-07T12:00:04.649273+00:00",
+   "at": "2026-11-17T14:43:20.118239+00:00",
    "v": null
   },
   "mc": {
@@ -274752,8 +277973,7 @@
  },
  "steam-2395810": {
   "hltb": {
-   "at": "2026-11-16T14:06:58.989783+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:43:31.621237+00:00",
    "v": null
   },
   "mc": {
@@ -275604,6 +278824,63 @@
    }
   }
  },
+ "steam-2400640": {
+  "hltb": {
+   "at": "2026-11-17T14:38:44.770156+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:04.687897+00:00",
+   "v": {
+    "genres": [
+     "Action Adventure"
+    ],
+    "reviews": 2,
+    "score": null,
+    "slug": "nanoapostle",
+    "title": "NanoApostle",
+    "user": null,
+    "userCount": 1,
+    "year": 2024
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:15.993870+00:00",
+   "forced": 2400640,
+   "v": {
+    "appid": 2400640,
+    "name": "NanoApostle",
+    "neg": 40,
+    "owners": "20,000 .. 50,000",
+    "pos": 809,
+    "price": 19.99,
+    "publisher": "PQube",
+    "tags": [
+     "Action",
+     "Boss Rush",
+     "Dark",
+     "Action RPG",
+     "Bullet Hell",
+     "Hack and Slash",
+     "Futuristic",
+     "Souls-like",
+     "Spectacle fighter",
+     "2D",
+     "Anime",
+     "Pixel Graphics",
+     "Top-Down",
+     "Dark Fantasy",
+     "Robots",
+     "Sci-fi",
+     "Combat",
+     "Female Protagonist",
+     "Singleplayer",
+     "Indie"
+    ]
+   }
+  }
+ },
  "steam-2401230": {
   "hltb": {
    "at": "2026-11-12T22:00:47.950038+00:00",
@@ -275967,8 +279244,7 @@
  },
  "steam-2408310": {
   "hltb": {
-   "at": "2026-11-16T13:53:35.278549+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:36:15.195997+00:00",
    "v": null
   },
   "mc": {
@@ -280343,6 +283619,43 @@
    }
   }
  },
+ "steam-2442380": {
+  "hltb": {
+   "at": "2026-11-17T14:43:53.117088+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:46.212352+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:50.502079+00:00",
+   "forced": 2442380,
+   "v": {
+    "appid": 2442380,
+    "name": "SNK VS. CAPCOM SVC CHAOS",
+    "neg": 40,
+    "owners": "20,000 .. 50,000",
+    "pos": 281,
+    "price": 19.99,
+    "publisher": "SNK CORPORATION",
+    "tags": [
+     "Action",
+     "2D Fighter",
+     "2D",
+     "Pixel Graphics",
+     "1990's",
+     "Dark",
+     "PvP",
+     "Multiplayer",
+     "Singleplayer",
+     "Fighting",
+     "Arcade"
+    ]
+   }
+  }
+ },
  "steam-2443360": {
   "hltb": {
    "at": "2026-10-23T15:49:20.808130+00:00",
@@ -281075,6 +284388,69 @@
     "price": null,
     "publisher": "",
     "tags": []
+   }
+  }
+ },
+ "steam-244850": {
+  "hltb": {
+   "at": "2026-11-17T14:41:25.251532+00:00",
+   "v": {
+    "comp": 382.5,
+    "extra": 74.1,
+    "id": 16007,
+    "main": 20.3,
+    "title": "Space Engineers",
+    "year": 2013
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:25.226838+00:00",
+   "v": {
+    "genres": [
+     "Sandbox"
+    ],
+    "reviews": 4,
+    "score": 68,
+    "slug": "space-engineers",
+    "title": "Space Engineers",
+    "user": 6,
+    "userCount": 46,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:01.620587+00:00",
+   "forced": 244850,
+   "v": {
+    "appid": 244850,
+    "name": "Space Engineers",
+    "neg": 10451,
+    "owners": "2,000,000 .. 5,000,000",
+    "pos": 90354,
+    "price": 19.99,
+    "publisher": "Keen Software House",
+    "tags": [
+     "Sandbox",
+     "Building",
+     "Space",
+     "Survival",
+     "Simulation",
+     "Physics",
+     "Open World",
+     "Base-Building",
+     "Multiplayer",
+     "Singleplayer",
+     "Co-op",
+     "Moddable",
+     "PvP",
+     "Space Sim",
+     "Combat",
+     "Action",
+     "Exploration",
+     "PvE",
+     "Realistic",
+     "Strategy"
+    ]
    }
   }
  },
@@ -282081,7 +285457,7 @@
  },
  "steam-2459860": {
   "hltb": {
-   "at": "2026-11-07T11:57:49.725334+00:00",
+   "at": "2026-11-17T14:40:14.495652+00:00",
    "v": null
   },
   "mc": {
@@ -286099,7 +289475,8 @@
  },
  "steam-2503550": {
   "hltb": {
-   "at": "2026-11-07T11:56:34.587237+00:00",
+   "at": "2026-11-17T14:37:26.500865+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -293049,7 +296426,7 @@
  },
  "steam-2562460": {
   "hltb": {
-   "at": "2026-11-07T11:57:42.986753+00:00",
+   "at": "2026-11-17T14:39:15.477602+00:00",
    "v": null
   },
   "mc": {
@@ -294363,8 +297740,7 @@
  },
  "steam-2579280": {
   "hltb": {
-   "at": "2026-11-16T14:05:11.252820+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:42:37.261768+00:00",
    "v": null
   },
   "mc": {
@@ -295341,7 +298717,7 @@
  },
  "steam-259530": {
   "hltb": {
-   "at": "2026-11-07T11:57:41.290831+00:00",
+   "at": "2026-11-17T14:39:10.861780+00:00",
    "v": null
   },
   "mc": {
@@ -297550,6 +300926,69 @@
      "Singleplayer",
      "Strategy",
      "Replay Value"
+    ]
+   }
+  }
+ },
+ "steam-2619650": {
+  "hltb": {
+   "at": "2026-11-17T14:40:04.357169+00:00",
+   "v": {
+    "comp": 62.3,
+    "extra": 31.7,
+    "id": 170155,
+    "main": 13.7,
+    "title": "Cauldron",
+    "year": 2025
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:13.429286+00:00",
+   "v": {
+    "genres": [
+     "RPG"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "cauldron",
+    "title": "Cauldron",
+    "user": null,
+    "userCount": 1,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:34.869305+00:00",
+   "forced": 2619650,
+   "v": {
+    "appid": 2619650,
+    "name": "Cauldron",
+    "neg": 19,
+    "owners": "20,000 .. 50,000",
+    "pos": 481,
+    "price": 14.99,
+    "publisher": "Caketown Interactive",
+    "tags": [
+     "Minigames",
+     "Idler",
+     "Casual",
+     "Turn-Based Strategy",
+     "Adventure",
+     "Pixel Graphics",
+     "Auto Battler",
+     "2D",
+     "Fantasy",
+     "Colorful",
+     "Cute",
+     "Tactical RPG",
+     "Magic",
+     "Retro",
+     "Female Protagonist",
+     "Turn-Based Combat",
+     "Simulation",
+     "Score Attack",
+     "Strategy",
+     "Singleplayer"
     ]
    }
   }
@@ -303782,6 +307221,69 @@
    }
   }
  },
+ "steam-2685490": {
+  "hltb": {
+   "at": "2026-11-17T14:38:04.485382+00:00",
+   "v": {
+    "comp": 10.0,
+    "extra": 7.3,
+    "id": 143033,
+    "main": 4.5,
+    "title": "Detective Hayseed - The Cloning Madness",
+    "year": 2023
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:00.076143+00:00",
+   "v": {
+    "genres": [
+     "Point-and-Click"
+    ],
+    "reviews": 2,
+    "score": null,
+    "slug": "detective-hayseed-the-cloning-madness",
+    "title": "Detective Hayseed - The Cloning Madness",
+    "user": null,
+    "userCount": 1,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:06.055504+00:00",
+   "forced": 2685490,
+   "v": {
+    "appid": 2685490,
+    "name": "Detective Hayseed - The Cloning Madness",
+    "neg": 3,
+    "owners": "20,000 .. 50,000",
+    "pos": 200,
+    "price": 14.99,
+    "publisher": "Zima software",
+    "tags": [
+     "Adventure",
+     "Point & Click",
+     "Interactive Fiction",
+     "Clicker",
+     "Exploration",
+     "Choose Your Own Adventure",
+     "2D",
+     "Cartoon",
+     "Hand-drawn",
+     "Comic Book",
+     "Detective",
+     "Comedy",
+     "Relaxing",
+     "Parody ",
+     "Political",
+     "Retro",
+     "Dark Humor",
+     "Satire",
+     "Funny",
+     "Conversation"
+    ]
+   }
+  }
+ },
  "steam-2685900": {
   "hltb": {
    "at": "2026-10-26T13:32:05.383422+00:00",
@@ -304167,8 +307669,7 @@
  },
  "steam-2689440": {
   "hltb": {
-   "at": "2026-11-16T13:57:27.317425+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:38:20.440682+00:00",
    "v": null
   },
   "mc": {
@@ -304702,6 +308203,69 @@
      "Indie",
      "Psychedelic",
      "Psychological"
+    ]
+   }
+  }
+ },
+ "steam-2693530": {
+  "hltb": {
+   "at": "2026-11-17T14:40:14.397865+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 162080,
+    "main": 1.7,
+    "title": "Witching Stone",
+    "year": 2024
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:16.672844+00:00",
+   "v": {
+    "genres": [
+     "Strategy"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "witching-stone",
+    "title": "Witching Stone",
+    "user": null,
+    "userCount": 0,
+    "year": 2024
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:42.638517+00:00",
+   "forced": 2693530,
+   "v": {
+    "appid": 2693530,
+    "name": "Witching Stone",
+    "neg": 8,
+    "owners": "20,000 .. 50,000",
+    "pos": 126,
+    "price": 13.99,
+    "publisher": "Alexander Taylor",
+    "tags": [
+     "Strategy",
+     "Rogue-like",
+     "Deckbuilding",
+     "Puzzle",
+     "Anime",
+     "1990's",
+     "Dungeon Crawler",
+     "Pixel Graphics",
+     "Rogue-lite",
+     "Turn-Based Strategy",
+     "Female Protagonist",
+     "Turn-Based Tactics",
+     "2D",
+     "Colorful",
+     "Procedural Generation",
+     "Cute",
+     "Magic",
+     "Tactical",
+     "Character Customization",
+     "Inventory Management"
     ]
    }
   }
@@ -309036,7 +312600,7 @@
  },
  "steam-2736860": {
   "hltb": {
-   "at": "2026-11-07T11:56:37.300312+00:00",
+   "at": "2026-11-17T14:38:08.578752+00:00",
    "v": null
   },
   "mc": {
@@ -311833,6 +315397,52 @@
    }
   }
  },
+ "steam-276340": {
+  "hltb": {
+   "at": "2026-11-17T14:42:19.694787+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:35.242542+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:23.818911+00:00",
+   "forced": 276340,
+   "v": {
+    "appid": 276340,
+    "name": "My Riding Stables: Life with Horses",
+    "neg": 29,
+    "owners": "20,000 .. 50,000",
+    "pos": 217,
+    "price": 14.99,
+    "publisher": "familyplay, Markt+Technik Verlag",
+    "tags": [
+     "Horses",
+     "Simulation",
+     "Casual",
+     "Sports",
+     "Family Friendly",
+     "Female Protagonist",
+     "Animals",
+     "Adventure",
+     "Management",
+     "Open World",
+     "Immersive",
+     "Action",
+     "Walking Simulator",
+     "Anime",
+     "Immersive Sim",
+     "Dogs",
+     "RPG",
+     "3D Fighter",
+     "Action RPG",
+     "Cute"
+    ]
+   }
+  }
+ },
  "steam-2763670": {
   "hltb": {
    "at": "2026-10-25T09:55:38.694860+00:00",
@@ -312310,7 +315920,8 @@
  },
  "steam-2767910": {
   "hltb": {
-   "at": "2026-11-07T11:58:49.086577+00:00",
+   "at": "2026-11-17T14:40:27.397901+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -316473,8 +320084,7 @@
  },
  "steam-2804510": {
   "hltb": {
-   "at": "2026-11-16T14:02:02.189703+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:41:10.710293+00:00",
    "v": null
   },
   "mc": {
@@ -316633,7 +320243,7 @@
  },
  "steam-2806230": {
   "hltb": {
-   "at": "2026-11-16T13:57:27.660594+00:00",
+   "at": "2026-11-17T14:38:21.418233+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -316997,8 +320607,7 @@
  },
  "steam-2811830": {
   "hltb": {
-   "at": "2026-11-16T13:52:12.792314+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:36:01.369983+00:00",
    "v": null
   },
   "mc": {
@@ -317402,6 +321011,63 @@
    }
   }
  },
+ "steam-2816950": {
+  "hltb": {
+   "at": "2026-11-17T14:40:47.039775+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:20.274187+00:00",
+   "v": {
+    "genres": [
+     "Trainer RPG"
+    ],
+    "reviews": 2,
+    "score": null,
+    "slug": "yaoling-mythical-journey",
+    "title": "Yaoling: Mythical Journey",
+    "user": null,
+    "userCount": 0,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:49.377124+00:00",
+   "forced": 2816950,
+   "v": {
+    "appid": 2816950,
+    "name": "Yaoling: Mythical Journey",
+    "neg": 223,
+    "owners": "100,000 .. 200,000",
+    "pos": 2405,
+    "price": 19.99,
+    "publisher": "RAYKA STUDIO, Craftmos Games",
+    "tags": [
+     "Early Access",
+     "Strategy",
+     "Creature Collector",
+     "RPG",
+     "Adventure",
+     "Cute",
+     "Open World",
+     "Indie",
+     "Relaxing",
+     "Singleplayer",
+     "Sandbox",
+     "Exploration",
+     "Story Rich",
+     "Auto Battler",
+     "Stylized",
+     "Casual",
+     "Simulation",
+     "Crafting",
+     "Cozy",
+     "Fantasy"
+    ]
+   }
+  }
+ },
  "steam-2817140": {
   "hltb": {
    "at": "2026-10-26T13:46:56.884938+00:00",
@@ -317704,7 +321370,7 @@
  },
  "steam-2820140": {
   "hltb": {
-   "at": "2026-11-07T12:01:04.778926+00:00",
+   "at": "2026-11-17T14:44:13.837772+00:00",
    "v": null
   },
   "mc": {
@@ -320906,6 +324572,48 @@
    }
   }
  },
+ "steam-2841650": {
+  "hltb": {
+   "at": "2026-11-17T14:38:14.988432+00:00",
+   "v": {
+    "comp": 7.8,
+    "extra": 7.1,
+    "id": 181668,
+    "main": 3.9,
+    "title": "Sniper Dan",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:03.023491+00:00",
+   "v": {
+    "genres": [
+     "Hidden Object"
+    ],
+    "reviews": 5,
+    "score": 76,
+    "slug": "sniper-dan",
+    "title": "Sniper Dan",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:11.529764+00:00",
+   "forced": 2841650,
+   "v": {
+    "appid": 2841650,
+    "name": "",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
  "steam-284240": {
   "hltb": {
    "at": "2026-10-26T13:40:12.291190+00:00",
@@ -322381,6 +326089,67 @@
    }
   }
  },
+ "steam-2850490": {
+  "hltb": {
+   "at": "2026-11-17T14:37:22.225611+00:00",
+   "v": {
+    "comp": null,
+    "extra": 13.0,
+    "id": 168931,
+    "main": null,
+    "title": "Axyz",
+    "year": 2025
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:33:59.509681+00:00",
+   "v": {
+    "genres": [
+     "Action Puzzle"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "axyz",
+    "title": "Axyz",
+    "user": null,
+    "userCount": 0,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:04.020407+00:00",
+   "forced": 2850490,
+   "v": {
+    "appid": 2850490,
+    "name": "Axyz",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 68,
+    "price": 11.99,
+    "publisher": "Space Lion Studios",
+    "tags": [
+     "Puzzle-Platformer",
+     "Puzzle",
+     "Singleplayer",
+     "Indie",
+     "3D Platformer",
+     "Difficult",
+     "3D",
+     "Surreal",
+     "Controller",
+     "Casual",
+     "Abstract",
+     "Colorful",
+     "Minimalist",
+     "Logic",
+     "Psychedelic",
+     "1990's",
+     "Retro",
+     "Grid-Based Movement"
+    ]
+   }
+  }
+ },
  "steam-2850630": {
   "hltb": {
    "at": "2026-11-13T13:20:07.747981+00:00",
@@ -323787,8 +327556,7 @@
  },
  "steam-2861740": {
   "hltb": {
-   "at": "2026-11-16T13:58:50.097403+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:39:07.831845+00:00",
    "v": null
   },
   "mc": {
@@ -324974,7 +328742,8 @@
  },
  "steam-2872930": {
   "hltb": {
-   "at": "2026-11-07T11:54:28.492264+00:00",
+   "at": "2026-11-17T14:35:38.798715+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -325878,7 +329647,7 @@
  },
  "steam-2879980": {
   "hltb": {
-   "at": "2026-11-07T12:00:00.610080+00:00",
+   "at": "2026-11-17T14:43:11.288024+00:00",
    "v": null
   },
   "mc": {
@@ -326725,6 +330494,48 @@
     "pos": 0,
     "price": null,
     "publisher": "",
+    "tags": []
+   }
+  }
+ },
+ "steam-2886620": {
+  "hltb": {
+   "at": "2026-11-17T14:39:12.907136+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 182062,
+    "main": null,
+    "title": "Hive Blight",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:10.726734+00:00",
+   "v": {
+    "genres": [
+     "Strategy"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "hive-blight",
+    "title": "Hive Blight",
+    "user": null,
+    "userCount": 0,
+    "year": 2097
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:28.246610+00:00",
+   "forced": 2886620,
+   "v": {
+    "appid": 2886620,
+    "name": "Hive Blight",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 12.49,
+    "publisher": "Slug Disco",
     "tags": []
    }
   }
@@ -327781,7 +331592,7 @@
  },
  "steam-2899680": {
   "hltb": {
-   "at": "2026-11-07T11:57:49.362650+00:00",
+   "at": "2026-11-17T14:40:10.763971+00:00",
    "v": null
   },
   "mc": {
@@ -330531,8 +334342,7 @@
  },
  "steam-2921890": {
   "hltb": {
-   "at": "2026-11-16T13:51:07.742034+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:35:58.137559+00:00",
    "v": null
   },
   "mc": {
@@ -333128,6 +336938,69 @@
    }
   }
  },
+ "steam-294860": {
+  "hltb": {
+   "at": "2026-11-17T14:41:27.450330+00:00",
+   "v": {
+    "comp": 58.7,
+    "extra": 38.1,
+    "id": 36967,
+    "main": 30.3,
+    "title": "Valkyria Chronicles",
+    "year": 2008
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:26.729444+00:00",
+   "v": {
+    "genres": [
+     "Turn-Based Tactics"
+    ],
+    "reviews": 60,
+    "score": 86,
+    "slug": "valkyria-chronicles",
+    "title": "Valkyria Chronicles",
+    "user": 8.5,
+    "userCount": 372,
+    "year": 2008
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:04.894037+00:00",
+   "forced": 294860,
+   "v": {
+    "appid": 294860,
+    "name": "Valkyria Chronicles",
+    "neg": 1108,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 9765,
+    "price": 19.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Anime",
+     "Strategy",
+     "Turn-Based",
+     "Story Rich",
+     "JRPG",
+     "RPG",
+     "Tactical",
+     "Singleplayer",
+     "Tactical RPG",
+     "Strategy RPG",
+     "Great Soundtrack",
+     "War",
+     "Tanks",
+     "Third Person",
+     "Turn-Based Strategy",
+     "Action",
+     "World War II",
+     "Romance",
+     "Female Protagonist",
+     "Classic"
+    ]
+   }
+  }
+ },
  "steam-2948640": {
   "hltb": {
    "at": "2026-10-26T13:27:10.681636+00:00",
@@ -333549,8 +337422,7 @@
  },
  "steam-2951710": {
   "hltb": {
-   "at": "2026-11-16T13:59:52.714961+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:39:22.109766+00:00",
    "v": null
   },
   "mc": {
@@ -333794,8 +337666,7 @@
  },
  "steam-2953560": {
   "hltb": {
-   "at": "2026-11-16T13:51:27.830256+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:35:59.289655+00:00",
    "v": null
   },
   "mc": {
@@ -334285,7 +338156,7 @@
  },
  "steam-2956820": {
   "hltb": {
-   "at": "2026-11-07T11:57:46.396925+00:00",
+   "at": "2026-11-17T14:40:00.774183+00:00",
    "v": null
   },
   "mc": {
@@ -337006,7 +340877,7 @@
  },
  "steam-2981070": {
   "hltb": {
-   "at": "2026-11-16T14:07:19.096989+00:00",
+   "at": "2026-11-17T14:43:53.348701+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -340622,6 +344493,55 @@
    }
   }
  },
+ "steam-301120": {
+  "hltb": {
+   "at": "2026-11-17T14:43:13.630954+00:00",
+   "v": {
+    "comp": 433.3,
+    "extra": null,
+    "id": 27843,
+    "main": 348.2,
+    "title": "Eastside Hockey Manager",
+    "year": 2015
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:40.177866+00:00",
+   "v": {
+    "genres": [
+     "Hockey Sim"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "eastside-hockey-manager",
+    "title": "Eastside Hockey Manager",
+    "user": 7.5,
+    "userCount": 17,
+    "year": 2015
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:37.111406+00:00",
+   "forced": 301120,
+   "v": {
+    "appid": 301120,
+    "name": "Eastside Hockey Manager",
+    "neg": 160,
+    "owners": "200,000 .. 500,000",
+    "pos": 1013,
+    "price": 19.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Hockey",
+     "Sports",
+     "Simulation",
+     "Management",
+     "Singleplayer",
+     "Strategy"
+    ]
+   }
+  }
+ },
  "steam-301190": {
   "hltb": {
    "at": "2026-10-23T16:58:21.849182+00:00",
@@ -340728,7 +344648,7 @@
  },
  "steam-301300": {
   "hltb": {
-   "at": "2026-11-07T11:55:34.403731+00:00",
+   "at": "2026-11-17T14:37:03.360882+00:00",
    "v": null
   },
   "mc": {
@@ -343506,7 +347426,7 @@
  },
  "steam-3034450": {
   "hltb": {
-   "at": "2026-11-07T11:58:55.679783+00:00",
+   "at": "2026-11-17T14:41:20.722201+00:00",
    "v": null
   },
   "mc": {
@@ -344404,8 +348324,7 @@
  },
  "steam-3039500": {
   "hltb": {
-   "at": "2026-11-16T14:06:58.481305+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:43:30.424891+00:00",
    "v": null
   },
   "mc": {
@@ -344632,7 +348551,8 @@
  },
  "steam-3040820": {
   "hltb": {
-   "at": "2026-11-07T11:56:35.022471+00:00",
+   "at": "2026-11-17T14:37:32.111860+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -345202,8 +349122,7 @@
  },
  "steam-3045660": {
   "hltb": {
-   "at": "2026-11-16T14:03:48.485276+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:42:12.927948+00:00",
    "v": null
   },
   "mc": {
@@ -351296,8 +355215,7 @@
  },
  "steam-3110080": {
   "hltb": {
-   "at": "2026-11-16T13:52:33.497544+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:36:09.468435+00:00",
    "v": null
   },
   "mc": {
@@ -353798,8 +357716,7 @@
  },
  "steam-3135990": {
   "hltb": {
-   "at": "2026-11-16T13:58:28.784547+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:39:05.650190+00:00",
    "v": null
   },
   "mc": {
@@ -354297,8 +358214,7 @@
  },
  "steam-314030": {
   "hltb": {
-   "at": "2026-11-16T14:04:08.835312+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:42:15.738351+00:00",
    "v": null
   },
   "mc": {
@@ -354707,6 +358623,69 @@
     "price": null,
     "publisher": "",
     "tags": []
+   }
+  }
+ },
+ "steam-314410": {
+  "hltb": {
+   "at": "2026-11-17T14:39:09.636375+00:00",
+   "v": {
+    "comp": 66.9,
+    "extra": 20.8,
+    "id": 30283,
+    "main": 6.9,
+    "title": "Rampage Knights",
+    "year": 2015
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:09.516397+00:00",
+   "v": {
+    "genres": [
+     "2D Beat-'Em-Up"
+    ],
+    "reviews": 5,
+    "score": 80,
+    "slug": "rampage-knights",
+    "title": "Rampage Knights",
+    "user": 8.5,
+    "userCount": 26,
+    "year": 2015
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:25.997116+00:00",
+   "forced": 314410,
+   "v": {
+    "appid": 314410,
+    "name": "Rampage Knights",
+    "neg": 148,
+    "owners": "200,000 .. 500,000",
+    "pos": 2033,
+    "price": 12.99,
+    "publisher": "Rake in Grass",
+    "tags": [
+     "Co-op",
+     "Action Roguelike",
+     "Action",
+     "Beat 'em up",
+     "Rogue-like",
+     "Multiplayer",
+     "Indie",
+     "Adventure",
+     "RPG",
+     "Local Co-Op",
+     "Online Co-Op",
+     "Rogue-lite",
+     "Dungeon Crawler",
+     "2D",
+     "Funny",
+     "Hack and Slash",
+     "Difficult",
+     "Dwarves",
+     "Side Scroller",
+     "Procedural Generation"
+    ]
    }
   }
  },
@@ -355839,7 +359818,7 @@
  },
  "steam-3154800": {
   "hltb": {
-   "at": "2026-11-07T11:58:51.984122+00:00",
+   "at": "2026-11-17T14:41:16.138708+00:00",
    "v": null
   },
   "mc": {
@@ -356255,7 +360234,7 @@
  },
  "steam-3160640": {
   "hltb": {
-   "at": "2026-11-07T11:58:54.023601+00:00",
+   "at": "2026-11-17T14:41:19.201680+00:00",
    "v": null
   },
   "mc": {
@@ -356336,7 +360315,8 @@
  },
  "steam-3162110": {
   "hltb": {
-   "at": "2026-11-07T11:57:43.576175+00:00",
+   "at": "2026-11-17T14:39:16.434592+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -357898,8 +361878,7 @@
  },
  "steam-3177070": {
   "hltb": {
-   "at": "2026-11-16T13:53:36.813768+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:36:15.443624+00:00",
    "v": null
   },
   "mc": {
@@ -358784,8 +362763,7 @@
  },
  "steam-3185000": {
   "hltb": {
-   "at": "2026-11-16T14:03:48.148169+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:42:12.255413+00:00",
    "v": null
   },
   "mc": {
@@ -362715,6 +366693,69 @@
    }
   }
  },
+ "steam-322110": {
+  "hltb": {
+   "at": "2026-11-17T14:40:15.709859+00:00",
+   "v": {
+    "comp": 40.5,
+    "extra": 13.8,
+    "id": 25226,
+    "main": 6.0,
+    "title": "20XX",
+    "year": 2014
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:18.146856+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": 14,
+    "score": 77,
+    "slug": "20xx",
+    "title": "20XX",
+    "user": 6.9,
+    "userCount": 31,
+    "year": 2018
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:44.930164+00:00",
+   "forced": 322110,
+   "v": {
+    "appid": 322110,
+    "name": "20XX",
+    "neg": 351,
+    "owners": "200,000 .. 500,000",
+    "pos": 3639,
+    "price": 14.99,
+    "publisher": "Batterystaple Games",
+    "tags": [
+     "Platformer",
+     "Action Roguelike",
+     "Action",
+     "2D Platformer",
+     "Rogue-lite",
+     "2D",
+     "Online Co-Op",
+     "Indie",
+     "Female Protagonist",
+     "Local Co-Op",
+     "Side Scroller",
+     "Great Soundtrack",
+     "Multiplayer",
+     "Controller",
+     "Procedural Generation",
+     "Local Multiplayer",
+     "Co-op",
+     "Singleplayer",
+     "Rogue-like",
+     "Difficult"
+    ]
+   }
+  }
+ },
  "steam-3221180": {
   "hltb": {
    "at": "2026-11-16T14:06:49.351462+00:00",
@@ -363853,7 +367894,7 @@
  },
  "steam-3229480": {
   "hltb": {
-   "at": "2026-11-07T11:55:27.634480+00:00",
+   "at": "2026-11-17T14:36:06.747120+00:00",
    "v": null
   },
   "mc": {
@@ -364794,7 +368835,7 @@
  },
  "steam-3239960": {
   "hltb": {
-   "at": "2026-11-16T13:54:38.582338+00:00",
+   "at": "2026-11-17T14:36:41.556248+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -364830,8 +368871,7 @@
  },
  "steam-3240540": {
   "hltb": {
-   "at": "2026-11-16T13:53:36.889503+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:36:16.375461+00:00",
    "v": null
   },
   "mc": {
@@ -365486,7 +369526,8 @@
  },
  "steam-324680": {
   "hltb": {
-   "at": "2026-11-07T11:55:34.988637+00:00",
+   "at": "2026-11-17T14:37:12.591956+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -366486,8 +370527,7 @@
  },
  "steam-32620": {
   "hltb": {
-   "at": "2026-11-16T14:01:42.108005+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:41:09.441682+00:00",
    "v": null
   },
   "mc": {
@@ -368545,8 +372585,7 @@
  },
  "steam-3281980": {
   "hltb": {
-   "at": "2026-11-16T13:56:45.471194+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:38:06.622129+00:00",
    "v": null
   },
   "mc": {
@@ -371468,8 +375507,7 @@
  },
  "steam-3320930": {
   "hltb": {
-   "at": "2026-11-16T13:58:48.867585+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:39:07.334594+00:00",
    "v": null
   },
   "mc": {
@@ -371906,6 +375944,69 @@
    }
   }
  },
+ "steam-332950": {
+  "hltb": {
+   "at": "2026-11-17T14:44:14.901855+00:00",
+   "v": {
+    "comp": null,
+    "extra": 41.3,
+    "id": 61858,
+    "main": 2.6,
+    "title": "Dark Deception",
+    "year": 2018
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:47.919823+00:00",
+   "v": {
+    "genres": [
+     "Survival"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "dark-deception",
+    "title": "Dark Deception",
+    "user": 7.5,
+    "userCount": 56,
+    "year": 2018
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:54.866385+00:00",
+   "forced": 332950,
+   "v": {
+    "appid": 332950,
+    "name": "Dark Deception",
+    "neg": 2905,
+    "owners": "2,000,000 .. 5,000,000",
+    "pos": 21727,
+    "price": null,
+    "publisher": "Glowstick Entertainment",
+    "tags": [
+     "Horror",
+     "Free to Play",
+     "Multiplayer",
+     "Singleplayer",
+     "First-Person",
+     "Psychological Horror",
+     "Runner",
+     "Survival Horror",
+     "Indie",
+     "Action",
+     "Survival",
+     "Dark Humor",
+     "Adventure",
+     "Story Rich",
+     "Arcade",
+     "RPG",
+     "Multiple Endings",
+     "Cinematic",
+     "Dark",
+     "Difficult"
+    ]
+   }
+  }
+ },
  "steam-3330": {
   "hltb": {
    "at": "2026-10-23T12:32:01.670047+00:00",
@@ -372126,7 +376227,7 @@
  },
  "steam-3330940": {
   "hltb": {
-   "at": "2026-11-07T11:56:40.604682+00:00",
+   "at": "2026-11-17T14:38:05.918433+00:00",
    "v": null
   },
   "mc": {
@@ -375123,8 +379224,7 @@
  },
  "steam-33600": {
   "hltb": {
-   "at": "2026-11-16T14:00:34.674375+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:40:19.733455+00:00",
    "v": null
   },
   "mc": {
@@ -375309,7 +379409,7 @@
  },
  "steam-33620": {
   "hltb": {
-   "at": "2026-11-07T12:00:03.733188+00:00",
+   "at": "2026-11-17T14:43:18.222798+00:00",
    "v": null
   },
   "mc": {
@@ -375793,8 +379893,7 @@
  },
  "steam-336610": {
   "hltb": {
-   "at": "2026-11-16T14:01:42.494959+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:41:10.389571+00:00",
    "v": null
   },
   "mc": {
@@ -380231,6 +384330,51 @@
    }
   }
  },
+ "steam-34030": {
+  "hltb": {
+   "at": "2026-11-17T14:40:15.461712+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:17.171950+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:43.825901+00:00",
+   "forced": 34030,
+   "v": {
+    "appid": 34030,
+    "name": "Total War: NAPOLEON – Definitive Edition",
+    "neg": 1566,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 16695,
+    "price": 19.99,
+    "publisher": "SEGA, Feral Interactive (Mac)",
+    "tags": [
+     "Strategy",
+     "Historical",
+     "Grand Strategy",
+     "War",
+     "Turn-Based Strategy",
+     "RTS",
+     "Multiplayer",
+     "Tactical",
+     "Military",
+     "Singleplayer",
+     "Real Time Tactics",
+     "Turn-Based",
+     "Action",
+     "Turn-Based Tactics",
+     "Simulation",
+     "Co-op",
+     "Naval",
+     "Great Soundtrack",
+     "Moddable",
+     "Classic"
+    ]
+   }
+  }
+ },
  "steam-3403590": {
   "hltb": {
    "at": "2026-10-26T13:15:52.892944+00:00",
@@ -381924,7 +386068,7 @@
  },
  "steam-3418720": {
   "hltb": {
-   "at": "2026-11-07T11:59:59.455400+00:00",
+   "at": "2026-11-17T14:42:22.276570+00:00",
    "v": null
   },
   "mc": {
@@ -382206,8 +386350,7 @@
  },
  "steam-3424990": {
   "hltb": {
-   "at": "2026-11-16T14:03:48.879695+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:42:12.970833+00:00",
    "v": null
   },
   "mc": {
@@ -384989,8 +389132,7 @@
  },
  "steam-3449630": {
   "hltb": {
-   "at": "2026-11-16T13:59:32.801846+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:39:21.176859+00:00",
    "v": null
   },
   "mc": {
@@ -385025,8 +389167,7 @@
  },
  "steam-3449850": {
   "hltb": {
-   "at": "2026-11-16T14:06:14.060704+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:43:22.063874+00:00",
    "v": null
   },
   "mc": {
@@ -386499,7 +390640,7 @@
  },
  "steam-346850": {
   "hltb": {
-   "at": "2026-11-07T11:55:27.695783+00:00",
+   "at": "2026-11-17T14:36:09.985670+00:00",
    "v": null
   },
   "mc": {
@@ -392158,8 +396299,7 @@
  },
  "steam-3540550": {
   "hltb": {
-   "at": "2026-11-16T13:58:30.080443+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:39:06.870596+00:00",
    "v": null
   },
   "mc": {
@@ -392725,7 +396865,7 @@
  },
  "steam-3545940": {
   "hltb": {
-   "at": "2026-11-16T13:51:06.156005+00:00",
+   "at": "2026-11-17T14:35:47.201042+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -393016,7 +397156,7 @@
  },
  "steam-3547880": {
   "hltb": {
-   "at": "2026-11-07T11:58:54.917883+00:00",
+   "at": "2026-11-17T14:42:11.522749+00:00",
    "v": null
   },
   "mc": {
@@ -393628,7 +397768,7 @@
  },
  "steam-355630": {
   "hltb": {
-   "at": "2026-11-07T11:57:48.780358+00:00",
+   "at": "2026-11-17T14:40:09.942070+00:00",
    "v": null
   },
   "mc": {
@@ -393781,7 +397921,7 @@
  },
  "steam-3559510": {
   "hltb": {
-   "at": "2026-11-07T11:55:32.179943+00:00",
+   "at": "2026-11-17T14:37:01.168687+00:00",
    "v": null
   },
   "mc": {
@@ -395541,6 +399681,37 @@
      "Story Rich",
      "Singleplayer"
     ]
+   }
+  }
+ },
+ "steam-3580160": {
+  "hltb": {
+   "at": "2026-11-17T14:42:18.588937+00:00",
+   "v": {
+    "comp": 9.2,
+    "extra": 8.0,
+    "id": 169423,
+    "main": 6.3,
+    "title": "Ambrosia Sky",
+    "year": 2025
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:34.520913+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:22.637257+00:00",
+   "forced": 3580160,
+   "v": {
+    "appid": 3580160,
+    "name": "Ambrosia Sky",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 24.99,
+    "publisher": "Soft Rains, Exothermic",
+    "tags": []
    }
   }
  },
@@ -397416,8 +401587,7 @@
  },
  "steam-3597930": {
   "hltb": {
-   "at": "2026-11-16T13:52:13.529684+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:36:03.599846+00:00",
    "v": null
   },
   "mc": {
@@ -398442,7 +402612,8 @@
  },
  "steam-3606690": {
   "hltb": {
-   "at": "2026-11-07T11:56:33.803849+00:00",
+   "at": "2026-11-17T14:37:25.315082+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -400084,6 +404255,69 @@
     "price": null,
     "publisher": "",
     "tags": []
+   }
+  }
+ },
+ "steam-362890": {
+  "hltb": {
+   "at": "2026-11-17T14:38:22.666309+00:00",
+   "v": {
+    "comp": 29.1,
+    "extra": 18.6,
+    "id": 1100,
+    "main": 15.3,
+    "title": "Black Mesa",
+    "year": 2020
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:04.224656+00:00",
+   "v": {
+    "genres": [
+     "FPS"
+    ],
+    "reviews": 29,
+    "score": 84,
+    "slug": "black-mesa",
+    "title": "Black Mesa",
+    "user": 8.7,
+    "userCount": 1681,
+    "year": 2012
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:13.705138+00:00",
+   "forced": 362890,
+   "v": {
+    "appid": 362890,
+    "name": "Black Mesa",
+    "neg": 6837,
+    "owners": "2,000,000 .. 5,000,000",
+    "pos": 128777,
+    "price": 19.99,
+    "publisher": "Crowbar Collective",
+    "tags": [
+     "FPS",
+     "Remake",
+     "Action",
+     "Sci-fi",
+     "First-Person",
+     "Singleplayer",
+     "Shooter",
+     "Atmospheric",
+     "Classic",
+     "Story Rich",
+     "Great Soundtrack",
+     "Aliens",
+     "Zombies",
+     "Adventure",
+     "Horror",
+     "Multiplayer",
+     "Indie",
+     "Mod",
+     "Gore",
+     "Early Access"
+    ]
    }
   }
  },
@@ -403376,7 +407610,7 @@
  },
  "steam-3669740": {
   "hltb": {
-   "at": "2026-11-16T13:59:32.933943+00:00",
+   "at": "2026-11-17T14:39:21.650686+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -407829,7 +412063,7 @@
  },
  "steam-3725630": {
   "hltb": {
-   "at": "2026-11-07T11:58:53.077861+00:00",
+   "at": "2026-11-17T14:41:18.264185+00:00",
    "v": null
   },
   "mc": {
@@ -408269,8 +412503,7 @@
  },
  "steam-3732960": {
   "hltb": {
-   "at": "2026-11-16T14:05:53.884822+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:43:16.554465+00:00",
    "v": null
   },
   "mc": {
@@ -408382,7 +412615,7 @@
  },
  "steam-3734400": {
   "hltb": {
-   "at": "2026-11-07T11:58:53.911337+00:00",
+   "at": "2026-11-17T14:41:18.826244+00:00",
    "v": null
   },
   "mc": {
@@ -409327,6 +413560,48 @@
    }
   }
  },
+ "steam-3747730": {
+  "hltb": {
+   "at": "2026-11-17T14:37:09.964292+00:00",
+   "v": {
+    "comp": 17.2,
+    "extra": 13.1,
+    "id": 181978,
+    "main": 9.8,
+    "title": "Legacy of Kain: Defiance Remastered",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:33:56.892720+00:00",
+   "v": {
+    "genres": [
+     "Action Adventure"
+    ],
+    "reviews": 20,
+    "score": 70,
+    "slug": "legacy-of-kain-defiance-remastered",
+    "title": "Legacy of Kain: Defiance Remastered",
+    "user": 7.7,
+    "userCount": 41,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:33:59.360123+00:00",
+   "forced": 3747730,
+   "v": {
+    "appid": 3747730,
+    "name": "Legacy of Kain: Defiance Remastered",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 24.99,
+    "publisher": "Crystal Dynamics",
+    "tags": []
+   }
+  }
+ },
  "steam-3748640": {
   "hltb": {
    "at": "2026-10-29T11:40:37.254958+00:00",
@@ -409413,8 +413688,7 @@
  },
  "steam-375200": {
   "hltb": {
-   "at": "2026-11-16T14:03:04.978886+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:42:08.902316+00:00",
    "v": null
   },
   "mc": {
@@ -409706,7 +413980,8 @@
  },
  "steam-375750": {
   "hltb": {
-   "at": "2026-11-07T11:59:59.516084+00:00",
+   "at": "2026-11-17T14:42:38.425937+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -410139,7 +414414,7 @@
  },
  "steam-3764940": {
   "hltb": {
-   "at": "2026-11-07T11:55:33.049731+00:00",
+   "at": "2026-11-17T14:37:01.766498+00:00",
    "v": null
   },
   "mc": {
@@ -411644,7 +415919,7 @@
  },
  "steam-3785560": {
   "hltb": {
-   "at": "2026-11-07T12:00:00.516154+00:00",
+   "at": "2026-11-17T14:42:58.022310+00:00",
    "v": null
   },
   "mc": {
@@ -411714,7 +415989,7 @@
  },
  "steam-3785720": {
   "hltb": {
-   "at": "2026-11-07T12:01:03.735109+00:00",
+   "at": "2026-11-17T14:44:12.865406+00:00",
    "v": null
   },
   "mc": {
@@ -414271,6 +418546,48 @@
    }
   }
  },
+ "steam-3823370": {
+  "hltb": {
+   "at": "2026-11-17T14:44:14.809583+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 177892,
+    "main": null,
+    "title": "Beyond Words",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:47.548556+00:00",
+   "v": {
+    "genres": [
+     "Logic Puzzle"
+    ],
+    "reviews": 5,
+    "score": 73,
+    "slug": "beyond-words",
+    "title": "Beyond Words",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:53.810387+00:00",
+   "forced": 3823370,
+   "v": {
+    "appid": 3823370,
+    "name": "Beyond Words",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 14.99,
+    "publisher": "PQube",
+    "tags": []
+   }
+  }
+ },
  "steam-3823440": {
   "hltb": {
    "at": "2026-10-23T14:53:36.582997+00:00",
@@ -415431,7 +419748,7 @@
  },
  "steam-3837390": {
   "hltb": {
-   "at": "2026-11-07T11:56:36.872904+00:00",
+   "at": "2026-11-17T14:38:08.078150+00:00",
    "v": null
   },
   "mc": {
@@ -415690,7 +420007,7 @@
  },
  "steam-3839810": {
   "hltb": {
-   "at": "2026-11-16T13:56:24.765600+00:00",
+   "at": "2026-11-17T14:37:46.027248+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -417339,8 +421656,7 @@
  },
  "steam-3861280": {
   "hltb": {
-   "at": "2026-11-16T14:00:36.749899+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:40:20.661159+00:00",
    "v": null
   },
   "mc": {
@@ -417532,7 +421848,7 @@
  },
  "steam-3864100": {
   "hltb": {
-   "at": "2026-11-16T13:54:18.901603+00:00",
+   "at": "2026-11-17T14:36:38.262735+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -417862,6 +422178,69 @@
     "price": null,
     "publisher": "",
     "tags": []
+   }
+  }
+ },
+ "steam-386940": {
+  "hltb": {
+   "at": "2026-11-17T14:37:10.466860+00:00",
+   "v": {
+    "comp": 25.9,
+    "extra": 12.9,
+    "id": 37327,
+    "main": 5.0,
+    "title": "Ultimate Chicken Horse",
+    "year": 2016
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:33:57.661554+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": 6,
+    "score": 80,
+    "slug": "ultimate-chicken-horse",
+    "title": "Ultimate Chicken Horse",
+    "user": 7.9,
+    "userCount": 141,
+    "year": 2018
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:00.485770+00:00",
+   "forced": 386940,
+   "v": {
+    "appid": 386940,
+    "name": "Ultimate Chicken Horse",
+    "neg": 1670,
+    "owners": "2,000,000 .. 5,000,000",
+    "pos": 39657,
+    "price": 14.99,
+    "publisher": "Clever Endeavour Games",
+    "tags": [
+     "Multiplayer",
+     "Party",
+     "Local Co-Op",
+     "Funny",
+     "Platformer",
+     "Party Game",
+     "PvP",
+     "Local Multiplayer",
+     "Level Editor",
+     "4 Player Local",
+     "Precision Platformer",
+     "Online Co-Op",
+     "Competitive",
+     "Casual",
+     "Family Friendly",
+     "Parkour",
+     "2D",
+     "Cute",
+     "2D Platformer",
+     "Action"
+    ]
    }
   }
  },
@@ -418804,7 +423183,7 @@
  },
  "steam-3880400": {
   "hltb": {
-   "at": "2026-11-07T11:59:56.631759+00:00",
+   "at": "2026-11-17T14:43:21.080985+00:00",
    "v": null
   },
   "mc": {
@@ -418916,7 +423295,7 @@
  },
  "steam-3883710": {
   "hltb": {
-   "at": "2026-11-07T11:56:35.551182+00:00",
+   "at": "2026-11-17T14:38:13.730873+00:00",
    "v": null
   },
   "mc": {
@@ -419315,8 +423694,7 @@
  },
  "steam-3890990": {
   "hltb": {
-   "at": "2026-11-16T13:58:49.998478+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:39:07.609628+00:00",
    "v": null
   },
   "mc": {
@@ -419586,8 +423964,7 @@
  },
  "steam-3894570": {
   "hltb": {
-   "at": "2026-11-16T13:51:27.843737+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:36:00.259388+00:00",
    "v": null
   },
   "mc": {
@@ -419657,8 +424034,7 @@
  },
  "steam-3894950": {
   "hltb": {
-   "at": "2026-11-16T13:55:42.232225+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:37:19.917254+00:00",
    "v": null
   },
   "mc": {
@@ -420051,6 +424427,48 @@
      "Games Workshop",
      "Visual Novel"
     ]
+   }
+  }
+ },
+ "steam-3898860": {
+  "hltb": {
+   "at": "2026-11-17T14:39:13.855147+00:00",
+   "v": {
+    "comp": 8.6,
+    "extra": 4.2,
+    "id": 182734,
+    "main": 3.2,
+    "title": "Roommates, Romance, and Ringing Hearts",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:11.417398+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "roommates-romance-and-ringing-hearts",
+    "title": "Roommates, Romance, and Ringing Hearts",
+    "user": null,
+    "userCount": 2,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:29.344456+00:00",
+   "forced": 3898860,
+   "v": {
+    "appid": 3898860,
+    "name": "Roommates, Romance, and Ringing Hearts",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 11.99,
+    "publisher": "TV Asahi Corporation, Aiming Inc.",
+    "tags": []
    }
   }
  },
@@ -420899,7 +425317,7 @@
  },
  "steam-3908200": {
   "hltb": {
-   "at": "2026-11-16T13:57:47.175796+00:00",
+   "at": "2026-11-17T14:38:21.529368+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -421848,7 +426266,7 @@
  },
  "steam-3915610": {
   "hltb": {
-   "at": "2026-11-07T11:58:51.119102+00:00",
+   "at": "2026-11-17T14:41:15.867627+00:00",
    "v": null
   },
   "mc": {
@@ -422128,7 +426546,7 @@
  },
  "steam-3917620": {
   "hltb": {
-   "at": "2026-11-07T11:55:28.394971+00:00",
+   "at": "2026-11-17T14:36:10.441977+00:00",
    "v": null
   },
   "mc": {
@@ -422963,8 +427381,7 @@
  },
  "steam-3929200": {
   "hltb": {
-   "at": "2026-11-16T14:04:50.916426+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:42:29.750591+00:00",
    "v": null
   },
   "mc": {
@@ -424052,6 +428469,48 @@
    }
   }
  },
+ "steam-3950130": {
+  "hltb": {
+   "at": "2026-11-17T14:37:08.990328+00:00",
+   "v": {
+    "comp": 14.0,
+    "extra": 15.9,
+    "id": 180585,
+    "main": 13.9,
+    "title": "Database Detective: Minor Crimes Division",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:33:56.085204+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "database-detective-minor-crimes-division",
+    "title": "Database Detective: Minor Crimes Division",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:33:57.137886+00:00",
+   "forced": 3950130,
+   "v": {
+    "appid": 3950130,
+    "name": "Database Detective: Minor Crimes Division",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 14.99,
+    "publisher": "Thomas Hsu",
+    "tags": []
+   }
+  }
+ },
  "steam-3950770": {
   "hltb": {
    "at": "2026-10-23T16:51:02.403306+00:00",
@@ -424458,6 +428917,51 @@
     "price": null,
     "publisher": "",
     "tags": []
+   }
+  }
+ },
+ "steam-39540": {
+  "hltb": {
+   "at": "2026-11-17T14:42:26.463317+00:00",
+   "v": {
+    "comp": 170.6,
+    "extra": 107.8,
+    "id": 8925,
+    "main": 60.5,
+    "title": "SpellForce: Platinum Edition",
+    "year": 2009
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:37.148237+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:29.344571+00:00",
+   "forced": 39540,
+   "v": {
+    "appid": 39540,
+    "name": "SpellForce - Platinum Edition",
+    "neg": 306,
+    "owners": "200,000 .. 500,000",
+    "pos": 2123,
+    "price": 9.99,
+    "publisher": "THQ Nordic",
+    "tags": [
+     "RPG",
+     "Strategy",
+     "Fantasy",
+     "RTS",
+     "Action",
+     "Singleplayer",
+     "Story Rich",
+     "Classic",
+     "Dwarves",
+     "Great Soundtrack",
+     "Multiplayer",
+     "Adventure",
+     "Elves"
+    ]
    }
   }
  },
@@ -425819,7 +430323,7 @@
  },
  "steam-3978110": {
   "hltb": {
-   "at": "2026-11-07T11:57:44.558680+00:00",
+   "at": "2026-11-17T14:39:05.796784+00:00",
    "v": null
   },
   "mc": {
@@ -427030,8 +431534,7 @@
  },
  "steam-3995110": {
   "hltb": {
-   "at": "2026-11-16T13:55:22.331600+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:37:14.868680+00:00",
    "v": null
   },
   "mc": {
@@ -427271,8 +431774,7 @@
  },
  "steam-3998800": {
   "hltb": {
-   "at": "2026-11-16T13:55:22.049203+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:37:13.895755+00:00",
    "v": null
   },
   "mc": {
@@ -427862,6 +432364,69 @@
    }
   }
  },
+ "steam-400750": {
+  "hltb": {
+   "at": "2026-11-17T14:43:28.105249+00:00",
+   "v": {
+    "comp": 137.0,
+    "extra": 129.8,
+    "id": 94346,
+    "main": null,
+    "title": "Call to Arms - Gates of Hell: Ostfront",
+    "year": 2021
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:42.689881+00:00",
+   "v": {
+    "genres": [
+     "Tactical Third Person Shooter"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "call-to-arms-gates-of-hell-ostfront",
+    "title": "Call to Arms - Gates of Hell: Ostfront",
+    "user": 7.7,
+    "userCount": 33,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:42.625662+00:00",
+   "forced": 400750,
+   "v": {
+    "appid": 400750,
+    "name": "Call to Arms - Gates of Hell: Ostfront",
+    "neg": 4818,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 28540,
+    "price": 34.99,
+    "publisher": "Digitalmindsoft",
+    "tags": [
+     "World War II",
+     "Strategy",
+     "Real Time Tactics",
+     "Historical",
+     "RTS",
+     "Third Person",
+     "Singleplayer",
+     "War",
+     "Multiplayer",
+     "Moddable",
+     "Military",
+     "Realistic",
+     "PvE",
+     "Inventory Management",
+     "Top-Down Shooter",
+     "PvP",
+     "Online Co-Op",
+     "Shooter",
+     "Level Editor",
+     "Replay Value"
+    ]
+   }
+  }
+ },
  "steam-400790": {
   "hltb": {
    "at": "2026-10-23T16:07:18.375171+00:00",
@@ -428014,7 +432579,7 @@
  },
  "steam-4010900": {
   "hltb": {
-   "at": "2026-11-07T12:00:01.640114+00:00",
+   "at": "2026-11-17T14:43:10.282873+00:00",
    "v": null
   },
   "mc": {
@@ -428455,7 +433020,7 @@
  },
  "steam-4018740": {
   "hltb": {
-   "at": "2026-11-07T11:59:56.551073+00:00",
+   "at": "2026-11-17T14:42:15.948747+00:00",
    "v": null
   },
   "mc": {
@@ -428644,8 +433209,7 @@
  },
  "steam-4021870": {
   "hltb": {
-   "at": "2026-11-16T13:55:42.148677+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:37:17.652324+00:00",
    "v": null
   },
   "mc": {
@@ -429466,8 +434030,7 @@
  },
  "steam-403400": {
   "hltb": {
-   "at": "2026-11-16T14:00:56.689543+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:40:25.463506+00:00",
    "v": null
   },
   "mc": {
@@ -430441,6 +435004,69 @@
     "price": null,
     "publisher": "",
     "tags": []
+   }
+  }
+ },
+ "steam-404680": {
+  "hltb": {
+   "at": "2026-11-17T14:42:14.406616+00:00",
+   "v": {
+    "comp": 17.0,
+    "extra": 11.4,
+    "id": 37105,
+    "main": 10.3,
+    "title": "Hob",
+    "year": 2017
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:34.047463+00:00",
+   "v": {
+    "genres": [
+     "Open-World Action"
+    ],
+    "reviews": 31,
+    "score": 76,
+    "slug": "hob",
+    "title": "Hob",
+    "user": 7.2,
+    "userCount": 159,
+    "year": 2017
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:20.511380+00:00",
+   "forced": 404680,
+   "v": {
+    "appid": 404680,
+    "name": "Hob",
+    "neg": 548,
+    "owners": "200,000 .. 500,000",
+    "pos": 4147,
+    "price": 19.99,
+    "publisher": "Arc Games",
+    "tags": [
+     "Adventure",
+     "Action",
+     "Singleplayer",
+     "Puzzle",
+     "Indie",
+     "Platformer",
+     "Exploration",
+     "Open World",
+     "Metroidvania",
+     "Puzzle-Platformer",
+     "3D Platformer",
+     "Atmospheric",
+     "Action-Adventure",
+     "Controller",
+     "RPG",
+     "Hack and Slash",
+     "Great Soundtrack",
+     "Colorful",
+     "Action RPG",
+     "Fantasy"
+    ]
    }
   }
  },
@@ -432685,7 +437311,7 @@
  },
  "steam-4094120": {
   "hltb": {
-   "at": "2026-11-07T11:59:57.556234+00:00",
+   "at": "2026-11-17T14:42:19.127650+00:00",
    "v": null
   },
   "mc": {
@@ -435022,8 +439648,7 @@
  },
  "steam-4131900": {
   "hltb": {
-   "at": "2026-11-16T13:56:44.655998+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:38:02.606568+00:00",
    "v": null
   },
   "mc": {
@@ -437312,6 +441937,48 @@
    }
   }
  },
+ "steam-4171850": {
+  "hltb": {
+   "at": "2026-11-17T14:42:20.318734+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 182487,
+    "main": null,
+    "title": "Trees Hate You",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:35.319653+00:00",
+   "v": {
+    "genres": [
+     "Action Adventure"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "trees-hate-you",
+    "title": "Trees Hate You",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:24.849861+00:00",
+   "forced": 4171850,
+   "v": {
+    "appid": 4171850,
+    "name": "",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
  "steam-4173110": {
   "hltb": {
    "at": "2026-10-26T12:35:59.671966+00:00",
@@ -439214,8 +443881,7 @@
  },
  "steam-4209920": {
   "hltb": {
-   "at": "2026-11-16T14:04:50.791703+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:42:28.814772+00:00",
    "v": null
   },
   "mc": {
@@ -440049,8 +444715,7 @@
  },
  "steam-4224800": {
   "hltb": {
-   "at": "2026-11-16T13:53:16.632637+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:36:14.369144+00:00",
    "v": null
   },
   "mc": {
@@ -440318,8 +444983,7 @@
  },
  "steam-422920": {
   "hltb": {
-   "at": "2026-11-16T14:02:02.421643+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:41:11.583266+00:00",
    "v": null
   },
   "mc": {
@@ -440622,6 +445286,62 @@
     "price": 7.99,
     "publisher": "一相逢互动娱乐, 凤麟工作室",
     "tags": []
+   }
+  }
+ },
+ "steam-423580": {
+  "hltb": {
+   "at": "2026-11-17T14:43:28.522258+00:00",
+   "v": {
+    "comp": 49.4,
+    "extra": 23.0,
+    "id": 39490,
+    "main": 9.8,
+    "title": "Project Highrise",
+    "year": 2016
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:44.051367+00:00",
+   "v": {
+    "genres": [
+     "Tycoon"
+    ],
+    "reviews": 6,
+    "score": 72,
+    "slug": "project-highrise-architects-edition",
+    "title": "Project Highrise: Architect's Edition",
+    "user": 5.2,
+    "userCount": 6,
+    "year": 2018
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:44.927379+00:00",
+   "forced": 423580,
+   "v": {
+    "appid": 423580,
+    "name": "Project Highrise",
+    "neg": 561,
+    "owners": "200,000 .. 500,000",
+    "pos": 3340,
+    "price": 19.99,
+    "publisher": "Kasedo Games",
+    "tags": [
+     "Management",
+     "Simulation",
+     "Building",
+     "Strategy",
+     "Singleplayer",
+     "2D",
+     "Sandbox",
+     "Economy",
+     "Indie",
+     "Casual",
+     "City Builder",
+     "Pixel Graphics",
+     "Base-Building"
+    ]
    }
   }
  },
@@ -441286,7 +446006,7 @@
  },
  "steam-4249120": {
   "hltb": {
-   "at": "2026-11-16T14:03:04.858905+00:00",
+   "at": "2026-11-17T14:41:29.519924+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -441994,7 +446714,7 @@
  },
  "steam-4261980": {
   "hltb": {
-   "at": "2026-11-07T11:55:33.996972+00:00",
+   "at": "2026-11-17T14:37:04.267601+00:00",
    "v": null
   },
   "mc": {
@@ -443579,8 +448299,7 @@
  },
  "steam-4289410": {
   "hltb": {
-   "at": "2026-11-16T13:59:32.740509+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:39:20.702254+00:00",
    "v": null
   },
   "mc": {
@@ -446590,7 +451309,7 @@
  },
  "steam-4342570": {
   "hltb": {
-   "at": "2026-11-07T11:57:42.235838+00:00",
+   "at": "2026-11-17T14:39:15.091831+00:00",
    "v": null
   },
   "mc": {
@@ -450568,7 +455287,7 @@
  },
  "steam-443360": {
   "hltb": {
-   "at": "2026-11-16T14:07:18.934150+00:00",
+   "at": "2026-11-17T14:43:52.339399+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -451310,7 +456029,7 @@
  },
  "steam-4450570": {
   "hltb": {
-   "at": "2026-11-07T11:56:40.652623+00:00",
+   "at": "2026-11-17T14:38:21.738639+00:00",
    "v": null
   },
   "mc": {
@@ -451345,8 +456064,7 @@
  },
  "steam-4450620": {
   "hltb": {
-   "at": "2026-11-16T14:04:50.485724+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:42:27.389078+00:00",
    "v": null
   },
   "mc": {
@@ -451705,7 +456423,7 @@
  },
  "steam-446640": {
   "hltb": {
-   "at": "2026-11-07T11:58:50.909419+00:00",
+   "at": "2026-11-17T14:41:12.552371+00:00",
    "v": null
   },
   "mc": {
@@ -452860,8 +457578,7 @@
  },
  "steam-4492080": {
   "hltb": {
-   "at": "2026-11-16T13:52:13.643807+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:36:04.357971+00:00",
    "v": null
   },
   "mc": {
@@ -453001,10 +457718,68 @@
    }
   }
  },
+ "steam-449250": {
+  "hltb": {
+   "at": "2026-11-17T14:40:12.320187+00:00",
+   "v": {
+    "comp": 13.3,
+    "extra": 10.5,
+    "id": 38384,
+    "main": 6.0,
+    "title": "A Little Lily Princess",
+    "year": 2016
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:16.618830+00:00",
+   "v": {
+    "genres": [
+     "Visual Novel"
+    ],
+    "reviews": 2,
+    "score": null,
+    "slug": "a-little-lily-princess",
+    "title": "A Little Lily Princess",
+    "user": null,
+    "userCount": 2,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:41.552412+00:00",
+   "forced": 449250,
+   "v": {
+    "appid": 449250,
+    "name": "A Little Lily Princess",
+    "neg": 21,
+    "owners": "0 .. 20,000",
+    "pos": 274,
+    "price": 14.99,
+    "publisher": "Hanako Games",
+    "tags": [
+     "Visual Novel",
+     "Female Protagonist",
+     "LGBTQ+",
+     "Cute",
+     "Story Rich",
+     "Anime",
+     "Romance",
+     "Based On A Novel",
+     "Dating Sim",
+     "Multiple Endings",
+     "Emotional",
+     "Simulation",
+     "Singleplayer",
+     "2D",
+     "Indie",
+     "Otome"
+    ]
+   }
+  }
+ },
  "steam-4494970": {
   "hltb": {
-   "at": "2026-11-16T13:57:26.717838+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:38:19.493264+00:00",
    "v": null
   },
   "mc": {
@@ -457089,6 +461864,184 @@
    }
   }
  },
+ "steam-460780": {
+  "hltb": {
+   "at": "2026-11-17T14:41:21.444034+00:00",
+   "v": {
+    "comp": 50.5,
+    "extra": 48.3,
+    "id": 39179,
+    "main": 30.0,
+    "title": "Avadon 3: The Warborn",
+    "year": 2016
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:23.990148+00:00",
+   "v": {
+    "genres": [
+     "Western RPG"
+    ],
+    "reviews": 3,
+    "score": null,
+    "slug": "avadon-3-the-warborn",
+    "title": "Avadon 3: The Warborn",
+    "user": 8.3,
+    "userCount": 8,
+    "year": 2016
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:59.832160+00:00",
+   "forced": 460780,
+   "v": {
+    "appid": 460780,
+    "name": "Avadon 3: The Warborn",
+    "neg": 11,
+    "owners": "0 .. 20,000",
+    "pos": 107,
+    "price": 19.99,
+    "publisher": "Spiderweb Software",
+    "tags": [
+     "RPG",
+     "Indie",
+     "Adventure",
+     "Strategy",
+     "Isometric",
+     "CRPG",
+     "Story Rich",
+     "Fantasy",
+     "2D",
+     "Old School",
+     "Singleplayer",
+     "Grid-Based Movement",
+     "Retro",
+     "Party-Based RPG",
+     "Turn-Based"
+    ]
+   }
+  }
+ },
+ "steam-460790": {
+  "hltb": {
+   "at": "2026-11-17T14:39:24.951437+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:11.983780+00:00",
+   "v": {
+    "genres": [
+     "Linear Action Adventure"
+    ],
+    "reviews": 86,
+    "score": 90,
+    "slug": "bayonetta",
+    "title": "Bayonetta",
+    "user": 8.3,
+    "userCount": 1070,
+    "year": 2010
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:31.532444+00:00",
+   "forced": 460790,
+   "v": {
+    "appid": 460790,
+    "name": "Bayonetta",
+    "neg": 2076,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 25626,
+    "price": 19.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Action",
+     "Female Protagonist",
+     "Hack and Slash",
+     "Sexual Content",
+     "Nudity",
+     "Singleplayer",
+     "Spectacle fighter",
+     "Great Soundtrack",
+     "Character Action Game",
+     "Adventure",
+     "Fast-Paced",
+     "Third Person",
+     "Beat 'em up",
+     "Fantasy",
+     "Comedy",
+     "Gore",
+     "Classic",
+     "Anime",
+     "Atmospheric",
+     "Difficult"
+    ]
+   }
+  }
+ },
+ "steam-460810": {
+  "hltb": {
+   "at": "2026-11-17T14:41:28.263111+00:00",
+   "v": {
+    "comp": 20.5,
+    "extra": 8.1,
+    "id": 10899,
+    "main": 6.1,
+    "title": "Vanquish",
+    "year": 2010
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:27.264864+00:00",
+   "v": {
+    "genres": [
+     "Third Person Shooter"
+    ],
+    "reviews": 70,
+    "score": 84,
+    "slug": "vanquish",
+    "title": "Vanquish",
+    "user": 7.6,
+    "userCount": 466,
+    "year": 2010
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:06.061564+00:00",
+   "forced": 460810,
+   "v": {
+    "appid": 460810,
+    "name": "Vanquish",
+    "neg": 731,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 6323,
+    "price": 19.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Action",
+     "Third-Person Shooter",
+     "Sci-fi",
+     "Singleplayer",
+     "Fast-Paced",
+     "Shooter",
+     "Third Person",
+     "Bullet Time",
+     "Mechs",
+     "Futuristic",
+     "Robots",
+     "Character Action Game",
+     "Arcade",
+     "Hack and Slash",
+     "Great Soundtrack",
+     "Gore",
+     "Classic",
+     "Adventure",
+     "Violent",
+     "Cyberpunk"
+    ]
+   }
+  }
+ },
  "steam-460960": {
   "hltb": {
    "at": "2026-10-23T16:54:12.253303+00:00",
@@ -460197,7 +465150,7 @@
  },
  "steam-468820": {
   "hltb": {
-   "at": "2026-11-07T11:57:43.708802+00:00",
+   "at": "2026-11-17T14:39:19.709102+00:00",
    "v": null
   },
   "mc": {
@@ -460585,6 +465538,51 @@
      "Visual Novel",
      "First-Person",
      "World War II"
+    ]
+   }
+  }
+ },
+ "steam-4700": {
+  "hltb": {
+   "at": "2026-11-17T14:37:11.044731+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:33:58.475097+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:01.568546+00:00",
+   "forced": 4700,
+   "v": {
+    "appid": 4700,
+    "name": "Total War: MEDIEVAL II – Definitive Edition",
+    "neg": 1249,
+    "owners": "2,000,000 .. 5,000,000",
+    "pos": 26337,
+    "price": 19.99,
+    "publisher": "SEGA, Feral Interactive (Mac), Feral Interactive (Linux)",
+    "tags": [
+     "Strategy",
+     "Medieval",
+     "Historical",
+     "Turn-Based Strategy",
+     "Grand Strategy",
+     "War",
+     "RTS",
+     "Tactical",
+     "Multiplayer",
+     "Singleplayer",
+     "Military",
+     "Moddable",
+     "Turn-Based",
+     "Real Time Tactics",
+     "Classic",
+     "Simulation",
+     "Action",
+     "Sandbox",
+     "Great Soundtrack",
+     "4X"
     ]
    }
   }
@@ -461638,7 +466636,7 @@
  },
  "steam-4753960": {
   "hltb": {
-   "at": "2026-11-16T14:05:11.335552+00:00",
+   "at": "2026-11-17T14:42:38.212710+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -463835,7 +468833,7 @@
  },
  "steam-4855450": {
   "hltb": {
-   "at": "2026-11-07T11:55:35.322236+00:00",
+   "at": "2026-11-17T14:37:13.292769+00:00",
    "v": null
   },
   "mc": {
@@ -463992,8 +468990,7 @@
  },
  "steam-4861510": {
   "hltb": {
-   "at": "2026-11-16T13:51:07.799504+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:35:58.315084+00:00",
    "v": null
   },
   "mc": {
@@ -465571,7 +470568,7 @@
  },
  "steam-490390": {
   "hltb": {
-   "at": "2026-11-16T14:07:18.495233+00:00",
+   "at": "2026-11-17T14:43:33.805828+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -466990,7 +471987,7 @@
  },
  "steam-4942770": {
   "hltb": {
-   "at": "2026-11-07T11:58:50.996626+00:00",
+   "at": "2026-11-17T14:41:14.870375+00:00",
    "v": null
   },
   "mc": {
@@ -467160,7 +472157,7 @@
  },
  "steam-4947900": {
   "hltb": {
-   "at": "2026-11-07T11:57:44.433315+00:00",
+   "at": "2026-11-17T14:40:13.422062+00:00",
    "v": null
   },
   "mc": {
@@ -467763,7 +472760,7 @@
  },
  "steam-497180": {
   "hltb": {
-   "at": "2026-11-16T14:02:45.097050+00:00",
+   "at": "2026-11-17T14:41:28.402049+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -469446,7 +474443,7 @@
  },
  "steam-5017810": {
   "hltb": {
-   "at": "2026-11-07T11:59:58.470606+00:00",
+   "at": "2026-11-17T14:42:16.883590+00:00",
    "v": null
   },
   "mc": {
@@ -470097,6 +475094,41 @@
    }
   }
  },
+ "steam-5037200": {
+  "hltb": {
+   "at": "2026-11-17T14:37:02.871064+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:33:54.707502+00:00",
+   "v": {
+    "genres": [
+     "Volleyball"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "just-volleyball",
+    "title": "just volleyball",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:33:54.707798+00:00",
+   "forced": 5037200,
+   "v": {
+    "appid": 5037200,
+    "name": "just volleyball",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "temkosoft",
+    "tags": []
+   }
+  }
+ },
  "steam-5037510": {
   "hltb": {
    "at": "2026-11-16T13:55:10.242464+00:00",
@@ -470321,6 +475353,55 @@
      "Top-Down Shooter",
      "Hack and Slash",
      "Atmospheric"
+    ]
+   }
+  }
+ },
+ "steam-504380": {
+  "hltb": {
+   "at": "2026-11-17T14:38:12.776890+00:00",
+   "v": {
+    "comp": 8.9,
+    "extra": 6.8,
+    "id": 29141,
+    "main": 6.1,
+    "title": "Detective Hayseed - Hollywood",
+    "year": 2014
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:02.225127+00:00",
+   "v": {
+    "genres": [
+     "Point-and-Click"
+    ],
+    "reviews": 5,
+    "score": 53,
+    "slug": "detective-hayseed-hollywood",
+    "title": "Detective Hayseed: Hollywood",
+    "user": 7.6,
+    "userCount": 9,
+    "year": 2016
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:09.408822+00:00",
+   "forced": 504380,
+   "v": {
+    "appid": 504380,
+    "name": "Detective Hayseed - Hollywood",
+    "neg": 5,
+    "owners": "0 .. 20,000",
+    "pos": 147,
+    "price": 14.99,
+    "publisher": "Zima software",
+    "tags": [
+     "Adventure",
+     "Indie",
+     "RPG",
+     "Point & Click",
+     "Comedy",
+     "Detective"
     ]
    }
   }
@@ -471793,6 +476874,69 @@
    }
   }
  },
+ "steam-511740": {
+  "hltb": {
+   "at": "2026-11-17T14:43:13.525176+00:00",
+   "v": {
+    "comp": 36.8,
+    "extra": 14.6,
+    "id": 39066,
+    "main": 3.7,
+    "title": "Gal*Gun: Double Peace",
+    "year": 2016
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:40.161212+00:00",
+   "v": {
+    "genres": [
+     "Light Gun"
+    ],
+    "reviews": 21,
+    "score": 64,
+    "slug": "galgun-double-peace",
+    "title": "Gal*Gun: Double Peace",
+    "user": 7.4,
+    "userCount": 58,
+    "year": 2016
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:36.034527+00:00",
+   "forced": 511740,
+   "v": {
+    "appid": 511740,
+    "name": "Gal*Gun: Double Peace",
+    "neg": 280,
+    "owners": "100,000 .. 200,000",
+    "pos": 1867,
+    "price": 29.99,
+    "publisher": "PQube",
+    "tags": [
+     "On-Rails Shooter",
+     "Anime",
+     "Dating Sim",
+     "FPS",
+     "Sexual Content",
+     "Cute",
+     "Funny",
+     "First-Person",
+     "3D",
+     "Character Customization",
+     "Romance",
+     "Dark Humor",
+     "Choices Matter",
+     "Multiple Endings",
+     "Surreal",
+     "Controller",
+     "Conversation",
+     "Singleplayer",
+     "Action",
+     "Cartoony"
+    ]
+   }
+  }
+ },
  "steam-512060": {
   "hltb": {
    "at": "2026-11-16T13:59:23.991737+00:00",
@@ -472679,7 +477823,7 @@
  },
  "steam-514090": {
   "hltb": {
-   "at": "2026-11-07T12:01:04.715703+00:00",
+   "at": "2026-11-17T14:44:12.930255+00:00",
    "v": null
   },
   "mc": {
@@ -474797,7 +479941,7 @@
  },
  "steam-522040": {
   "hltb": {
-   "at": "2026-11-07T11:56:36.720528+00:00",
+   "at": "2026-11-17T14:38:07.642812+00:00",
    "v": null
   },
   "mc": {
@@ -476372,6 +481516,41 @@
    }
   }
  },
+ "steam-5295330": {
+  "hltb": {
+   "at": "2026-11-17T14:43:27.561924+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:42.238674+00:00",
+   "v": {
+    "genres": [
+     "Defense"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "water-td",
+    "title": "Water TD",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:41.615566+00:00",
+   "forced": 5295330,
+   "v": {
+    "appid": 5295330,
+    "name": "Water TD",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "Managagrau",
+    "tags": []
+   }
+  }
+ },
  "steam-529780": {
   "hltb": {
    "at": "2026-10-23T15:09:27.838988+00:00",
@@ -476906,7 +482085,7 @@
  },
  "steam-5316540": {
   "hltb": {
-   "at": "2026-11-07T11:57:48.500765+00:00",
+   "at": "2026-11-17T14:40:09.220350+00:00",
    "v": null
   },
   "mc": {
@@ -477754,6 +482933,63 @@
     "price": null,
     "publisher": "",
     "tags": []
+   }
+  }
+ },
+ "steam-535930": {
+  "hltb": {
+   "at": "2026-11-17T14:39:35.946417+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:12.774462+00:00",
+   "v": {
+    "genres": [
+     "Tycoon"
+    ],
+    "reviews": 57,
+    "score": 83,
+    "slug": "two-point-hospital",
+    "title": "Two Point Hospital",
+    "user": 7.6,
+    "userCount": 311,
+    "year": 2018
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:32.574562+00:00",
+   "forced": 535930,
+   "v": {
+    "appid": 535930,
+    "name": "Two Point Hospital",
+    "neg": 1957,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 24804,
+    "price": 29.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Simulation",
+     "Management",
+     "Medical Sim",
+     "Building",
+     "Funny",
+     "Singleplayer",
+     "Strategy",
+     "Sandbox",
+     "Indie",
+     "Comedy",
+     "Casual",
+     "City Builder",
+     "Cartoony",
+     "Replay Value",
+     "Multiplayer",
+     "Isometric",
+     "Family Friendly",
+     "Retro",
+     "Classic",
+     "Tactical"
+    ]
    }
   }
  },
@@ -485224,7 +490460,7 @@
  },
  "steam-577480": {
   "hltb": {
-   "at": "2026-11-07T11:55:32.339459+00:00",
+   "at": "2026-11-17T14:37:02.302447+00:00",
    "v": null
   },
   "mc": {
@@ -485623,7 +490859,7 @@
  },
  "steam-578930": {
   "hltb": {
-   "at": "2026-11-07T11:56:38.477145+00:00",
+   "at": "2026-11-17T14:38:10.315223+00:00",
    "v": null
   },
   "mc": {
@@ -486456,6 +491692,63 @@
      "Typing",
      "Rhythm",
      "Music"
+    ]
+   }
+  }
+ },
+ "steam-584400": {
+  "hltb": {
+   "at": "2026-11-17T14:38:24.617296+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:04.672336+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": 76,
+    "score": 86,
+    "slug": "sonic-mania",
+    "title": "Sonic Mania",
+    "user": 8.5,
+    "userCount": 1077,
+    "year": 2017
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:14.912973+00:00",
+   "forced": 584400,
+   "v": {
+    "appid": 584400,
+    "name": "Sonic Mania",
+    "neg": 1386,
+    "owners": "1,000,000 .. 2,000,000",
+    "pos": 23179,
+    "price": 19.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Great Soundtrack",
+     "2D",
+     "Platformer",
+     "Retro",
+     "Classic",
+     "Pixel Graphics",
+     "Fast-Paced",
+     "Colorful",
+     "Adventure",
+     "Action",
+     "Side Scroller",
+     "Singleplayer",
+     "Family Friendly",
+     "Local Co-Op",
+     "Multiplayer",
+     "Casual",
+     "Arcade",
+     "Action-Adventure",
+     "Cartoony",
+     "Remake"
     ]
    }
   }
@@ -490058,8 +495351,7 @@
  },
  "steam-598700": {
   "hltb": {
-   "at": "2026-11-16T14:02:44.557682+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:41:27.877881+00:00",
    "v": null
   },
   "mc": {
@@ -491935,8 +497227,7 @@
  },
  "steam-6060": {
   "hltb": {
-   "at": "2026-11-16T13:57:47.377201+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:38:23.649705+00:00",
    "v": null
   },
   "mc": {
@@ -493006,7 +498297,7 @@
  },
  "steam-612170": {
   "hltb": {
-   "at": "2026-11-16T13:54:18.451760+00:00",
+   "at": "2026-11-17T14:36:22.700755+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -506612,7 +511903,7 @@
  },
  "steam-690420": {
   "hltb": {
-   "at": "2026-11-16T13:56:24.665622+00:00",
+   "at": "2026-11-17T14:37:44.943136+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -508708,7 +513999,7 @@
  },
  "steam-704640": {
   "hltb": {
-   "at": "2026-11-07T12:01:03.695771+00:00",
+   "at": "2026-11-17T14:44:12.754269+00:00",
    "v": null
   },
   "mc": {
@@ -509165,6 +514456,61 @@
      "Psychological Horror",
      "Minimalist",
      "Singleplayer"
+    ]
+   }
+  }
+ },
+ "steam-710030": {
+  "hltb": {
+   "at": "2026-11-17T14:41:14.442173+00:00",
+   "v": {
+    "comp": 6.0,
+    "extra": null,
+    "id": 56198,
+    "main": 4.0,
+    "title": "Cinderella Escape 2: Revenge",
+    "year": 2017
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:22.635550+00:00",
+   "v": {
+    "genres": [
+     "3D Beat-'Em-Up"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "cinderella-escape-2-revenge",
+    "title": "Cinderella Escape 2 Revenge",
+    "user": null,
+    "userCount": 2,
+    "year": 2017
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:56.026349+00:00",
+   "forced": 710030,
+   "v": {
+    "appid": 710030,
+    "name": "Cinderella Escape 2 Revenge",
+    "neg": 40,
+    "owners": "20,000 .. 50,000",
+    "pos": 349,
+    "price": 14.99,
+    "publisher": "Hajime Doujin Circle",
+    "tags": [
+     "Sexual Content",
+     "Mature",
+     "Action",
+     "Nudity",
+     "Female Protagonist",
+     "Anime",
+     "Indie",
+     "Character Customization",
+     "Singleplayer",
+     "Hack and Slash",
+     "Beat 'em up",
+     "Violent"
     ]
    }
   }
@@ -509823,6 +515169,69 @@
      "Indie",
      "Replay Value",
      "Short"
+    ]
+   }
+  }
+ },
+ "steam-715560": {
+  "hltb": {
+   "at": "2026-11-17T14:42:14.011993+00:00",
+   "v": {
+    "comp": 13.6,
+    "extra": 12.3,
+    "id": 65001,
+    "main": 8.8,
+    "title": "Eastshade",
+    "year": 2019
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:33.468495+00:00",
+   "v": {
+    "genres": [
+     "First-Person Adventure"
+    ],
+    "reviews": 22,
+    "score": 78,
+    "slug": "eastshade",
+    "title": "Eastshade",
+    "user": 7.8,
+    "userCount": 73,
+    "year": 2019
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:19.398600+00:00",
+   "forced": 715560,
+   "v": {
+    "appid": 715560,
+    "name": "Eastshade",
+    "neg": 549,
+    "owners": "100,000 .. 200,000",
+    "pos": 4608,
+    "price": 24.99,
+    "publisher": "Eastshade Studios",
+    "tags": [
+     "Exploration",
+     "Relaxing",
+     "Open World",
+     "Beautiful",
+     "Atmospheric",
+     "Adventure",
+     "Walking Simulator",
+     "Singleplayer",
+     "First-Person",
+     "Nature",
+     "Indie",
+     "Colorful",
+     "Casual",
+     "RPG",
+     "Interactive Fiction",
+     "Story Rich",
+     "Fantasy",
+     "Great Soundtrack",
+     "Crafting",
+     "Survival"
     ]
    }
   }
@@ -514541,6 +519950,69 @@
    }
   }
  },
+ "steam-746940": {
+  "hltb": {
+   "at": "2026-11-17T14:42:11.274411+00:00",
+   "v": {
+    "comp": 12.6,
+    "extra": 2.7,
+    "id": 60631,
+    "main": 2.2,
+    "title": "Nippon Marathon",
+    "year": 2018
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:31.420794+00:00",
+   "v": {
+    "genres": [
+     "Athletics"
+    ],
+    "reviews": 9,
+    "score": 54,
+    "slug": "nippon-marathon",
+    "title": "Nippon Marathon",
+    "user": 6.5,
+    "userCount": 20,
+    "year": 2018
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:15.079237+00:00",
+   "forced": 746940,
+   "v": {
+    "appid": 746940,
+    "name": "Nippon Marathon",
+    "neg": 31,
+    "owners": "0 .. 20,000",
+    "pos": 306,
+    "price": 14.99,
+    "publisher": "PQube",
+    "tags": [
+     "Sports",
+     "Indie",
+     "Racing",
+     "4 Player Local",
+     "Family Friendly",
+     "Funny",
+     "Anime",
+     "Multiplayer",
+     "Fighting",
+     "Local Multiplayer",
+     "Action",
+     "Casual",
+     "Memes",
+     "Physics",
+     "Controller",
+     "Early Access",
+     "Runner",
+     "Third Person",
+     "Action-Adventure",
+     "Arcade"
+    ]
+   }
+  }
+ },
  "steam-747610": {
   "hltb": {
    "at": "2026-10-23T17:02:35.550089+00:00",
@@ -515511,7 +520983,8 @@
  },
  "steam-754050": {
   "hltb": {
-   "at": "2026-11-07T11:55:30.551532+00:00",
+   "at": "2026-11-17T14:36:18.711197+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -515883,6 +521356,120 @@
      "Comedy",
      "Collectathon",
      "Psychological Horror"
+    ]
+   }
+  }
+ },
+ "steam-758330": {
+  "hltb": {
+   "at": "2026-11-17T14:41:32.788017+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:28.815759+00:00",
+   "v": {
+    "genres": [
+     "Compilation"
+    ],
+    "reviews": 36,
+    "score": 75,
+    "slug": "shenmue-i-and-ii",
+    "title": "Shenmue I & II",
+    "user": 8.5,
+    "userCount": 296,
+    "year": 2018
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:08.256482+00:00",
+   "forced": 758330,
+   "v": {
+    "appid": 758330,
+    "name": "Shenmue I & II",
+    "neg": 326,
+    "owners": "100,000 .. 200,000",
+    "pos": 2619,
+    "price": 29.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Adventure",
+     "Open World",
+     "Story Rich",
+     "Martial Arts",
+     "Classic",
+     "Action",
+     "RPG",
+     "Atmospheric",
+     "Fighting",
+     "Cult Classic",
+     "Quick-Time Events",
+     "Great Soundtrack",
+     "Singleplayer",
+     "Retro",
+     "JRPG",
+     "Beat 'em up",
+     "Epic",
+     "Third Person",
+     "Simulation",
+     "Anime"
+    ]
+   }
+  }
+ },
+ "steam-758370": {
+  "hltb": {
+   "at": "2026-11-17T14:40:50.135799+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:20.278178+00:00",
+   "v": {
+    "genres": [
+     "Action"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "through-the-ages",
+    "title": "Through The Ages",
+    "user": null,
+    "userCount": 0,
+    "year": 2025
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:50.464815+00:00",
+   "forced": 758370,
+   "v": {
+    "appid": 758370,
+    "name": "Through the Ages",
+    "neg": 198,
+    "owners": "200,000 .. 500,000",
+    "pos": 1992,
+    "price": 15.99,
+    "publisher": "CGE Digital",
+    "tags": [
+     "Strategy",
+     "Board Game",
+     "Tabletop",
+     "Card Game",
+     "Historical",
+     "Multiplayer",
+     "Turn-Based Strategy",
+     "Singleplayer",
+     "2D",
+     "Resource Management",
+     "Turn-Based",
+     "Simulation",
+     "Economy",
+     "Politics",
+     "Competitive",
+     "Replay Value",
+     "Stylized",
+     "Tactical",
+     "Turn-Based Tactics",
+     "Asynchronous Multiplayer"
     ]
    }
   }
@@ -516421,7 +522008,7 @@
  },
  "steam-760890": {
   "hltb": {
-   "at": "2026-11-07T11:55:34.822722+00:00",
+   "at": "2026-11-17T14:37:06.177875+00:00",
    "v": null
   },
   "mc": {
@@ -520723,6 +526310,69 @@
    }
   }
  },
+ "steam-790820": {
+  "hltb": {
+   "at": "2026-11-17T14:43:13.203905+00:00",
+   "v": {
+    "comp": 72.9,
+    "extra": 50.3,
+    "id": 50789,
+    "main": 36.9,
+    "title": "Valkyria Chronicles 4",
+    "year": 2018
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:39.419494+00:00",
+   "v": {
+    "genres": [
+     "Turn-Based Tactics"
+    ],
+    "reviews": 50,
+    "score": 85,
+    "slug": "valkyria-chronicles-4",
+    "title": "Valkyria Chronicles 4",
+    "user": 8,
+    "userCount": 258,
+    "year": 2018
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:34.922873+00:00",
+   "forced": 790820,
+   "v": {
+    "appid": 790820,
+    "name": "Valkyria Chronicles 4 Complete Edition",
+    "neg": 854,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 5759,
+    "price": 49.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Strategy",
+     "Anime",
+     "Turn-Based",
+     "RPG",
+     "War",
+     "Strategy RPG",
+     "Singleplayer",
+     "Tactical",
+     "Turn-Based Tactics",
+     "JRPG",
+     "Action",
+     "Story Rich",
+     "Third Person",
+     "Tactical RPG",
+     "Turn-Based Strategy",
+     "Tanks",
+     "Violent",
+     "Great Soundtrack",
+     "Female Protagonist",
+     "World War II"
+    ]
+   }
+  }
+ },
  "steam-791770": {
   "hltb": {
    "at": "2026-10-28T11:37:23.239357+00:00",
@@ -521619,6 +527269,56 @@
      "Pixel Graphics",
      "Top-Down Shooter",
      "2D"
+    ]
+   }
+  }
+ },
+ "steam-798290": {
+  "hltb": {
+   "at": "2026-11-17T14:43:29.463249+00:00",
+   "v": {
+    "comp": 45.0,
+    "extra": 21.0,
+    "id": 76755,
+    "main": 15.0,
+    "title": "MXGP Pro",
+    "year": 2018
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:44.840035+00:00",
+   "v": {
+    "genres": [
+     "Auto Racing"
+    ],
+    "reviews": 19,
+    "score": 64,
+    "slug": "mxgp-pro",
+    "title": "MXGP Pro",
+    "user": 9.3,
+    "userCount": 4,
+    "year": 2018
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:47.084182+00:00",
+   "forced": 798290,
+   "v": {
+    "appid": 798290,
+    "name": "MXGP PRO",
+    "neg": 186,
+    "owners": "100,000 .. 200,000",
+    "pos": 1052,
+    "price": 19.99,
+    "publisher": "Milestone S.r.l.",
+    "tags": [
+     "Simulation",
+     "Racing",
+     "Sports",
+     "Motorbike",
+     "Motocross",
+     "Multiplayer",
+     "Offroad"
     ]
    }
   }
@@ -524315,7 +530015,7 @@
  },
  "steam-815780": {
   "hltb": {
-   "at": "2026-11-16T13:59:52.979708+00:00",
+   "at": "2026-11-17T14:39:44.616657+00:00",
    "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
@@ -525151,8 +530851,7 @@
  },
  "steam-824270": {
   "hltb": {
-   "at": "2026-11-16T13:59:52.882729+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:39:24.023892+00:00",
    "v": null
   },
   "mc": {
@@ -525182,6 +530881,69 @@
      "Controller",
      "Multiplayer",
      "Horror"
+    ]
+   }
+  }
+ },
+ "steam-824600": {
+  "hltb": {
+   "at": "2026-11-17T14:37:09.372476+00:00",
+   "v": {
+    "comp": 13.5,
+    "extra": 7.7,
+    "id": 85353,
+    "main": 5.9,
+    "title": "HROT",
+    "year": 2023
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:33:56.872799+00:00",
+   "v": {
+    "genres": [
+     "FPS"
+    ],
+    "reviews": 7,
+    "score": 86,
+    "slug": "hrot",
+    "title": "HROT",
+    "user": 8.3,
+    "userCount": 37,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:33:58.208169+00:00",
+   "forced": 824600,
+   "v": {
+    "appid": 824600,
+    "name": "HROT",
+    "neg": 167,
+    "owners": "200,000 .. 500,000",
+    "pos": 5464,
+    "price": 19.99,
+    "publisher": "Spytihněv",
+    "tags": [
+     "Retro",
+     "FPS",
+     "Shooter",
+     "Boomer Shooter",
+     "Indie",
+     "First-Person",
+     "Action",
+     "Singleplayer",
+     "Old School",
+     "Gore",
+     "Violent",
+     "Dark",
+     "Horror",
+     "Atmospheric",
+     "1980s",
+     "Alternate History",
+     "Blood",
+     "Horses",
+     "Driving",
+     "Vehicular Combat"
     ]
    }
   }
@@ -525674,6 +531436,60 @@
      "Tabletop",
      "Turn-Based Strategy",
      "Colorful"
+    ]
+   }
+  }
+ },
+ "steam-830820": {
+  "hltb": {
+   "at": "2026-11-17T14:41:06.592558+00:00",
+   "v": {
+    "comp": 6.6,
+    "extra": 3.8,
+    "id": 63417,
+    "main": 3.3,
+    "title": "Jets'n'Guns 2",
+    "year": 2018
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:21.141170+00:00",
+   "v": {
+    "genres": [
+     "Horizontal Shoot-'Em-Up"
+    ],
+    "reviews": 4,
+    "score": 80,
+    "slug": "jetsnguns-2",
+    "title": "Jets'n'Guns 2",
+    "user": 6.3,
+    "userCount": 6,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:52.631206+00:00",
+   "forced": 830820,
+   "v": {
+    "appid": 830820,
+    "name": "Jets'n'Guns 2",
+    "neg": 117,
+    "owners": "50,000 .. 100,000",
+    "pos": 1127,
+    "price": 15.99,
+    "publisher": "Rake in Grass",
+    "tags": [
+     "Action",
+     "Indie",
+     "Shoot 'Em Up",
+     "Great Soundtrack",
+     "Side Scroller",
+     "Bullet Hell",
+     "2D",
+     "Colorful",
+     "War",
+     "Violent",
+     "Difficult"
     ]
    }
   }
@@ -527749,6 +533565,69 @@
    }
   }
  },
+ "steam-850190": {
+  "hltb": {
+   "at": "2026-11-17T14:37:04.863298+00:00",
+   "v": {
+    "comp": 22.6,
+    "extra": 11.4,
+    "id": 109125,
+    "main": 7.5,
+    "title": "Goat Simulator 3",
+    "year": 2022
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:33:55.975305+00:00",
+   "v": {
+    "genres": [
+     "Open-World Action"
+    ],
+    "reviews": 26,
+    "score": 68,
+    "slug": "goat-simulator-3",
+    "title": "Goat Simulator 3",
+    "user": 7.7,
+    "userCount": 248,
+    "year": 2022
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:33:55.894172+00:00",
+   "forced": 850190,
+   "v": {
+    "appid": 850190,
+    "name": "Goat Simulator 3",
+    "neg": 293,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 13795,
+    "price": 29.99,
+    "publisher": "Coffee Stain Publishing",
+    "tags": [
+     "Physics",
+     "Sandbox",
+     "Exploration",
+     "Open World",
+     "Simulation",
+     "Character Customization",
+     "3D",
+     "Action-Adventure",
+     "Casual",
+     "Multiplayer",
+     "Comedy",
+     "Co-op",
+     "Cartoony",
+     "Adventure",
+     "Colorful",
+     "Family Friendly",
+     "Local Co-Op",
+     "Online Co-Op",
+     "Funny",
+     "Singleplayer"
+    ]
+   }
+  }
+ },
  "steam-851100": {
   "hltb": {
    "at": "2026-10-26T15:42:52.885009+00:00",
@@ -529473,11 +535352,11 @@
  },
  "steam-862690": {
   "hltb": {
-   "at": "2026-10-23T12:43:42.281778+00:00",
+   "at": "2026-11-17T14:36:11.409855+00:00",
    "v": null
   },
   "mc": {
-   "at": "2026-10-23T12:31:15.388815+00:00",
+   "at": "2026-11-17T14:33:54.707102+00:00",
    "v": null
   },
   "steam": {
@@ -530684,8 +536563,7 @@
  },
  "steam-871100": {
   "hltb": {
-   "at": "2026-11-16T13:53:16.848904+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:36:14.467067+00:00",
    "v": null
   },
   "mc": {
@@ -530785,6 +536663,69 @@
      "Anime",
      "Emotional",
      "Cats"
+    ]
+   }
+  }
+ },
+ "steam-871930": {
+  "hltb": {
+   "at": "2026-11-17T14:43:14.572501+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 60107,
+    "main": null,
+    "title": "Gladiabots",
+    "year": 2018
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:40.657323+00:00",
+   "v": {
+    "genres": [
+     "Real-Time Strategy"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "gladiabots",
+    "title": "Gladiabots",
+    "user": 8,
+    "userCount": 7,
+    "year": 2019
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:38.277133+00:00",
+   "forced": 871930,
+   "v": {
+    "appid": 871930,
+    "name": "GLADIABOTS - AI Combat Arena",
+    "neg": 92,
+    "owners": "200,000 .. 500,000",
+    "pos": 775,
+    "price": 14.99,
+    "publisher": "GFX47, WhisperGames",
+    "tags": [
+     "Strategy",
+     "Artificial Intelligence",
+     "Competitive",
+     "Multiplayer",
+     "PvE",
+     "Singleplayer",
+     "PvP",
+     "Programming",
+     "Simulation",
+     "Robots",
+     "Indie",
+     "Logic",
+     "Tactical",
+     "Asynchronous Multiplayer",
+     "Automation",
+     "Education",
+     "Auto Battler",
+     "Difficult",
+     "Sci-fi",
+     "Early Access"
     ]
    }
   }
@@ -533021,6 +538962,51 @@
    }
   }
  },
+ "steam-893180": {
+  "hltb": {
+   "at": "2026-11-17T14:42:24.506735+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:36.019448+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:27.139808+00:00",
+   "forced": 893180,
+   "v": {
+    "appid": 893180,
+    "name": "Catherine Classic",
+    "neg": 1269,
+    "owners": "500,000 .. 1,000,000",
+    "pos": 8694,
+    "price": 19.99,
+    "publisher": "SEGA",
+    "tags": [
+     "Sexual Content",
+     "Anime",
+     "Mature",
+     "Nudity",
+     "Puzzle",
+     "Story Rich",
+     "Choices Matter",
+     "Multiple Endings",
+     "Puzzle-Platformer",
+     "Horror",
+     "Singleplayer",
+     "Difficult",
+     "Adventure",
+     "Psychological Horror",
+     "Surreal",
+     "Violent",
+     "Great Soundtrack",
+     "Gore",
+     "Sokoban",
+     "Local Multiplayer"
+    ]
+   }
+  }
+ },
  "steam-893390": {
   "hltb": {
    "at": "2026-10-23T15:30:28.960848+00:00",
@@ -534285,8 +540271,7 @@
  },
  "steam-908100": {
   "hltb": {
-   "at": "2026-11-16T14:01:39.696632+00:00",
-   "err": "HLTB-Abfrage fehlgeschlagen",
+   "at": "2026-11-17T14:41:07.543255+00:00",
    "v": null
   },
   "mc": {
@@ -534456,6 +540441,132 @@
      "Resource Management",
      "RTS",
      "Real Time Tactics"
+    ]
+   }
+  }
+ },
+ "steam-909820": {
+  "hltb": {
+   "at": "2026-11-17T14:41:09.775113+00:00",
+   "v": {
+    "comp": 7.0,
+    "extra": 6.2,
+    "id": 69388,
+    "main": 4.8,
+    "title": "Songbird Symphony",
+    "year": 2019
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:21.899182+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": 8,
+    "score": 81,
+    "slug": "songbird-symphony",
+    "title": "Songbird Symphony",
+    "user": 7.3,
+    "userCount": 18,
+    "year": 2019
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:54.884911+00:00",
+   "forced": 909820,
+   "v": {
+    "appid": 909820,
+    "name": "Songbird Symphony",
+    "neg": 65,
+    "owners": "20,000 .. 50,000",
+    "pos": 581,
+    "price": 16.99,
+    "publisher": "PQube",
+    "tags": [
+     "Metroidvania",
+     "Side Scroller",
+     "Exploration",
+     "Puzzle-Platformer",
+     "Rhythm",
+     "Puzzle",
+     "Platformer",
+     "Cute",
+     "2D",
+     "Pixel Graphics",
+     "Story Rich",
+     "Adventure",
+     "Atmospheric",
+     "Retro",
+     "Music",
+     "Singleplayer",
+     "Wholesome",
+     "Soundtrack",
+     "Indie",
+     "Cozy"
+    ]
+   }
+  }
+ },
+ "steam-910630": {
+  "hltb": {
+   "at": "2026-11-17T14:39:04.439344+00:00",
+   "v": {
+    "comp": 17.7,
+    "extra": 11.2,
+    "id": 65086,
+    "main": 8.3,
+    "title": "Arcade Spirits",
+    "year": 2019
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:06.823108+00:00",
+   "v": {
+    "genres": [
+     "Visual Novel"
+    ],
+    "reviews": 9,
+    "score": 75,
+    "slug": "arcade-spirits",
+    "title": "Arcade Spirits",
+    "user": 6,
+    "userCount": 5,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:34:19.388842+00:00",
+   "forced": 910630,
+   "v": {
+    "appid": 910630,
+    "name": "Arcade Spirits",
+    "neg": 44,
+    "owners": "50,000 .. 100,000",
+    "pos": 555,
+    "price": 19.99,
+    "publisher": "PQube",
+    "tags": [
+     "Cute",
+     "Dating Sim",
+     "LGBTQ+",
+     "Visual Novel",
+     "Romance",
+     "Story Rich",
+     "Choices Matter",
+     "Choose Your Own Adventure",
+     "Retro",
+     "Futuristic",
+     "Character Customization",
+     "Singleplayer",
+     "Casual",
+     "Simulation",
+     "Funny",
+     "Nudity",
+     "Otome",
+     "Mature",
+     "Female Protagonist",
+     "Sexual Content"
     ]
    }
   }
@@ -536817,7 +542928,7 @@
  },
  "steam-926340": {
   "hltb": {
-   "at": "2026-11-07T11:55:35.899331+00:00",
+   "at": "2026-11-17T14:37:14.248018+00:00",
    "v": null
   },
   "mc": {
@@ -542690,7 +548801,7 @@
  },
  "steam-965190": {
   "hltb": {
-   "at": "2026-11-07T11:59:57.528383+00:00",
+   "at": "2026-11-17T14:43:11.624727+00:00",
    "v": null
   },
   "mc": {
@@ -543875,6 +549986,63 @@
      "Sexual Content",
      "Comedy",
      "Psychological Horror"
+    ]
+   }
+  }
+ },
+ "steam-971030": {
+  "hltb": {
+   "at": "2026-11-17T14:43:32.767280+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:45.783764+00:00",
+   "v": {
+    "genres": [
+     "Skating"
+    ],
+    "reviews": 20,
+    "score": 54,
+    "slug": "skatebird",
+    "title": "SkateBIRD",
+    "user": 4.1,
+    "userCount": 12,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:49.299595+00:00",
+   "forced": 971030,
+   "v": {
+    "appid": 971030,
+    "name": "SkateBIRD",
+    "neg": 119,
+    "owners": "20,000 .. 50,000",
+    "pos": 631,
+    "price": 19.99,
+    "publisher": "Glass Bottom Games",
+    "tags": [
+     "Skateboarding",
+     "Exploration",
+     "Sandbox",
+     "Skating",
+     "Character Customization",
+     "Simulation",
+     "Relaxing",
+     "Family Friendly",
+     "Racing",
+     "Sports",
+     "Cute",
+     "Third Person",
+     "Funny",
+     "Controller",
+     "Open World",
+     "Story Rich",
+     "Action",
+     "Casual",
+     "Colorful",
+     "Birds"
     ]
    }
   }
@@ -546781,6 +552949,67 @@
     "tags": [
      "Utilities",
      "VR"
+    ]
+   }
+  }
+ },
+ "steam-99300": {
+  "hltb": {
+   "at": "2026-11-17T14:43:29.046112+00:00",
+   "v": {
+    "comp": 13.0,
+    "extra": 6.6,
+    "id": 7705,
+    "main": 4.8,
+    "title": "Renegade Ops",
+    "year": 2011
+   }
+  },
+  "mc": {
+   "at": "2026-11-17T14:34:44.159031+00:00",
+   "v": {
+    "genres": [
+     "Top-Down Shoot-'Em-Up"
+    ],
+    "reviews": 36,
+    "score": 81,
+    "slug": "renegade-ops",
+    "title": "Renegade Ops",
+    "user": 7.8,
+    "userCount": 24,
+    "year": 2011
+   }
+  },
+  "steam": {
+   "at": "2026-11-17T14:35:46.015294+00:00",
+   "forced": 99300,
+   "v": {
+    "appid": 99300,
+    "name": "Renegade Ops",
+    "neg": 151,
+    "owners": "200,000 .. 500,000",
+    "pos": 868,
+    "price": 15.0,
+    "publisher": "SEGA",
+    "tags": [
+     "Action",
+     "Twin Stick Shooter",
+     "Arcade",
+     "Top-Down",
+     "Local Co-Op",
+     "Co-op",
+     "Online Co-Op",
+     "Shoot 'Em Up",
+     "Split Screen",
+     "Local Multiplayer",
+     "Racing",
+     "Shooter",
+     "Top-Down Shooter",
+     "Controller",
+     "Vehicular Combat",
+     "Multiplayer",
+     "Singleplayer",
+     "War"
     ]
    }
   }
