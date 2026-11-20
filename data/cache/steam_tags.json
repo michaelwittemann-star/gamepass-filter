@@ -9571,6 +9571,20 @@
    "Simulation"
   ]
  },
+ "1140570": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1140570/library_600x900.jpg?t=1612253248",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1140570/header.jpg?t=1612253248",
+  "tags": [
+   "Indie",
+   "Adventure",
+   "Simulation",
+   "Cats",
+   "Pixel Graphics",
+   "Cute",
+   "Isometric"
+  ]
+ },
  "1140610": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1140610/library_600x900.jpg?t=1667654980",
@@ -9823,6 +9837,17 @@
    "Psychological Horror",
    "Memes",
    "2D"
+  ]
+ },
+ "1144280": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1144280/library_600x900.jpg?t=1593162089",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1144280/header.jpg?t=1593162089",
+  "tags": [
+   "Action",
+   "Indie",
+   "Casual",
+   "Psychological Horror"
   ]
  },
  "1144440": {
@@ -35010,6 +35035,28 @@
    "Survival"
   ]
  },
+ "1494190": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1494190/library_600x900.jpg?t=1614584974",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1494190/header.jpg?t=1614584974",
+  "tags": [
+   "Casual",
+   "Simulation",
+   "RPG",
+   "Visual Novel",
+   "LGBTQ+",
+   "Word Game",
+   "Dating Sim",
+   "Anime",
+   "Emotional",
+   "Female Protagonist",
+   "Story Rich",
+   "Indie",
+   "Adventure",
+   "Linear",
+   "Singleplayer"
+  ]
+ },
  "1494910": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1494910/library_600x900.jpg?t=1650527026",
@@ -39417,6 +39464,26 @@
    "Story Rich",
    "Soundtrack",
    "Metroidvania"
+  ]
+ },
+ "1561910": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1561910/library_600x900.jpg?t=1628498809",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1561910/header.jpg?t=1628498809",
+  "tags": [
+   "RPG",
+   "Hand-drawn",
+   "Story Rich",
+   "Exploration",
+   "JRPG",
+   "2D",
+   "Free to Play",
+   "Anime",
+   "Indie",
+   "Emotional",
+   "Dark Fantasy",
+   "Singleplayer",
+   "Pixel Graphics"
   ]
  },
  "1562420": {
@@ -52373,6 +52440,33 @@
    "Anime"
   ]
  },
+ "1765540": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1765540/library_600x900.jpg?t=1651500930",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1765540/header.jpg?t=1651500930",
+  "tags": [
+   "Strategy",
+   "2D",
+   "Pixel Graphics",
+   "Turn-Based Strategy",
+   "Grand Strategy",
+   "Alternate History",
+   "Military",
+   "Dystopian ",
+   "Political Sim",
+   "Atmospheric",
+   "War",
+   "Idler",
+   "World War II",
+   "Historical",
+   "PvE",
+   "Linear",
+   "Multiple Endings",
+   "1980s",
+   "Perma Death",
+   "Turn-Based Tactics"
+  ]
+ },
  "1766010": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1766010/library_600x900.jpg?t=1726889599",
@@ -56766,6 +56860,28 @@
    "Fighting",
    "Combat",
    "Survival"
+  ]
+ },
+ "1835690": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1835690/library_600x900.jpg?t=1740786291",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1835690/header.jpg?t=1740786291",
+  "tags": [
+   "Action",
+   "3D Fighter",
+   "PvP",
+   "Strategy",
+   "Shooter",
+   "3D Platformer",
+   "3D",
+   "Shoot 'Em Up",
+   "Colorful",
+   "First-Person",
+   "Free to Play",
+   "Survival",
+   "Tactical",
+   "Multiplayer",
+   "War"
   ]
  },
  "1835810": {
@@ -85649,6 +85765,32 @@
    "Replay Value",
    "Indie",
    "Crafting"
+  ]
+ },
+ "2295570": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2295570/library_600x900.jpg?t=1710789532",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2295570/header.jpg?t=1710789532",
+  "tags": [
+   "Hidden Object",
+   "Cats",
+   "Cozy",
+   "Cute",
+   "Hand-drawn",
+   "Cartoon",
+   "Audio Production",
+   "Music-Based Procedural Generation",
+   "Relaxing",
+   "Instrumental Music",
+   "Point & Click",
+   "Incremental",
+   "Cartoony",
+   "Colorful",
+   "Comic Book",
+   "Stylized",
+   "Casual",
+   "Singleplayer",
+   "2D"
   ]
  },
  "2295700": {
@@ -147002,6 +147144,32 @@
    "Story Rich"
   ]
  },
+ "3418990": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3418990/4be02d1e70ea3a4c068957b3934a5ca9193d600b/library_capsule.jpg?t=1792988481",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3418990/71f171637a1a984194ec8e49024619ccda1f0c81/header.jpg?t=1792988481",
+  "tags": [
+   "Indie",
+   "Adventure",
+   "Metroidvania",
+   "2D",
+   "Platformer",
+   "Action",
+   "RPG",
+   "Exploration",
+   "Female Protagonist",
+   "Fantasy",
+   "Combat",
+   "Pixel Graphics",
+   "Action RPG",
+   "2D Platformer",
+   "Hidden Object",
+   "Dark Fantasy",
+   "Magic",
+   "Singleplayer",
+   "Anime"
+  ]
+ },
  "34190": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/34190/library_600x900.jpg?t=1762752545",
@@ -175416,6 +175584,33 @@
    "Board Game"
   ]
  },
+ "4111370": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4111370/c38022e4673903d9f36b084f6213b01379f6dee1/library_capsule.jpg?t=1794887682",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4111370/8d63617f6ba762697b5658a20453e5342cc58a03/header.jpg?t=1794887682",
+  "tags": [
+   "Birds",
+   "Idler",
+   "Creature Collector",
+   "Desktop Companion",
+   "Nature",
+   "Casual",
+   "Decorating",
+   "Building",
+   "Pixel Graphics",
+   "Simulation",
+   "Point & Click",
+   "2D",
+   "Cute",
+   "Relaxing",
+   "Colorful",
+   "Atmospheric",
+   "Cozy",
+   "City Builder",
+   "Sandbox",
+   "Time Management"
+  ]
+ },
  "4113050": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4113050/da1fb52f4364a07ac01648b99efa53051a42fd2f/library_capsule.jpg?t=1784125900",
@@ -177550,6 +177745,21 @@
    "2D",
    "Funny",
    "Horror"
+  ]
+ },
+ "4178790": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4178790/176199e25b1ca9a86e7c1a33218ada792824eaa9/library_capsule.jpg?t=1795182782",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4178790/902c524c3a35705cff8b4174a40923e14727e103/header.jpg?t=1795182782",
+  "tags": [
+   "Incremental",
+   "Casual",
+   "City Builder",
+   "Base Building",
+   "Strategy",
+   "Resource Management",
+   "Automation",
+   "Relaxing"
   ]
  },
  "418040": {
@@ -186532,6 +186742,33 @@
    "Hand-drawn"
   ]
  },
+ "4523120": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4523120/5fea8dd6fc905886e9740c6235c96310ac9248ba/library_capsule.jpg?t=1795112316",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4523120/bd01ad0f41f47272b6f1459de015d2494b24a422/header.jpg?t=1795112316",
+  "tags": [
+   "Action",
+   "Adventure",
+   "Action-Adventure",
+   "Arcade",
+   "Platformer",
+   "2D Platformer",
+   "Precision Platformer",
+   "2D",
+   "Cartoony",
+   "Colorful",
+   "Cute",
+   "Pixel Graphics",
+   "1980s",
+   "1990's",
+   "Animals",
+   "Comedy",
+   "Comic Book",
+   "Funny",
+   "Old School",
+   "Retro"
+  ]
+ },
  "452420": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/452420/library_600x900.jpg?t=1728956363",
@@ -189765,6 +190002,22 @@
    "Comedy",
    "Multiplayer",
    "Level Editor"
+  ]
+ },
+ "467820": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/467820/portrait.png?t=1575196661",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/467820/header.jpg?t=1575196661",
+  "tags": [
+   "Action",
+   "Indie",
+   "Third-Person Shooter",
+   "Multiplayer",
+   "Physics",
+   "Arena Shooter",
+   "Funny",
+   "Early Access",
+   "Third Person"
   ]
  },
  "4680930": {
@@ -195266,6 +195519,33 @@
    "Roguelike",
    "Indie",
    "Casual"
+  ]
+ },
+ "5051090": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5051090/e9f82b414843060e9aac3343c48076d1ebb18285/library_capsule.jpg?t=1795000361",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5051090/3cfb50537b0bf57ee89dc9a5ac4faafc62461ba9/header.jpg?t=1795000361",
+  "tags": [
+   "Psychological Horror",
+   "Cute",
+   "Life Sim",
+   "Sandbox",
+   "3D",
+   "Relaxing",
+   "Casual",
+   "Arcade",
+   "Indie",
+   "Atmospheric",
+   "Gore",
+   "Cozy",
+   "Third Person",
+   "Horror",
+   "Pixel Graphics",
+   "Hentai",
+   "Singleplayer",
+   "Multiple Endings",
+   "Sexual Content",
+   "Survival Horror"
   ]
  },
  "5051410": {
@@ -200815,6 +201095,33 @@
    "Economy"
   ]
  },
+ "567630": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/567630/f2c2ce04618a2dc9d412d91a6d4e66f4bb873fa2/library_capsule.jpg?t=1792635262",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/567630/9d2d7a409400ddd686984c219f60700fdf0ada6e/header.jpg?t=1792635262",
+  "tags": [
+   "Hack and Slash",
+   "Medieval",
+   "Free to Play",
+   "RPG",
+   "Strategy",
+   "Multiplayer",
+   "War",
+   "Action",
+   "PvP",
+   "Sandbox",
+   "Massively Multiplayer",
+   "Horses",
+   "Historical",
+   "Tactical",
+   "RTS",
+   "Swordplay",
+   "MOBA",
+   "Online Co-Op",
+   "Grand Strategy",
+   "Adventure"
+  ]
+ },
  "567800": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/567800/a186775025f55ba7ff677e1a37ebabe82c011502/library_capsule.jpg?t=1789036806",
@@ -202457,6 +202764,19 @@
    "Character Customization",
    "Singleplayer",
    "Side Scroller"
+  ]
+ },
+ "587470": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/587470/portrait.png?t=1511812703",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/587470/header.jpg?t=1511812703",
+  "tags": [
+   "Simulation",
+   "Indie",
+   "Casual",
+   "VR",
+   "Physics",
+   "Sandbox"
   ]
  },
  "587620": {
@@ -210232,6 +210552,33 @@
    "Psychological Horror"
   ]
  },
+ "690560": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/690560/portrait.png?t=1693946224",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/690560/header.jpg?t=1693946224",
+  "tags": [
+   "Roguelike",
+   "Turn-Based",
+   "Dungeon Crawler",
+   "RPG",
+   "Traditional Roguelike",
+   "Singleplayer",
+   "Top-Down",
+   "2D",
+   "Pixel Graphics",
+   "Casual",
+   "Fantasy",
+   "Funny",
+   "Loot",
+   "Perma Death",
+   "Replay Value",
+   "Puzzle",
+   "Procedural Generation",
+   "Comedy",
+   "Adventure",
+   "Indie"
+  ]
+ },
  "690640": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/690640/library_600x900.jpg?t=1789546865",
@@ -212817,6 +213164,33 @@
    "Short",
    "Female Protagonist",
    "LGBTQ+"
+  ]
+ },
+ "734920": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/734920/library_600x900.jpg?t=1569935305",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/734920/header.jpg?t=1569935305",
+  "tags": [
+   "Casual",
+   "Puzzle",
+   "3D Platformer",
+   "Parkour",
+   "Indie",
+   "Adventure",
+   "First-Person",
+   "Action",
+   "Atmospheric",
+   "Colorful",
+   "Puzzle Platformer",
+   "Funny",
+   "Relaxing",
+   "Great Soundtrack",
+   "Singleplayer",
+   "Controller",
+   "Short",
+   "Platformer",
+   "Difficult",
+   "Replay Value"
   ]
  },
  "735290": {
@@ -218095,6 +218469,27 @@
    "Platformer"
   ]
  },
+ "823840": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/823840/library_600x900.jpg?t=1623691574",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/823840/header.jpg?t=1623691574",
+  "tags": [
+   "Indie",
+   "Adventure",
+   "Cute",
+   "2.5D",
+   "Puzzle",
+   "Platformer",
+   "Puzzle Platformer",
+   "Singleplayer",
+   "Atmospheric",
+   "Colorful",
+   "Great Soundtrack",
+   "Difficult",
+   "Fantasy",
+   "Female Protagonist"
+  ]
+ },
  "824190": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/824190/portrait.png?t=1737738044",
@@ -221440,6 +221835,19 @@
    "Dark"
   ]
  },
+ "887900": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/887900/library_600x900.jpg?t=1584116362",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/887900/header.jpg?t=1584116362",
+  "tags": [
+   "Action",
+   "Indie",
+   "Casual",
+   "Difficult",
+   "Platformer",
+   "Physics"
+  ]
+ },
  "888040": {
   "at": "2026-10-26T18:37:19.743340+00:00",
   "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/888040/library_600x900.jpg?t=1774275112",
@@ -222366,6 +222774,25 @@
    "Action RPG",
    "Co-op",
    "Sci-fi"
+  ]
+ },
+ "91200": {
+  "at": "2026-11-20T14:11:33.144516+00:00",
+  "cap": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/91200/library_600x900.jpg?t=1634818526",
+  "hdr": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/91200/header.jpg?t=1634818526",
+  "tags": [
+   "Strategy",
+   "Indie",
+   "Tower Defense",
+   "Action",
+   "Sci-fi",
+   "Singleplayer",
+   "Touch-Friendly",
+   "RTS",
+   "Top-Down",
+   "Aliens",
+   "Difficult",
+   "Arcade"
   ]
  },
  "912380": {

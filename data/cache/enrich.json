@@ -66941,7 +66941,7 @@
    }
   },
   "steam": {
-   "at": "2026-11-10T13:36:46.290618+00:00",
+   "at": "2026-11-20T14:10:22.981401+00:00",
    "v": null
   }
  },
@@ -67201,7 +67201,7 @@
  },
  "ps-10010437": {
   "hltb": {
-   "at": "2026-11-10T13:36:47.693848+00:00",
+   "at": "2026-11-20T14:10:22.982013+00:00",
    "v": null
   },
   "mc": {
@@ -108749,6 +108749,56 @@
    }
   }
  },
+ "steam-1140570": {
+  "hltb": {
+   "at": "2026-11-20T14:10:32.256537+00:00",
+   "v": {
+    "comp": 5.8,
+    "extra": 3.0,
+    "id": 75881,
+    "main": 1.1,
+    "title": "A Street Cat's Tale",
+    "year": 2019
+   }
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:28.208268+00:00",
+   "v": {
+    "genres": [
+     "RPG"
+    ],
+    "reviews": 2,
+    "score": null,
+    "slug": "a-street-cats-tale",
+    "title": "A Street Cat's Tale",
+    "user": null,
+    "userCount": 3,
+    "year": 2020
+   }
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:32.092750+00:00",
+   "forced": 1140570,
+   "v": {
+    "appid": 1140570,
+    "name": "A Street Cat's Tale",
+    "neg": 24,
+    "owners": "20,000 .. 50,000",
+    "pos": 287,
+    "price": 4.99,
+    "publisher": "CFK Co., Ltd.",
+    "tags": [
+     "Indie",
+     "Adventure",
+     "Simulation",
+     "Cats",
+     "Pixel Graphics",
+     "Cute",
+     "Isometric"
+    ]
+   }
+  }
+ },
  "steam-1140610": {
   "hltb": {
    "at": "2026-10-23T16:58:25.833134+00:00",
@@ -109387,6 +109437,47 @@
      "Memes",
      "2D",
      "Open World Survival Craft"
+    ]
+   }
+  }
+ },
+ "steam-1144280": {
+  "hltb": {
+   "at": "2026-11-20T14:10:34.200173+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:28.613682+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "ain-dodo",
+    "title": "Ain Dodo",
+    "user": null,
+    "userCount": 1,
+    "year": 2019
+   }
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:35.426812+00:00",
+   "forced": 1144280,
+   "v": {
+    "appid": 1144280,
+    "name": "Ain Dodo",
+    "neg": 21,
+    "owners": "0 .. 20,000",
+    "pos": 147,
+    "price": 0.99,
+    "publisher": "oukaein",
+    "tags": [
+     "Action",
+     "Indie",
+     "Casual",
+     "Psychological Horror"
     ]
    }
   }
@@ -167113,6 +167204,47 @@
    }
   }
  },
+ "steam-1494190": {
+  "hltb": {
+   "at": "2026-11-20T14:10:32.251387+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:28.009906+00:00",
+   "v": null
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:30.983139+00:00",
+   "forced": 1494190,
+   "v": {
+    "appid": 1494190,
+    "name": "秘密舞会",
+    "neg": 42,
+    "owners": "20,000 .. 50,000",
+    "pos": 628,
+    "price": 2.99,
+    "publisher": "PeriScope Game",
+    "tags": [
+     "Casual",
+     "Simulation",
+     "RPG",
+     "Visual Novel",
+     "LGBTQ+",
+     "Word Game",
+     "Dating Sim",
+     "Anime",
+     "Drama",
+     "Emotional",
+     "Female Protagonist",
+     "Indie",
+     "Story Rich",
+     "Adventure",
+     "Linear",
+     "Singleplayer"
+    ]
+   }
+  }
+ },
  "steam-1494910": {
   "hltb": {
    "at": "2026-10-23T15:15:41.671985+00:00",
@@ -177325,6 +177457,56 @@
    }
   }
  },
+ "steam-1561910": {
+  "hltb": {
+   "at": "2026-11-20T14:10:24.831458+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:22.983512+00:00",
+   "v": {
+    "genres": [
+     "Adventure"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "kelvin-and-the-chateau",
+    "title": "Kelvin And The Chateau",
+    "user": null,
+    "userCount": 0,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:23.225722+00:00",
+   "forced": 1561910,
+   "v": {
+    "appid": 1561910,
+    "name": "凯尔文 - Kelvin And The Chateau",
+    "neg": 51,
+    "owners": "100,000 .. 200,000",
+    "pos": 439,
+    "price": null,
+    "publisher": "Forgotten",
+    "tags": [
+     "RPG",
+     "Hand-drawn",
+     "Story Rich",
+     "Exploration",
+     "JRPG",
+     "2D",
+     "Free to Play",
+     "Anime",
+     "Indie",
+     "Drama",
+     "Emotional",
+     "Dark Fantasy",
+     "Singleplayer",
+     "RPGMaker"
+    ]
+   }
+  }
+ },
  "steam-1562420": {
   "hltb": {
    "at": "2026-10-26T18:15:09.831770+00:00",
@@ -185983,7 +186165,7 @@
  },
  "steam-1611410": {
   "hltb": {
-   "at": "2026-11-10T13:37:38.884167+00:00",
+   "at": "2026-11-20T14:10:31.305015+00:00",
    "v": null
   },
   "mc": {
@@ -204148,6 +204330,48 @@
    }
   }
  },
+ "steam-1765540": {
+  "hltb": {
+   "at": "2026-11-20T14:10:25.042029+00:00",
+   "v": {
+    "comp": 1.1,
+    "extra": null,
+    "id": 146756,
+    "main": 1.0,
+    "title": "The Red Button",
+    "year": 2024
+   }
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:22.983898+00:00",
+   "v": {
+    "genres": [
+     "Turn-Based Strategy"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "red-button",
+    "title": "Red Button",
+    "user": null,
+    "userCount": 1,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:23.594955+00:00",
+   "forced": 1765540,
+   "v": {
+    "appid": 1765540,
+    "name": "Red Button",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
  "steam-1766010": {
   "hltb": {
    "at": "2026-10-23T16:11:34.841863+00:00",
@@ -213076,6 +213300,41 @@
    }
   }
  },
+ "steam-1835690": {
+  "hltb": {
+   "at": "2026-11-20T14:10:22.982496+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:22.982268+00:00",
+   "v": {
+    "genres": [
+     "Tactical FPS"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "shawncena121",
+    "title": "ShawnCena121",
+    "user": null,
+    "userCount": 0,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:22.982935+00:00",
+   "forced": 1835690,
+   "v": {
+    "appid": 1835690,
+    "name": "ShawnCena121",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
+   }
+  }
+ },
  "steam-1835810": {
   "hltb": {
    "at": "2026-10-23T16:29:04.539034+00:00",
@@ -214941,11 +215200,11 @@
  },
  "steam-1851200": {
   "hltb": {
-   "at": "2026-11-10T13:36:47.829112+00:00",
+   "at": "2026-11-20T14:10:25.955195+00:00",
    "v": null
   },
   "mc": {
-   "at": "2026-11-10T13:36:45.588924+00:00",
+   "at": "2026-11-20T14:10:22.984222+00:00",
    "v": null
   },
   "steam": {
@@ -272626,6 +272885,68 @@
    }
   }
  },
+ "steam-2295570": {
+  "hltb": {
+   "at": "2026-11-20T14:10:30.294813+00:00",
+   "v": {
+    "comp": 1.5,
+    "extra": 1.2,
+    "id": 131817,
+    "main": 0.9,
+    "title": "Shy Cats Hidden Orchestra",
+    "year": 2023
+   }
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:26.408779+00:00",
+   "v": {
+    "genres": [
+     "Hidden Object"
+    ],
+    "reviews": 1,
+    "score": null,
+    "slug": "shy-cats-hidden-orchestra",
+    "title": "Shy Cats Hidden Orchestra",
+    "user": null,
+    "userCount": 0,
+    "year": 2023
+   }
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:28.761156+00:00",
+   "forced": 2295570,
+   "v": {
+    "appid": 2295570,
+    "name": "Shy Cats Hidden Orchestra",
+    "neg": 6,
+    "owners": "0 .. 20,000",
+    "pos": 119,
+    "price": 4.99,
+    "publisher": "Enchant Games",
+    "tags": [
+     "Hidden Object",
+     "Cats",
+     "Cozy",
+     "Cute",
+     "Hand-drawn",
+     "Cartoon",
+     "Audio Production",
+     "Music-Based Procedural Generation",
+     "Relaxing",
+     "Instrumental Music",
+     "Point & Click",
+     "Clicker",
+     "Cartoony",
+     "Colorful",
+     "Comic Book",
+     "Stylized",
+     "Casual",
+     "Singleplayer",
+     "2D"
+    ]
+   }
+  }
+ },
  "steam-2295610": {
   "hltb": {
    "at": "2026-10-26T13:42:00.757246+00:00",
@@ -295078,7 +295399,7 @@
  },
  "steam-2485410": {
   "hltb": {
-   "at": "2026-11-10T13:37:52.095542+00:00",
+   "at": "2026-11-20T14:10:32.490325+00:00",
    "v": null
   },
   "mc": {
@@ -394871,6 +395192,48 @@
    }
   }
  },
+ "steam-3418990": {
+  "hltb": {
+   "at": "2026-11-20T14:10:31.533315+00:00",
+   "v": {
+    "comp": 5.9,
+    "extra": 4.9,
+    "id": 169668,
+    "main": null,
+    "title": "Shattered Divinities",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:26.885504+00:00",
+   "v": {
+    "genres": [
+     "Metroidvania"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "shattered-divinities",
+    "title": "Shattered Divinities",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:29.862314+00:00",
+   "forced": 3418990,
+   "v": {
+    "appid": 3418990,
+    "name": "Shattered Divinities",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 9.99,
+    "publisher": "TrueColor Games",
+    "tags": []
+   }
+  }
+ },
  "steam-34190": {
   "hltb": {
    "at": "2026-10-26T13:38:52.901487+00:00",
@@ -419393,7 +419756,7 @@
  },
  "steam-3702120": {
   "hltb": {
-   "at": "2026-11-10T13:36:55.206685+00:00",
+   "at": "2026-11-20T14:10:30.197908+00:00",
    "v": null
   },
   "mc": {
@@ -438798,7 +439161,8 @@
  },
  "steam-3959530": {
   "hltb": {
-   "at": "2026-11-10T13:38:42.775028+00:00",
+   "at": "2026-11-20T14:10:34.375622+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
    "v": null
   },
   "mc": {
@@ -448667,6 +449031,48 @@
    }
   }
  },
+ "steam-4111370": {
+  "hltb": {
+   "at": "2026-11-20T14:10:26.265202+00:00",
+   "v": {
+    "comp": 72.2,
+    "extra": null,
+    "id": 189200,
+    "main": null,
+    "title": "Birdwatching Notebook",
+    "year": 2026
+   }
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:24.266740+00:00",
+   "v": {
+    "genres": [
+     "Simulation"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "birdwatching-notebook",
+    "title": "Birdwatching Notebook",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:24.128371+00:00",
+   "forced": 4111370,
+   "v": {
+    "appid": 4111370,
+    "name": "Birdwatching Notebook",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 9.99,
+    "publisher": "Biekka Games",
+    "tags": []
+   }
+  }
+ },
  "steam-4113050": {
   "hltb": {
    "at": "2026-10-26T13:14:54.814071+00:00",
@@ -450945,11 +451351,11 @@
  },
  "steam-4160020": {
   "hltb": {
-   "at": "2026-11-10T13:36:52.410996+00:00",
+   "at": "2026-11-20T14:10:27.363157+00:00",
    "v": null
   },
   "mc": {
-   "at": "2026-11-10T13:36:48.657115+00:00",
+   "at": "2026-11-20T14:10:24.536671+00:00",
    "v": null
   },
   "steam": {
@@ -452156,6 +452562,42 @@
      "Funny",
      "Illuminati"
     ]
+   }
+  }
+ },
+ "steam-4178790": {
+  "hltb": {
+   "at": "2026-11-20T14:10:53.651970+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:30.403847+00:00",
+   "v": {
+    "genres": [
+     "Management"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "clicky-islands",
+    "title": "Clicky Islands",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:37.626456+00:00",
+   "forced": 4178790,
+   "v": {
+    "appid": 4178790,
+    "name": "",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "",
+    "tags": []
    }
   }
  },
@@ -460699,7 +461141,7 @@
  },
  "steam-4326130": {
   "hltb": {
-   "at": "2026-11-10T13:36:54.071132+00:00",
+   "at": "2026-11-20T14:10:30.623554+00:00",
    "v": null
   },
   "mc": {
@@ -469155,6 +469597,41 @@
    }
   }
  },
+ "steam-4523120": {
+  "hltb": {
+   "at": "2026-11-20T14:10:28.345079+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:24.719175+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "volvys-adventure-reslimed",
+    "title": "Volvy's Adventure: Reslimed",
+    "user": null,
+    "userCount": 0,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:25.426485+00:00",
+   "forced": 4523120,
+   "v": {
+    "appid": 4523120,
+    "name": "Volvy’s Adventure: Reslimed",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": 4.99,
+    "publisher": "Devolver Digital",
+    "tags": []
+   }
+  }
+ },
  "steam-452420": {
   "hltb": {
    "at": "2026-10-23T16:59:48.014013+00:00",
@@ -475313,6 +475790,52 @@
    }
   }
  },
+ "steam-467820": {
+  "hltb": {
+   "at": "2026-11-20T14:10:34.306721+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:30.000231+00:00",
+   "v": {
+    "genres": [
+     "Third Person Shooter"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "zero-g-arena",
+    "title": "Zero G Arena",
+    "user": null,
+    "userCount": 0,
+    "year": 2016
+   }
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:36.518350+00:00",
+   "forced": 467820,
+   "v": {
+    "appid": 467820,
+    "name": "Zero G Arena",
+    "neg": 28,
+    "owners": "20,000 .. 50,000",
+    "pos": 221,
+    "price": 9.99,
+    "publisher": "Jonathan Wood",
+    "tags": [
+     "Action",
+     "Indie",
+     "Third-Person Shooter",
+     "Multiplayer",
+     "Physics",
+     "Arena Shooter",
+     "Funny",
+     "Early Access",
+     "Third Person"
+    ]
+   }
+  }
+ },
  "steam-467960": {
   "hltb": {
    "at": "2026-10-23T12:37:05.480363+00:00",
@@ -477534,7 +478057,7 @@
  },
  "steam-4773970": {
   "hltb": {
-   "at": "2026-10-26T11:57:52.222496+00:00",
+   "at": "2026-11-20T14:10:26.160144+00:00",
    "v": null
   },
   "mc": {
@@ -484213,7 +484736,7 @@
  },
  "steam-499180": {
   "hltb": {
-   "at": "2026-11-10T13:37:53.620095+00:00",
+   "at": "2026-11-20T14:10:33.251439+00:00",
    "v": null
   },
   "mc": {
@@ -485204,7 +485727,7 @@
  },
  "steam-5019170": {
   "hltb": {
-   "at": "2026-11-10T13:36:51.508822+00:00",
+   "at": "2026-11-20T14:10:27.330897+00:00",
    "v": null
   },
   "mc": {
@@ -486367,6 +486890,41 @@
    }
   }
  },
+ "steam-5051090": {
+  "hltb": {
+   "at": "2026-11-20T14:10:29.237743+00:00",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:24.970632+00:00",
+   "v": {
+    "genres": [
+     "Virtual Life"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "the-cozy-funemployment",
+    "title": "The Cozy Funemployment",
+    "user": null,
+    "userCount": 1,
+    "year": 2026
+   }
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:26.524471+00:00",
+   "forced": 5051090,
+   "v": {
+    "appid": 5051090,
+    "name": "The Cozy Funemployment",
+    "neg": 0,
+    "owners": "0 .. 20,000",
+    "pos": 0,
+    "price": null,
+    "publisher": "BeetleGame",
+    "tags": []
+   }
+  }
+ },
  "steam-5051410": {
   "hltb": {
    "at": "2026-11-11T12:51:36.094205+00:00",
@@ -487180,7 +487738,7 @@
  },
  "steam-5099380": {
   "hltb": {
-   "at": "2026-11-10T13:36:47.727084+00:00",
+   "at": "2026-11-20T14:10:22.983252+00:00",
    "v": null
   },
   "mc": {
@@ -490969,8 +491527,15 @@
  },
  "steam-5226940": {
   "hltb": {
-   "at": "2026-11-10T13:36:52.974984+00:00",
-   "v": null
+   "at": "2026-11-20T14:10:28.275262+00:00",
+   "v": {
+    "comp": 8.8,
+    "extra": null,
+    "id": 193563,
+    "main": null,
+    "title": "Tidy Farm",
+    "year": 2026
+   }
   },
   "mc": {
    "at": "2026-10-31T11:04:03.722272+00:00",
@@ -503694,6 +504259,55 @@
      "Character Customization",
      "Side Scroller",
      "Singleplayer"
+    ]
+   }
+  }
+ },
+ "steam-587470": {
+  "hltb": {
+   "at": "2026-11-20T14:10:29.703911+00:00",
+   "v": {
+    "comp": null,
+    "extra": null,
+    "id": 49935,
+    "main": null,
+    "title": "Chroma Lab",
+    "year": 2017
+   }
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:26.368315+00:00",
+   "v": {
+    "genres": [
+     "Simulation"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "chroma-lab",
+    "title": "Chroma Lab",
+    "user": null,
+    "userCount": 0,
+    "year": 2017
+   }
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:27.664497+00:00",
+   "forced": 587470,
+   "v": {
+    "appid": 587470,
+    "name": "Chroma Lab",
+    "neg": 11,
+    "owners": "20,000 .. 50,000",
+    "pos": 315,
+    "price": 4.99,
+    "publisher": "Sean Tann",
+    "tags": [
+     "Simulation",
+     "Indie",
+     "Casual",
+     "VR",
+     "Physics",
+     "Sandbox"
     ]
    }
   }
@@ -523621,6 +524235,63 @@
    }
   }
  },
+ "steam-690560": {
+  "hltb": {
+   "at": "2026-11-20T14:10:53.851876+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:30.737909+00:00",
+   "v": {
+    "genres": [
+     "Roguelike"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "i-am-overburdened",
+    "title": "I Am Overburdened",
+    "user": null,
+    "userCount": 1,
+    "year": 2017
+   }
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:39.887488+00:00",
+   "forced": 690560,
+   "v": {
+    "appid": 690560,
+    "name": "I Am Overburdened",
+    "neg": 19,
+    "owners": "20,000 .. 50,000",
+    "pos": 135,
+    "price": 4.99,
+    "publisher": "Magic Item Tech",
+    "tags": [
+     "Rogue-like",
+     "Turn-Based",
+     "Dungeon Crawler",
+     "RPG",
+     "Traditional Roguelike",
+     "Singleplayer",
+     "2D",
+     "Top-Down",
+     "Pixel Graphics",
+     "Casual",
+     "Fantasy",
+     "Funny",
+     "Loot",
+     "Perma Death",
+     "Replay Value",
+     "Puzzle",
+     "Procedural Generation",
+     "Comedy",
+     "Adventure",
+     "Indie"
+    ]
+   }
+  }
+ },
  "steam-690640": {
   "hltb": {
    "at": "2026-10-26T13:38:16.813368+00:00",
@@ -529553,6 +530224,69 @@
      "Kickstarter",
      "LGBTQ+",
      "Female Protagonist"
+    ]
+   }
+  }
+ },
+ "steam-734920": {
+  "hltb": {
+   "at": "2026-11-20T14:10:33.256587+00:00",
+   "v": {
+    "comp": 6.0,
+    "extra": 2.7,
+    "id": 54051,
+    "main": 1.3,
+    "title": "MEANDERS",
+    "year": 2018
+   }
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:28.599984+00:00",
+   "v": {
+    "genres": [
+     "3D Platformer"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "meanders",
+    "title": "MEANDERS",
+    "user": 8,
+    "userCount": 5,
+    "year": 2018
+   }
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:33.195993+00:00",
+   "forced": 734920,
+   "v": {
+    "appid": 734920,
+    "name": "MEANDERS",
+    "neg": 34,
+    "owners": "0 .. 20,000",
+    "pos": 369,
+    "price": 2.99,
+    "publisher": "ATOMIC BREATH, FraZack",
+    "tags": [
+     "Casual",
+     "3D Platformer",
+     "Puzzle",
+     "Parkour",
+     "Indie",
+     "Adventure",
+     "First-Person",
+     "Action",
+     "Atmospheric",
+     "Colorful",
+     "Puzzle-Platformer",
+     "Funny",
+     "Relaxing",
+     "Great Soundtrack",
+     "Singleplayer",
+     "Controller",
+     "Platformer",
+     "Short",
+     "Difficult",
+     "Replay Value"
     ]
    }
   }
@@ -543251,6 +543985,63 @@
    }
   }
  },
+ "steam-823840": {
+  "hltb": {
+   "at": "2026-11-20T14:10:33.409580+00:00",
+   "v": {
+    "comp": 10.0,
+    "extra": 7.2,
+    "id": 65146,
+    "main": 7.1,
+    "title": "Macrotis: A Mother's Journey",
+    "year": 2019
+   }
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:28.601946+00:00",
+   "v": {
+    "genres": [
+     "2D Platformer"
+    ],
+    "reviews": 3,
+    "score": null,
+    "slug": "macrotis-a-mothers-journey",
+    "title": "Macrotis: A Mother's Journey",
+    "user": null,
+    "userCount": 0,
+    "year": 2021
+   }
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:34.295209+00:00",
+   "forced": 823840,
+   "v": {
+    "appid": 823840,
+    "name": "Macrotis: A Mother's Journey",
+    "neg": 14,
+    "owners": "0 .. 20,000",
+    "pos": 167,
+    "price": 9.99,
+    "publisher": "Orsam Information Technologies",
+    "tags": [
+     "Indie",
+     "Adventure",
+     "Cute",
+     "2.5D",
+     "Puzzle",
+     "Platformer",
+     "Puzzle-Platformer",
+     "Singleplayer",
+     "Atmospheric",
+     "Great Soundtrack",
+     "Difficult",
+     "Colorful",
+     "Fantasy",
+     "Female Protagonist"
+    ]
+   }
+  }
+ },
  "steam-824190": {
   "hltb": {
    "at": "2026-10-23T16:53:52.069629+00:00",
@@ -551320,6 +552111,49 @@
    }
   }
  },
+ "steam-887900": {
+  "hltb": {
+   "at": "2026-11-20T14:10:53.773952+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:30.498276+00:00",
+   "v": {
+    "genres": [
+     "Arcade"
+    ],
+    "reviews": null,
+    "score": null,
+    "slug": "egg-is-broken-heart-is-too",
+    "title": "egg is broken. heart is too.",
+    "user": null,
+    "userCount": 1,
+    "year": 2019
+   }
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:38.753277+00:00",
+   "forced": 887900,
+   "v": {
+    "appid": 887900,
+    "name": "egg is broken. heart is too.",
+    "neg": 19,
+    "owners": "0 .. 20,000",
+    "pos": 121,
+    "price": 2.99,
+    "publisher": "Curious Visions",
+    "tags": [
+     "Action",
+     "Indie",
+     "Casual",
+     "Difficult",
+     "Platformer",
+     "Physics"
+    ]
+   }
+  }
+ },
  "steam-888040": {
   "hltb": {
    "at": "2026-10-23T16:12:27.851876+00:00",
@@ -553469,6 +554303,55 @@
      "Action",
      "Arcade",
      "Combat"
+    ]
+   }
+  }
+ },
+ "steam-91200": {
+  "hltb": {
+   "at": "2026-11-20T14:11:13.271096+00:00",
+   "err": "HLTB-Abfrage fehlgeschlagen",
+   "v": null
+  },
+  "mc": {
+   "at": "2026-11-20T14:10:32.050129+00:00",
+   "v": {
+    "genres": [
+     "Real-Time Strategy"
+    ],
+    "reviews": 36,
+    "score": 80,
+    "slug": "anomaly-warzone-earth",
+    "title": "Anomaly: Warzone Earth",
+    "user": 7.2,
+    "userCount": 185,
+    "year": 2011
+   }
+  },
+  "steam": {
+   "at": "2026-11-20T14:10:40.979750+00:00",
+   "forced": 91200,
+   "v": {
+    "appid": 91200,
+    "name": "Anomaly: Warzone Earth",
+    "neg": 152,
+    "owners": "200,000 .. 500,000",
+    "pos": 860,
+    "price": 9.99,
+    "publisher": "11 bit studios",
+    "tags": [
+     "Strategy",
+     "Indie",
+     "Tower Defense",
+     "Action",
+     "Sci-fi",
+     "Singleplayer",
+     "Touch-Friendly",
+     "RTS",
+     "Top-Down",
+     "Aliens",
+     "Difficult",
+     "Arcade"
     ]
    }
   }
