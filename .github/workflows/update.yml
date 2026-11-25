@@ -23,9 +23,6 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -44,7 +41,13 @@ jobs:
           git add data public/data
           git diff --cached --quiet || git commit -m "Katalog $(date -u +%Y-%m-%d)"
           git pull --rebase --autostash -q || true
-          git push
+          # GitHub lehnt Pushes gelegentlich mit "Internal Server Error" ab -> bis zu 3 Versuche
+          for i in 1 2 3; do
+            git push && exit 0
+            sleep 30
+            git pull --rebase --autostash -q || true
+          done
+          exit 1
       - uses: actions/setup-node@v5
         with:
           node-version: 24
@@ -54,5 +57,15 @@ jobs:
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
+
+  # Eigener Job: deploy-pages fand das Paket direkt nach dem Hochladen manchmal nicht
+  # ("Found 0 artifact(s)"); getrennt läuft es später und lässt sich allein neu starten.
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
       - id: deploy
         uses: actions/deploy-pages@v4
